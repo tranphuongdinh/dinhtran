@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Fredoka+One&family=Indie+Flower&family=Modak&family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Fredoka+One&family=Orbitron:wght@700&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
+    <title>HANGMAN BY ĐÌNH RAMOS</title>
+</head>
+<body>
+    <div class="container-1">
+        <a href="#"><h2 id="gameTitle">HANGMAN</h2></a>
+        <div class="header">
+            <div id="wrongWords"><h4 id="wrongWordList">INCORRECT LETTERS: </h4></div>
+            <div id="btnPlace">
+                <button id="btnHint" onmousedown="hint()">HINT</button>
+                <button id="btnNew" onmousedown="init()">NEW</button>
+            </div>
+        </div>
+        <div class="container-main-screen">
+            <div id="canvasPlace"><canvas id="canvasMainScreen" width="400" height="300"></canvas></div>
+            <div id="information">
+                <div id="category">
+                    <h2>CATEGORY</h2>
+                    <h3 id="categoryName"></h3>
+                </div>
+                <div id="playerName">
+                    <h2>WIN</h2>
+                    <span id="win"></span>
+                </div>
+                <div id="computerName">
+                    <h2>LOSE</h2>
+                    <span id="lose"></span>
+                </div>
+            </div>
+        </div>
+        <div id="wordToFind">
+        </div>
+        <div id="alphabet">
+            <button id="btnA" onmousedown="pickLetterA()">A</button>
+            <button id="btnB" onmousedown="pickLetterB()">B</button>
+            <button id="btnC" onmousedown="pickLetterC()">C</button>
+            <button id="btnD" onmousedown="pickLetterD()">D</button>
+            <button id="btnE" onmousedown="pickLetterE()">E</button>
+            <button id="btnF" onmousedown="pickLetterF()">F</button>
+            <button id="btnG" onmousedown="pickLetterG()">G</button>
+            <button id="btnH" onmousedown="pickLetterH()">H</button>
+            <button id="btnI" onmousedown="pickLetterI()">I</button>
+            <button id="btnJ" onmousedown="pickLetterJ()">J</button>
+            <button id="btnK" onmousedown="pickLetterK()">K</button>
+            <button id="btnL" onmousedown="pickLetterL()">L</button>
+            <button id="btnM" onmousedown="pickLetterM()">M</button>
+            <button id="btnN" onmousedown="pickLetterN()">N</button>
+            <button id="btnO" onmousedown="pickLetterO()">O</button>
+            <button id="btnP" onmousedown="pickLetterP()">P</button>
+            <button id="btnQ" onmousedown="pickLetterQ()">Q</button>
+            <button id="btnR" onmousedown="pickLetterR()">R</button>
+            <button id="btnS" onmousedown="pickLetterS()">S</button>
+            <button id="btnT" onmousedown="pickLetterT()">T</button>
+            <button id="btnU" onmousedown="pickLetterU()">U</button>
+            <button id="btnV" onmousedown="pickLetterV()">V</button>
+            <button id="btnW" onmousedown="pickLetterW()">W</button>
+            <button id="btnX" onmousedown="pickLetterX()">X</button>
+            <button id="btnY" onmousedown="pickLetterY()">Y</button>
+            <button id="btnZ" onmousedown="pickLetterZ()">Z</button>
+        </div>
+    </div>
+    <script src="menuGame.js"></script>
+    <script src="game.js"></script>
+    <script src="pickLetter.js"></script>
+</body>
+</html>

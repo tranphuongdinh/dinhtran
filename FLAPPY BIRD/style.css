@@ -1,0 +1,50 @@
+body{
+    margin: 0 auto;
+    background: url('https://eskipaper.com/images/flappy-bird-1.jpg');
+    background-size: cover;
+}
+
+canvas {
+    border-radius: 10px;
+    border: 10px solid rgb(100, 92, 92);
+}
+
+#btnRestart {
+    border-radius: 999px;
+    position: absolute;
+    top: 450px;
+    left: 20px;
+    font-family: 'Bangers', cursive;
+    font-weight: bolder;
+    background-color: khaki;
+    width: 100px;
+    height: 30px;
+}
+
+#btnBackToMenu {
+    border-radius: 999px;
+    position: absolute;
+    top: 450px;
+    left: 170px;
+    font-family: 'Bangers', cursive;
+    font-weight: bolder;
+    background-color: khaki;
+    width: 110px;
+    height: 30px;
+}
+
+#btnStart {
+    border-radius: 999px;
+    position: absolute;
+    top: 200px;
+    left: 95px;
+    font-family: 'Bangers', cursive;
+    color: khaki;
+    text-shadow:2px 2px 2px black;
+    font-size: 160%;
+    text-align: center;
+    font-weight: bolder;
+    background-color: aqua;
+    width: 110px;
+    height: 50px;
+}

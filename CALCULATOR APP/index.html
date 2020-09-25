@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR APP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="screen">
+            <div id="calculation"></div>
+            <div id="result"></div>
+        </div>
+
+        <div class="btn">
+            <div class="number-container">
+                <button class="number-btn" id="btn-7" onmousedown="get7()">7</button>
+                <button class="number-btn" id="btn-8" onmousedown="get8()">8</button>
+                <button class="number-btn" id="btn-9" onmousedown="get9()">9</button>
+                <button class="number-btn" id="btn-4" onmousedown="get4()">4</button>
+                <button class="number-btn" id="btn-5" onmousedown="get5()">5</button>
+                <button class="number-btn" id="btn-6" onmousedown="get6()">6</button>
+                <button class="number-btn" id="btn-1" onmousedown="get1()">1</button>
+                <button class="number-btn" id="btn-2" onmousedown="get2()">2</button>
+                <button class="number-btn" id="btn-3" onmousedown="get3()">3</button>
+                <button class="number-btn" id="btn-dot"onmousedown="getDot()">.</button>
+                <button class="number-btn" id="btn-0" onmousedown="get0()">0</button>
+                <button class="number-btn" id="mod" onmousedown="mod()">%</button>
+            </div>
+
+            <div class="operator-container">
+                <button class="operator-btn" id="btn-DEL" onmousedown="backSpace()">DEL</button>
+                <button class="operator-btn" id="btn-AC" onmousedown="ACinit()">AC</button>
+                <button class="operator-btn" id="add" onmousedown="add()">+</button>
+                <button class="operator-btn" id="minus" onmousedown="minus()">-</button>
+                <button class="operator-btn" id="multiply" onmousedown="multiply()">x</button>
+                <button class="operator-btn" id="devide" onmousedown="devide()">:</button>
+                <button class="operator-btn" id="equal" onmousedown="equal()">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

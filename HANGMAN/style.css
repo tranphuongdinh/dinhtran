@@ -1,0 +1,262 @@
+body{
+    margin: 0 auto;
+    box-sizing: border-box;
+    background: url('https://avante.biz/wp-content/uploads/Green-board-wallpaper/Green-board-wallpaper2.jpg');
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+#mainScreen {
+    width: 600px;
+    height: 650px;
+    background-image: url('/images/menu.png');
+}
+
+#canvasPlace{
+    background: url("images/none.png");
+}
+
+#btnPlay {
+    position: absolute;
+    top: 250px;
+    left: 400px;
+    width: 150px;
+    height: 50px;
+    font-family: 'Righteous', cursive;
+    font-size: 300%;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: purple;
+    transition: 0.75s;
+}
+
+#btnPlay:hover {
+    position: absolute;
+    top: 250px;
+    left: 390px;
+    width: 150px;
+    height: 50px;
+    font-family: 'Righteous', cursive;
+    font-weight: bolder;
+    font-size: 400%;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: pink;
+}
+
+#gameTitle {
+    font-family: 'Sigmar One', cursive;
+    font-size: 2em;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    width: 580px;
+    height: 35px;
+    background:url('https://media.istockphoto.com/photos/hangman-sketched-on-blackboard-picture-id466313780?k=6&m=466313780&s=612x612&w=0&h=Wpx_vgPCyt3oEJ5CIAhHxVfWlqdRfXrAfsHX4MbPfe8=');
+    background-size:contain;
+    color: whitesmoke;
+    filter: blur(1px);
+}
+
+.container-1{
+    width: 600px;
+    min-height: 550px;
+    border: 20px solid rgb(107, 50, 3);
+    border-radius: 20px;
+}
+
+.header{
+    display: flex;
+}
+
+#btnPlace {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#btnHint, #btnNew{
+    margin: 0px;
+    width: 100px;
+    height: 36px;
+    background: linear-gradient(#03FF0A,#018A06);
+    border: none;
+    font-family: 'Fredoka One', cursive;
+    transition: 0.75s;
+    border-top: 3px solid rgb(107, 50, 3);
+    border-bottom: 3px solid rgb(107, 50, 3);
+    border-left: 3px solid rgb(107, 50, 3);
+}
+
+#btnNew {
+    background: linear-gradient(red, yellow);
+}
+
+#btnHint:hover , #btnNew:hover{
+    background: linear-gradient(green, red);
+    font-family: 'Fredoka One', cursive;
+    color: white;
+}
+
+#btnPlace {
+    float: right;
+    width: 200px;
+    height: 36px;
+}
+
+#wrongWords {
+    background: url(https://cdn.images.express.co.uk/img/dynamic/59/590x/secondary/facetime-games-how-to-play-games-facetime-with-friends-2408135.jpg?r=1589438909303) top no-repeat;
+    background-size: cover;
+    color: rgb(247, 246, 241);
+    width: 400px;
+    height: 36px;
+}
+
+#wrongWordList {
+    text-align: left;
+    font-family: 'Anton', sans-serif;
+    font-weight: 250;
+    letter-spacing: 1.5px;
+    margin: 10px;
+    left: 0px;
+    font-size: 1.2em;
+}
+
+span {
+    font-family: 'Fredoka One', cursive;
+    text-align: center;
+    font-size: 2em;
+}
+
+.container-main-screen{
+    background: url(https://cdn.images.express.co.uk/img/dynamic/59/590x/secondary/facetime-games-how-to-play-games-facetime-with-friends-2408135.jpg?r=1589438909303) center no-repeat;
+    background-size: cover;
+    display: flex;
+    width: 600px;
+    height: 300px;
+}
+
+#canvasPlace{
+    width: 400px;
+    height: 303px;
+    background: none;
+    opacity: 0.9;
+}
+
+#canvasPlace canvas {
+    border-bottom-right-radius: 60px;
+}
+
+#information {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+}
+
+#information h2{
+    margin: 10px;
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    font-size: 2em;
+    color: chartreuse;
+}
+
+#category h3{
+    color: rgb(227, 128, 240);
+    margin: 0;
+}
+
+#category, #playerName, #computerName{
+    padding-top: 10px;
+    width: 200px;
+    height: 94px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#categoryName {
+    font-family: 'Fredoka One', cursive;
+    text-align: center;
+
+    font-size: 150%;;
+    margin-left: 5px;
+}
+
+#win {
+    color: rgb(79, 200, 236);
+}
+
+#lose {
+    color: rgb(240, 48, 48);
+}
+
+#wordToFind{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:space-around;
+    background: url(https://cdn.images.express.co.uk/img/dynamic/59/590x/secondary/facetime-games-how-to-play-games-facetime-with-friends-2408135.jpg?r=1589438909303) bottom no-repeat;
+    background-size: cover;
+    width: 600px;
+    height: 80px;
+}
+
+#wordToFind button{
+    background: none;
+    border: none;
+    border-bottom: 7px solid rgb(255, 255, 255);
+    width: 45px;
+    height: 50px;
+    margin: 7px;
+    margin-bottom: 15px;
+    font-family: 'Fredoka One', cursive;
+    color:rgb(255, 255, 255);
+    font-size: 2.5em;
+    transition: 0.75s;
+}
+
+#wordToFind button:hover{
+    font-size: 2.8em;
+}
+
+#alphabet {
+    background: url('https://us.123rf.com/450wm/sonyaillustration/sonyaillustration1504/sonyaillustration150400304/38329927-stock-vector-green-school-board-vector-background-.jpg?ver=6') center no-repeat;
+    background-size:cover;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:space-around;
+    width: 600px;
+    min-height: 200px;
+}
+
+#alphabet button{
+    border-radius: 10px;
+    width: 52px;
+    height: 40px;
+    margin: 7px;
+    margin-top: 15px;
+    font-family: 'Righteous', cursive;
+    font-weight: bolder;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+    font-size: 1.1em;
+    color: #FCE060;
+}
+
+#alphabet button:hover {
+    width: 55px;
+    height: 45px;
+    background:linear-gradient(rgb(107, 89, 50), rgb(230, 230, 143));
+    color: #13120d;
+}
+
+#alphabet button:active{
+    background:linear-gradient(rgb(236, 193, 100), yellow);
+    color: #13120d;
+}

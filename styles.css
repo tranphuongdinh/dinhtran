@@ -1,0 +1,1359 @@
+/*GLOBAL STYLES*/
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+*{
+    scroll-behavior: smooth;
+    font-family: 'Rowdies', sans-serif;
+}
+
+html {
+    font-family: 'Nunito', sans-serif;
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    font-size: 26px;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.ctn {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.section-title{
+    display: inline-block;
+    width: 70%;
+    position: relative;
+    left: 50px;
+    top: 20px;
+    margin-top: 70px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 50px;
+    color: white;
+    filter: blur(0.5px);
+}
+/*GLOBAL STYLES*/
+
+/*SCROLLBAR*/
+::-webkit-scrollbar
+{
+    width: 0;
+    height: 0;
+}
+
+/* ::-webkit-scrollbar-thumb{
+    background: url('https://thumbs.gfycat.com/CautiousSlightGhostshrimp-size_restricted.gif') center no-repeat;
+    background-size:cover;
+} */
+
+#scrollPath {
+    position: fixed;
+    top:0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: rgba(241, 215, 215, 0.05);
+}
+
+#progressbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    animation: animateBar 5s linear infinite;
+    z-index: 1000;
+}
+
+@keyframes animateBar {
+    0%, 100% {
+        filter: hue-rotate(0deg);
+    }
+    50% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+#progressbar:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    filter: blur(10px);
+}
+
+#progressbar:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    filter: blur(30px);
+}
+/*SCROLLBAR*/
+
+/*BACK TO TOP BUTTON*/
+#back-to-top-btn{
+    display: inline-block;
+    position: fixed;
+    width: 64px;
+    height: 64px;
+    bottom: 10px;
+    right: 10px;
+    line-height: 50px;
+}
+
+.btnEntrance {
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-name: btnEntrance;
+}
+
+@keyframes btnEntrance {
+    from {
+        opacity: 0;
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.btnExit {
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-name: btnExit;
+}
+
+@keyframes btnExit {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+}
+/*BACK TO TOP BUTTON*/
+
+/*  HEADER */
+header {
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.ctn {
+    margin: 0 auto;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.menu-icons i{
+    margin: 10px;
+    font-size: 56px;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.close i{
+    text-align: center;
+    width: 70px;
+    display: inline-block;
+    color: whitesmoke;
+    z-index: 1500;
+}
+
+.nav-brand {
+    position: relative;
+    top: -15px;
+    width: 120px;
+    height: 30px;
+    left: 20px;
+    transition: 0.75s;
+}
+
+.nav-list {
+    width: 100%;
+    height: 100vh;
+    background: none;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1500;
+    transition: all 100ms ease-in-out;
+}
+
+.nav-list.active {
+    right: 0px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+}
+
+.open {
+    right: 0px;
+}
+
+.nav-item {
+    margin: 24px 0;
+}
+
+.nav-link {
+    position: relative;
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Krona One', sans-serif;
+    text-transform: uppercase;
+    color: whitesmoke;
+    font-weight: bold;
+    transition: 0.75s;
+}
+
+.nav-link:hover{
+    color: white;
+    text-decoration:none;
+}
+
+/*HOME*/
+#home {
+    width: 100%;
+    height: 100vh;
+    background: url('https://i.pinimg.com/originals/2e/73/92/2e7392bd69172cb64fb648d6a5abb830.gif') center no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home .ctn {
+    justify-content: center;
+    align-items: center;
+}
+
+#home-title {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#home-title li {
+    list-style: none;
+    color: #fff;
+    font-size: 4.8em;
+    font-weight: bold;
+    font-family: 'Rowdies', cursive;
+    letter-spacing: 10px;
+    filter: blur(1px);
+    transition: 2s;
+}
+
+#home-title:hover li {
+    transform: rotate(180deg) translateY(-200px);
+    transition: 1s;
+    filter: blur(20px);
+    opacity: 0;
+}
+
+#home-subtitle {
+    font-size: 3em;
+    text-transform: uppercase;
+    font-family: 'Rowdies', cursive;
+    color: #fff;
+    filter: blur(1px);
+}
+
+.class-home h1{
+    display: none;
+    width: 40%;
+    position: relative;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 40px;
+    top: 150px;
+    left: 50px;
+    color: palevioletred;
+}
+/*HOME*/
+
+/*ABOUT ME*/
+#about-me{
+    width: 100%;
+    min-height: 100vh;
+    background: url('images/about-me-background-1.jpg') center no-repeat;
+    background-size:cover;
+    overflow: hidden;
+}
+
+#about-me::before{
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('images/avatar-about-me-2.jpg') center no-repeat fixed;
+    background-size:contain;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.3;
+}
+
+.class-about-me{
+    width: 100%;
+}
+
+#about-me .ctn {
+    flex-wrap: wrap;
+    flex-direction: inherit;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#about-me .ctn .card {
+    position: relative;
+    width: 320px;
+    height: 450px;
+    background: #232323;
+    opacity: 0.9;
+    border-radius: 20px;
+    overflow:hidden;
+    margin: 30px 10px 30px 10px;
+}
+
+#about-me .ctn .card:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #497dcc;
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
+    filter: blur(40px);
+}
+
+#about-me .ctn .card:hover:before {
+    clip-path: circle(300px at 80% -20%);
+}
+
+#about-me .ctn .card .imgBx {
+    position: absolute;
+    top: -10%;
+    transform: translateY(-50%);
+    z-index: 10000;
+    width: 100%;
+    height: 220px;
+    transition: 0.5s;
+}
+
+#about-me .ctn .card:hover .imgBx {
+    top: -45%;
+    transform: translateY(0);
+}
+
+#about-me .ctn .card .imgBx img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%) rotate(-25deg);
+    width: 220px;
+}
+
+#about-me .ctn .card .contentBx {
+    position: absolute;
+    bottom: -20px;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 1s;
+    z-index: 10;
+}
+
+#about-me .ctn .card .contentBx p {
+    font-size: 1em;
+    text-align: justify;
+    word-wrap: break-word;
+    padding: 20px;
+    color: #fff;
+    font-family: 'Rowdies', cursive;
+}
+
+#about-me .ctn .card:nth-child(3) .contentBx p {
+    text-align: center;
+}
+
+#about-me .ctn .card:hover .contentBx {
+    height: 210px;
+}
+
+#about-me .ctn .card .contentBx h2 {
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Rowdies', cursive;
+}
+
+#about-me .ctn .card .contentBx a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #111;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.5s;
+    font-family: 'Rowdies', sans-serif;
+}
+
+#about-me .ctn .card:hover .contentBx a {
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 0.75s;
+}
+
+#about-me .ctn .card:nth-child(1) {
+    border:2px solid #488dce;
+    box-shadow: 0 30px 60px rgba(57, 95, 165, 0.5);
+}
+
+#about-me .ctn .card:nth-child(1) .contentBx h2 {
+    color: rgb(88, 180, 233);
+}
+
+#about-me .ctn .card:nth-child(2) {
+    border:2px solid rgb(124, 209, 106);
+    box-shadow: 0 30px 60px rgba(72, 207, 90, 0.5);
+}
+
+#about-me .ctn .card:nth-child(3) {
+    border:2px solid rgb(223, 210, 37);
+    box-shadow: 0 30px 60px rgba(187, 214, 66, 0.5);
+}
+
+#about-me .ctn .card:nth-child(2)::before {
+    background: rgb(75, 192, 52);
+}
+
+#about-me .ctn .card:nth-child(2) .contentBx {
+    bottom: -20px;
+}
+
+#about-me .ctn .card:nth-child(2) .contentBx h2 {
+    color: rgb(124, 209, 106);
+}
+
+#about-me .ctn .card:nth-child(2) .contentBx p {
+    padding: 20px;
+    text-align: center;
+}
+
+#about-me .ctn .card:nth-child(2) .contentBx a {
+    background: rgb(124, 209, 106);
+}
+
+#about-me .ctn .card:nth-child(3)::before {
+    background: rgb(223, 210, 37);
+}
+
+#about-me .ctn .card:nth-child(3) .contentBx a {
+    background: rgb(223, 210, 37);
+}
+
+#about-me .ctn .card:nth-child(3) .contentBx h2 {
+    color: rgb(221, 212, 80);
+}
+
+/*ABOUT ME*/
+
+/*EXPERIENCE*/
+#experience{
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(94, 72, 72);
+    background: url("https://www.forbes.com/forbes-insights/wp-content/uploads/2018/05/dell-background.jpg") center no-repeat;
+    background-size: cover;
+}
+
+#experience .ctn {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 70vh;
+    background:none;
+}
+
+.skill-container {
+    position: relative;
+    width: 600px;
+}
+
+.skill-container .skills {
+    position: relative;
+    display: flex;
+    margin: 30px 0;
+    padding: 24px 10px 18px;
+    background: linear-gradient(#1a17c4 0%, rgb(27, 79, 88) 10%, rgb(7, 5, 46));
+    border-radius: 8px;
+    overflow: hidden;
+    border: 2px solid rgb(16, 122, 184);
+    transition: 0.5s;
+}
+
+.skill-container .skills span {
+    font-size: 1.4em;
+}
+
+.skill-container:hover .skills {
+    opacity: 0.05;
+}
+
+.skill-container:hover .skills:nth-child(1):hover {
+    opacity: 1;
+    box-shadow:0 30px 60px rgba(235, 123, 48, 0.8);
+}
+
+.skill-container:hover .skills:nth-child(2):hover {
+    opacity: 1;
+    box-shadow:0 30px 60px rgba(66, 116, 207, 0.8);
+}
+
+.skill-container:hover .skills:nth-child(3):hover {
+    opacity: 1;
+    box-shadow:0 30px 60px rgba(245, 220, 79, 0.8);
+}
+
+.skill-container:hover .skills:nth-child(4):hover {
+    opacity: 1;
+    box-shadow:0 30px 60px rgba(178, 81, 216, 0.8);
+}
+
+
+.skill-container .skills:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: rgba(84, 193, 212, 0.1);
+    z-index: 10;
+}
+
+.skill-container .skills .name {
+    position: relative;
+    width: 110px;
+    text-align: right;
+    color: #fff;
+    margin-top: -2px;
+    text-transform: uppercase;
+}
+
+.skill-container .skills .value {
+    position: relative;
+    width: 110px;
+    text-align: left;
+    color: #fff;
+    margin-top: -2px;
+    text-transform: uppercase;
+}
+
+.skill-container .skills .percent {
+    position: relative;
+    width: calc(100% - 150px);
+    height: 20px;
+    margin: 0 10px;
+    border-radius: 10px;
+    background: #151515;
+    box-shadow: inset 0 0 10px #000;
+    overflow: hidden;
+}
+
+.skill-container .skills .percent .progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    border-radius: 10px;
+    background:#fff;
+    box-shadow: inset 0 0 2px #000;
+    animation: increaseSkill 2s ease-in-out infinite;
+}
+
+@keyframes increaseSkill {
+    from {
+        width: 0;
+    }
+}
+
+.skill-container .skills:nth-child(1) .percent .progress {
+    background: linear-gradient(45deg, #3bc0ff, #33ff00);
+}
+
+.skill-container .skills:nth-child(2) .percent .progress {
+    background: linear-gradient(45deg, #1fe6ff, #673ab7);
+}
+
+.skill-container .skills:nth-child(3) .percent .progress {
+    background: linear-gradient(45deg, #ffee54, #e73030);
+}
+
+.skill-container .skills:nth-child(4) .percent .progress {
+    background: linear-gradient(45deg, #7f6de6, #e4357e);
+}
+/*EXPERIENCE*/
+
+/*PROJECTS*/
+#projects {
+    width: 100%;
+    animation: backgroundChange 12s ease-in-out infinite;
+}
+
+@keyframes backgroundChange{
+    0%,100%{
+        background: url("images/experience-background.jpg") center;
+        background-size: cover;
+    }
+    25%{
+        background: url("https://i.pinimg.com/originals/ab/65/25/ab6525b299477019027ddbd33a90c4b7.jpg");
+        background-size: cover;
+    }
+    50%{
+        background: url("https://i.pinimg.com/originals/6f/65/e1/6f65e11345f9cda4c684998205fe0af4.jpg");
+        background-size: cover;
+    }
+    75%{
+        background: url("https://images.hdqwalls.com/wallpapers/interstellar-abstract-art-i4.jpg") center;
+        background-size: cover;
+    }
+}
+
+.p-subtitle {
+    display: inline-block;
+    width: 90%;
+    padding-top: 30px;
+    font-family: 'Rowdies', cursive;
+    padding-left: 50px;
+    color: white;
+    text-align: left;
+}
+
+.project-item a img:hover {
+    animation: shake 0.5s infinite;
+}
+
+#projects .ctn {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    display: inherit;
+    padding-top: 20px;
+}
+
+.project-card {
+    position: relative;
+    width: 320px;
+    height: 300px;
+    margin: 20px;
+    background: #122936;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 2px solid rgba(240, 87, 232, 0.8);
+}
+
+.project-card:hover {
+    box-shadow: 0 30px 60px rgba(240, 87, 232, 0.8);
+}
+
+.project-card:before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    transform: skewY(345deg);
+    transition: 0.5s;
+}
+
+#flappy-bird-card:before {
+    background: url('images/flappy-bird-icon.png') center no-repeat;
+}
+
+#hangman-card:before {
+    background: url('images/hangman-icon.png') center no-repeat;
+}
+
+#calculator-card:before {
+    background: url('images/calculator.PNG') center no-repeat;
+}
+
+#snake-card:before {
+    background: url('images/snake-the-game-icon.PNG') center no-repeat;
+}
+
+#coding-card:before {
+    background: url('images/coding-flappy-bird.PNG') center no-repeat;
+}
+
+#piano-card:before {
+    background: url('images/piano-icon.jpg') center no-repeat;
+}
+
+#coming-card:before {
+    background: url('images/tron-like-tunnel.PNG') center no-repeat;
+}
+
+#coming-card-2:before {
+    background: url('images/galactic-light-trails.PNG') center no-repeat;
+}
+
+
+.project-card:hover:before {
+    top: -70%;
+    transform: skewY(390deg);
+}
+
+.project-card:after {
+    content: 'FLAPPY BIRD';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 600;
+    font-size: 5em;
+    color: rgba(0,0,0,0.15);
+    word-wrap: break-word;
+}
+
+#hangman-card:after {
+    content: 'HANGMAN';
+}
+
+#calculator-card:after {
+    content: 'CALCULATOR';
+}
+
+#snake-card:after {
+    content: 'SNAKE THE GAME';
+}
+
+#coding-card:after {
+    content: 'CODING CHALLENGE';
+}
+
+#piano-card:after {
+    content: 'PIANO COVER';
+}
+
+#coming-card:after {
+    content: 'TRON-LIKE TUNNELS';
+}
+
+#coming-card-2:after {
+    content: 'GALACTIC LIGHT TRAILS';
+}
+
+.project-card .imgBx {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    z-index: 1;
+}
+
+.project-card .imgBx img {
+    max-width: 40%;
+    transition: 0.5s;
+}
+
+.project-card:hover .imgBx img {
+    max-width: 30%;
+}
+
+.project-card .contentBx {
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.project-card .contentBx h3 {
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.project-card .contentBx .play {
+    position: relative;
+    top: 200px;
+    opacity: 0;
+    padding: 10px 30px;
+    margin-top: 15px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    background: linear-gradient(45deg, rgb(132, 86, 241),rgb(216, 25, 206));
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+
+.project-card .contentBx .play:hover {
+    background: linear-gradient(45deg,rgb(216, 25, 206),rgb(132, 86, 241));
+    font-size: 1.1em;
+}
+
+.project-card:hover .contentBx .play {
+    top: 0;
+    opacity: 1;
+}
+
+.card-area {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 340px;
+    padding-left:28px;
+    padding-right:28px;
+}
+
+.card-area h1 {
+    text-align: left;
+    font-size: 4.75em;
+    color: rgb(240, 231, 231);
+    z-index: 0;
+    padding-left: 40px;
+    text-shadow: 0px 10px 20px rgb(206, 223, 233, 0.3);
+}
+
+.card-area:nth-child(even) h1 {
+   padding-right: 40px;
+   text-align: right;
+}
+
+.card-area:nth-child(even) {
+    justify-content: flex-end;
+}
+/*PROJECTS*/
+
+/*CONTACT*/
+#contact {
+    width: 100%;
+    min-height: 100vh;
+    background: url("https://dustfreedom.com/wp-content/uploads/2018/07/Contact-Us-Background.jpg") center no-repeat;
+    background-size:cover;
+}
+
+#contact .p-subtitle {
+    padding-top:15px;
+}
+
+#contact .ctn {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#contact .ctn ul {
+    align-self: flex-end;
+    margin: 30px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#contact .ctn ul li {
+    position: relative;
+    list-style: none;
+    width: 60px;
+    height: 60px;
+    margin: 0 30px;
+    transform: rotate(-45deg);
+    background: #ccc;
+}
+
+#contact .ctn ul li span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    transition: 0.5s;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 2.8em !important;
+}
+
+#contact .ctn ul li:nth-child(1) span {
+    background: #399adb;
+}
+
+#contact .ctn ul li:nth-child(2) span {
+    background: #d45f29;
+}
+
+#contact .ctn ul li:nth-child(3) span {
+    background: #cc2348;
+}
+
+#contact .ctn ul li:nth-child(4) span {
+    background: #3edb39;
+}
+
+#contact .ctn ul li:hover  span:nth-child(5) {
+    transform: translate(40px, -40px);
+    opacity: 1;
+}
+
+#contact .ctn ul li:hover span:nth-child(4) {
+    transform: translate(30px, -30px);
+    opacity: .8;
+}
+#contact .ctn ul li:hover span:nth-child(3) {
+    transform: translate(20px, -20px);
+    opacity: .6;
+}
+#contact .ctn ul li:hover  span:nth-child(2) {
+    transform: translate(10px, -10px);
+    opacity: .4;
+}
+#contact .ctn ul li:hover span:nth-child(1) {
+    transform: translate(0px, -0px);
+    opacity: .2;
+}
+
+.formBx {
+    border-radius: 20px;
+    margin-top: 30px;
+    width: 400px;
+}
+
+/* .formBx form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formBx form h3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.formBx form input, .formBx form textarea {
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background: #222;
+    color: #fff;
+    resize: none;
+}
+
+.formBx form textarea {
+    min-height: 200px;
+}
+
+.formBx form input::placeholder, .formBx form textarea::placeholder {
+    color: #999;
+}
+
+.formBx form input[type="submit"] {
+    max-width: 100px;
+    background: #2196f3;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+} */
+/*CONTACT*/
+
+footer{
+    background: #333333;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    padding: 10px;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (min-width: 768px) {
+    .nav-brand {
+        position: relative;
+        width: 80px;
+        height: 40px;
+        left: 15px;
+    }
+
+    .nav-list {
+        width: initial;
+        height: initial;
+        position: initial;
+        top: initial;
+        right: initial;
+        flex-direction: row;
+        transition: initial;
+    }
+
+    .menu-icons{
+        display: none;
+    }
+
+    .nav-item{
+        margin: 0 30px;
+    }
+
+    .nav-link, .current{
+        color: whitesmoke;
+        position: relative;
+        font-size: 15px;
+    }
+
+    .nav-link::before, current::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -8px;
+        background: linear-gradient(to right, #a395f5, #2172ce);
+        width: 100%;
+        height: 3px;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 600ms;
+    }
+
+    .current::before{
+        transform: scaleX(1);
+    }
+
+    .nav-link:hover::before{
+        transform: scaleX(1);
+    }
+}
+
+/********************** Large devices only *********************/
+@media (min-width:1200px) {
+}
+
+/********************** Medium devices only *********************/
+@media (min-width:992px) and (max-width:1199px) {
+}
+/********************** Small devices only *********************/
+@media (min-width:768px) and (max-width:991px) {
+    .nav-brand {
+        width: 60px;
+        height: 30px;
+        left: 15px;
+    }
+
+    .nav-item{
+        margin: 0 25px;
+    }
+
+    .nav-link, .current{
+        font-size: 10px;
+    }
+
+    .section-title{
+        font-size: 3em;
+    }
+
+    .class-about-me{
+        width: 100%;
+    }
+
+    #home-title li{
+        font-size: 3em;
+    }
+
+    #home-subtitle{
+        font-size: 2.2em;
+    }
+
+    .project-card {
+        height: 270px;
+    }
+
+    .card-area, .card-area:nth-child(even) {
+        height: 310px;
+    }
+
+    .card-area h1 {
+        font-size: 3.8em;
+        padding-left: 15px;
+    }
+    
+    .card-area:nth-child(even) h1 {
+       padding-right: 15px;
+    }
+}
+
+/********************** Extra small devices only *********************/
+@media (max-width: 767px) {
+    #scrollPath, #progressbar {
+        display: none;
+    }
+
+    .nav-brand {
+        width: 80px;
+        height: 60px;
+    }
+
+    .nav-list{
+        background: url('https://cutewallpaper.org/21/1920x1080-gif/gif-Backgrounds-Wallpaper-Cave.gif') center no-repeat;
+        background-size: cover;
+        opacity: 0.9;
+    }
+
+    .nav-link:hover{
+        color:plum;
+        font-size: 1.3em;
+        text-decoration:none;
+    }
+
+    .section-title{
+        font-size: 2.9em;
+    }
+
+    #home-title li{
+        font-size: 1.6em;
+    }
+
+    #home-subtitle{
+        font-size: 1.3em;
+    }
+
+    .skill-container {
+        width: 450px;
+    }
+
+    .p-subtitle {
+        font-size: 1.5em;
+    }
+
+    .project-card {
+        height: 270px;
+        margin: 20px;
+    }
+
+    .card-area, .card-area:nth-child(even) {
+        height: 300px;
+        justify-content: space-around;
+        background: none;
+    }
+
+    .card-area h1 {
+        display: none;
+    }
+
+    .project-card:after {
+        font-size: 3em;
+    }
+
+    #contact .ctn ul li {
+        margin: 20px;
+        width: 40px;
+        height: 40px;
+    }
+
+    #contact .ctn ul li span {
+        font-size: 2.2em !important;
+    }
+}
+
+/*********************SUPER EXTRA SMALL DEVICES ONLY***********************/
+@media (max-width:479px) {
+    .section-title{
+        font-size: 2.1em;
+        left: 20px;
+    }
+
+    #home{
+        background: url('https://images.wallpaperscraft.com/image/city_silhouette_art_136751_1920x1080.jpg') center no-repeat;
+        background-size:cover;
+    }
+
+    #experience {
+        background: url('https://bestwallpapers.in/wp-content/uploads/2018/05/abstract-colorful-square-pattern-4k-wallpaper-1440x2160.jpg') center no-repeat;
+
+        background-size:cover;
+        animation: none;
+    }
+
+    #projects{
+        background: url('https://i.pinimg.com/originals/8f/43/3e/8f433ed00acf3eb0bae3ad1d0e4b63f4.jpg') center;
+        background-size:contain;
+        animation: none;
+    }
+
+    #contact{
+        background: url('https://wallpaperaccess.com/full/803962.jpg');
+        background-size: cover;
+    }
+
+    #home-title li{
+        font-size: 1.2em;
+    }
+
+    #home-subtitle{
+        font-size: 0.9em;
+    }
+
+    .skill-container .skills span {
+        font-size: 1em;
+    }
+
+    .skill-container .skills {
+        padding: 15px 5px 15px;
+        background: linear-gradient(#a8640a 0%, rgb(177, 84, 8) 10%, rgb(111, 13, 114));
+        border: 2px solid rgb(17, 2, 19);
+    }
+
+    .skill-container {
+        width: 320px;
+    }
+
+    .p-subtitle{
+        padding-top: 15px;
+        padding-left: 20px;
+    }
+
+    .card-area {
+        padding-left:0;
+        padding-right:0;
+    }
+
+    .project-card {
+        height: 240px;
+        border: 2px solid rgb(202, 64, 10);
+    }
+
+    .project-card:hover {
+        box-shadow: 0 30px 60px rgb(202, 64, 10);
+    }
+
+    .project-card .contentBx h3 {
+        font-size: 1em;
+    }
+
+    .project-card .contentBx .play {
+        position: relative;
+        font-size: 0.7em;
+        letter-spacing: 0.5px;
+    }
+
+    .project-card .contentBx .play:hover {
+        font-size: 0.8em;
+    }
+
+    .card-area, .card-area:nth-child(even) {
+        height: 270px;
+    }
+
+    .formBx {
+        width: 280px;
+    }
+
+    #contact .ctn ul {
+        padding-top:40px;
+        padding-bottom:0px;
+        padding-left:0;
+        padding-right:0;
+    }
+
+    #contact .ctn ul li {
+        margin: 15px;
+        width: 35px;
+        height: 35px;
+    }
+
+    #contact .ctn ul li span {
+        font-size: 2em !important;
+    }
+}
+
+/*********************SUPER EXTREME SMALL DEVICES ONLY***********************/
+@media (max-width:320px) {
+    .section-title {
+        font-size: 2em;
+    }
+
+    .skill-container {
+        width: 300px;
+    }
+
+    #home-title li {
+        font-size: 0.9em;
+    }
+}
