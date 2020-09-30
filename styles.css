@@ -739,8 +739,8 @@ nav {
     background: url('images/calculator.PNG') center no-repeat;
 }
 
-#snake-card:before {
-    background: url('images/snake-the-game-icon.PNG') center no-repeat;
+#memeGen-card:before {
+    background: url('images/memeGenerator.PNG') top no-repeat;
 }
 
 #coding-card:before {
@@ -784,8 +784,8 @@ nav {
     content: 'CALCULATOR';
 }
 
-#snake-card:after {
-    content: 'SNAKE THE GAME';
+#memeGen-card:after {
+    content: 'MEME GENERATOR';
 }
 
 #coding-card:after {
