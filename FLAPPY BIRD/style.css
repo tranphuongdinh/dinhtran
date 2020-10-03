@@ -4,6 +4,11 @@ body{
     background-size: cover;
 }
 
+button {
+    cursor: pointer;
+    outline: none;
+}
+
 canvas {
     border-radius: 10px;
     border: 10px solid rgb(100, 92, 92);
