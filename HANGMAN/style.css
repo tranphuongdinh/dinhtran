@@ -9,6 +9,9 @@ a {
     text-decoration: none;
 }
 
+button, input {
+    outline: none;
+}
 
 #mainScreen {
     width: 600px;
@@ -235,7 +238,7 @@ span {
     min-height: 200px;
 }
 
-#alphabet button{
+#alphabet .btn-word{
     border-radius: 10px;
     width: 52px;
     height: 40px;
@@ -249,14 +252,14 @@ span {
     color: #FCE060;
 }
 
-#alphabet button:hover {
+#alphabet .btn-word:hover {
     width: 55px;
     height: 45px;
     background:linear-gradient(rgb(107, 89, 50), rgb(230, 230, 143));
     color: #13120d;
 }
 
-#alphabet button:active{
+#alphabet .btn-word:active{
     background:linear-gradient(rgb(236, 193, 100), yellow);
     color: #13120d;
 }

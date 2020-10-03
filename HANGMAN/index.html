@@ -15,8 +15,8 @@
         <div class="header">
             <div id="wrongWords"><h4 id="wrongWordList">INCORRECT LETTERS: </h4></div>
             <div id="btnPlace">
-                <button id="btnHint" onmousedown="hint()">HINT</button>
-                <button id="btnNew" onmousedown="init()">NEW</button>
+                <button id="btnHint" onclick="hint()">HINT</button>
+                <button id="btnNew" onclick="init()">NEW</button>
             </div>
         </div>
         <div class="container-main-screen">
@@ -39,36 +39,35 @@
         <div id="wordToFind">
         </div>
         <div id="alphabet">
-            <button id="btnA" onmousedown="pickLetterA()">A</button>
-            <button id="btnB" onmousedown="pickLetterB()">B</button>
-            <button id="btnC" onmousedown="pickLetterC()">C</button>
-            <button id="btnD" onmousedown="pickLetterD()">D</button>
-            <button id="btnE" onmousedown="pickLetterE()">E</button>
-            <button id="btnF" onmousedown="pickLetterF()">F</button>
-            <button id="btnG" onmousedown="pickLetterG()">G</button>
-            <button id="btnH" onmousedown="pickLetterH()">H</button>
-            <button id="btnI" onmousedown="pickLetterI()">I</button>
-            <button id="btnJ" onmousedown="pickLetterJ()">J</button>
-            <button id="btnK" onmousedown="pickLetterK()">K</button>
-            <button id="btnL" onmousedown="pickLetterL()">L</button>
-            <button id="btnM" onmousedown="pickLetterM()">M</button>
-            <button id="btnN" onmousedown="pickLetterN()">N</button>
-            <button id="btnO" onmousedown="pickLetterO()">O</button>
-            <button id="btnP" onmousedown="pickLetterP()">P</button>
-            <button id="btnQ" onmousedown="pickLetterQ()">Q</button>
-            <button id="btnR" onmousedown="pickLetterR()">R</button>
-            <button id="btnS" onmousedown="pickLetterS()">S</button>
-            <button id="btnT" onmousedown="pickLetterT()">T</button>
-            <button id="btnU" onmousedown="pickLetterU()">U</button>
-            <button id="btnV" onmousedown="pickLetterV()">V</button>
-            <button id="btnW" onmousedown="pickLetterW()">W</button>
-            <button id="btnX" onmousedown="pickLetterX()">X</button>
-            <button id="btnY" onmousedown="pickLetterY()">Y</button>
-            <button id="btnZ" onmousedown="pickLetterZ()">Z</button>
+            <input type="button" class="btn-word" value="A"></input>
+            <input type="button" class="btn-word" value="B"></input>
+            <input type="button" class="btn-word" value="C"></input>
+            <input type="button" class="btn-word" value="D"></input>
+            <input type="button" class="btn-word" value="E"></input>
+            <input type="button" class="btn-word" value="F"></input>
+            <input type="button" class="btn-word" value="G"></input>
+            <input type="button" class="btn-word" value="H"></input>
+            <input type="button" class="btn-word" value="I"></input>
+            <input type="button" class="btn-word" value="J"></input>
+            <input type="button" class="btn-word" value="K"></input>
+            <input type="button" class="btn-word" value="L"></input>
+            <input type="button" class="btn-word" value="M"></input>
+            <input type="button" class="btn-word" value="N"></input>
+            <input type="button" class="btn-word" value="O"></input>
+            <input type="button" class="btn-word" value="P"></input>
+            <input type="button" class="btn-word" value="Q"></input>
+            <input type="button" class="btn-word" value="R"></input>
+            <input type="button" class="btn-word" value="S"></input>
+            <input type="button" class="btn-word" value="T"></input>
+            <input type="button" class="btn-word" value="U"></input>
+            <input type="button" class="btn-word" value="V"></input>
+            <input type="button" class="btn-word" value="W"></input>
+            <input type="button" class="btn-word" value="X"></input>
+            <input type="button" class="btn-word" value="Y"></input>
+            <input type="button" class="btn-word" value="Z"></input>
         </div>
     </div>
-    <script src="menuGame.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="game.js"></script>
-    <script src="pickLetter.js"></script>
 </body>
 </html>
