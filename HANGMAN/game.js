@@ -177,6 +177,7 @@ for (let i = 0; i < btnWords.length; i++) {
                 winSound.play();
                 win++;
                 drawLoseAndWin(win, lose);
+                alert('THE WORD IS: ' + wordToFind + '. CONGRATULATIONS! PRESS NEW BUTTON TO START NEW GAME!');
             }
         
             if (isCorrect === false) {
