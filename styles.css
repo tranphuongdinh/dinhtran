@@ -177,12 +177,18 @@ header {
 }
 
 nav {
+    align-self: center;
     position: fixed;
-    width: 100%;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 15px 0;
+    background: rgb(126, 102, 102);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: url('https://i.pinimg.com/originals/3c/80/9e/3c809ebd8b9cff50088e20bbe28660a5.gif') center;
+    background-size: cover;
 }
 
 .menu-icons i{
@@ -657,7 +663,9 @@ nav {
 /*PROJECTS*/
 #projects {
     width: 100%;
-    animation: backgroundChange 12s ease-in-out infinite;
+    min-height: 100vh;
+    background: url('https://www.pixelstalk.net/wp-content/uploads/2016/03/Blue-Squares-Abstract-Wallpaper.jpg') no-repeat;
+    background-size: cover;
 }
 
 @keyframes backgroundChange{
@@ -705,15 +713,13 @@ nav {
     position: relative;
     width: 320px;
     height: 300px;
-    margin: 20px;
     background: #122936;
-    border-radius: 20px;
     overflow: hidden;
-    border: 2px solid rgba(240, 87, 232, 0.8);
+    border: 1px solid rgba(58, 132, 241, 0.8);
 }
 
 .project-card:hover {
-    box-shadow: 0 30px 60px rgba(240, 87, 232, 0.8);
+    box-shadow: 0 30px 60px rgba(84, 213, 245, 0.8);
 }
 
 .project-card:before {
@@ -867,35 +873,45 @@ nav {
     opacity: 1;
 }
 
-.card-area {
-    position: relative;
+/* .projectBox {
+    margin: 0 auto;
+    animation: backgroundChange 12s ease-in-out infinite;
+    background: rgb(248, 238, 247);
+    width: 86%;
+    min-height: 80vh;
+} */
+
+#projects ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#projects ul li{
+    background: rgb(223, 215, 215);
+    text-transform: uppercase;
+    font-size: 1.1em;
+    padding: 8px 40px;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    border-right: 2px solid black;
+    cursor: pointer;
+}
+
+#projects ul li.projectActive {
+    background:  rgb(84, 125, 238);
+    color: rgb(229, 238, 241);
+}
+
+#projects .product {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 340px;
-    padding-left:28px;
-    padding-right:28px;
-}
-
-.card-area h1 {
-    text-align: left;
-    font-size: 4.75em;
-    color: rgb(240, 231, 231);
-    z-index: 0;
-    padding-left: 40px;
-    text-shadow: 0px 10px 20px rgb(206, 223, 233, 0.3);
-}
-
-.card-area:nth-child(even) h1 {
-   padding-right: 40px;
-   text-align: right;
-}
-
-.card-area:nth-child(even) {
-    justify-content: flex-end;
+    justify-content: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+    flex-wrap: wrap;
 }
 /*PROJECTS*/
 
@@ -1145,17 +1161,15 @@ footer{
         height: 270px;
     }
 
-    .card-area, .card-area:nth-child(even) {
-        height: 310px;
-    }
-
-    .card-area h1 {
-        font-size: 3.8em;
-        padding-left: 15px;
-    }
-    
-    .card-area:nth-child(even) h1 {
-       padding-right: 15px;
+    #projects ul li{
+        background: #eee;
+        text-transform: uppercase;
+        font-size: 0.9em;
+        padding: 6px 20px;
+        margin-top: 20px;
+        letter-spacing: 1px;
+        border-right: 2px solid black;
+        cursor: pointer;
     }
 }
 
@@ -1163,6 +1177,11 @@ footer{
 @media (max-width: 767px) {
     #scrollPath, #progressbar {
         display: none;
+    }
+
+    nav {
+        width: 95%;
+        background: none;
     }
 
     .nav-brand {
@@ -1177,7 +1196,7 @@ footer{
     }
 
     .nav-link:hover{
-        color:plum;
+        color:rgb(96, 180, 219);
         font-size: 1.3em;
         text-decoration:none;
     }
@@ -1207,13 +1226,7 @@ footer{
         margin: 20px;
     }
 
-    .card-area, .card-area:nth-child(even) {
-        height: 300px;
-        justify-content: space-around;
-        background: none;
-    }
-
-    .card-area h1 {
+    #projects ul {
         display: none;
     }
 

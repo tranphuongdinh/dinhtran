@@ -116,3 +116,21 @@ window.onscroll = () => {
 //SCROLL BAR
 
 AOS.init({duration:1000})
+
+$(document).ready(()=>{
+    $('.list').click(function(){
+        const value = $(this).attr('data-filter')
+        if(value == 'all'){
+            $('.project-card').show('1000')
+        }
+        else{
+
+            $('.project-card').not('.'+value).hide('1000')
+            $('.project-card').filter('.'+value).show('1000')
+        }
+    })
+
+    $('.list').click(function(){
+        $(this).addClass('projectActive').siblings().removeClass('projectActive')
+    })
+})

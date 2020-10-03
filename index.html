@@ -161,10 +161,17 @@
         </section>
         <section id="projects">
             <h1 class="section-title" data-aos="fade-down-right">PROJECTS</h1>
-            <p class="p-subtitle" data-aos="fade-right">These are my projects that I and my colleagues have made so far.</p>
-            <div class="ctn">
-                <div class="card-area">
-                    <div class="project-card" id="flappy-bird-card" data-aos="zoom-in-up">
+            <p class="p-subtitle" data-aos="fade-right">These are my projects that I and my colleagues have made so far.</p>     
+            <div class="projectBox" data-aos="fade-up">
+                <ul>
+                    <li class="list projectActive" data-filter="all">All</li>
+                    <li class="list" data-filter="miniGames">Mini Games</li>
+                    <li class="list" data-filter="simpleWebapps">Simple Webapps</li>
+                    <li class="list" data-filter="youtubeClips">Youtube Clips</li>
+                    <li class="list" data-filter="others">Others</li>
+                </ul>
+                <div class="product">
+                    <div class="project-card miniGames" id="flappy-bird-card">
                         <div class="imgBx">
                             <img src="images/flappy-bird-icon-2.png" alt="Flappy Bird">
                         </div>
@@ -173,7 +180,8 @@
                             <a class="play" href="FLAPPY BIRD/menu.html" target="blanc">Play!</a>
                         </div>
                     </div>
-                    <div class="project-card" id="hangman-card" data-aos="zoom-in-up">
+    
+                    <div class="project-card miniGames" id="hangman-card">
                         <div class="imgBx">
                             <img src="images/hangman-icon-2.jpg" alt="Hangman">
                         </div>
@@ -182,12 +190,8 @@
                             <a class="play" href="HANGMAN/index.html" target="blanc">Play!</a>
                         </div>
                     </div>
-                    <h1 data-aos="fade-left">MINI GAMES</h1>
-                </div>
-
-                <div class="card-area">
-                    <h1 data-aos="fade-right">SIMPLE WEBAPPS</h1>
-                    <div class="project-card" id="calculator-card" data-aos="zoom-in-down">
+    
+                    <div class="project-card simpleWebapps" id="calculator-card">
                         <div class="imgBx">
                             <img src="images/calculator-icon-2.png" alt="Calculator">
                         </div>
@@ -196,7 +200,8 @@
                             <a class="play" href="CALCULATOR APP/index.html" target="blanc">Try!</a>
                         </div>
                     </div>
-                    <div class="project-card" id="memeGen-card" data-aos="zoom-in-down">
+    
+                    <div class="project-card simpleWebapps" id="memeGen-card">
                         <div class="imgBx">
                             <img src="images/trollFace.png" alt="Meme Generator">
                         </div>
@@ -205,10 +210,8 @@
                             <a class="play" href="https://tranphuongdinh.github.io/MemeGeneratorAppDemo/" target="blanc">Try!</a>
                         </div>
                     </div>
-                </div>
-
-                <div class="card-area">
-                    <div class="project-card" id="coding-card" data-aos="zoom-in-up">
+    
+                    <div class="project-card youtubeClips" id="coding-card">
                         <div class="imgBx">
                             <img src="images/js-icon.png" alt="Coding Flappy Bird in 60 minutes">
                         </div>
@@ -217,7 +220,8 @@
                             <a class="play" href="https://www.youtube.com/watch?v=PdHPwGvnvzI&t=1373s" target="blanc">Watch now!</a>
                         </div>
                     </div>
-                    <div class="project-card" id="piano-card" data-aos="zoom-in-up">
+    
+                    <div class="project-card youtubeClips" id="piano-card">
                         <div class="imgBx">
                             <img src="images/piano-icon.png" alt="Lạc Trôi Piano Cover">
                         </div>
@@ -226,12 +230,8 @@
                             <a class="play" href="https://www.youtube.com/watch?v=FWbPnQYPPEM" target="blanc">Watch now!</a>
                         </div>
                     </div>
-                    <h1 data-aos="fade-left">YOUTUBE CLIPS</h1>
-                </div>
-
-                <div class="card-area">
-                    <h1 data-aos="fade-right">CANVAS EFFECTS</h1>
-                    <div class="project-card" id="coming-card" data-aos="zoom-in-down">
+    
+                    <div class="project-card others" id="coming-card">
                         <div class="imgBx">
                             <img src="images/tron-like-icon.png" alt="TRON-LIKE TUNNELS">
                         </div>
@@ -240,7 +240,8 @@
                             <a class="play" href="TRON-LIKE TUNNELS/index.html" target="blanc">Watch it!</a>
                         </div>
                     </div>
-                    <div class="project-card" id="coming-card-2" data-aos="zoom-in-down">
+    
+                    <div class="project-card others" id="coming-card-2">
                         <div class="imgBx">
                             <img src="images/galaxy-icon.png" alt="GALACTIC LIGHT TRAILS">
                         </div>
@@ -252,11 +253,12 @@
                 </div>
             </div>
         </section>
+        
         <section id="contact">
             <h1 class="section-title"  data-aos="fade-down-right">CONTACT</h1>
             <p class="p-subtitle" data-aos="fade-right">Connect with me!</p>
-            <div class="ctn">
-                <div class="formBx" data-aos="fade-up">
+            <div class="ctn" data-aos="fade-up">
+                <div class="formBx">
                     <script type="text/javascript" src="https://form.jotform.com/jsform/202642645025449"></script>
                 </div>
 
@@ -270,7 +272,7 @@
                     </form>
                 </div> -->
 
-                <ul data-aos="fade-down">
+                <ul>
                     <li>
                         <a href="https://www.facebook.com/Dinh.Ramos.SR4.CR7.NTH/" target="blanc">
                             <span></span>
@@ -313,10 +315,7 @@
     </main>
     <footer>&copy; 2020 by Tran Phuong Dinh</footer>
     <a id="back-to-top-btn" href="#home"><img src="images/up-icon.png" alt="Back to home"></a>
-    <script
-    src="https://code.jquery.com/jquery-3.5.1.js"
-    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
