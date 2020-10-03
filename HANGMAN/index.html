@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Fredoka+One&family=Indie+Flower&family=Modak&family=Righteous&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Fredoka+One&family=Orbitron:wght@700&family=Permanent+Marker&display=swap" rel="stylesheet">
@@ -15,6 +16,7 @@
         <div class="header">
             <div id="wrongWords"><h4 id="wrongWordList">INCORRECT LETTERS: </h4></div>
             <div id="btnPlace">
+                <span id="btnSound" onclick="mute()" class="fa fa-volume-up" aria-hidden="true"></span>
                 <button id="btnHint" onclick="hint()">HINT</button>
                 <button id="btnNew" onclick="init()">NEW</button>
             </div>

@@ -50,6 +50,7 @@ var countWrong;
 var countRight;
 var win = 0;
 var lose = 0;
+var onOffSound = 1;
 var isPressed;
 var alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var countHint;
@@ -94,6 +95,24 @@ function init() {
 }
 
 init();
+
+const mute = () => {
+    let soundIcon = $('#btnSound')
+    if (onOffSound == 1)
+    {
+        $(soundIcon).removeClass()
+        $(soundIcon).addClass('fa fa-volume-off')
+        themesong.pause()
+        onOffSound = 0
+    }
+    else
+    {
+        $(soundIcon).removeClass()
+        $(soundIcon).addClass('fa fa-volume-up')
+        themesong.play()
+        onOffSound = 1
+    }
+}
 
 function hint() {
     if (hintPress) {
