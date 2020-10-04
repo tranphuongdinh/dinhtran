@@ -118,6 +118,8 @@ window.onscroll = () => {
 AOS.init({duration:1000})
 
 $(document).ready(()=>{
+    $('#loading').hide();
+
     $('.list').click(function(){
         const value = $(this).attr('data-filter')
         if(value == 'all'){

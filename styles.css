@@ -18,6 +18,26 @@ html {
     box-sizing: border-box;
 }
 
+#loading {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: block;
+    background-color: #fff;
+    z-index: 99;
+    text-align: center;
+  }
+  
+  #loading-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
 a {
     text-decoration: none;
 }
@@ -919,7 +939,7 @@ nav {
 #contact {
     width: 100%;
     min-height: 100vh;
-    background: url("https://i.dlpng.com/static/png/7035263_preview.png") center no-repeat;
+    background: url("https://wallpaperforu.com/wp-content/uploads/2020/07/texture-wallpaper-20070911382848.jpg") center no-repeat;
     background-size:cover;
 }
 
