@@ -47,12 +47,22 @@ img {
     width: 70%;
     position: relative;
     left: 50px;
-    top: 20px;
-    margin-top: 70px;
+    top: 0;
+    margin-top: 40px;
     font-family: 'Press Start 2P', cursive;
     font-size: 50px;
-    color: white;
+    color: #000;
     filter: blur(0.5px);
+}
+
+.p-subtitle {
+    display: inline-block;
+    width: 90%;
+    padding-top: 0;
+    font-family: 'Rowdies', cursive;
+    padding-left: 50px;
+    color: #000;
+    text-align: left;
 }
 /*GLOBAL STYLES*/
 
@@ -125,7 +135,7 @@ img {
     width: 64px;
     height: 64px;
     bottom: 10px;
-    right: 10px;
+    left: 10px;
     line-height: 50px;
 }
 
@@ -184,11 +194,6 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 15px 0;
-    background: rgb(126, 102, 102);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    background: url('https://i.pinimg.com/originals/3c/80/9e/3c809ebd8b9cff50088e20bbe28660a5.gif') center;
-    background-size: cover;
 }
 
 .menu-icons i{
@@ -260,7 +265,6 @@ nav {
 }
 
 .nav-link:hover{
-    color: white;
     text-decoration:none;
 }
 
@@ -268,11 +272,31 @@ nav {
 #home {
     width: 100%;
     height: 100vh;
-    background: url('https://i.pinimg.com/originals/2e/73/92/2e7392bd69172cb64fb648d6a5abb830.gif') center no-repeat;
+    background: url('https://i.gifer.com/7Gsw.gif') center no-repeat;
+    animation: backgroundChange 8s ease-in-out infinite;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@keyframes backgroundChange{
+    0%,100%{
+        background: url("https://i.gifer.com/7Gsw.gif") center;
+        background-size: cover;
+    }
+    25%{
+        background: url("https://i.gifer.com/ClMq.gif");
+        background-size: cover;
+    }
+    50%{
+        background: url("https://64.media.tumblr.com/679a1a9619d2900c85dc6dc128660952/tumblr_o2qogkXy6P1t2eg65o6_r1_400.gifv");
+        background-size: cover;
+    }
+    75%{
+        background: url("https://i.gifer.com/1psR.gif") center;
+        background-size: cover;
+    }
 }
 
 #home .ctn {
@@ -329,7 +353,7 @@ nav {
 #about-me{
     width: 100%;
     min-height: 100vh;
-    background: url('images/about-me-background-1.jpg') center no-repeat;
+    background: url('https://i.pinimg.com/originals/e5/79/96/e5799698e1255e1dfefd6c87b4fa8244.jpg') center no-repeat;
     background-size:cover;
     overflow: hidden;
 }
@@ -351,11 +375,15 @@ nav {
 }
 
 #about-me .ctn {
+    padding-left: 45px;
+    padding-right: 45px;
+    margin-top: 15px;
     flex-wrap: wrap;
     flex-direction: inherit;
     justify-content: space-around;
     align-items: center;
-    min-height: 100vh;
+    width: 100%;
+    min-height: 90vh;
 }
 
 #about-me .ctn .card {
@@ -366,7 +394,7 @@ nav {
     opacity: 0.9;
     border-radius: 20px;
     overflow:hidden;
-    margin: 30px 10px 30px 10px;
+    margin-bottom: 20px;
 }
 
 #about-me .ctn .card:before {
@@ -525,7 +553,7 @@ nav {
     width: 100%;
     min-height: 100vh;
     background: rgb(94, 72, 72);
-    background: url("https://www.forbes.com/forbes-insights/wp-content/uploads/2018/05/dell-background.jpg") center no-repeat;
+    background: url('images/skills-background.jpg') center no-repeat;
     background-size: cover;
 }
 
@@ -664,37 +692,8 @@ nav {
 #projects {
     width: 100%;
     min-height: 100vh;
-    background: url('https://www.pixelstalk.net/wp-content/uploads/2016/03/Blue-Squares-Abstract-Wallpaper.jpg') no-repeat;
+    background: url('images/projects-background.jpg') no-repeat;
     background-size: cover;
-}
-
-@keyframes backgroundChange{
-    0%,100%{
-        background: url("images/experience-background.jpg") center;
-        background-size: cover;
-    }
-    25%{
-        background: url("https://i.pinimg.com/originals/ab/65/25/ab6525b299477019027ddbd33a90c4b7.jpg");
-        background-size: cover;
-    }
-    50%{
-        background: url("https://i.pinimg.com/originals/6f/65/e1/6f65e11345f9cda4c684998205fe0af4.jpg");
-        background-size: cover;
-    }
-    75%{
-        background: url("https://images.hdqwalls.com/wallpapers/interstellar-abstract-art-i4.jpg") center;
-        background-size: cover;
-    }
-}
-
-.p-subtitle {
-    display: inline-block;
-    width: 90%;
-    padding-top: 30px;
-    font-family: 'Rowdies', cursive;
-    padding-left: 50px;
-    color: white;
-    text-align: left;
 }
 
 .project-item a img:hover {
@@ -873,13 +872,15 @@ nav {
     opacity: 1;
 }
 
-/* .projectBox {
+.projectBox {
     margin: 0 auto;
-    animation: backgroundChange 12s ease-in-out infinite;
-    background: rgb(248, 238, 247);
+    background: url('https://i.pinimg.com/originals/88/15/63/881563d6444b370fa4ceea0c3183bb4c.gif') center no-repeat;
+    background-size: cover;
     width: 86%;
     min-height: 80vh;
-} */
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+}
 
 #projects ul {
     width: 100%;
@@ -889,7 +890,7 @@ nav {
 }
 
 #projects ul li{
-    background: rgb(223, 215, 215);
+    background: rgb(219, 213, 213);
     text-transform: uppercase;
     font-size: 1.1em;
     padding: 8px 40px;
@@ -919,12 +920,8 @@ nav {
 #contact {
     width: 100%;
     min-height: 100vh;
-    background: url("https://dustfreedom.com/wp-content/uploads/2018/07/Contact-Us-Background.jpg") center no-repeat;
+    background: url("https://i.dlpng.com/static/png/7035263_preview.png") center no-repeat;
     background-size:cover;
-}
-
-#contact .p-subtitle {
-    padding-top:15px;
 }
 
 #contact .ctn {
@@ -939,7 +936,7 @@ nav {
 
 #contact .ctn ul {
     align-self: flex-end;
-    margin: 30px;
+    margin: 0;
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -1065,11 +1062,27 @@ footer{
 
 /*MEDIA QUERIES*/
 @media screen and (min-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: 100vh;
+        width: 7rem;
+        right: 0;
+        background: url('https://i.pinimg.com/originals/e0/77/ee/e077eec5651d294de5ffd25b340f9e13.jpg') center;
+        /* background: #fff; */
+        background-size: cover;
+    }
+
     .nav-brand {
         position: relative;
-        width: 80px;
+        width: 60px;
         height: 40px;
-        left: 15px;
+    }
+
+    .nav-brand img {
+        position: relative;
+        width: 80%;
+        left: -15px;
+        top: 10px;
     }
 
     .nav-list {
@@ -1078,7 +1091,7 @@ footer{
         position: initial;
         top: initial;
         right: initial;
-        flex-direction: row;
+        flex-direction: column;
         transition: initial;
     }
 
@@ -1087,13 +1100,15 @@ footer{
     }
 
     .nav-item{
+        transform: rotate(90deg);
         margin: 0 30px;
+        line-height: 10rem;
     }
 
     .nav-link, .current{
-        color: whitesmoke;
+        color: rgb(0, 0, 0);
         position: relative;
-        font-size: 15px;
+        font-size: 0.8em;
     }
 
     .nav-link::before, current::before {
@@ -1189,6 +1204,13 @@ footer{
         height: 60px;
     }
 
+    .nav-brand img {
+        position: relative;
+        top: 21px;
+        content: url('images/white-logo.png');
+        width: 70%;
+    }
+
     .nav-list{
         background: url('https://cutewallpaper.org/21/1920x1080-gif/gif-Backgrounds-Wallpaper-Cave.gif') center no-repeat;
         background-size: cover;
@@ -1203,6 +1225,10 @@ footer{
 
     .section-title{
         font-size: 2.9em;
+    }
+
+    #home {
+        animation: none;
     }
 
     #home-title li{
@@ -1252,29 +1278,6 @@ footer{
         left: 20px;
     }
 
-    #home{
-        background: url('https://images.wallpaperscraft.com/image/city_silhouette_art_136751_1920x1080.jpg') center no-repeat;
-        background-size:cover;
-    }
-
-    #experience {
-        background: url('https://bestwallpapers.in/wp-content/uploads/2018/05/abstract-colorful-square-pattern-4k-wallpaper-1440x2160.jpg') center no-repeat;
-
-        background-size:cover;
-        animation: none;
-    }
-
-    #projects{
-        background: url('https://i.pinimg.com/originals/8f/43/3e/8f433ed00acf3eb0bae3ad1d0e4b63f4.jpg') center;
-        background-size:contain;
-        animation: none;
-    }
-
-    #contact{
-        background: url('https://wallpaperaccess.com/full/803962.jpg');
-        background-size: cover;
-    }
-
     #home-title li{
         font-size: 1.2em;
     }
@@ -1283,14 +1286,17 @@ footer{
         font-size: 0.9em;
     }
 
+    #about-me .ctn {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
     .skill-container .skills span {
         font-size: 1em;
     }
 
     .skill-container .skills {
         padding: 15px 5px 15px;
-        background: linear-gradient(#a8640a 0%, rgb(177, 84, 8) 10%, rgb(111, 13, 114));
-        border: 2px solid rgb(17, 2, 19);
     }
 
     .skill-container {
@@ -1298,22 +1304,12 @@ footer{
     }
 
     .p-subtitle{
-        padding-top: 15px;
         padding-left: 20px;
     }
 
     .card-area {
         padding-left:0;
         padding-right:0;
-    }
-
-    .project-card {
-        height: 240px;
-        border: 2px solid rgb(202, 64, 10);
-    }
-
-    .project-card:hover {
-        box-shadow: 0 30px 60px rgb(202, 64, 10);
     }
 
     .project-card .contentBx h3 {
