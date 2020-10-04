@@ -199,7 +199,6 @@ nav {
 .menu-icons i{
     margin: 10px;
     font-size: 56px;
-    color: whitesmoke;
     cursor: pointer;
 }
 
@@ -207,7 +206,7 @@ nav {
     text-align: center;
     width: 70px;
     display: inline-block;
-    color: whitesmoke;
+    color: #fff;
     z-index: 1500;
 }
 
@@ -1207,7 +1206,7 @@ footer{
     .nav-brand img {
         position: relative;
         top: 21px;
-        content: url('images/white-logo.png');
+        content: url('images/logo.png');
         width: 70%;
     }
 
