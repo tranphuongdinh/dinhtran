@@ -1,3 +1,6 @@
+//show loading function
+
+
 //function expression to select elements
 const selectElement = (s) => document.querySelector(s);
 //Open menu on click
@@ -118,7 +121,9 @@ window.onscroll = () => {
 AOS.init({duration:1000})
 
 $(document).ready(()=>{
-    $('#loading').hide();
+    $('body').ready(()=>{
+        $('#loading').fadeOut('slow')
+    })
 
     $('.list').click(function(){
         const value = $(this).attr('data-filter')
