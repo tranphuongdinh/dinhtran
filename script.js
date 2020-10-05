@@ -120,11 +120,11 @@ window.onscroll = () => {
 
 AOS.init({duration:1000})
 
-$(document).ready(()=>{
-    $('body').ready(()=>{
-        $('#loading').fadeOut('slow')
-    })
+$('#home').ready(()=>{
+    $('#loading').fadeOut('slow')
+})
 
+$(document).ready(()=>{
     $('.list').click(function(){
         const value = $(this).attr('data-filter')
         if(value == 'all'){
