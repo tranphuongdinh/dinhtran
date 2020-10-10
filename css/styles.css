@@ -1093,7 +1093,7 @@ nav {
 .contact-info .contact-info__item {
     align-self: center;
     background: rgb(175, 175, 175);
-    background: url('http://www.baltana.com/files/wallpapers-10/Broken-Glass-White-Abstract-Wallpaper-28536.jpg') center no-repeat;
+    background: url('../images/contact-background.jpg') center no-repeat;
     background-size: cover;
     padding-top: 20px;
     padding-bottom: 20px;
