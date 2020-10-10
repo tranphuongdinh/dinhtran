@@ -389,7 +389,7 @@ nav {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: url('images/avatar-about-me-2.jpg') center no-repeat fixed;
+    background: url('../images/avatar-about-me-2.jpg') center no-repeat fixed;
     background-size:contain;
     pointer-events: none;
     z-index: 0;
@@ -497,6 +497,7 @@ nav {
     letter-spacing: 1px;
     text-transform: uppercase;
     font-family: 'Rowdies', cursive;
+    word-wrap: break-word;
 }
 
 #about-me .ctn .card .contentBx a {
@@ -728,7 +729,7 @@ nav {
 
 .certificate-box .card .imgBx {
     position: absolute;
-    top: -10%;
+    top: -12%;
     transform: translateY(-50%);
     z-index: 100;
     width: 100%;
@@ -737,7 +738,7 @@ nav {
 }
 
 .certificate-box .card:hover .imgBx {
-    top: -45%;
+    top: -50%;
     transform: translateY(0);
 }
 
@@ -1152,7 +1153,7 @@ nav {
     left: 0;
     top: 0;
     height: 100vh;
-    width: 8rem;
+    width: 7rem;
     left: -4rem;
     display: flex;
     flex-direction: column;
@@ -1483,7 +1484,7 @@ footer .ctn .footer__links ul li a:hover {
 
     .nav-brand img {
         position: relative;
-        content: url('images/logo.png');
+        content: url('../images/logo.png');
         width: 70%;
     }
 
@@ -1524,7 +1525,7 @@ footer .ctn .footer__links ul li a:hover {
     }
 
     .skill-container {
-        width: 450px;
+        width: 460px;
     }
 
     .p-subtitle {
@@ -1599,7 +1600,11 @@ footer .ctn .footer__links ul li a:hover {
     }
     
     #about-me .ctn .card:hover .contentBx {
-        height: 280px;
+        height: 300px;
+    }
+
+    #about-me .ctn .card .contentBx h2{
+        font-size: 1.8em;
     }
 
     #about-me .ctn .card p {
@@ -1610,13 +1615,24 @@ footer .ctn .footer__links ul li a:hover {
         font-size: 0.83em;
     }
 
+    .ctn {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
     .skill-container {
-        width: 270px;
+        width: 90%;
     }
 
     .certificate-box .card {
         position: relative;
-        width: 270px;
+        width: 260px;
+    }
+
+    .project-card {
+        height: 270px;
+        margin: 0;
+        margin-bottom: 20px;
     }
 
     .project-card .contentBx h3 {
@@ -1632,9 +1648,14 @@ footer .ctn .footer__links ul li a:hover {
     .project-card .contentBx .play:hover {
         font-size: 0.8em;
     }
+
+    #contact .ctn {
+        padding-left: 0;
+        padding-right: 0;
+    }
             
     .contact-items {
-        width: 6rem;
+        width: 5rem;
         left: -3rem;
         transition: 0.7s;
     }
