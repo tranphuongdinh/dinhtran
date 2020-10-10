@@ -1,0 +1,231 @@
+/*LOADING IMG*/
+#loading {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: block;
+    background-color: #fff;
+    z-index: 10000000;
+    text-align: center;
+  }
+  
+  #loading-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+/*LOADING IMG*/
+
+/*SCROLLBAR*/
+::-webkit-scrollbar
+{
+    width: 0;
+    height: 0;
+}
+
+/* ::-webkit-scrollbar-thumb{
+    background: url('https://thumbs.gfycat.com/CautiousSlightGhostshrimp-size_restricted.gif') center no-repeat;
+    background-size:cover;
+} */
+
+#scrollPath {
+    position: fixed;
+    top:0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+}
+
+#progressbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 8px;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    animation: animateBar 5s linear infinite;
+    z-index: 500000;
+}
+
+@keyframes animateBar {
+    0%, 100% {
+        filter: hue-rotate(0deg);
+    }
+    50% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+#progressbar:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    filter: blur(10px);
+}
+
+#progressbar:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    filter: blur(30px);
+}
+/*SCROLLBAR*/
+
+/*BACK TO TOP BUTTON*/
+#back-to-top-btn{
+    display: inline-block;
+    position: fixed;
+    width: 64px;
+    height: 64px;
+    bottom: 10px;
+    left: 10px;
+    line-height: 50px;
+    display: none;
+    cursor: pointer;
+}
+
+.btnEntrance {
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-name: btnEntrance;
+}
+
+@keyframes btnEntrance {
+    from {
+        opacity: 0;
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.btnExit {
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-name: btnExit;
+}
+
+@keyframes btnExit {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+}
+/*BACK TO TOP BUTTON*/
+
+h1 {
+    align-self: center;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 2px rgba(221, 208, 208, 0.6);
+    font-size: 2.5em;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'Press Start 2P', cursive;
+    color: #000;
+}
+
+body {
+    background: rgb(209, 207, 207);
+    /* background: url('https://www.fivestardatarecovery.com/wp-content/uploads/white-abstract-background-hd-For-desktop-Wallpaper.jpg');
+    background-size: cover; */
+}
+
+#certificates {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    z-index: 0;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#certificates img {
+    width: 350px;
+    margin-bottom: 40px;
+    border: 8px solid rgb(143, 65, 19);
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#certificates img:hover {
+    box-shadow: 0 10px 20px rgba(241, 253, 64, 0.7)
+}
+
+.img-full-screen {
+    position: absolute;
+    align-self: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+}
+
+.img-full-screen .img-full-screen__link {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.img-full-screen .img-full-screen__link img{
+    align-self: center;
+    width: 100%;
+    border: 8px solid rgb(143, 65, 19);
+    box-shadow: 2px 2px rgba(27, 27, 27, 0.5);
+}
+
+.img-full-screen__close-btn {
+    cursor: pointer;
+    font-size: 4em;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transition: 0.4s;
+}
+
+.img-full-screen__close-btn:hover {
+    color:rgb(238, 236, 236);
+}
+
+@media (max-width:767px) {
+    #loading img {
+        content: url('https://www.frogx3.com/wp-content/uploads/2017/03/logotipos-animados-para-tu-inspiracion-10.gif');
+        object-fit: cover;
+    }
+
+    #certificates img {
+        width: 500px;
+    }
+
+    .img-full-screen .img-full-screen__link{
+        width: 80%;
+    }
+}
+
+@media (max-width:479px) {
+    h1{
+        font-size: 1.6em;
+    }
+}

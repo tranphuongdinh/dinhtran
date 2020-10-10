@@ -18,22 +18,23 @@
         <!--Stylesheets-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <link rel="stylesheet" href="bootstrap.min.css">
-        <link rel="stylesheet" href="styles.css">
-        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <link rel="stylesheet" href="css/roadmap.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/fontawesome-all.css">
     </head>
 <body>
     <div id="loading">
         <img id="loading-image" src="https://steamuserimages-a.akamaihd.net/ugc/785232317734044116/7B04BA5F49BDB1D05843083868D351F299749F9B/" alt="Loading..." />
       </div>
-    <div id="progressbar"></div>
-    <div id="scrollPath"></div>
+      <div id="progressbar"></div>
+      <div id="scrollPath"></div>
     <header>
         <div class="ctn">
             <nav>
-                <div class="nav-brand" data-aos="zoom-out">
+                <div class="nav-brand">
                     <a href="index.html">
-                        <img src="images/logo.png" alt="Tran Dinh" srcset="">
+                        <img src="images/logo.png" alt="Dinh Tran">
                     </a>
                 </div>
 
@@ -52,11 +53,14 @@
                         <a href="#about-me" class="nav-link" title="About me">About</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#experience" class="nav-link" title="Experience">Skills</a>
+                        <a href="#experience" class="nav-link" title="Experience">Experience</a>
                     </li>
                     <li class="nav-item">
                         <a href="#projects" class="nav-link" title="Projects">Projects</a>
                     </li>
+                    <!-- <li class="nav-item">
+                        <a href="#" class="nav-link" title="Blog">Blog</a>
+                    </li> -->
                     <li class="nav-item">
                         <a href="#contact" class="nav-link" title="Contact">Contact</a>
                     </li>
@@ -67,111 +71,124 @@
     <main>
         <section id="home">
             <div class="ctn">
-                <ul id="home-title" data-aos="zoom-in">
-                    <li>H</li>
-                    <li>N</li>
-                    <li>I</li>
-                    <li>D</li>
-                    <li>.</li>
-                    <li>G</li>
-                    <li>N</li>
-                    <li>O</li>
-                    <li>U</li>
-                    <li>H</li>
-                    <li>P</li>
-                    <li>.</li>
-                    <li>N</li>
-                    <li>A</li>
-                    <li>R</li>
-                    <li>T</li>
-                </ul>
-                <h2 id="home-subtitle" data-aos="fade-up">WELCOME TO MY SITE</h2>
+                <a href="#about-me">
+                    <ul id="home-title" data-aos="zoom-in">
+                        <li>H</li>
+                        <li>N</li>
+                        <li>I</li>
+                        <li>D</li>
+                        <li>.</li>
+                        <li>G</li>
+                        <li>N</li>
+                        <li>O</li>
+                        <li>U</li>
+                        <li>H</li>
+                        <li>P</li>
+                        <li>.</li>
+                        <li>N</li>
+                        <li>A</li>
+                        <li>R</li>
+                        <li>T</li>
+                    </ul>
+                </a>
+                <h2 id="home-subtitle" data-aos="zoom-in">WELCOME TO MY SITE</h2>
             </div>
         </section>
         <section id="about-me">
-            <h1 data-aos="fade-down-right" class="section-title">ABOUT ME</h1>
-            <p class="p-subtitle" data-aos="fade-right">"There's no fate but what we make for ourselves." - Sarah Connor</p>
+            <h1 class="section-title" data-aos="zoom-in-up">ABOUT ME</h1>
             <div class="ctn">
-                <div class="card" data-aos="fade-up">
+                <div class="card" data-aos="flip-left">
                     <div class="imgBx">
-                        <img src="images/info.png" alt="About me">
+                        <img src="images/avatar-about-me.jpg" alt="avt of me">
                     </div>
                     <div class="contentBx">
                         <h2>introduction</h2>
                         <p>
-                            <span class="fa fa-address-card-o"></span> <span>Full name:</span> Tran Phuong Dinh<br>
-                            <span class="fa fa-address-card-o"></span> <span>Age:</span> 19<br>
-                            <span class="fa fa-graduation-cap"></span> VNUHCM - University Of Science<br>
-                            <span class="fa fa-home"></span> Long An, Vietnam<br>
+                            Hi! my name is Dinh. I am 19 years old, and a student of VNU - University Of Science. 
+                            Web development is my passion. 
+                            I have learnt Front-end development for six months and I got some certificates of HTML-CSS-JS and Front-end frameworks. 
+                            My favorite quote is by Sarah Connor in "Terminator: Judgment day" movie: "There is no fate but what we make".
                         </p>
                     </div>
                 </div>
-                <div class="card" data-aos="fade-up">
+                <div class="card" data-aos="flip-right">
                     <div class="imgBx">
-                        <img src="images/soccer.png" alt="About me">
+                        <img src="images/info.png" alt="Personal info">
                     </div>
                     <div class="contentBx">
-                        <h2>hobbies</h2>
-                        <p>You want to know my hobbies?</p>
-                        <a href="hobbies.html">See more</a>
-                    </div>
-                </div>
-                <div class="card" data-aos="fade-up">
-                    <div class="imgBx">
-                        <img src="images/certificate.png" alt="About me">
-                    </div>
-                    <div class="contentBx">
-                        <h2>certificates</h2>
-                        <p>Click to see my certificates!</p>
-                        <a href="certificates.html">See more</a>
+                        <h2>personal data</h2>
+                        <p>
+                            <span class="contentBx-icon fas fa-address-card"></span> <span class="contentBx-icon">Full name:</span> Tran Phuong Dinh<br>
+                            <span class="contentBx-icon fas fa-address-card"></span> <span class="contentBx-icon">Age:</span> 19<br>
+                            <span class="contentBx-icon fa fa-graduation-cap"></span> <span class="contentBx-icon">Study:</span> VNUHCM - University Of Science<br>
+                            <span class="contentBx-icon fa fa-home"></span> <span class="contentBx-icon">Hometown:</span> Long An, Vietnam<br>
+                            <span class="contentBx-icon fas fa-star"></span> <span class="contentBx-icon">Hobbies:</span> Football, coding, gym, PC gaming gears, movies
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
         <section id="experience">
-            <h1 class="section-title" data-aos="fade-down-right">SKILLS</h1>
-            <p class="p-subtitle" data-aos="fade-right">Current: Study React, React Native and NodeJS</p>
+            <h1 class="section-title" data-aos="zoom-in-up">EXPERIENCE</h1>
             <div class="ctn">
-                <div class="skill-container">
-                    <div class="skills" data-aos="zoom-in-up">
+                <div id="my-timeline" data-aos="flip-up">
+                    <h1 class="roadmap-title">Jobs & Education</h1>
+                </div>
+                <div id="my-knowledge" data-aos="flip-down">
+                    <h1 class="roadmap-title">Knowledge</h1>
+                </div>
+                <div class="skill-container" data-aos="fade-right">
+                    <h1 class="roadmap-title">Skills</h1>
+                    <div class="skills">
                         <span class="name">HTML</span>
                         <div class="percent">
                             <div class="progress" style="width:70%;"></div>
                         </div>
                         <span class="value">70%</span>
                     </div>
-                    <div class="skills" data-aos="zoom-in-up">
+                    <div class="skills">
                         <span class="name">CSS</span>
                         <div class="percent">
-                            <div class="progress" style="width:50%;"></div>
+                            <div class="progress" style="width:60%;"></div>
                         </div>
-                        <span class="value">50%</span>
+                        <span class="value">60%</span>
                     </div>
-                    <div class="skills" data-aos="zoom-in-up">
+                    <div class="skills">
                         <span class="name">JS</span>
+                        <div class="percent">
+                            <div class="progress" style="width:45%;"></div>
+                        </div>
+                        <span class="value">45%</span>
+                    </div>
+                    <div class="skills">
+                        <span class="name">OTHERS</span>
                         <div class="percent">
                             <div class="progress" style="width:35%;"></div>
                         </div>
                         <span class="value">35%</span>
                     </div>
-                    <div class="skills" data-aos="zoom-in-up">
-                        <span class="name">OTHERS</span>
-                        <div class="percent">
-                            <div class="progress" style="width:25%;"></div>
+                </div>
+                <div class="certificate-box" data-aos="fade-left">
+                    <div class="card">
+                        <div class="imgBx">
+                            <img src="images/certificate.png" alt="About me">
                         </div>
-                        <span class="value">25%</span>
+                        <div class="contentBx">
+                            <h2>Certificates</h2>
+                            <p>Click to see my certificates!</p>
+                            <a href="certificates.html">See more</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <section id="projects">
-            <h1 class="section-title" data-aos="fade-down-right">PROJECTS</h1>
-            <p class="p-subtitle" data-aos="fade-right">These are my projects that I and my colleagues have made so far.</p>     
-            <div class="projectBox" data-aos="fade-up">
+            <h1 class="section-title" data-aos="zoom-in-up">PROJECTS</h1> 
+            <div class="projectBox" data-aos="zoom-in-up">
                 <ul>
                     <li class="list projectActive" data-filter="all">All</li>
                     <li class="list" data-filter="miniGames">Mini Games</li>
-                    <li class="list" data-filter="simpleWebapps">Simple Webapps</li>
+                    <li class="list" data-filter="simpleWebapps">Mini Webapps</li>
                     <li class="list" data-filter="youtubeClips">Youtube Clips</li>
                     <li class="list" data-filter="others">Others</li>
                 </ul>
@@ -182,7 +199,7 @@
                         </div>
                         <div class="contentBx">
                             <h3>Flappy Bird</h3>
-                            <a class="play" href="FLAPPY BIRD/menu.html" target="blanc">Play!</a>
+                            <a class="play" href="PROJECTS/FLAPPY BIRD/menu.html" target="blanc">Play!</a>
                         </div>
                     </div>
     
@@ -192,7 +209,7 @@
                         </div>
                         <div class="contentBx">
                             <h3>hangman</h3>
-                            <a class="play" href="HANGMAN/index.html" target="blanc">Play!</a>
+                            <a class="play" href="PROJECTS/HANGMAN/index.html" target="blanc">Play!</a>
                         </div>
                     </div>
     
@@ -202,7 +219,7 @@
                         </div>
                         <div class="contentBx">
                             <h3>calculator</h3>
-                            <a class="play" href="CALCULATOR APP/index.html" target="blanc">Try!</a>
+                            <a class="play" href="PROJECTS/CALCULATOR APP/index.html" target="blanc">Try!</a>
                         </div>
                     </div>
     
@@ -213,6 +230,26 @@
                         <div class="contentBx">
                             <h3>Meme Generator</h3>
                             <a class="play" href="https://tranphuongdinh.github.io/MemeGeneratorAppDemo/" target="blanc">Try!</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card simpleWebapps" id="paint-card">
+                        <div class="imgBx">
+                            <img src="http://getdrawings.com/img/art-palette-silhouette-14.png" alt="Paint">
+                        </div>
+                        <div class="contentBx">
+                            <h3>Paint</h3>
+                            <a class="play" href="https://tranphuongdinh.github.io/SIMPLE-PAINT/" target="blanc">Try!</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card youtubeClips" id="snake-card">
+                        <div class="imgBx">
+                            <img src="images/snake-icon-2.png" alt="Snake the Game">
+                        </div>
+                        <div class="contentBx">
+                            <h3>Snake the game</h3>
+                            <a class="play" href="https://www.youtube.com/watch?v=OfrRXK3a6pw&t=9s" target="blanc">Watch now!</a>
                         </div>
                     </div>
     
@@ -242,7 +279,7 @@
                         </div>
                         <div class="contentBx">
                             <h3>tron-like tunnels</h3>
-                            <a class="play" href="TRON-LIKE TUNNELS/index.html" target="blanc">Watch it!</a>
+                            <a class="play" href="PROJECTS/TRON-LIKE TUNNELS/index.html" target="blanc">Watch it!</a>
                         </div>
                     </div>
     
@@ -252,7 +289,7 @@
                         </div>
                         <div class="contentBx">
                             <h3>GALACTIC LIGHT TRAILS</h3>
-                            <a class="play" href="GALACTIC LIGHT TRAILS/index.html" target="blanc">Watch it!</a>
+                            <a class="play" href="PROJECTS/GALACTIC LIGHT TRAILS/index.html" target="blanc">Watch it!</a>
                         </div>
                     </div>
                 </div>
@@ -260,11 +297,10 @@
         </section>
         
         <section id="contact">
-            <h1 class="section-title"  data-aos="fade-down-right">CONTACT</h1>
-            <p class="p-subtitle" data-aos="fade-right">Connect with me!</p>
-            <div class="ctn" data-aos="fade-up">
-                <div class="formBx">
-                    <script type="text/javascript" src="https://form.jotform.com/jsform/202642645025449"></script>
+            <h1 class="section-title" data-aos="zoom-in-up">CONTACT</h1>
+            <div class="ctn">
+                <div class="formBx" data-aos="fade-up">
+                    <script type="text/javascript" src="https://form.jotform.com/jsform/202814080705044"></script>
                 </div>
 
                 <!-- <div class="formBx">
@@ -276,53 +312,158 @@
                         <input type="submit" value="Send">
                     </form>
                 </div> -->
-
-                <ul>
-                    <li>
-                        <a href="https://www.facebook.com/Dinh.Ramos.SR4.CR7.NTH/" target="blanc">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span class="fa fa-facebook-official" aria-hidden="true"></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="mailto:dinhblade123@gmail.com">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span class="fa fa-envelope" aria-hidden="true"></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.youtube.com/channel/UCRvegrzTa8Lof_PE0YxRhew?view_as=subscriber" target="blanc">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span class="fa fa-youtube-square" aria-hidden="true"></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="tel:0949996310">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span class="fa fa-phone-square" aria-hidden="true"></span>
-                        </a>
-                    </li>
-                </ul>
+                <div class="contact-info" data-aos="fade-up">
+                    <div class="contact-info__item">
+                        <span class="contact-info__item-icon fas fa-map-marker-alt"></span>
+                        <h3>Address</h3>
+                        <span>Ho Chi Minh city, Vietnam</span>
+                    </div>
+                    <div class="contact-info__item">
+                        <span class="contact-info__item-icon far fa-envelope"></span>
+                        <h3>Mail</h3>
+                        <span>dinhblade123@gmail.com</span>
+                    </div>
+                    <div class="contact-info__item">
+                        <span class="contact-info__item-icon fas fa-phone"></span>
+                        <h3>Phone</h3>
+                        <span>+84949996310</span>
+                    </div>
+                </div>
             </div>
         </section>
+        <div class="contact-items">
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/Dinh.Ramos.SR4.CR7.NTH/" target="blanc">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span class="fab fa-facebook-square" aria-hidden="true"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:dinhblade123@gmail.com">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span class="fas fa-envelope-square" aria-hidden="true"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCRvegrzTa8Lof_PE0YxRhew?view_as=subscriber" target="blanc">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span class="fab fa-youtube-square" aria-hidden="true"></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="tel:0949996310">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span class="fas fa-phone-square" aria-hidden="true"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </main>
-    <footer>&copy; 2020 by Tran Phuong Dinh</footer>
-    <a id="back-to-top-btn" href="#home"><img src="images/up-icon.png" alt="Back to home"></a>
-
+    <footer>
+        <div class="ctn">
+            <div class="footer__links">
+                <ul>
+                    <li><a class="footer__nav-link" href="#home">HOME</a></li>
+                    <li><a class="footer__nav-link" href="#about-me">ABOUT</a></li>
+                    <li><a class="footer__nav-link" href="#experience">EXPERIENCE</a></li>
+                    <li><a class="footer__nav-link" href="#projects">PROJECTS</a></li>
+                    <li><a class="footer__nav-link" href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="footer__logo">
+                <div class="footer__logo-img">
+                    <a href="#home">
+                        <img src="images/logo.png" alt="footer-logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__title">
+            <h4><span class="fas fa-copyright"></span> 2020 Dinh Tran. All rights reserved | Designed by Tran Phuong Dinh</h4>
+            <div class="footer__title-icons">
+                <ul>
+                    <li><a href="https://www.facebook.com/Dinh.Ramos.SR4.CR7.NTH/" target="blanc"><span class="fab fa-facebook"></span></a></li>
+                    <li><a href="mailto:dinhblade123@gmail.com"><span class="fab fa-google-plus-circle"></span></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCRvegrzTa8Lof_PE0YxRhew?view_as=subscriber" target="blanc"><span class="fab fa-youtube"></span></a></li>
+                    <li><a href="tel:0949996310"><span class="fas fa-phone"></span></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <a id="back-to-top-btn" href="#home"><img src="images/up-icon.png" alt="Back to top"></a>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="script.js"></script>
+    <script src="js/jquery.roadmap.js"></script>
+    <script>
+        $(document).ready(function() {
+            var events = [{
+                    date: 'Sep 2019 - Present',
+                    content: 'VNU - University of Science <small>Faculty of Information Technology</small>'
+                },
+                {
+                    date: '2016 - 2019',
+                    content: 'My Lac Senior High School <small>Student</small>'
+                },
+                {
+                    date: '2012 - 2016',
+                    content: 'My Lac Junior High School <small>Student</small>'
+                },
+                {
+                    date: '2007 - 2012',
+                    content: 'My Lac Primary School <small>Student</small>'
+                }
+            ];
+
+            $('#my-timeline').roadmap(events, {
+                eventsPerSlide: 4,
+                slide: 1,
+                prevArrow: '<i class="fa fa-arrow-circle-left"></i>',
+                nextArrow: '<i class="fa fa-arrow-circle-right"></i>'
+            });
+        });
+    </script>
+        <script>
+            $(document).ready(function() {
+                var events = [{
+                        date: 'Front-end basic',
+                        content: 'HTML - CSS - JS'
+                    },
+                    {
+                        date: 'Front-end Libraries & Frameworks',
+                        content: 'React / Jquery / Bootstrap 4'
+                    },
+                    {
+                        date: 'Designs',
+                        content: 'Adobe Premere / Adobe Photoshop'
+                    },
+                    {
+                        date: 'Others',
+                        content: 'NodeJS / AJAX / Git / LESS - SASS'
+                    }
+                ];
+    
+                $('#my-knowledge').roadmap(events, {
+                    eventsPerSlide: 4,
+                    slide: 1,
+                    prevArrow: '<i class="fa fa-arrow-circle-left"></i>',
+                    nextArrow: '<i class="fa fa-arrow-circle-right"></i>'
+                });
+            });
+        </script>
+    <script src="js/script.js"></script>
 </body>
 </html>
 

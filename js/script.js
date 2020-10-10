@@ -1,6 +1,5 @@
 //show loading function
 
-
 //function expression to select elements
 const selectElement = (s) => document.querySelector(s);
 //Open menu on click
@@ -21,8 +20,7 @@ for (var i = 0; i < navLinks.length; i++) {
     })
 }
 
-console.log(navLinks)
-
+//SCROLLSPY
 let home = document.querySelector('#home')
 let aboutme = document.querySelector('#about-me')
 let experience = document.querySelector('#experience')
@@ -72,10 +70,7 @@ window.addEventListener('scroll', ()=>{
             navLinks[i].setAttribute("class", "nav-link")
     }
 })
-
-function getEmail(){
-    alert("My email: dinhblade123@gmail.com");
-}
+//SCROLLSPY
 
 //BACK TO TOP BUTTON
 const backToTopButton = document.querySelector("#back-to-top-btn");
@@ -83,7 +78,7 @@ const backToTopButton = document.querySelector("#back-to-top-btn");
 window.addEventListener('scroll', scrollFunction);
 
 function scrollFunction() {
-    if (window.pageYOffset > 10){
+    if (window.pageYOffset > 20){
         if(!backToTopButton.classList.contains('btnEntrance')) {
             backToTopButton.classList.remove('btnExit');
             backToTopButton.classList.add('btnEntrance');
@@ -110,7 +105,7 @@ backToTopButton.addEventListener('click', backToTop);
 
 //SCROLL BAR
 let progress = document.getElementById('progressbar');
-let totalHeight = document.body.scrollHeight - window.innerHeight;
+let totalHeight = document.body.scrollHeight;
 
 window.onscroll = () => {
     let progressHeight = (window.pageYOffset / totalHeight) * 100;
@@ -118,13 +113,10 @@ window.onscroll = () => {
 }
 //SCROLL BAR
 
-AOS.init({duration:1000})
-
-$('#home').ready(()=>{
-    $('#loading').fadeOut('slow')
-})
+AOS.init({duration:1500})
 
 $(document).ready(()=>{
+    $('#loading').fadeOut('slow')
     $('.list').click(function(){
         const value = $(this).attr('data-filter')
         if(value == 'all'){

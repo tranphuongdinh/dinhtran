@@ -1,38 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dinh Tran | Certificates</title>
-    <link rel="shortcut icon" href="images/icon-2.PNG">
-    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Krona+One&family=Press+Start+2P&family=Rowdies:wght@700&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="certificates-style.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Dinh Tran</title>
+        <link rel="shortcut icon" href="images/logo.png">
+        <!--Ion Icons-->
+        <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+        <!--Google Fonts-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Aldrich&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Krona+One&family=Press+Start+2P&family=Rowdies:wght@700&display=swap" rel="stylesheet">
+        <!--Stylesheets-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/fontawesome-all.css">
+        <link rel="stylesheet" href="css/certificates-style.css">
+    </head>
 <body>
+    <div id="loading">
+        <img id="loading-image" src="https://steamuserimages-a.akamaihd.net/ugc/785232317734044116/7B04BA5F49BDB1D05843083868D351F299749F9B/" alt="Loading..." />
+      </div>
+      <div id="progressbar"></div>
+      <div id="scrollPath"></div>
     <main>
-        <h1 data-aos="zoom-in">MY CERTIFICATES</h1>
-        <div class="container">
-            <img src="images/CodeLearn_certification.png" alt="CodeLearn_certification" data-aos="zoom-in-up">
-            <img src="images/CodeLearn_certification-1.png" alt="CodeLearn_certification" data-aos="zoom-in-up">
-            <img src="images/CodeLearn_certification-2.png" alt="CodeLearn_certification" data-aos="zoom-in-up">
-            <img src="images/CodeLearn_certification-3.png" alt="CodeLearn_certification" data-aos="zoom-in-up">
-            <img src="images/CodeLearn_certification-4.png" alt="CodeLearn_certification" data-aos="zoom-in-up">
-            <img src="images/CodeLearn_certification-5.png" alt="CodeLearn_certification" data-aos="zoom-in-up">
-            <img src="images/CodeLearn_certification-6.png" alt="CodeLearn_certification" data-aos="zoom-in-up">
-            <img src="images/CodeLearn_certification-7.png" alt="CodeLearn_certification" data-aos="zoom-in-up">
-            <img src="images/CodeLearn_certification-8.png" alt="CodeLearn_certification" data-aos="zoom-in-up">
-            <img src="images/algorithm-toolbox-certificate.PNG" alt="HTML-CSS-JS_certification" data-aos="zoom-in-up">
-            <img src="images/front-end-basic-certificate.PNG" alt="HTML-CSS-JS_certification" data-aos="zoom-in-up">
-            <img src="images/bootstrap4-certificate.PNG" alt="Bootstrap4_certification" data-aos="zoom-in-up">
+        <div class="img-full-screen">
+            <span class="img-full-screen__close-btn fas fa-close"></span>
+            <a class="img-full-screen__link" href="" target="blanc"><img id="img-full-screen__img" src="" alt="certificate-full-screen"></a>
         </div>
+        <h1>Certificates</h1>
+        <section id="certificates">
+            <img class="certificates__img" src="images/CodeLearn_certification.png" data-link="https://codelearn.io/certification/odbkndqw" alt="CodeLearn_certification">
+            <img class="certificates__img" src="images/CodeLearn_certification-1.png" data-link="https://codelearn.io/certification/zwi1mgy2" alt="CodeLearn_certification">
+            <img class="certificates__img" src="images/CodeLearn_certification-2.png" data-link="https://codelearn.io/certification/zddjotrk" alt="CodeLearn_certification">
+            <img class="certificates__img" src="images/CodeLearn_certification-3.png" data-link="https://codelearn.io/certification/mjkym2iw" alt="CodeLearn_certification">
+            <img class="certificates__img" src="images/CodeLearn_certification-4.png" data-link="https://codelearn.io/certification/otmynzdi" alt="CodeLearn_certification">
+            <img class="certificates__img" src="images/CodeLearn_certification-5.png" data-link="https://codelearn.io/certification/zdcyotc2" alt="CodeLearn_certification">
+            <img class="certificates__img" src="images/CodeLearn_certification-6.png" data-link="https://codelearn.io/certification/yme0yzqz" alt="CodeLearn_certification">
+            <img class="certificates__img" src="images/CodeLearn_certification-7.png" data-link="https://codelearn.io/certification/mtiwmgjk" alt="CodeLearn_certification">
+            <img class="certificates__img" src="images/CodeLearn_certification-8.png" data-link="https://codelearn.io/certification/otm0yzvi" alt="CodeLearn_certification">
+            <img class="certificates__img" src="images/algorithm-toolbox-certificate.PNG" data-link="https://coursera.org/share/3b3dcaaf283a7889b0eed348c5bac80d" alt="HTML-CSS-JS_certification">
+            <img class="certificates__img" src="images/front-end-basic-certificate.PNG" data-link="https://coursera.org/share/bbd73c08c469ac8b1a49a7a39ab6b52e" alt="HTML-CSS-JS_certification">
+            <img class="certificates__img" src="images/bootstrap4-certificate.PNG" data-link="https://coursera.org/share/ec5838105e246a51ca18c978f285c7f0" alt="Bootstrap4_certification">
+        </section>
     </main>
-    <a id="backToHomepageBTN" href="index.html">Homepage</a>
-    <footer>&copy; 2020 by Tran Phuong Dinh</footer>
+    <footer>
+        <div class="ctn">
+            <div class="footer__links">
+                <ul>
+                    <li><a class="footer__nav-link" href="index.html#home">HOME</a></li>
+                    <li><a class="footer__nav-link" href="index.html#about-me">ABOUT</a></li>
+                    <li><a class="footer__nav-link" href="index.html#experience">EXPERIENCE</a></li>
+                    <li><a class="footer__nav-link" href="index.html#projects">PROJECTS</a></li>
+                    <li><a class="footer__nav-link" href="index.html#contact">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="footer__logo">
+                <div class="footer__logo-img">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="footer-logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__title">
+            <h4><span class="fas fa-copyright"></span> 2020 Dinh Tran. All rights reserved | Designed by Tran Phuong Dinh</h4>
+            <div class="footer__title-icons">
+                <ul>
+                    <li><a href="https://www.facebook.com/Dinh.Ramos.SR4.CR7.NTH/" target="blanc"><span class="fab fa-facebook"></span></a></li>
+                    <li><a href="mailto:dinhblade123@gmail.com"><span class="fab fa-google-plus-circle"></span></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCRvegrzTa8Lof_PE0YxRhew?view_as=subscriber" target="blanc"><span class="fab fa-youtube"></span></a></li>
+                    <li><a href="tel:0949996310"><span class="fas fa-phone"></span></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <a id="back-to-top-btn"><img src="images/up-icon.png" alt="Back to top"></a>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({duration:1000})
-    </script>
+    <script src="js/certificateScript.js"></script>
 </body>
 </html>
+
