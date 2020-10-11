@@ -1,4 +1,5 @@
-        //BACK TO TOP BUTTON
+AOS.init({duration:1500})
+//BACK TO TOP BUTTON
         const backToTopButton = document.querySelector("#back-to-top-btn");
 
         window.addEventListener('scroll', scrollFunction);
