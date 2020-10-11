@@ -1125,7 +1125,7 @@ nav {
 }
 
 .contact-info .contact-info__item:nth-child(1):hover span:nth-child(1), .contact-info .contact-info__item:nth-child(1):hover span:nth-child(3) {
-    color: rgba(203, 216, 27, 0.8);
+    color: rgba(255, 239, 93, 0.8);
 }
 
 .contact-info .contact-info__item:nth-child(2):hover span:nth-child(1), .contact-info .contact-info__item:nth-child(2):hover span:nth-child(3) {
