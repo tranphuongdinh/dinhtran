@@ -1524,6 +1524,14 @@ footer .ctn .footer__links ul li a:hover {
         font-size: 1.3em;
     }
 
+    #about-me .ctn .card:hover .imgBx {
+        top: -46%;
+    }
+    
+    #about-me .ctn .card:hover .contentBx {
+        height: 240px;
+    }
+
     .skill-container {
         width: 460px;
     }
