@@ -1202,7 +1202,7 @@ nav {
     font-size: 2.8em !important;
 }
 
-.contact-items ul li:nth-child(1) span {
+.contact-items ul li:nth-child(1) span:nth-child(5) {
     background: url('../images/cv-icon.webp');
     background-size: contain;
 }
