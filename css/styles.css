@@ -411,7 +411,7 @@ nav {
 #about-me .ctn .card {
     position: relative;
     width: 600px;
-    height: 450px;
+    height: 500px;
     background: rgba(0,0,0,0.6);
     overflow:hidden;
     margin-bottom: 35px;
@@ -445,12 +445,16 @@ nav {
 }
 
 #about-me .ctn .card:hover .imgBx {
-    top: -45%;
+    top: -40%;
     transform: translateY(0);
 }
 
 #about-me .ctn .card:hover .contentBx {
-    height: 210px;
+    height: 230px
+}
+
+#about-me .ctn .card:nth-child(2):hover .contentBx {
+    height: 210px
 }
 
 #about-me .ctn .card .imgBx img {
@@ -1203,6 +1207,7 @@ nav {
 }
 
 .contact-items ul li:nth-child(1) span:nth-child(5) {
+    border-radius: 50%;
     background: url('../images/cv-icon.webp');
     background-size: contain;
 }
@@ -1530,13 +1535,17 @@ footer .ctn .footer__links ul li a:hover {
     }
 
     #about-me .ctn .card:hover .imgBx {
-        top: -46%;
+        top: -40%;
     }
     
     #about-me .ctn .card:hover .contentBx {
-        height: 240px;
+        height: 280px
     }
 
+    #about-me .ctn .card:nth-child(2):hover .contentBx {
+        height: 240px
+    }
+    
     .skill-container {
         width: 460px;
     }
@@ -1611,13 +1620,32 @@ footer .ctn .footer__links ul li a:hover {
         top: -42%;
         transform: translateY(0);
     }
+
+    #about-me .ctn .card .contentBx, #about-me .ctn .card:nth-child(2) .contentBx {
+        bottom: -25px;
+    }
     
     #about-me .ctn .card:hover .contentBx {
-        height: 300px;
+        height: 285px;
+    }
+
+    #about-me .ctn .card:hover .contentBx .contentBx__personal-data {
+        justify-content: space-around;
+    }
+
+    #about-me .ctn .card:hover .contentBx .contentBx__personal-data p{
+        padding-bottom: 0;
+        width: 100%;
+    }
+    
+    #about-me .ctn .card:hover .contentBx .contentBx__personal-data a{
+        width: 55px;
+        height: 55px;
+        margin-top:10px;
     }
 
     #about-me .ctn .card .contentBx h2{
-        font-size: 1.8em;
+        font-size: 1.7em;
     }
 
     #about-me .ctn .card p {
