@@ -1207,8 +1207,8 @@ nav {
 }
 
 .contact-items ul li:nth-child(1) span:nth-child(5) {
-    border-radius: 50%;
-    background: url('../images/cv-icon.webp');
+    border-radius: 5px;
+    background: url('../images/cv-icon.png');
     background-size: contain;
 }
 
