@@ -1,7 +1,6 @@
 $(document).ready(()=>{
     let i = 1;
     let isOpen = false;
-    let deviceWidth = (window.innerWidth > 0) ? window.innerWidth : screen.width;
     let contents = [
         {
             imgSrc:"./images/desktop-image-hero-1.jpg",
@@ -24,7 +23,8 @@ $(document).ready(()=>{
     ]
 
     $('.container__top__second_buttons--left').click(function(){
-        if (deviceWidth > 768)
+        let deviceWidth = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+        if (deviceWidth >= 768)
             $('.container__top__first').css({
                 "background": `url(${contents[i].imgSrc})`,
                 "background-size": 'cover'
@@ -42,14 +42,16 @@ $(document).ready(()=>{
     })
 
     $('.container__top__second_buttons--right').click(function(){
-        if (deviceWidth > 768)
+        let deviceWidth = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+        console.log(deviceWidth)
+        if (deviceWidth >= 768)
             $('.container__top__first').css({
-                "background": `url(${contents[i].imgSrcMob})`,
+                "background": `url(${contents[i].imgSrc})`,
                 "background-size": 'cover'
             })
         else 
             $('.container__top__first').css({
-                "background": `url(${contents[i].imgSrc})`,
+                "background": `url(${contents[i].imgSrcMob})`,
                 "background-size": 'cover'
             })
 

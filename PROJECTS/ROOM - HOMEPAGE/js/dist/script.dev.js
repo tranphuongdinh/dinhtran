@@ -3,7 +3,6 @@
 $(document).ready(function () {
   var i = 1;
   var isOpen = false;
-  var deviceWidth = window.innerWidth > 0 ? window.innerWidth : screen.width;
   var contents = [{
     imgSrc: "./images/desktop-image-hero-1.jpg",
     imgSrcMob: "./images/mobile-image-hero-1.jpg",
@@ -21,7 +20,8 @@ $(document).ready(function () {
     content: "Our modern furniture store provide a high level of quality. Our company has invested in advanced technology to ensure that every product is made as perfect and as consistent as possible. With three decades of experience in this industry, we understand what customers want for their home and office."
   }];
   $('.container__top__second_buttons--left').click(function () {
-    if (deviceWidth > 768) $('.container__top__first').css({
+    var deviceWidth = window.innerWidth > 0 ? window.innerWidth : screen.width;
+    if (deviceWidth >= 768) $('.container__top__first').css({
       "background": "url(".concat(contents[i].imgSrc, ")"),
       "background-size": 'cover'
     });else $('.container__top__first').css({
@@ -34,11 +34,13 @@ $(document).ready(function () {
     if (i === -1) i = contents.length - 1;
   });
   $('.container__top__second_buttons--right').click(function () {
-    if (deviceWidth > 768) $('.container__top__first').css({
-      "background": "url(".concat(contents[i].imgSrcMob, ")"),
+    var deviceWidth = window.innerWidth > 0 ? window.innerWidth : screen.width;
+    console.log(deviceWidth);
+    if (deviceWidth >= 768) $('.container__top__first').css({
+      "background": "url(".concat(contents[i].imgSrc, ")"),
       "background-size": 'cover'
     });else $('.container__top__first').css({
-      "background": "url(".concat(contents[i].imgSrc, ")"),
+      "background": "url(".concat(contents[i].imgSrcMob, ")"),
       "background-size": 'cover'
     });
     $('.container__top__second__content--header').text("".concat(contents[i].header));
