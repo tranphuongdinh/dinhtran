@@ -1097,7 +1097,10 @@ nav {
     padding-left: 40px;
     padding-right: 40px;
     box-shadow:3px 3px 3px 3px rgba(0,0,0,0.5);
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .formBx form {
@@ -1145,7 +1148,7 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 90vh;
+    height: 75vh;
 }
 
 .contact-info .contact-info__item {
@@ -1629,7 +1632,7 @@ footer .ctn .footer__links ul li a:hover {
     .formBx {
         align-self: center;
         width: 85%;
-        min-height: 60vh;
+        min-height: 70vh;
     }
 
     .formBx form {
@@ -1640,12 +1643,12 @@ footer .ctn .footer__links ul li a:hover {
     }
 
     .formBx form textarea {
-        min-height: 150px;
+        min-height: 200px;
         text-overflow: ellipsis;
     }
 
     .formBx form input:nth-child(5){
-        height: 15%;
+        height: 25%;
         width: 30%;
     }
 
