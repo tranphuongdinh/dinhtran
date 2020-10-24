@@ -862,6 +862,10 @@ nav {
     transition: 0.5s;
 }
 
+#room-homepage-card::before {
+    background: url('../images/room-homepage-bg.PNG') center no-repeat;
+}
+
 #flappy-bird-card:before {
     background: url('../images/flappy-bird-icon.png') center no-repeat;
 }
@@ -917,6 +921,10 @@ nav {
     font-size: 5em;
     color: rgba(0,0,0,0.15);
     word-wrap: break-word;
+}
+
+#room-homepage-card::after {
+    content: 'ROOM HOMEPAGE';
 }
 
 #hangman-card:after {

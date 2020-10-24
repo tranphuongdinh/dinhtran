@@ -28,10 +28,26 @@ $VERY-DARK-GRAY:rgb(69,69,69);
     flex-direction: row;
 
     .container__top__first {
+      position: relative;
       height: auto;
       width: 60%;
       background: url('../images/desktop-image-hero-1.jpg');
+      overflow: hidden;
       background-size: cover;
+
+      .container__top__first__sliders {
+        position: relative;
+        width: 300%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        
+        img {
+          display: block;
+          width: calc(100% / 3);
+        }
+      }
+
       nav {
         position: fixed;
         top: 0;
@@ -40,6 +56,7 @@ $VERY-DARK-GRAY:rgb(69,69,69);
         padding-top: 40px;
         padding-left: 40px;
         width: 400px;
+        z-index: 10;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -84,6 +101,30 @@ $VERY-DARK-GRAY:rgb(69,69,69);
           }
         }
       }
+
+      .container__top__first__labels {
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+        align-self: center;
+        height: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        color: #000;
+        button {
+          margin: 0 5px 0 5px;
+          width: 20px;
+          background: #fff;
+          border: none;
+          border-radius: 0px;
+          box-shadow: 1px 1px rgb(122, 122, 122);
+          transition: 0.3s;
+        }
+        button.active {
+          background: $VERY-DARK-GRAY;
+        }
+      }
     }
 
     .container__top__second {
@@ -96,21 +137,39 @@ $VERY-DARK-GRAY:rgb(69,69,69);
       align-items: center;
 
       .container__top__second__content {
-        width: 70%;
+        width: 100%;
         margin: 0 auto;
         margin-top: 100px;
         margin-bottom: 150px;
-        h1 {
-          font-size: 3em;
-          text-shadow: 0 1px 2px rgb(65, 63, 63);
+        overflow: hidden;
+
+        .container__top__second__content__sliders {
+          position: relative;
+          left: 0;
+          width: 300%;
+          display: flex;
+          flex-direction: row;
+
+          .container__top__second__content__slider {
+            width: calc(100% / 3);
+            padding-left: 50px;
+            padding-right: 50px;
+            h1 {
+              font-size: 3em;
+              text-shadow: 0 1px 2px rgb(65, 63, 63);
+            }
+            p {
+              padding-top: 30px;
+              padding-bottom: 30px;
+              text-align: justify;
+              color: $DARK-GRAY;
+            }
+          }
         }
-        p {
-          padding-top: 30px;
-          padding-bottom: 30px;
-          text-align: justify;
-          color: $DARK-GRAY;
-        }
+
         a {
+          position: relative;
+          left: 50px;
           color: $VERY-DARK-GRAY;
           text-transform: uppercase;
           letter-spacing: 10px;
@@ -228,11 +287,32 @@ $VERY-DARK-GRAY:rgb(69,69,69);
     }
     .container__top {
       min-height: 65vh;
+      position: relative;
       .container__top__first {
+        position: relative;
         background: url('../images/mobile-image-hero-1.jpg');
         background-size: cover;
         width: 100%;
         min-height: 380px;
+
+        .container__top__first__sliders {
+          position: absolute;
+          top: 0;
+          width: 300%;
+          height: 100%;
+          display: flex;
+          flex-direction: row;
+          
+          img {
+            display: block;
+            width: calc(100% / 3);
+          }
+        }
+
+        .container__top__first__labels {
+          justify-content: flex-start;
+          padding-left: 30px;
+        }
 
         nav {
           position: relative;
@@ -255,6 +335,7 @@ $VERY-DARK-GRAY:rgb(69,69,69);
 
           .container__top__first__nav-brand {
               align-self: center;
+              font-size: 1.3em;
           }
           .nav-list {
             position: absolute;
@@ -263,6 +344,13 @@ $VERY-DARK-GRAY:rgb(69,69,69);
             top: 70px;
             left: -100px;
             transition: 0.5s;
+
+            li {
+              margin-top: 20px;
+              a {
+                font-size: 1.9em;
+              }
+            }
           }
           .nav-list.active {
             left: 30px;
@@ -277,11 +365,19 @@ $VERY-DARK-GRAY:rgb(69,69,69);
           align-self: center;
           margin-top: 70px;
           margin-bottom: 50px;
-          h1 {
-            font-size: 2.1em;
+          .container__top__second__content__sliders {
+            .container__top__second__content__slider {
+              h1 {
+                font-size: 2.1em;
+              }
+            }
           }
+
           a {
-            line-height: 50px;
+            letter-spacing: 5px;
+          }
+          a:hover {
+            letter-spacing: 10px;
           }
         }
         

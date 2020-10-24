@@ -1,52 +1,65 @@
 "use strict";
 
 $(document).ready(function () {
-  var i = 1;
+  var i = 0;
   var isOpen = false;
-  var contents = [{
+  var imagesSources = [{
     imgSrc: "./images/desktop-image-hero-1.jpg",
-    imgSrcMob: "./images/mobile-image-hero-1.jpg",
-    header: 'Discover innovative ways to decorate',
-    content: 'We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine form andnfunction in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love.'
+    imgSrcMob: "./images/mobile-image-hero-1.jpg"
   }, {
     imgSrc: "./images/desktop-image-hero-2.jpg",
-    imgSrcMob: "./images/mobile-image-hero-2.jpg",
-    header: 'We are available all across the globe',
-    content: "With stores all over the world, it's easy for you to find furniture for your home or place of business. Locally, we’re in most major cities throughout the country. Find the branch nearest you using our store locator. Any questions? Don't hesitate to contact us today."
+    imgSrcMob: "./images/mobile-image-hero-2.jpg"
   }, {
     imgSrc: "./images/desktop-image-hero-3.jpg",
-    imgSrcMob: "./images/mobile-image-hero-3.jpg",
-    header: 'Manufactured with the best materials',
-    content: "Our modern furniture store provide a high level of quality. Our company has invested in advanced technology to ensure that every product is made as perfect and as consistent as possible. With three decades of experience in this industry, we understand what customers want for their home and office."
+    imgSrcMob: "./images/mobile-image-hero-3.jpg"
   }];
+  var deviceWidth = window.innerWidth > 0 ? window.innerWidth : screen.width;
+
+  for (var j = 0; j < imagesSources.length; j++) {
+    if (deviceWidth >= 768) $($('.container__top__first__sliders__img')[j]).attr('src', "".concat(imagesSources[j].imgSrc));else $($('.container__top__first__sliders__img')[j]).attr('src', "".concat(imagesSources[j].imgSrcMob));
+  }
+
+  var autoSlider = setInterval(function () {
+    i++;
+    if (i === imagesSources.length) i = 0;
+    $('.container__top__first__sliders').animate({
+      left: "-".concat(100 * i, "%")
+    }, 1000);
+    $('.container__top__second__content__sliders').animate({
+      left: "-".concat(100 * i, "%")
+    }, 1000);
+
+    for (var _j = 0; _j < imagesSources.length; _j++) {
+      if (_j === i) $($('.container__top__first__label')[_j]).addClass('active');else $($('.container__top__first__label')[_j]).removeClass('active');
+    }
+  }, 3500);
   $('.container__top__second_buttons--left').click(function () {
-    var deviceWidth = window.innerWidth > 0 ? window.innerWidth : screen.width;
-    if (deviceWidth >= 768) $('.container__top__first').css({
-      "background": "url(".concat(contents[i].imgSrc, ")"),
-      "background-size": 'cover'
-    });else $('.container__top__first').css({
-      "background": "url(".concat(contents[i].imgSrcMob, ")"),
-      "background-size": 'cover'
-    });
-    $('.container__top__second__content--header').text("".concat(contents[i].header));
-    $('.container__top__second__content--paragraph').text("".concat(contents[i].content));
     i--;
-    if (i === -1) i = contents.length - 1;
+    if (i === -1) i = imagesSources.length - 1;
+    $('.container__top__first__sliders').animate({
+      left: "-".concat(100 * i, "%")
+    }, 1000);
+    $('.container__top__second__content__sliders').animate({
+      left: "-".concat(100 * i, "%")
+    }, 1000);
+
+    for (var _j2 = 0; _j2 < imagesSources.length; _j2++) {
+      if (_j2 === i) $($('.container__top__first__label')[_j2]).addClass('active');else $($('.container__top__first__label')[_j2]).removeClass('active');
+    }
   });
   $('.container__top__second_buttons--right').click(function () {
-    var deviceWidth = window.innerWidth > 0 ? window.innerWidth : screen.width;
-    console.log(deviceWidth);
-    if (deviceWidth >= 768) $('.container__top__first').css({
-      "background": "url(".concat(contents[i].imgSrc, ")"),
-      "background-size": 'cover'
-    });else $('.container__top__first').css({
-      "background": "url(".concat(contents[i].imgSrcMob, ")"),
-      "background-size": 'cover'
-    });
-    $('.container__top__second__content--header').text("".concat(contents[i].header));
-    $('.container__top__second__content--paragraph').text("".concat(contents[i].content));
     i++;
-    if (i === contents.length) i = 0;
+    if (i === imagesSources.length) i = 0;
+    $('.container__top__first__sliders').animate({
+      left: "-".concat(100 * i, "%")
+    }, 1000);
+    $('.container__top__second__content__sliders').animate({
+      left: "-".concat(100 * i, "%")
+    }, 1000);
+
+    for (var _j3 = 0; _j3 < imagesSources.length; _j3++) {
+      if (_j3 === i) $($('.container__top__first__label')[_j3]).addClass('active');else $($('.container__top__first__label')[_j3]).removeClass('active');
+    }
   });
   $('.menu-icon').click(function () {
     if (isOpen === false) {
