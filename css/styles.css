@@ -1097,6 +1097,7 @@ nav {
     padding-left: 40px;
     padding-right: 40px;
     box-shadow:3px 3px 3px 3px rgba(0,0,0,0.5);
+    margin-top: 10px;
     margin-bottom: 50px;
     display: flex;
     justify-content: center;
@@ -1149,6 +1150,7 @@ nav {
     flex-direction: column;
     justify-content: space-around;
     height: 75vh;
+    margin-bottom: 50px;
 }
 
 .contact-info .contact-info__item {
@@ -1643,7 +1645,7 @@ footer .ctn .footer__links ul li a:hover {
     }
 
     .formBx form textarea {
-        min-height: 200px;
+        min-height: 160px;
         text-overflow: ellipsis;
     }
 
