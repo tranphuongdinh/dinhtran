@@ -115,6 +115,8 @@ window.onscroll = () => {
 
 AOS.init({duration:1500})
 
+const submitForm = () =>{alert('This feature is being updated! Please comeback later^^')}
+
 $(document).ready(()=>{
     $('#loading').fadeOut('slow')
     $('.list').click(function(){

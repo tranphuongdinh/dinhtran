@@ -1,0 +1,126 @@
+"use strict";
+
+//show loading function
+//function expression to select elements
+var selectElement = function selectElement(s) {
+  return document.querySelector(s);
+}; //Open menu on click
+
+
+selectElement('.open').addEventListener('click', function () {
+  selectElement('.nav-list').classList.add('active');
+}); //Close menu on click
+
+selectElement('.close').addEventListener('click', function () {
+  selectElement('.nav-list').classList.remove('active');
+});
+var navLinks = document.getElementsByClassName('nav-link');
+
+for (var i = 0; i < navLinks.length; i++) {
+  navLinks[i].addEventListener('click', function () {
+    selectElement('.nav-list').classList.remove('active');
+  });
+} //SCROLLSPY
+
+
+var home = document.querySelector('#home');
+var aboutme = document.querySelector('#about-me');
+var experience = document.querySelector('#experience');
+var projects = document.querySelector('#projects');
+var contact = document.querySelector('#contact');
+window.addEventListener('scroll', function () {
+  var windo = window.pageYOffset;
+
+  if (home.offsetTop <= windo && aboutme.offsetTop > windo) {
+    for (var i = 0; i < 5; i++) {
+      if (i === 0) navLinks[i].setAttribute("class", "nav-link current");else navLinks[i].setAttribute("class", "nav-link");
+    }
+  }
+
+  if (aboutme.offsetTop <= windo + 20 && experience.offsetTop > windo) {
+    for (var i = 0; i < 5; i++) {
+      if (i === 1) navLinks[i].setAttribute("class", "nav-link current");else navLinks[i].setAttribute("class", "nav-link");
+    }
+  }
+
+  if (experience.offsetTop <= windo + 20 && projects.offsetTop > windo) {
+    for (var i = 0; i < 5; i++) {
+      if (i === 2) navLinks[i].setAttribute("class", "nav-link current");else navLinks[i].setAttribute("class", "nav-link");
+    }
+  }
+
+  if (projects.offsetTop <= windo + 20 && contact.offsetTop > windo) {
+    for (var i = 0; i < 5; i++) {
+      if (i === 3) navLinks[i].setAttribute("class", "nav-link current");else navLinks[i].setAttribute("class", "nav-link");
+    }
+  }
+
+  if (contact.offsetTop <= windo + 20) {
+    for (var i = 0; i < 5; i++) {
+      if (i === 4) navLinks[i].setAttribute("class", "nav-link current");else navLinks[i].setAttribute("class", "nav-link");
+    }
+  }
+}); //SCROLLSPY
+//BACK TO TOP BUTTON
+
+var backToTopButton = document.querySelector("#back-to-top-btn");
+window.addEventListener('scroll', scrollFunction);
+
+function scrollFunction() {
+  if (window.pageYOffset > 20) {
+    if (!backToTopButton.classList.contains('btnEntrance')) {
+      backToTopButton.classList.remove('btnExit');
+      backToTopButton.classList.add('btnEntrance');
+      backToTopButton.style.display = 'block';
+    }
+  } else {
+    if (backToTopButton.classList.contains('btnEntrance')) {
+      backToTopButton.classList.remove('btnEntrance');
+      backToTopButton.classList.add('btnExit');
+      setTimeout(function () {
+        backToTopButton.style.display = 'none';
+      }, 250);
+    }
+  }
+}
+
+backToTop = function backToTop() {
+  window.scrollTo(0, 0);
+};
+
+backToTopButton.addEventListener('click', backToTop); //BACK TO TOP BUTTON
+//SCROLL BAR
+
+var progress = document.getElementById('progressbar');
+var totalHeight = document.body.scrollHeight;
+
+window.onscroll = function () {
+  var progressHeight = window.pageYOffset / totalHeight * 100;
+  progress.style.height = progressHeight + "%";
+}; //SCROLL BAR
+
+
+AOS.init({
+  duration: 1500
+});
+
+var submitForm = function submitForm() {
+  alert('This feature is being updated! Please comeback later^^');
+};
+
+$(document).ready(function () {
+  $('#loading').fadeOut('slow');
+  $('.list').click(function () {
+    var value = $(this).attr('data-filter');
+
+    if (value == 'all') {
+      $('.project-card').show('1000');
+    } else {
+      $('.project-card').not('.' + value).hide('1000');
+      $('.project-card').filter('.' + value).show('1000');
+    }
+  });
+  $('.list').click(function () {
+    $(this).addClass('projectActive').siblings().removeClass('projectActive');
+  });
+});
