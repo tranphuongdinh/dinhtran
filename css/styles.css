@@ -866,46 +866,57 @@ nav {
 
 #room-homepage-card::before {
     background: url('../images/room-homepage-bg.PNG') center no-repeat;
+    background-size: contain;
 }
 
 #flappy-bird-card:before {
     background: url('../images/flappy-bird-icon.png') center no-repeat;
+    background-size: contain;
 }
 
 #hangman-card:before {
     background: url('../images/hangman-icon.png') center no-repeat;
+    background-size: contain;
 }
 
 #calculator-card:before {
     background: url('../images/calculator.PNG') center no-repeat;
+    background-size: contain;
 }
 
 #memeGen-card:before {
-    background: url('../images/memeGenerator.PNG') top no-repeat;
+    background: url('../images/memeGenerator.PNG') center no-repeat;
+    background-size: contain;
 }
 
 #coding-card:before {
     background: url('../images/coding-flappy-bird.PNG') center no-repeat;
+    background-size: contain;
 }
 
 #paint-card:before {
-    background: url('../images/paint.PNG') top no-repeat;
+    background: url('../images/paint.PNG') center no-repeat;
+    background-size: contain;
 }
 
 #snake-card:before {
     background: url('../images/snake-the-game-icon.PNG') center no-repeat;
+    background-size: contain;
 }
 
 #piano-card:before {
     background: url('../images/piano-icon.jpg') center no-repeat;
+    background-size: contain;
 }
 
 #coming-card:before {
     background: url('../images/tron-like-tunnel.PNG') center no-repeat;
+    background-size: contain;
 }
 
 #coming-card-2:before {
     background: url('../images/galactic-light-trails.PNG') center no-repeat;
+    background-size: contain;
 }
 
 

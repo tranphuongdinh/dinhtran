@@ -36,10 +36,11 @@ $(document).ready(()=>{
             else 
                 $($('.container__top__first__label')[j]).removeClass('active');
         }
-    }, 3500);
+    }, 4000);
          
 
     $('.container__top__second_buttons--left').click(function(){
+        clearInterval(autoSlider)
         i--;
         if(i === -1) i = imagesSources.length - 1;
         $('.container__top__first__sliders').animate({left:`-${100*(i)}%`}, 1000)
@@ -54,6 +55,7 @@ $(document).ready(()=>{
     })
 
     $('.container__top__second_buttons--right').click(function(){
+        clearInterval(autoSlider)
         i++;
         if(i === imagesSources.length) i = 0;
         $('.container__top__first__sliders').animate({left:`-${100*(i)}%`}, 1000)
