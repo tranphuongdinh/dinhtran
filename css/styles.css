@@ -1688,6 +1688,14 @@ footer .ctn .footer__links ul li a:hover {
     #home-subtitle{
         font-size: 0.8em;
     }
+
+    #home-title li {
+        text-shadow: 1px 1px #000;
+    }
+    
+    #home-subtitle {
+        text-shadow: 1px 1px #000;
+    }
     
     #home .ctn:hover #home-title li {
         transform: rotate(360deg) translateY(30px);
