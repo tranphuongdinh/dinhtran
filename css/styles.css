@@ -299,8 +299,8 @@ nav {
 #home {
     width: 100%;
     height: 100vh;
-    background: url('https://cdn.dribbble.com/users/1141571/screenshots/3978167/dribbble_3.gif') center no-repeat;
-    background-size: cover;
+    background: url('https://resources.mindx.edu.vn/uploads/images/huong-di-cua-lap-trinh-vien-5.gif') center no-repeat;
+    background-size: contain;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -335,16 +335,18 @@ nav {
 
 #home-title li {
     list-style: none;
-    color: #fff;
+    color: rgb(15, 15, 15);
     font-size: 4.8em;
     font-weight: bold;
     font-family: 'Rowdies', cursive;
     letter-spacing: 10px;
     filter: blur(1px);
     transition: 1s;
+    text-shadow: 1px 2px #000;
 }
 
 #home .ctn:hover #home-title li {
+    color: rgb(165, 165, 165);
     transform: rotate(360deg) translateY(80px);
     transition: 1s;
 }
@@ -357,9 +359,10 @@ nav {
     font-size: 3em;
     text-transform: uppercase;
     font-family: 'Rowdies', cursive;
-    color: #fff;
+    color: rgb(36, 35, 35);
     filter: blur(1px);
     transition: 1s;
+    text-shadow: 1px 2px #000;
 }
 
 .class-home h1{
