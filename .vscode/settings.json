@@ -3,5 +3,6 @@
     "compile-hero.disable-compile-files-on-did-save-code": false,
     "editor.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
     "editor.cursorBlinking": "smooth",
-    "editor.fontLigatures": true
+    "editor.fontLigatures": true,
+    "liveServer.settings.port": 5501
 }
