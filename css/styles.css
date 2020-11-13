@@ -971,6 +971,7 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    z-index: 10;
 }
 
 #projects ul li {
