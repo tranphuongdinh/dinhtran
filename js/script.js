@@ -3,12 +3,12 @@
 //function expression to select elements
 const selectElement = (s) => document.querySelector(s);
 //Open menu on click
-selectElement('.open').addEventListener('click', () =>{
+selectElement('.open').addEventListener('click', () => {
     selectElement('.nav-list').classList.add('active');
 });
 
 //Close menu on click
-selectElement('.close').addEventListener('click', () =>{
+selectElement('.close').addEventListener('click', () => {
     selectElement('.nav-list').classList.remove('active');
 });
 
@@ -27,50 +27,50 @@ let experience = document.querySelector('#experience')
 let projects = document.querySelector('#projects')
 let contact = document.querySelector('#contact')
 
-window.addEventListener('scroll', ()=>{
-    var windo = window.pageYOffset
+window.addEventListener('scroll', () => {
+        var windo = window.pageYOffset
 
-    if(home.offsetTop <= windo && aboutme.offsetTop > windo) {
-        for (var i = 0; i < 5; i++)
-            if (i === 0)
-                navLinks[i].setAttribute("class", "nav-link current")
-            else
-            navLinks[i].setAttribute("class", "nav-link")
-    }
+        if (home.offsetTop <= windo && aboutme.offsetTop > windo) {
+            for (var i = 0; i < 5; i++)
+                if (i === 0)
+                    navLinks[i].setAttribute("class", "nav-link current")
+                else
+                    navLinks[i].setAttribute("class", "nav-link")
+        }
 
-    if(aboutme.offsetTop <= windo + 20 && experience.offsetTop > windo) {
-        for (var i = 0; i < 5; i++)
-            if (i === 1)
-                navLinks[i].setAttribute("class", "nav-link current")
-            else
-            navLinks[i].setAttribute("class", "nav-link")
-    }
+        if (aboutme.offsetTop <= windo + 20 && experience.offsetTop > windo) {
+            for (var i = 0; i < 5; i++)
+                if (i === 1)
+                    navLinks[i].setAttribute("class", "nav-link current")
+                else
+                    navLinks[i].setAttribute("class", "nav-link")
+        }
 
-    if(experience.offsetTop <= windo + 20 && projects.offsetTop > windo) {
-        for (var i = 0; i < 5; i++)
-            if (i === 2)
-                navLinks[i].setAttribute("class", "nav-link current")
-            else
-            navLinks[i].setAttribute("class", "nav-link")
-    }
+        if (experience.offsetTop <= windo + 20 && projects.offsetTop > windo) {
+            for (var i = 0; i < 5; i++)
+                if (i === 2)
+                    navLinks[i].setAttribute("class", "nav-link current")
+                else
+                    navLinks[i].setAttribute("class", "nav-link")
+        }
 
-    if(projects.offsetTop <= windo + 20 && contact.offsetTop > windo) {
-        for (var i = 0; i < 5; i++)
-            if (i === 3)
-                navLinks[i].setAttribute("class", "nav-link current")
-            else
-            navLinks[i].setAttribute("class", "nav-link")
-    }
+        if (projects.offsetTop <= windo + 20 && contact.offsetTop > windo) {
+            for (var i = 0; i < 5; i++)
+                if (i === 3)
+                    navLinks[i].setAttribute("class", "nav-link current")
+                else
+                    navLinks[i].setAttribute("class", "nav-link")
+        }
 
-    if(contact.offsetTop <= windo + 20) {
-        for (var i = 0; i < 5; i++)
-            if (i === 4)
-                navLinks[i].setAttribute("class", "nav-link current")
-            else
-            navLinks[i].setAttribute("class", "nav-link")
-    }
-})
-//SCROLLSPY
+        if (contact.offsetTop <= windo + 20) {
+            for (var i = 0; i < 5; i++)
+                if (i === 4)
+                    navLinks[i].setAttribute("class", "nav-link current")
+                else
+                    navLinks[i].setAttribute("class", "nav-link")
+        }
+    })
+    //SCROLLSPY
 
 //BACK TO TOP BUTTON
 const backToTopButton = document.querySelector("#back-to-top-btn");
@@ -78,15 +78,14 @@ const backToTopButton = document.querySelector("#back-to-top-btn");
 window.addEventListener('scroll', scrollFunction);
 
 function scrollFunction() {
-    if (window.pageYOffset > 20){
-        if(!backToTopButton.classList.contains('btnEntrance')) {
+    if (window.pageYOffset > 20) {
+        if (!backToTopButton.classList.contains('btnEntrance')) {
             backToTopButton.classList.remove('btnExit');
             backToTopButton.classList.add('btnEntrance');
             backToTopButton.style.display = 'block';
         }
-    } 
-    else {
-        if(backToTopButton.classList.contains('btnEntrance')) {
+    } else {
+        if (backToTopButton.classList.contains('btnEntrance')) {
             backToTopButton.classList.remove('btnEntrance');
             backToTopButton.classList.add('btnExit');
             setTimeout(function() {
@@ -97,7 +96,7 @@ function scrollFunction() {
 }
 
 backToTop = () => {
-    window.scrollTo(0,0);
+    window.scrollTo(0, 0);
 }
 
 backToTopButton.addEventListener('click', backToTop);
@@ -108,30 +107,52 @@ let progress = document.getElementById('progressbar');
 let totalHeight = document.body.scrollHeight;
 
 window.onscroll = () => {
-    let progressHeight = (window.pageYOffset / totalHeight) * 100;
-    progress.style.height = progressHeight + "%";
-}
-//SCROLL BAR
+        let progressHeight = (window.pageYOffset / totalHeight) * 100;
+        progress.style.height = progressHeight + "%";
+    }
+    //SCROLL BAR
 
-AOS.init({duration:1500})
+AOS.init({ duration: 1500 })
 
-const submitForm = () =>{alert('This feature is being updated! Please comeback later^^')}
+const submitForm = () => { alert('This feature is being updated! Please comeback later^^') }
 
-$(document).ready(()=>{
+$(document).ready(() => {
     $('#loading').fadeOut('slow')
-    $('.list').click(function(){
-        const value = $(this).attr('data-filter')
-        if(value == 'all'){
-            $('.project-card').show('1000')
-        }
-        else{
 
-            $('.project-card').not('.'+value).hide('1000')
-            $('.project-card').filter('.'+value).show('1000')
+    let projectCard = $('.project-card')
+    let isHide = true;
+    for (let i = 6; i < projectCard.length; i++)
+        $(projectCard[i]).hide()
+
+    $('.list').click(function() {
+        const value = $(this).attr('data-filter')
+        if (value == 'all') {
+            $('.project-card').show('1000')
+            for (let i = 6; i < projectCard.length; i++)
+                $(projectCard[i]).hide()
+            $('.product__btn-see-more').show('1000')
+        } else {
+            $('.product__btn-see-more').hide()
+            $('.project-card').not('.' + value).hide('1000')
+            $('.project-card').filter('.' + value).show('1000')
         }
     })
 
-    $('.list').click(function(){
+    $('.list').click(function() {
         $(this).addClass('projectActive').siblings().removeClass('projectActive')
+    })
+
+    $('.product__btn-see-more').click(function() {
+        if (isHide) {
+            for (let i = 6; i < projectCard.length; i++)
+                $(projectCard[i]).show('1000')
+            $(this).html('Hide');
+            isHide = !isHide;
+        } else {
+            for (let i = 6; i < projectCard.length; i++)
+                $(projectCard[i]).hide('1000')
+            $(this).html('View all');
+            isHide = !isHide;
+        }
     })
 })

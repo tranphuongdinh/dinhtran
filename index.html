@@ -14,7 +14,11 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Aldrich&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Krona+One&family=Press+Start+2P&family=Rowdies:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
     <!--Stylesheets-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -26,7 +30,7 @@
 
 <body>
     <div id="loading">
-        <img id="loading-image" src="https://cdn.dribbble.com/users/1141571/screenshots/3978167/dribbble_3.gif" alt="Loading..." />
+        <img id="loading-image" src="https://i.pinimg.com/originals/8b/32/15/8b3215c7ee7dbd5e33b36383a83a04b7.gif" alt="Loading..." />
     </div>
     <div id="progressbar"></div>
     <div id="scrollPath"></div>
@@ -51,13 +55,13 @@
                         <a href="#home" class="nav-link current" title="Home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#about-me" class="nav-link" title="About me">About</a>
+                        <a href="#about-me" class="nav-link" title="My Intro">My Intro</a>
                     </li>
                     <li class="nav-item">
                         <a href="#experience" class="nav-link" title="Experience">Experience</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#projects" class="nav-link" title="Projects">Projects</a>
+                        <a href="#projects" class="nav-link" title="Portfolio">Portfolio</a>
                     </li>
                     <!-- <li class="nav-item">
                         <a href="#" class="nav-link" title="Blog">Blog</a>
@@ -72,247 +76,272 @@
     <main>
         <section id="home">
             <div class="ctn">
-                <a href="#about-me">
-                    <ul id="home-title" data-aos="zoom-in">
-                        <li>H</li>
-                        <li>N</li>
-                        <li>I</li>
-                        <li>D</li>
-                        <li>.</li>
-                        <li>G</li>
-                        <li>N</li>
-                        <li>O</li>
-                        <li>U</li>
-                        <li>H</li>
-                        <li>P</li>
-                        <li>.</li>
-                        <li>N</li>
-                        <li>A</li>
-                        <li>R</li>
-                        <li>T</li>
-                    </ul>
-                </a>
-                <h2 id="home-subtitle" data-aos="zoom-in">WELCOME TO MY SITES</h2>
+                <h3 data-aos="fade-up" data-text="Hi, I am">Hi, I am</h3>
+                <h2 data-text="TRAN.PHUONG.DINH">TRAN.PHUONG.DINH</h2>
+                <h3 data-aos="fade-in" data-aos-delay="3000">Front End Developer</h3>
+                <div class="btn-group" data-aos="fade-in" data-aos-delay="3000">
+                    <a href="https://drive.google.com/file/d/1VwC-kbQqPuUxxIwX3ZIMPvIrlTSTlpAi/view" target="blanc">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span> Download CV</a>
+                    <a href="#contact">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span> Contact me</a>
+                </div>
             </div>
         </section>
         <section id="about-me">
-            <h1 class="section-title" data-aos="zoom-in-up">ABOUT ME</h1>
             <div class="ctn">
-                <div class="card" data-aos="flip-left">
-                    <div class="imgBx">
-                        <img src="./images/avatar-about-me.jpg" alt="avt of me">
-                    </div>
-                    <div class="contentBx">
-                        <h2>introduction</h2>
-                        <p>
-                            Hi! My name is Dinh. I am 19 years old and I am a student of VNU - University Of Science. Web development is my passion. I have learnt Front-end development for six months and I got some certificates of HTML-CSS-JS and Front-end frameworks. My favorite
-                            quote is from Mark Twain: “It ain't what you don't know that gets you into trouble. It's what you know for sure that just ain't so.”.
-                        </p>
-                    </div>
+                <div data-aos="fade-right" class="about-me__ctn__full-image">
+                    <img src="./images/avatar-about-me.jpg" alt="">
                 </div>
-                <div class="card" data-aos="flip-right">
-                    <div class="imgBx">
-                        <img src="./images/info.png" alt="Personal info">
-                    </div>
-                    <div class="contentBx">
-                        <h2>personal data</h2>
+                <div data-aos="fade-left" class="about-me__ctn__content">
+                    <div class="about-me__ctn__intro">
+                        <h3>My Intro</h3>
+                        <h2>About Me</h2>
                         <p>
-                            <span class="contentBx-icon fas fa-address-card"></span> <span class="contentBx-icon">Full name:</span> Tran Phuong Dinh<br>
-                            <span class="contentBx-icon fas fa-address-card"></span> <span class="contentBx-icon">Age:</span> 19<br>
-                            <span class="contentBx-icon fa fa-graduation-cap"></span> <span class="contentBx-icon">Study:</span> VNUHCM - University Of Science<br>
-                            <span class="contentBx-icon fa fa-home"></span> <span class="contentBx-icon">Hometown:</span> Long An, Vietnam<br>
-                            <span class="contentBx-icon fas fa-star"></span> <span class="contentBx-icon">Hobbies:</span> Football, coding, gym, PC gaming gears, movies
+                            Hi! My name is Dinh. I am 19 years old and I am a student of VNU - University Of Science. Web development is my passion. I have learnt Front-end development for six months and I got some certificates of HTML-CSS-JS and Front End frameworks. My favorite
+                            quote is from Mark Twain: “It ain't what you don't know that gets you into trouble. It's what you know for sure that just ain't so”.
                         </p>
+                    </div>
+                    <div class="about-me__ctn__info">
+                        <div class="about-me__ctn__info__content">
+                            <span class="about-me__ctn__content__icon fas fa-user"></span><span class="about-me__ctn__content__label"> Name</span><span>:</span><span>Tran Phuong Dinh</span>
+                        </div>
+                        <div class="about-me__ctn__info__content">
+                            <span class="about-me__ctn__content__icon fas fa-phone"></span><span class="about-me__ctn__content__label"> Phone</span><span>:</span><span>+84949996310</span>
+                        </div>
+                        <div class="about-me__ctn__info__content">
+                            <span class="about-me__ctn__content__icon far fa-envelope"></span><span class="about-me__ctn__content__label"> Email</span><span>:</span> <span>dinhblade123@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="about-me__ctn__interests">
+                        <h3>My Interests</h3>
+                        <div class="about-me__ctn__interests__info">
+                            <div class="about-me__ctn__interests-info"><span class="about-me__ctn__content__icon fas fa-music"></span><span class="about-me__ctn__content__label"> Music</span></div>
+                            <div class="about-me__ctn__interests-info"><span class="about-me__ctn__content__icon fas fa-code"></span><span class="about-me__ctn__content__label"> Coding</span></div>
+                            <div class="about-me__ctn__interests-info"><span class="about-me__ctn__content__icon fas fa-futbol"></span><span class="about-me__ctn__content__label"> Football</span></div>
+                            <div class="about-me__ctn__interests-info"><span class="about-me__ctn__content__icon fas fa-child"></span><span class="about-me__ctn__content__label"> Gym</span></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <section id="experience">
-            <h1 class="section-title" data-aos="zoom-in-up">EXPERIENCE</h1>
+            <h3 data-aos="zoom-in-down">My Qualification</h3>
+            <h2 data-aos="zoom-in-down">Awesome Journey</h2>
             <div class="ctn">
-                <div id="my-timeline" data-aos="flip-up">
-                    <h1 class="roadmap-title">Jobs & Education</h1>
-                </div>
-                <div id="my-knowledge" data-aos="flip-down">
-                    <h1 class="roadmap-title">Knowledge</h1>
+                <div class="roadmaps">
+                    <div class="roadmap" id="my-timeline" data-aos="flip-up">
+                        <h1 class="roadmap-title">Jobs & Education</h1>
+                    </div>
+                    <div class="roadmap" id="my-knowledge" data-aos="flip-down">
+                        <h1 class="roadmap-title">Knowledge</h1>
+                    </div>
                 </div>
                 <div class="skill-container" data-aos="zoom-in-up">
-                    <h1 class="roadmap-title">Skills</h1>
-                    <div class="skills">
-                        <span class="name">HTML</span>
-                        <div class="percent">
-                            <div class="progress" style="width:70%;"></div>
+                    <div class="card">
+                        <div class="box">
+                            <div class="percent">
+
+                            </div>
                         </div>
-                        <span class="value">70%</span>
-                    </div>
-                    <div class="skills">
-                        <span class="name">CSS</span>
-                        <div class="percent">
-                            <div class="progress" style="width:60%;"></div>
-                        </div>
-                        <span class="value">60%</span>
-                    </div>
-                    <div class="skills">
-                        <span class="name">JS</span>
-                        <div class="percent">
-                            <div class="progress" style="width:45%;"></div>
-                        </div>
-                        <span class="value">45%</span>
-                    </div>
-                    <div class="skills">
-                        <span class="name">OTHERS</span>
-                        <div class="percent">
-                            <div class="progress" style="width:35%;"></div>
-                        </div>
-                        <span class="value">35%</span>
                     </div>
                 </div>
-                <div class="certificate-box" data-aos="fade-up">
-                    <div class="card">
-                        <div class="imgBx">
-                            <img src="./images/certificate.png" alt="About me">
-                        </div>
-                        <div class="contentBx">
-                            <h2>Certificates</h2>
-                            <p>Click to see my certificates!</p>
-                            <a href="certificates.html">See more</a>
-                        </div>
+                <div class="certificate">
+                    <h3>My Certificates</h3>
+                    <h2>A Winner Never Stops Trying</h2>
+                    <div class="certificate-box">
+                        <span style="--i:1"><img src="./images/algorithm-toolbox-certificate.PNG" alt="algorithm-toolbox-certificate"></span>
+                        <span style="--i:2"><img src="./images/front-end-basic-certificate.PNG" alt="front-end-basic-certificate"></span>
+                        <span style="--i:3"><img src="./images/bootstrap4-certificate.PNG" alt="bootstrap4-certificate"></span>
+                        <span style="--i:4"><img src="./images/CodeLearn_certification.png" alt="CodeLearn_certification"></span>
+                        <span style="--i:5"><img src="./images/CodeLearn_certification-1.png" alt="CodeLearn_certification1"></span>
+                        <span style="--i:6"><img src="./images/CodeLearn_certification-2.png" alt="CodeLearn_certification2"></span>
+                        <span style="--i:7"><img src="./images/CodeLearn_certification-3.png" alt="CodeLearn_certification3"></span>
+                        <span style="--i:8"><img src="./images/CodeLearn_certification-4.png" alt="CodeLearn_certification4"></span>
+                        <span style="--i:9"><img src="./images/CodeLearn_certification-5.png" alt="CodeLearn_certification5"></span>
+                        <span style="--i:10"><img src="./images/CodeLearn_certification-6.png" alt="CodeLearn_certification6"></span>
+                        <span style="--i:11"><img src="./images/CodeLearn_certification-7.png" alt="CodeLearn_certification7"></span>
+                        <span style="--i:12"><img src="./images/CodeLearn_certification-8.png" alt="CodeLearn_certification8"></span>
                     </div>
                 </div>
             </div>
         </section>
         <section id="projects">
-            <h1 class="section-title" data-aos="zoom-in-up">PROJECTS</h1>
-            <div class="projectBox" data-aos="zoom-in-up">
+            <h3 data-aos="zoom-in-down">My Portfolio</h3>
+            <h2 data-aos="zoom-in-down">Recent Works</h2>
+            <div class="projectBox">
                 <ul>
-                    <li class="list projectActive" data-filter="all">All</li>
+                    <li class="list projectActive" data-filter="all">All Projects</li>
                     <li class="list" data-filter="miniGames">Mini Games</li>
                     <li class="list" data-filter="simpleWebapps">Mini Webapps</li>
                     <li class="list" data-filter="youtubeClips">Youtube Clips</li>
                     <li class="list" data-filter="others">Others</li>
                 </ul>
                 <div class="product">
-                    <div class="project-card others" id="room-homepage-card">
-                        <div class="imgBx">
-                            <img src="./images/room-icon.png" alt="Room Homepage">
+                    <div data-aos="zoom-in-up" class="project-card others" id="room-homepage-card">
+                        <div class="project-card__content">
+                            <a href="https://tranphuongdinh.github.io/dinhtran/PROJECTS/ROOM%20-%20HOMEPAGE/" target="blanc"><span class="fas fa-play"></span></a>
+                            <a href="https://github.com/TranPhuongDinh/dinhtran/tree/master/PROJECTS/ROOM%20-%20HOMEPAGE" target="blanc"><span class="fas fa-code"></span></a>
                         </div>
-                        <div class="contentBx">
-                            <h3>Room Homepage</h3>
-                            <a class="play" href="PROJECTS/ROOM - HOMEPAGE/" target="blanc">Visit it!</a>
-                        </div>
-                    </div>
-
-                    <div class="project-card miniGames" id="flappy-bird-card">
-                        <div class="imgBx">
-                            <img src="./images/flappy-bird-icon-2.png" alt="Flappy Bird">
-                        </div>
-                        <div class="contentBx">
-                            <h3>Flappy Bird</h3>
-                            <a class="play" href="PROJECTS/FLAPPY BIRD/menu.html" target="blanc">Play!</a>
+                        <div class="project-card__info">
+                            <a href="">Room Homepage</a>
+                            <div>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JS</span>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="project-card miniGames" id="hangman-card">
-                        <div class="imgBx">
-                            <img src="./images/hangman-icon-2.jpg" alt="Hangman">
+                    <div data-aos="zoom-in-up" class="project-card miniGames" id="flappy-bird-card">
+                        <div class="project-card__content">
+                            <a href="https://tranphuongdinh.github.io/dinhtran/PROJECTS/FLAPPY%20BIRD/menu.html" target="blanc"><span class="fas fa-play"></span></a>
+                            <a href="https://github.com/TranPhuongDinh/dinhtran/tree/master/PROJECTS/FLAPPY%20BIRD" target="blanc"><span class="fas fa-code"></span></a>
                         </div>
-                        <div class="contentBx">
-                            <h3>hangman</h3>
-                            <a class="play" href="PROJECTS/HANGMAN/index.html" target="blanc">Play!</a>
-                        </div>
-                    </div>
-
-                    <div class="project-card simpleWebapps" id="calculator-card">
-                        <div class="imgBx">
-                            <img src="./images/calculator-icon-2.png" alt="Calculator">
-                        </div>
-                        <div class="contentBx">
-                            <h3>calculator</h3>
-                            <a class="play" href="PROJECTS/CALCULATOR APP/index.html" target="blanc">Try!</a>
+                        <div class="project-card__info">
+                            <a href="">Flappy Bird</a>
+                            <div>
+                                <span>JS</span>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="project-card simpleWebapps" id="memeGen-card">
-                        <div class="imgBx">
-                            <img src="./images/trollFace.png" alt="Meme Generator">
+                    <div data-aos="zoom-in-up" class="project-card miniGames" id="hangman-card">
+                        <div class="project-card__content">
+                            <a href="https://tranphuongdinh.github.io/dinhtran/PROJECTS/HANGMAN/index.html" target="blanc"><span class="fas fa-play"></span></a>
+                            <a href="https://github.com/TranPhuongDinh/dinhtran/tree/master/PROJECTS/HANGMAN" target="blanc"><span class="fas fa-code"></span></a>
                         </div>
-                        <div class="contentBx">
-                            <h3>Meme Generator</h3>
-                            <a class="play" href="https://tranphuongdinh.github.io/MemeGeneratorAppDemo/" target="blanc">Try!</a>
-                        </div>
-                    </div>
-
-                    <div class="project-card simpleWebapps" id="paint-card">
-                        <div class="imgBx">
-                            <img src="http://getdrawings.com/img/art-palette-silhouette-14.png" alt="Paint">
-                        </div>
-                        <div class="contentBx">
-                            <h3>Paint</h3>
-                            <a class="play" href="https://tranphuongdinh.github.io/SIMPLE-PAINT/" target="blanc">Try!</a>
+                        <div class="project-card__info">
+                            <a href="">Hangman</a>
+                            <div>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JS</span>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="project-card youtubeClips" id="snake-card">
-                        <div class="imgBx">
-                            <img src="./images/snake-icon-2.png" alt="Snake the Game">
+                    <div data-aos="zoom-in-up" class="project-card simpleWebapps" id="calculator-card">
+                        <div class="project-card__content">
+                            <a href="./PROJECTS/CALCULATOR APP/index.html" target="blanc"><span class="fas fa-play"></span></a>
+                            <a href="https://github.com/TranPhuongDinh/dinhtran/tree/master/PROJECTS/CALCULATOR%20APP" target="blanc"><span class="fas fa-code"></span></a>
                         </div>
-                        <div class="contentBx">
-                            <h3>Snake the game</h3>
-                            <a class="play" href="https://www.youtube.com/watch?v=OfrRXK3a6pw&t=9s" target="blanc">Watch now!</a>
-                        </div>
-                    </div>
-
-                    <div class="project-card youtubeClips" id="coding-card">
-                        <div class="imgBx">
-                            <img src="./images/js-icon.png" alt="Coding Flappy Bird in 60 minutes">
-                        </div>
-                        <div class="contentBx">
-                            <h3>CODING CHALLENGE</h3>
-                            <a class="play" href="https://www.youtube.com/watch?v=PdHPwGvnvzI&t=1373s" target="blanc">Watch now!</a>
+                        <div class="project-card__info">
+                            <a href="">Calculator</a>
+                            <div>
+                                <span>CSS</span>
+                                <span>JS</span>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="project-card youtubeClips" id="piano-card">
-                        <div class="imgBx">
-                            <img src="./images/piano-icon.png" alt="Lạc Trôi Piano Cover">
+                    <div data-aos="zoom-in-up" class="project-card simpleWebapps" id="memeGen-card">
+                        <div class="project-card__content">
+                            <a href="https://tranphuongdinh.github.io/MemeGeneratorAppDemo/" target="blanc"><span class="fas fa-play"></span></a>
+                            <a href="./PROJECTS/MemeGeneratorSource/" target="blanc"><span class="fas fa-code"></span></a>
                         </div>
-                        <div class="contentBx">
-                            <h3>PIANO COVER</h3>
-                            <a class="play" href="https://youtu.be/AR6zpfzaENs" target="blanc">Watch now!</a>
-                        </div>
-                    </div>
-
-                    <div class="project-card others" id="coming-card">
-                        <div class="imgBx">
-                            <img src="./images/tron-like-icon.png" alt="TRON-LIKE TUNNELS">
-                        </div>
-                        <div class="contentBx">
-                            <h3>tron-like tunnels</h3>
-                            <a class="play" href="PROJECTS/TRON-LIKE TUNNELS/index.html" target="blanc">Watch it!</a>
+                        <div class="project-card__info">
+                            <a href="">Meme Generator</a>
+                            <div>
+                                <span>REACT</span>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="project-card others" id="coming-card-2">
-                        <div class="imgBx">
-                            <img src="./images/galaxy-icon.png" alt="GALACTIC LIGHT TRAILS">
+                    <div data-aos="zoom-in-up" class="project-card simpleWebapps" id="paint-card">
+                        <div class="project-card__content">
+                            <a href="https://tranphuongdinh.github.io/SIMPLE-PAINT/" target="blanc"><span class="fas fa-play"></span></a>
+                            <a href="./PROJECTS/SIMPLE PAINT/" target="blanc"><span class="fas fa-code"></span></a>
                         </div>
-                        <div class="contentBx">
-                            <h3>GALACTIC LIGHT TRAILS</h3>
-                            <a class="play" href="PROJECTS/GALACTIC LIGHT TRAILS/index.html" target="blanc">Watch it!</a>
+                        <div class="project-card__info">
+                            <a href="">Paint</a>
+                            <div>
+                                <span>JS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div data-aos="zoom-in-up" class="project-card youtubeClips" id="snake-card">
+                        <div class="project-card__content">
+                            <a href="https://www.youtube.com/watch?v=OfrRXK3a6pw&t=9s" target="blanc"><span class="fas fa-play"></span></a>
+                        </div>
+                        <div class="project-card__info">
+                            <a href="">Snake The Game</a>
+                            <div>
+                                <span>C++</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div data-aos="zoom-in-up" class="project-card youtubeClips" id="coding-card">
+                        <div class="project-card__content">
+                            <a href="https://www.youtube.com/watch?v=PdHPwGvnvzI&t=1373s" target="blanc"><span class="fas fa-play"></span></a>
+                            <a href="https://github.com/TranPhuongDinh/dinhtran/tree/master/PROJECTS/FLAPPY%20BIRD" target="blanc"><span class="fas fa-code"></span></a>
+                        </div>
+                        <div class="project-card__info">
+                            <a href="">Coding Challenge</a>
+                            <div>
+                                <span>JS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div data-aos="zoom-in-up" class="project-card youtubeClips" id="piano-card">
+                        <div class="project-card__content">
+                            <a href="https://www.youtube.com/watch?v=AR6zpfzaENs&feature=youtu.be" target="blanc"><span class="fas fa-play"></span></a>
+                        </div>
+                        <div class="project-card__info">
+                            <a href="">Piano Cover</a>
+                            <div>
+                                <span>PIANO</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div data-aos="zoom-in-up" class="project-card others" id="tron-like-card">
+                        <div class="project-card__content">
+                            <a href="https://tranphuongdinh.github.io/dinhtran/PROJECTS/TRON-LIKE%20TUNNELS/index.html" target="blanc"><span class="fas fa-play"></span></a>
+                            <a href="https://github.com/TranPhuongDinh/dinhtran/tree/master/PROJECTS/TRON-LIKE%20TUNNELS" target="blanc"><span class="fas fa-code"></span></a>
+                        </div>
+                        <div class="project-card__info">
+                            <a href="">Tron-like Tunnels</a>
+                            <div>
+                                <span>JS Canvas</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div data-aos="zoom-in-up" class="project-card others" id="galactic-card">
+                        <div class="project-card__content">
+                            <a href="https://tranphuongdinh.github.io/dinhtran/PROJECTS/GALACTIC%20LIGHT%20TRAILS/index.html" target="blanc"><span class="fas fa-play"></span></a>
+                            <a href="https://github.com/TranPhuongDinh/dinhtran/tree/master/PROJECTS/GALACTIC%20LIGHT%20TRAILS" target="blanc"><span class="fas fa-code"></span></a>
+                        </div>
+                        <div class="project-card__info">
+                            <a href="">Galactic Light Trails</a>
+                            <div>
+                                <span>JS Canvas</span>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <button class="product__btn-see-more">View all</button>
             </div>
         </section>
 
         <section id="contact">
-            <h1 class="section-title" data-aos="zoom-in-up">CONTACT</h1>
+            <h3>Contact me</h3>
+            <h2>Get in Touch</h2>
             <div class="ctn">
                 <!-- <div class="formBx" data-aos="fade-up">
                     <script type="text/javascript" src="https://form.jotform.com/jsform/202814080705044"></script>
                 </div> -->
 
-                <div class="formBx" data-aos="fade-up">
+                <div class="formBx">
                     <h1 class="formBx__title">Message me!</h1>
                     <iframe class="fs_embed" src="https://formsmarts.com/form/25d3?mode=h5embed&lay=1" allow="camera; fullscreen; geolocation" allowfullscreen="true"><a href="https://formsmarts.com/form/25d3">Can&#39;t see the form? Click here</a>.</iframe>
                     <!-- Do not change or remove this notice. See https://formsmarts.com/warn -->
@@ -325,20 +354,20 @@
                     </form> -->
                 </div>
 
-                <div class="contact-info" data-aos="fade-up">
+                <div class="contact-info">
                     <div class="contact-info__item">
                         <span class="contact-info__item-icon fas fa-map-marker-alt"></span>
-                        <h3>Address</h3>
+                        <h3><b>Location</b></h3>
                         <span>Ho Chi Minh city, Vietnam</span>
                     </div>
                     <div class="contact-info__item">
                         <span class="contact-info__item-icon far fa-envelope"></span>
-                        <h3>Mail</h3>
+                        <h3><b>E-mail</b></h3>
                         <span>dinhblade123@gmail.com</span>
                     </div>
                     <div class="contact-info__item">
                         <span class="contact-info__item-icon fas fa-phone"></span>
-                        <h3>Phone</h3>
+                        <h3><b>Call me</b></h3>
                         <span>+84949996310</span>
                     </div>
                 </div>
@@ -399,7 +428,7 @@
             <div class="footer__logo">
                 <div class="footer__logo-img">
                     <a href="#home">
-                        <img src="./images/logo.png" alt="footer-logo">
+                        <img src="./images/white-logo.png" alt="footer-logo">
                     </a>
                 </div>
             </div>
@@ -457,7 +486,7 @@
                 content: 'Adobe Premere / Adobe Photoshop'
             }, {
                 date: 'Others',
-                content: 'NodeJS / AJAX / Git / LESS - SASS'
+                content: 'NodeJS / AJAX / Git / SASS'
             }];
 
             $('#my-knowledge').roadmap(events, {

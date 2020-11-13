@@ -110,17 +110,48 @@ var submitForm = function submitForm() {
 
 $(document).ready(function () {
   $('#loading').fadeOut('slow');
+  var projectCard = $('.project-card');
+  var isHide = true;
+
+  for (var _i = 6; _i < projectCard.length; _i++) {
+    $(projectCard[_i]).hide();
+  }
+
   $('.list').click(function () {
     var value = $(this).attr('data-filter');
 
     if (value == 'all') {
       $('.project-card').show('1000');
+
+      for (var _i2 = 6; _i2 < projectCard.length; _i2++) {
+        $(projectCard[_i2]).hide();
+      }
+
+      $('.product__btn-see-more').show('1000');
     } else {
+      $('.product__btn-see-more').hide();
       $('.project-card').not('.' + value).hide('1000');
       $('.project-card').filter('.' + value).show('1000');
     }
   });
   $('.list').click(function () {
     $(this).addClass('projectActive').siblings().removeClass('projectActive');
+  });
+  $('.product__btn-see-more').click(function () {
+    if (isHide) {
+      for (var _i3 = 6; _i3 < projectCard.length; _i3++) {
+        $(projectCard[_i3]).show('1000');
+      }
+
+      $(this).html('Hide');
+      isHide = !isHide;
+    } else {
+      for (var _i4 = 6; _i4 < projectCard.length; _i4++) {
+        $(projectCard[_i4]).hide('1000');
+      }
+
+      $(this).html('View all');
+      isHide = !isHide;
+    }
   });
 });
