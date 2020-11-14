@@ -112,6 +112,28 @@ $(document).ready(function () {
   $('#loading').fadeOut('slow');
   var projectCard = $('.project-card');
   var isHide = true;
+  var isDark = false;
+  $('#dark-mode-btn').click(function () {
+    if (!isDark) {
+      $('html').addClass('dark-mode');
+      $('#home').addClass('dark-mode');
+      $('img').addClass('dark-mode');
+      $('.project-card').addClass('dark-mode');
+      $('footer').addClass('dark-mode');
+      $('#dark-mode-btn-content').removeClass('fa-sun');
+      $('#dark-mode-btn-content').addClass('fa-moon');
+      isDark = true;
+    } else {
+      $('html').removeClass('dark-mode');
+      $('#home').removeClass('dark-mode');
+      $('img').removeClass('dark-mode');
+      $('.project-card').removeClass('dark-mode');
+      $('footer').removeClass('dark-mode');
+      $('#dark-mode-btn-content').removeClass('fa-moon');
+      $('#dark-mode-btn-content').addClass('fa-sun');
+      isDark = false;
+    }
+  });
 
   for (var _i = 6; _i < projectCard.length; _i++) {
     $(projectCard[_i]).hide();

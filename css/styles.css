@@ -16,6 +16,11 @@
 html {
     font-size: 10px;
     box-sizing: border-box;
+    transition: 1s;
+}
+
+.dark-mode {
+    filter: invert(1) hue-rotate(180deg)
 }
 
 body {
@@ -173,6 +178,7 @@ img {
     line-height: 50px;
     display: none;
     cursor: pointer;
+    z-index: 1000000;
 }
 
 .btnEntrance {
@@ -246,7 +252,7 @@ nav {
     text-align: center;
     width: 70px;
     display: inline-block;
-    color: #fff;
+    color: #000;
     z-index: 1500;
 }
 
@@ -298,7 +304,7 @@ nav {
     text-align: center;
     font-size: 7vw;
     font-family: 'Krona One', sans-serif;
-    color: whitesmoke;
+    color: #000;
     font-weight: bold;
     transition: 0.75s;
 }
@@ -1221,6 +1227,7 @@ nav {
     flex-direction: column;
     justify-content: space-around;
     transition: 1s;
+    z-index: 1;
 }
 
 .contact-items:hover {
@@ -1265,7 +1272,7 @@ nav {
     font-size: 2.8em !important;
 }
 
-.contact-items ul li:nth-child(1) span:nth-child(5) {
+.contact-items ul li:nth-child(2) span:nth-child(5) {
     border-radius: 5px;
     background: url('../images/cv-icon.png');
     background-size: contain;
@@ -1590,13 +1597,13 @@ footer .ctn .footer__links ul li a:hover {
         width: 70%;
     }
     .nav-list {
-        background: url('https://i.pinimg.com/originals/b4/7a/0e/b47a0e912d81aebde3413da04d3b63ab.gif') center no-repeat;
+        background: url('https://i.pinimg.com/originals/74/43/a3/7443a31b6a19e5630b94a6538ff9bdd1.gif') center no-repeat;
         background-size: cover;
         opacity: 0.9;
     }
     .nav-link {
         transition: 0.5s;
-        text-shadow: 1px 2px rgb(231, 231, 231);
+        text-shadow: 1px 1.5px rgb(136, 136, 136);
     }
     .nav-link:hover {
         color: rgb(255, 115, 0);
@@ -1606,8 +1613,8 @@ footer .ctn .footer__links ul li a:hover {
         width: 50px;
         height: 50px;
         left: inherit;
-        bottom: 20px;
-        right: 30px;
+        bottom: 15px;
+        right: 15px;
     }
     /* HEADER */
     /* HOME */
@@ -1892,9 +1899,12 @@ footer .ctn .footer__links ul li a:hover {
     .contact-items:hover {
         left: 0;
     }
+    .contact-items ul {
+        height: 73%;
+    }
     .contact-items ul li {
-        width: 38px;
-        height: 38px;
+        width: 47px;
+        height: 47px;
     }
     .formBx .formBx__title {
         font-size: 7vw;
