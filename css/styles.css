@@ -14,6 +14,7 @@
 }
 
 html {
+    background-color: #000;
     font-size: 10px;
     box-sizing: border-box;
     transition: 1s;
@@ -323,7 +324,7 @@ nav {
     position: relative;
     width: 100%;
     min-height: 100vh;
-    background-color: rgb(228, 228, 228);
+    background-color: rgb(33, 35, 68);
     background: url('../images/avatar-about-me-2.png') center no-repeat fixed;
     background-size: cover;
     display: flex;
