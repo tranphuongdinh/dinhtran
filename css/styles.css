@@ -324,24 +324,12 @@ nav {
     position: relative;
     width: 100%;
     min-height: 100vh;
-    background-color: rgb(33, 35, 68);
+    background-color: #595A85;
     background: url('../images/avatar-about-me-2.png') center no-repeat fixed;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-@keyframes backgroundChange {
-    0%,
-    100% {
-        background: url("https://i.gifer.com/7Gsw.gif") center;
-        background-size: cover;
-    }
-    50% {
-        background: url("https://i.gifer.com/1psR.gif") center;
-        background-size: cover;
-    }
 }
 
 #home .ctn {
