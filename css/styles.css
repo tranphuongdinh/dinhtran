@@ -179,7 +179,7 @@ img {
     line-height: 50px;
     display: none;
     cursor: pointer;
-    z-index: 1000000;
+    z-index: 10000;
 }
 
 .btnEntrance {
@@ -1533,6 +1533,10 @@ footer .ctn .footer__links ul li a:hover {
     /* EXPERIENCE */
     #experience .ctn .roadmaps {
         width: 90%;
+    }
+    .certificate-box {
+        width: 200px;
+        height: 140px;
     }
     /* EXPERIENCE */
     /* PROJECT */

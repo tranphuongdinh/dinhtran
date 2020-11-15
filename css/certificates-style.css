@@ -1,4 +1,5 @@
 /*LOADING IMG*/
+
 #loading {
     width: 100%;
     height: 100%;
@@ -6,12 +7,12 @@
     left: 0;
     position: fixed;
     display: block;
-    background-color: #fff;
+    background-color: #000;
     z-index: 10000000;
     text-align: center;
-  }
-  
-  #loading-image {
+}
+
+#loading-image {
     position: absolute;
     top: 0;
     left: 0;
@@ -19,14 +20,18 @@
     height: 100%;
     z-index: 100;
 }
+
+
 /*LOADING IMG*/
 
+
 /*SCROLLBAR*/
-::-webkit-scrollbar
-{
+
+::-webkit-scrollbar {
     width: 0;
     height: 0;
 }
+
 
 /* ::-webkit-scrollbar-thumb{
     background: url('https://thumbs.gfycat.com/CautiousSlightGhostshrimp-size_restricted.gif') center no-repeat;
@@ -35,7 +40,7 @@
 
 #scrollPath {
     position: fixed;
-    top:0;
+    top: 0;
     right: 0;
     width: 10px;
     height: 100%;
@@ -52,7 +57,8 @@
 }
 
 @keyframes animateBar {
-    0%, 100% {
+    0%,
+    100% {
         filter: hue-rotate(0deg);
     }
     50% {
@@ -80,16 +86,21 @@
     background: linear-gradient(to top, #008aff, #00ffe7);
     filter: blur(30px);
 }
+
+
 /*SCROLLBAR*/
 
+
 /*BACK TO TOP BUTTON*/
-#back-to-top-btn{
+
+#back-to-top-btn {
     display: inline-block;
     position: fixed;
     width: 64px;
     height: 64px;
-    bottom: 10px;
-    left: 10px;
+    bottom: 20px;
+    left: initial;
+    right: 20px;
     line-height: 50px;
     display: none;
     cursor: pointer;
@@ -126,27 +137,38 @@
         transform: scale3d(0.3, 0.3, 0.3);
     }
 }
+
+
 /*BACK TO TOP BUTTON*/
 
-h1 {
-    align-self: center;
+main {
+    background: url('https://thumbs.gfycat.com/SecondaryActualFishingcat-size_restricted.gif');
+    background-size: cover;
+}
+
+main>h3 {
     text-align: center;
-    text-transform: uppercase;
-    text-shadow: 1px 2px rgba(221, 208, 208, 0.6);
-    font-size: 2.5em;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-family: 'Press Start 2P', cursive;
-    color: #000;
+    color: rgb(255, 81, 0);
+    padding: 10vh 0 2vh 0;
+    margin: 0;
+}
+
+main>h2 {
+    font-family: sans-serif;
+    text-align: center;
+    font-family: 'Krona One', sans-serif;
+    margin: 0;
+    font-weight: 600;
+    font-size: 3em;
+    color: #fff;
 }
 
 body {
     background: rgb(209, 207, 207);
-    /* background: url('https://www.fivestardatarecovery.com/wp-content/uploads/white-abstract-background-hd-For-desktop-Wallpaper.jpg');
-    background-size: cover; */
 }
 
 #certificates {
+    margin-top: 30px;
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -154,21 +176,22 @@ body {
     justify-content: space-around;
     z-index: 0;
     padding-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 #certificates img {
-    width: 350px;
+    width: 27vw;
     margin-bottom: 40px;
     border: 8px solid rgb(143, 65, 19);
-    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
     cursor: pointer;
     transition: 0.5s;
 }
 
 #certificates img:hover {
-    box-shadow: 0 10px 20px rgba(241, 253, 64, 0.7)
+    box-shadow: 0 10px 20px rgba(255, 81, 0, 0.7);
+    transform: translateY(-20px);
 }
 
 .img-full-screen {
@@ -176,7 +199,7 @@ body {
     align-self: center;
     min-height: 100vh;
     min-width: 100vw;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     position: fixed;
@@ -190,7 +213,7 @@ body {
     justify-content: space-around;
 }
 
-.img-full-screen .img-full-screen__link img{
+.img-full-screen .img-full-screen__link img {
     align-self: center;
     width: 100%;
     border: 8px solid rgb(143, 65, 19);
@@ -207,26 +230,40 @@ body {
 }
 
 .img-full-screen__close-btn:hover {
-    color:rgb(238, 236, 236);
+    color: rgb(238, 236, 236);
+}
+
+@media (max-width:1200px) {
+    #certificates img {
+        width: 40vw;
+    }
+    .img-full-screen .img-full-screen__link {
+        width: 80%;
+    }
 }
 
 @media (max-width:767px) {
-    #loading img {
-        content: url('https://www.frogx3.com/wp-content/uploads/2017/03/logotipos-animados-para-tu-inspiracion-10.gif');
-        object-fit: cover;
+    main {
+        background: url('https://wallpaperboat.com/wp-content/uploads/2019/05/technology-15.jpg') center no-repeat;
+        background-size: cover;
     }
-
     #certificates img {
-        width: 500px;
+        width: 80vw;
     }
-
-    .img-full-screen .img-full-screen__link{
+    .img-full-screen .img-full-screen__link {
         width: 80%;
     }
 }
 
 @media (max-width:479px) {
-    h1{
-        font-size: 1.6em;
+    #back-to-top-btn {
+        width: 50px;
+        height: 50px;
+    }
+    main>h2 {
+        font-size: 10vw;
+    }
+    #certificates img {
+        border: 5px solid rgb(143, 65, 19);
     }
 }
