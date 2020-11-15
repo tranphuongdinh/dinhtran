@@ -323,7 +323,7 @@ nav {
     position: relative;
     width: 100%;
     min-height: 100vh;
-    background-color: #fff;
+    background-color: rgb(228, 228, 228);
     background: url('../images/avatar-about-me-2.png') center no-repeat fixed;
     background-size: cover;
     display: flex;
@@ -505,7 +505,7 @@ nav {
 #about-me {
     width: 100%;
     min-height: 100vh;
-    background: #fff;
+    background-color: rgb(228, 228, 228);
     background: url('https://cdn.wallpapersafari.com/32/93/UNSsM7.jpg') center no-repeat;
     background-size: cover;
     overflow: hidden;
@@ -622,7 +622,7 @@ nav {
 #experience {
     width: 100%;
     min-height: 100vh;
-    background: #fff;
+    background-color: rgb(228, 228, 228);
     background-size: cover;
     position: relative;
 }
@@ -762,6 +762,7 @@ nav {
     width: 100%;
     min-height: 100vh;
     position: relative;
+    background-color: rgb(228, 228, 228);
 }
 
 #projects:before {
@@ -1026,7 +1027,7 @@ nav {
 /*CONTACT*/
 
 #contact {
-    /* background: rgb(204, 201, 201); */
+    background-color: rgb(228, 228, 228);
     width: 100%;
     min-height: 100vh;
     position: relative;
