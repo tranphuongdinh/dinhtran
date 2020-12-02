@@ -28,6 +28,13 @@ body {
     /* background: url('https://media.giphy.com/media/l3q2XB76CaWPggiNW/giphy.gif') center no-repeat;
     background-size: cover; */
     background: #fff;
+    cursor: url('../images/cursor.ico'), auto;
+    cursor: url(https://cur.cursors-4u.net/cursors/cur-9/cur864.ani), url(http://cur.cursors-4u.net/cursors/cur-9/cur864.png), auto !important;
+}
+
+a,
+button {
+    cursor: url(https://cur.cursors-4u.net/cursors/cur-3/cur222.ani), url(http://cur.cursors-4u.net/cursors/cur-3/cur222.png), auto !important;
 }
 
 #loading {
@@ -178,7 +185,7 @@ img {
     left: 10px;
     line-height: 50px;
     display: none;
-    cursor: pointer;
+    cursor: url(https://cur.cursors-4u.net/cursors/cur-3/cur222.ani), url(http://cur.cursors-4u.net/cursors/cur-3/cur222.png), auto !important;
     z-index: 10000;
 }
 
@@ -246,7 +253,7 @@ nav {
 .menu-icons i {
     margin: 10px;
     font-size: 56px;
-    cursor: pointer;
+    cursor: url(https://cur.cursors-4u.net/cursors/cur-3/cur222.ani), url(http://cur.cursors-4u.net/cursors/cur-3/cur222.png), auto !important;
 }
 
 .close i {
@@ -298,6 +305,7 @@ nav {
 .nav-item {
     margin: 24px 0;
     text-align: center;
+    cursor: url(https://cur.cursors-4u.net/cursors/cur-3/cur222.ani), url(http://cur.cursors-4u.net/cursors/cur-3/cur222.png), auto !important;
 }
 
 .nav-link {
@@ -979,7 +987,7 @@ nav {
     margin-top: 20px;
     letter-spacing: 1px;
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.6);
-    cursor: pointer;
+    cursor: url(https://cur.cursors-4u.net/cursors/cur-3/cur222.ani), url(http://cur.cursors-4u.net/cursors/cur-3/cur222.png), auto !important;
 }
 
 #projects ul li.projectActive {
@@ -1260,6 +1268,7 @@ nav {
     justify-content: center;
     color: #fff;
     font-size: 2.8em !important;
+    cursor: url(https://cur.cursors-4u.net/cursors/cur-3/cur222.ani), url(http://cur.cursors-4u.net/cursors/cur-3/cur222.png), auto !important;
 }
 
 .contact-items ul li:nth-child(2) span:nth-child(5) {
@@ -1552,7 +1561,7 @@ footer .ctn .footer__links ul li a:hover {
         margin-top: 20px;
         letter-spacing: 1px;
         border-right: 2px solid black;
-        cursor: pointer;
+        cursor: url(https://cur.cursors-4u.net/cursors/cur-3/cur222.ani), url(http://cur.cursors-4u.net/cursors/cur-3/cur222.png), auto !important;
     }
     /* PROJECT */
     /*FOOTER*/
