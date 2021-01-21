@@ -333,7 +333,7 @@ nav {
     width: 100%;
     min-height: 100vh;
     background-color: #595A85;
-    background: url('../images/avatar-about-me-2.png') center no-repeat fixed;
+    background: url('../images/cover.jpg') center no-repeat fixed;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -342,11 +342,13 @@ nav {
 
 #home .ctn {
     width: auto;
+    position: absolute;
+    left: 10vw;
 }
 
 #home .ctn h2 {
     position: relative;
-    font-size: 6vw;
+    font-size: 5vw;
     color: #302e2e;
     text-shadow: 2px 4px rgb(34, 33, 33);
     -webkit-text-stroke: 0.2vw #bebebe;
@@ -370,7 +372,7 @@ nav {
 
 #home .ctn h3 {
     position: relative;
-    font-size: 2.5vw;
+    font-size: 2vw;
     color: rgb(255, 81, 0);
 }
 
@@ -1622,10 +1624,10 @@ footer .ctn .footer__links ul li a:hover {
     /* HEADER */
     /* HOME */
     #home .ctn h2 {
-        font-size: 8vw;
+        font-size: 5.5vw;
     }
     #home .ctn h3 {
-        font-size: 4vw;
+        font-size: 3vw;
     }
     #home .ctn .btn-group {
         width: 80%;
@@ -1805,6 +1807,16 @@ footer .ctn .footer__links ul li a:hover {
 
 @media (max-width:479px) {
     /* HOME */
+    #home {
+        background: url('../images/cover.jpg') right no-repeat fixed;
+        background-size: cover;
+    }
+    #home .ctn h2 {
+        font-size: 8vw;
+    }
+    #home .ctn h3 {
+        font-size: 4.5vw;
+    }
     #home .ctn .btn-group {
         width: 80%;
         flex-direction: column;
