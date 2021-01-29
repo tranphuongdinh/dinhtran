@@ -92,11 +92,11 @@ backToTopButton.addEventListener('click', backToTop); //BACK TO TOP BUTTON
 //SCROLL BAR
 
 var progress = document.getElementById('progressbar');
-var totalHeight = document.body.scrollHeight;
+var totalHeight = document.body.offsetHeight;
 
 window.onscroll = function () {
-  var progressHeight = window.pageYOffset / totalHeight * 100;
-  progress.style.height = progressHeight + "%";
+  var progressHeight = window.pageYOffset / totalHeight * 120;
+  progress.style.height = progressHeight + "vh";
 }; //SCROLL BAR
 
 
