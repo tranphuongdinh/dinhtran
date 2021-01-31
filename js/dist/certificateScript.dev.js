@@ -36,7 +36,7 @@ var progress = document.getElementById('progressbar');
 var totalHeight = document.body.scrollHeight;
 
 window.onscroll = function () {
-  var progressHeight = window.pageYOffset / totalHeight * 100;
+  var progressHeight = window.pageYOffset / totalHeight * 160;
   progress.style.height = progressHeight + "%";
 }; //SCROLL BAR
 
