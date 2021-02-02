@@ -1,0 +1,348 @@
+#projects {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background-color: rgb(228, 228, 228);
+}
+
+#projects:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/portfolio.webp') center no-repeat;
+    background-size: cover;
+    opacity: .1;
+}
+
+#projects>h3 {
+    text-align: center;
+    color: rgb(255, 81, 0);
+    padding: 10vh 0 2vh 0;
+    margin: 0;
+}
+
+#projects>h2 {
+    font-family: sans-serif;
+    text-align: center;
+    font-family: 'Krona One', sans-serif;
+    margin: 0;
+    font-weight: 600;
+    font-size: 3em;
+}
+
+#projects .ctn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    display: inherit;
+    padding-top: 20px;
+}
+
+.project-card {
+    position: relative;
+    width: 320px;
+    height: 300px;
+    overflow: hidden;
+    -webkit-box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.project-card:hover {
+    -webkit-box-shadow: 0 10px 20px rgba(255, 81, 0, 0.8);
+    box-shadow: 0 10px 20px rgba(255, 81, 0, 0.8);
+}
+
+#room-homepage-card {
+    background: url('../images/room-homepage-bg.PNG') center no-repeat;
+    background-size: cover;
+}
+
+#flappy-bird-card {
+    background: url('../images/flappy-bird-bg.png') center no-repeat;
+    background-size: cover;
+}
+
+#hangman-card {
+    background: url('../images/hangman-bg.jpg') center no-repeat;
+    background-size: cover;
+}
+
+#calculator-card {
+    background: url('../images/calculator-bg.jpg') center no-repeat;
+    background-size: cover;
+}
+
+#memeGen-card {
+    background: url('../images/memeGenerator.PNG') center no-repeat;
+    background-size: cover;
+}
+
+#paint-card {
+    background: url('../images/paint.PNG') center no-repeat;
+    background-size: cover;
+}
+
+#snake-card {
+    background: url('../images/snake-bg.jpg') center no-repeat;
+    background-size: cover;
+}
+
+#coding-card {
+    background: url('../images/coding-flappy-bird.PNG') center no-repeat;
+    background-size: cover;
+}
+
+#piano-card {
+    background: url('../images/piano-bg.jpg') center no-repeat;
+    background-size: cover;
+}
+
+#tron-like-card {
+    background: url('../images/tron-like-tunnel.PNG') center no-repeat;
+    background-size: cover;
+}
+
+#galactic-card {
+    background: url('../images/galactic-light-trails.PNG') center no-repeat;
+    background-size: cover;
+}
+
+.project-card:hover:before {
+    top: -70%;
+    -webkit-transform: skewY(390deg);
+    -ms-transform: skewY(390deg);
+    transform: skewY(390deg);
+}
+
+.project-card .project-card__content {
+    height: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+    -webkit-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s;
+}
+
+.project-card:hover .project-card__content {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.project-card .project-card__content a {
+    margin: 10px;
+    width: 70px;
+    height: 70px;
+    text-decoration: none;
+    font-size: 2em;
+    color: rgb(255, 81, 0);
+    padding: 10px 20px 10px 20px;
+    background: rgb(226, 223, 223);
+    -webkit-box-shadow: 1px 2px rgb(65, 63, 63);
+    box-shadow: 1px 2px rgb(65, 63, 63);
+    border-radius: 10px;
+    font-family: 'Krona One', sans-serif;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.project-card .project-card__content a span {
+    display: inline-block;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    color: rgb(255, 81, 0);
+}
+
+.project-card .project-card__content a:hover span {
+    -webkit-animation: rotateSpan 1s linear infinite;
+    animation: rotateSpan 1s linear infinite;
+    color: rgb(255, 81, 0);
+}
+
+@-webkit-keyframes rotateSpan {
+    0% {
+        -webkit-transform: rotateY(0);
+        transform: rotateY(0);
+    }
+    100% {
+        -webkit-transform: rotateY(360deg);
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes rotateSpan {
+    0% {
+        -webkit-transform: rotateY(0);
+        transform: rotateY(0);
+    }
+    100% {
+        -webkit-transform: rotateY(360deg);
+        transform: rotateY(360deg);
+    }
+}
+
+.project-card .project-card__info {
+    position: relative;
+    height: 30%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: #000;
+    -webkit-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    transform: translateY(100%);
+    -webkit-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s;
+}
+
+.project-card:hover .project-card__info {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.project-card .project-card__info a {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+.project-card .project-card__info div {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+.project-card .project-card__info div span {
+    padding: 0 10px 0 10px;
+    background: rgb(255, 81, 0);
+    color: #fff;
+    border-radius: 20px;
+}
+
+.projectBox {
+    margin: 0 auto;
+    width: 86%;
+    min-height: 80vh;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#projects ul {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+#projects ul li {
+    background: rgb(219, 213, 213);
+    text-transform: uppercase;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 8px 40px;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.6);
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.6);
+    cursor: url(https://cur.cursors-4u.net/cursors/cur-3/cur222.ani), url(http://cur.cursors-4u.net/cursors/cur-3/cur222.png), auto !important;
+}
+
+#projects ul li.projectActive {
+    background: rgb(255, 81, 0);
+    color: rgb(229, 238, 241);
+}
+
+#projects .product {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.product__btn-see-more {
+    border: none;
+    outline: none;
+    padding: 10px 50px 10px 50px;
+    background: rgb(255, 81, 0);
+    color: #fff;
+    font-size: 1.5em;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    z-index: 10;
+}

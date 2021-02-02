@@ -1,0 +1,115 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+* {
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    background-color: #000;
+    font-size: 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+}
+
+.dark-mode {
+    -webkit-filter: invert(1) hue-rotate(180deg);
+    filter: invert(1) hue-rotate(180deg)
+}
+
+body {
+    /* background: url('https://media.giphy.com/media/l3q2XB76CaWPggiNW/giphy.gif') center no-repeat;
+    background-size: cover; */
+    background: #fff;
+    cursor: url('../images/cursor.ico'), auto;
+    cursor: url(https://cur.cursors-4u.net/cursors/cur-9/cur864.ani), url(http://cur.cursors-4u.net/cursors/cur-9/cur864.png), auto !important;
+}
+
+a,
+button {
+    cursor: url(https://cur.cursors-4u.net/cursors/cur-3/cur222.ani), url(http://cur.cursors-4u.net/cursors/cur-3/cur222.png), auto !important;
+}
+
+#loading {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: block;
+    background-color: rgb(0, 0, 0);
+    z-index: 10000000;
+    text-align: center;
+}
+
+#loading-image {
+    -o-object-fit: contain;
+    object-fit: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    font-size: 26px;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.ctn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+}
+
+.section-title {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 50px;
+    color: #000;
+    -webkit-filter: blur(0.5px);
+    filter: blur(0.5px);
+}
+
+.roadmap-title {
+    width: 100%;
+    text-align: center;
+    color: #000000;
+    text-shadow: 1px 2px #787a7c;
+    padding-bottom: 20px;
+}
