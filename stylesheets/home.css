@@ -22,7 +22,7 @@
     opacity: 0;
     background: url('../images/cover.webp') center no-repeat fixed;
     background-size: cover;
-    animation: fade-slide-down 1s cubic-bezier(0, 0.5, 0, 1) forwards;
+    animation: fade-slide-down 1s cubic-bezier(0, 0.9, 0.3, 1) forwards;
 }
 
 @keyframes fade-slide-down {
@@ -64,21 +64,38 @@
     -webkit-text-stroke: 0vw #383d52;
     border-right: 3px solid rgb(255, 81, 0);
     overflow: hidden;
-    -webkit-animation: animateText 3s linear infinite;
-    animation: animateText 3s linear infinite;
-    -webkit-animation-delay: 1s;
-    animation-delay: 1s;
+    -webkit-animation: animateText 3s 1s linear infinite;
+    animation: animateText 3s 1s linear infinite;
 }
 
 #home .ctn h3 {
     position: relative;
     font-size: 2vw;
     color: rgb(255, 81, 0);
+    transform: translateY(-10vh);
+    opacity: 0;
+    animation: no-transform 1s ease-out forwards;
 }
 
 #home .ctn h3:nth-child(3) {
     color: #fff;
     font-family: 'Krona One', sans-serif;
+    opacity: 0;
+    animation: fade-in 2s 3s ease-out forwards;
+    transform: none;
+}
+
+@keyframes no-transform {
+    100% {
+        transform: none;
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    100% {
+        opacity: 1;
+    }
 }
 
 @-webkit-keyframes animateText {
@@ -114,6 +131,8 @@
     -ms-flex-pack: justify;
     justify-content: space-between;
     width: 70%;
+    opacity: 0;
+    animation: fade-in 2s 3s ease-out forwards;
 }
 
 #home .ctn .btn-group a {

@@ -116,9 +116,16 @@ AOS.init({ duration: 1500 })
 
 const submitForm = () => { alert('This feature is being updated! Please comeback later^^') }
 
-$(document).ready(() => {
-    $('#loading').fadeOut('slow')
+//PRE-LOAD FUNCTIONS
+document.body.classList.add('page-loading')
 
+window.addEventListener("load", function() {
+    document.body.classList.remove('page-loading')
+    loadScreen = document.getElementById('loading')
+    loadScreen.classList.add('fade-out')
+}, false);
+
+$(document).ready(() => {
     let projectCard = $('.project-card')
     let isHide = true;
     let isDark = false;
