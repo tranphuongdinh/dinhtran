@@ -34,7 +34,7 @@ let progress = document.getElementById('progressbar');
 let totalHeight = document.body.scrollHeight;
 
 window.onscroll = () => {
-        let progressHeight = (window.pageYOffset / totalHeight) * 160;
+        let progressHeight = (window.pageYOffset / totalHeight) * 110;
         progress.style.height = progressHeight + "%";
     }
     //SCROLL BAR
