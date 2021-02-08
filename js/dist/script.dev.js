@@ -1,6 +1,5 @@
 "use strict";
 
-//show loading function
 //function expression to select elements
 var selectElement = function selectElement(s) {
   return document.querySelector(s);

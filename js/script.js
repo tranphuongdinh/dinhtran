@@ -1,5 +1,3 @@
-//show loading function
-
 //function expression to select elements
 const selectElement = (s) => document.querySelector(s);
 //Open menu on click
