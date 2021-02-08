@@ -30,16 +30,6 @@ backToTop = function backToTop() {
 };
 
 backToTopButton.addEventListener('click', backToTop); //BACK TO TOP BUTTON
-//SCROLL BAR
-
-var progress = document.getElementById('progressbar');
-var totalHeight = document.body.scrollHeight;
-
-window.onscroll = function () {
-  var progressHeight = window.pageYOffset / totalHeight * 110;
-  progress.style.height = progressHeight + "%";
-}; //SCROLL BAR
-
 
 $(document).ready(function () {
   $('#loading').fadeOut('slow');

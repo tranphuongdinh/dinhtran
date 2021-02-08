@@ -29,16 +29,6 @@ backToTop = () => {
 backToTopButton.addEventListener('click', backToTop);
 //BACK TO TOP BUTTON
 
-//SCROLL BAR
-let progress = document.getElementById('progressbar');
-let totalHeight = document.body.scrollHeight;
-
-window.onscroll = () => {
-        let progressHeight = (window.pageYOffset / totalHeight) * 110;
-        progress.style.height = progressHeight + "%";
-    }
-    //SCROLL BAR
-
 $(document).ready(function() {
     $('#loading').fadeOut('slow')
     $('.img-full-screen').hide();
