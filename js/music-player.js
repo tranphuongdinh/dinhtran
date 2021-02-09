@@ -1,5 +1,5 @@
 window.onload = function() {
-    setTimeout(function() {
+    if (window.innerWidth >= 768) {
         const canvas = document.getElementById("canvas")
         const ctx = canvas.getContext('2d')
         const context = new AudioContext()
@@ -111,7 +111,9 @@ window.onload = function() {
             })
             //======================= CONTROL BUTTONS ============================
 
-        backgroundMusic.play()
-        renderFrame()
-    }, 2500)
+        setTimeout(function() {
+            backgroundMusic.play()
+            renderFrame()
+        }, 2500)
+    }
 }

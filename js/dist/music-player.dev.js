@@ -9,29 +9,8 @@ function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) ||
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 window.onload = function () {
-  setTimeout(function () {
-    var canvas = document.getElementById("canvas");
-    var ctx = canvas.getContext('2d');
-    var context = new AudioContext();
-    var backgroundMusic = new Audio();
-    var soundsName = ['Weight Of The World', 'Alien Manifestation', 'Ashes Of Dreams', 'Fortress Of Lies', 'Song Of Ancients', 'The Tower', 'Voice Of No Return', 'Wretched Weaponry'];
-    var songIndex = 0;
-    backgroundMusic.src = "sounds/" + soundsName[songIndex] + ".mp3";
-    var src = context.createMediaElementSource(backgroundMusic);
-    var analyser = context.createAnalyser();
-    src.connect(analyser);
-    analyser.connect(context.destination); //ANALYSER FFTSIZE
-
-    analyser.fftSize = 16384;
-    var bufferLength = analyser.frequencyBinCount;
-    var dataArray = new Uint8Array(bufferLength);
-    var WIDTH = canvas.width;
-    var HEIGHT = canvas.height;
-    var barWidth = WIDTH / bufferLength * 13;
-    var barHeight;
-    var x = 0;
-
-    function renderFrame() {
+  if (window.innerWidth >= 768) {
+    var renderFrame = function renderFrame() {
       requestAnimationFrame(renderFrame);
       x = 0;
       analyser.getByteFrequencyData(dataArray);
@@ -64,16 +43,10 @@ window.onload = function () {
         ctx.fillRect(x, HEIGHT - barHeight, barWidth + 2, barHeight);
         x += barWidth + 5;
       }
-    } //======================= CONTROL BUTTONS ============================
+    }; //======================= CONTROL BUTTONS ============================
 
 
-    var previousBtn = document.querySelector('.btn-previous');
-    var playBtn = document.querySelector('.btn-play');
-    var nextBtn = document.querySelector('.btn-next');
-    var songName = document.querySelector('.music-name');
-    var playIcon = playBtn.firstChild;
-
-    function soundController(songIndex, playIcon, isNext) {
+    var soundController = function soundController(songIndex, playIcon, isNext) {
       if (!isNext) {
         if (songIndex === 0) {
           songIndex = soundsName.length - 1;
@@ -90,8 +63,33 @@ window.onload = function () {
       playIcon.className = "fa fa-pause";
       renderFrame();
       return [songIndex, playIcon];
-    }
+    };
 
+    var canvas = document.getElementById("canvas");
+    var ctx = canvas.getContext('2d');
+    var context = new AudioContext();
+    var backgroundMusic = new Audio();
+    var soundsName = ['Weight Of The World', 'Alien Manifestation', 'Ashes Of Dreams', 'Fortress Of Lies', 'Song Of Ancients', 'The Tower', 'Voice Of No Return', 'Wretched Weaponry'];
+    var songIndex = 0;
+    backgroundMusic.src = "sounds/" + soundsName[songIndex] + ".mp3";
+    var src = context.createMediaElementSource(backgroundMusic);
+    var analyser = context.createAnalyser();
+    src.connect(analyser);
+    analyser.connect(context.destination); //ANALYSER FFTSIZE
+
+    analyser.fftSize = 16384;
+    var bufferLength = analyser.frequencyBinCount;
+    var dataArray = new Uint8Array(bufferLength);
+    var WIDTH = canvas.width;
+    var HEIGHT = canvas.height;
+    var barWidth = WIDTH / bufferLength * 13;
+    var barHeight;
+    var x = 0;
+    var previousBtn = document.querySelector('.btn-previous');
+    var playBtn = document.querySelector('.btn-play');
+    var nextBtn = document.querySelector('.btn-next');
+    var songName = document.querySelector('.music-name');
+    var playIcon = playBtn.firstChild;
     previousBtn.addEventListener('click', function () {
       var _soundController = soundController(songIndex, playIcon, false);
 
@@ -126,7 +124,9 @@ window.onload = function () {
       }
     }); //======================= CONTROL BUTTONS ============================
 
-    backgroundMusic.play();
-    renderFrame();
-  }, 2500);
+    setTimeout(function () {
+      backgroundMusic.play();
+      renderFrame();
+    }, 2500);
+  }
 };

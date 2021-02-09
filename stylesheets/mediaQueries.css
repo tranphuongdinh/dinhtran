@@ -255,7 +255,10 @@
         font-size: 2vw;
         letter-spacing: 1.5px;
     }
-    #home .ctn .music-player .music-name {
+    #home .ctn .music-player {
+        display: none;
+    }
+    /* #home .ctn .music-player .music-name {
         font-size: 1em;
     }
     #home .ctn .music-player .btn-group {
@@ -268,13 +271,8 @@
     }
     #home .ctn .music-player .btn-group button {
         width: calc(100% / 4);
-        height: 100%;
-        background: none;
-        outline: none;
-        border: none;
-        text-align: center;
         font-size: 1rem;
-    }
+    } */
     /* HOME */
     /* ABOUT ME */
     #about-me .ctn {
