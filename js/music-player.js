@@ -61,9 +61,6 @@ window.onload = function() {
             }
         }
 
-        backgroundMusic.play()
-        renderFrame()
-
         //======================= CONTROL BUTTONS ============================
         const previousBtn = document.querySelector('.btn-previous')
         const playBtn = document.querySelector('.btn-play')
@@ -71,41 +68,50 @@ window.onload = function() {
         let songName = document.querySelector('.music-name')
         let playIcon = playBtn.firstChild
 
-        previousBtn.addEventListener('click', function() {
-            if (songIndex === 0) {
-                songIndex = soundsName.length - 1
-            } else
-                songIndex--
-                console.log(songIndex)
-
+        function soundController(songIndex, playIcon, isNext) {
+            if (!isNext) {
+                if (songIndex === 0) {
+                    songIndex = soundsName.length - 1
+                } else
+                    songIndex--
+            } else {
+                if (songIndex === soundsName.length - 1) {
+                    songIndex = 0
+                } else
+                    songIndex++
+            }
             songName.innerHTML = soundsName[songIndex]
             backgroundMusic.src = "sounds/" + soundsName[songIndex] + ".mp3"
             backgroundMusic.play()
             playIcon.className = "fa fa-pause"
             renderFrame()
+            return [songIndex, playIcon]
+        }
+
+        previousBtn.addEventListener('click', function() {
+            [songIndex, playIcon] = soundController(songIndex, playIcon, false)
         })
 
         nextBtn.addEventListener('click', function() {
-            if (songIndex === soundsName.length - 1) {
-                songIndex = 0
-            } else
-                songIndex++
-                console.log(songIndex)
-            songName.innerHTML = soundsName[songIndex]
-            backgroundMusic.src = "sounds/" + soundsName[songIndex] + ".mp3"
-            backgroundMusic.play()
-            playIcon.className = "fa fa-pause"
-            renderFrame()
+            [songIndex, playIcon] = soundController(songIndex, playIcon, true)
+        })
+
+        backgroundMusic.addEventListener('ended', function() {
+            [songIndex, playIcon] = soundController(songIndex, playIcon, true)
         })
 
         playBtn.addEventListener('click', function() {
-            if (playIcon.className === "fa fa-play") {
-                backgroundMusic.play()
-                playIcon.className = "fa fa-pause"
-            } else {
-                backgroundMusic.pause()
-                playIcon.className = "fa fa-play"
-            }
-        })
+                if (playIcon.className === "fa fa-play") {
+                    backgroundMusic.play()
+                    playIcon.className = "fa fa-pause"
+                } else {
+                    backgroundMusic.pause()
+                    playIcon.className = "fa fa-play"
+                }
+            })
+            //======================= CONTROL BUTTONS ============================
+
+        backgroundMusic.play()
+        renderFrame()
     }, 2500)
 }
