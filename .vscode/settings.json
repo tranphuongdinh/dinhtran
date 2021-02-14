@@ -4,5 +4,5 @@
     "editor.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
     "editor.cursorBlinking": "smooth",
     "editor.fontLigatures": true,
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5502
 }
