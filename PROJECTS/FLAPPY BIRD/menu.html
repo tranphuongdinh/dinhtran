@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,12 @@
     <link rel="stylesheet" href="style.css">
     <title>FLAPPY BIRD BY ĐÌNH RAMOS</title>
 </head>
+
 <body>
-    <canvas id="canvas" width="288" height="512"></canvas>
-    <a href="index.html"><button id="btnStart">START</button></a>
+    <div class="container">
+        <canvas id="canvas" width="288" height="512"></canvas>
+        <a href="index.html"><button id="btnStart">START</button></a>
+    </div>
     <script>
         const canvas = document.getElementById('canvas');
         const c = canvas.getContext('2d');
@@ -26,7 +30,7 @@
 
         function draw() {
             c.drawImage(background, 0, 0);
-            c.drawImage(name, 0 ,0);
+            c.drawImage(name, 0, 0);
             c.drawImage(foreground, 0, canvas.height - 118);
             c.drawImage(bird, 10, canvas.height / 2);
 
@@ -37,4 +41,5 @@
         draw();
     </script>
 </body>
+
 </html>
