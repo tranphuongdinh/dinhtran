@@ -34,7 +34,9 @@ var birdX;
 var backgroundX;
 var pipes;
 var k;
-var highScore = 0;
+if (!localStorage.getItem("FlappyBirdHighScore"))
+    localStorage.setItem("FlappyBirdHighScore", 0);
+var highScore = localStorage.getItem("FlappyBirdHighScore");
 var speed;
 var angle;
 
@@ -172,7 +174,10 @@ function draw() {
         scoreSound.load();
         scoreSound.play();
         k++;
-        if (k > highScore) highScore = k;
+        if (k > highScore) {
+            highScore = k;
+            localStorage.setItem("FlappyBirdHighScore", highScore);
+        }
     }
 
     if (isDead == false) requestAnimationFrame(draw);

@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://cdn6.aptoide.com/imgs/d/d/c/ddcd5a5b94aad6b0879ebaac2e776d67_icon.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Fredoka+One&family=Indie+Flower&family=Modak&family=Righteous&display=swap" rel="stylesheet">
@@ -10,30 +12,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
     <title>HANGMAN BY ĐÌNH RAMOS</title>
 </head>
+
 <body>
     <div class="container-1">
-        <a href="#"><h2 id="gameTitle">HANGMAN</h2></a>
+        <a href="#">
+            <h2 id="gameTitle">HANGMAN</h2>
+        </a>
         <div class="header">
-            <div id="wrongWords"><h4 id="wrongWordList">INCORRECT LETTERS: </h4></div>
-            <div id="btnPlace">
-                <span id="btnSound" onclick="mute()" class="fa fa-volume-up" aria-hidden="true"></span>
-                <button id="btnHint" onclick="hint()">HINT</button>
-                <button id="btnNew" onclick="init()">NEW</button>
+            <div id="wrongWords">
+                <h4 id="wrongWordList">INCORRECT LETTERS: </h4>
             </div>
         </div>
         <div class="container-main-screen">
-            <div id="canvasPlace"><canvas id="canvasMainScreen" width="400" height="300"></canvas></div>
+            <div id="main-screen"></div>
             <div id="information">
                 <div id="category">
-                    <h2>CATEGORY</h2>
+                    <h2 class="information-title">CATEGORY</h2>
                     <h3 id="categoryName"></h3>
                 </div>
                 <div id="playerName">
-                    <h2>WIN</h2>
+                    <h2 class="information-title">WIN</h2>
                     <span id="win"></span>
                 </div>
                 <div id="computerName">
-                    <h2>LOSE</h2>
+                    <h2 class="information-title">LOSE</h2>
                     <span id="lose"></span>
                 </div>
             </div>
@@ -41,35 +43,40 @@
         <div id="wordToFind">
         </div>
         <div id="alphabet">
-            <input type="button" class="btn-word" value="A"></input>
-            <input type="button" class="btn-word" value="B"></input>
-            <input type="button" class="btn-word" value="C"></input>
-            <input type="button" class="btn-word" value="D"></input>
-            <input type="button" class="btn-word" value="E"></input>
-            <input type="button" class="btn-word" value="F"></input>
-            <input type="button" class="btn-word" value="G"></input>
-            <input type="button" class="btn-word" value="H"></input>
-            <input type="button" class="btn-word" value="I"></input>
-            <input type="button" class="btn-word" value="J"></input>
-            <input type="button" class="btn-word" value="K"></input>
-            <input type="button" class="btn-word" value="L"></input>
-            <input type="button" class="btn-word" value="M"></input>
-            <input type="button" class="btn-word" value="N"></input>
-            <input type="button" class="btn-word" value="O"></input>
-            <input type="button" class="btn-word" value="P"></input>
-            <input type="button" class="btn-word" value="Q"></input>
-            <input type="button" class="btn-word" value="R"></input>
-            <input type="button" class="btn-word" value="S"></input>
-            <input type="button" class="btn-word" value="T"></input>
-            <input type="button" class="btn-word" value="U"></input>
-            <input type="button" class="btn-word" value="V"></input>
-            <input type="button" class="btn-word" value="W"></input>
-            <input type="button" class="btn-word" value="X"></input>
-            <input type="button" class="btn-word" value="Y"></input>
-            <input type="button" class="btn-word" value="Z"></input>
+            <button class="btn-word">A</button>
+            <button class="btn-word">B</button>
+            <button class="btn-word">C</button>
+            <button class="btn-word">D</button>
+            <button class="btn-word">E</button>
+            <button class="btn-word">F</button>
+            <button class="btn-word">G</button>
+            <button class="btn-word">H</button>
+            <button class="btn-word">I</button>
+            <button class="btn-word">J</button>
+            <button class="btn-word">K</button>
+            <button class="btn-word">L</button>
+            <button class="btn-word">M</button>
+            <button class="btn-word">N</button>
+            <button class="btn-word">O</button>
+            <button class="btn-word">P</button>
+            <button class="btn-word">Q</button>
+            <button class="btn-word">R</button>
+            <button class="btn-word">S</button>
+            <button class="btn-word">T</button>
+            <button class="btn-word">U</button>
+            <button class="btn-word">V</button>
+            <button class="btn-word">W</button>
+            <button class="btn-word">X</button>
+            <button class="btn-word">Y</button>
+            <button class="btn-word">Z</button>
+            <button class="btn-func btn-hint" id="btnHint" onclick="hint()">HINT</button>
+            <button id="btnNew" class="btn-func btn-new" onclick="init()">NEW</button>
+            <button class="btn-func btn-sound"><span id="btnSound" onclick="mute()" class="fa fa-volume-up" aria-hidden="true"></span></button>
+            <button id="btnQuit" class="btn-func btn-quit" onclick="quit()">QUIT</button>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="game.js"></script>
 </body>
+
 </html>

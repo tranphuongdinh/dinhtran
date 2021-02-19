@@ -1,113 +1,74 @@
-body{
-    margin: 0 auto;
+* {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    background: url('https://avante.biz/wp-content/uploads/Green-board-wallpaper/Green-board-wallpaper2.jpg');
-    background-size: cover;
+    background: #000;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(13, 12, 15);
+    width: 100%;
+    height: 100vh;
 }
 
 a {
     text-decoration: none;
 }
 
-button, input {
+button,
+input {
     cursor: pointer;
     outline: none;
-}
-
-#mainScreen {
-    width: 600px;
-    height: 650px;
-    background-image: url('/images/menu.png');
-}
-
-#canvasPlace{
-    background: url("images/none.png");
 }
 
 #gameTitle {
     font-family: 'Sigmar One', cursive;
     font-size: 2em;
     margin: 0;
-    padding: 10px;
     text-align: center;
-    width: 580px;
-    height: 35px;
-    background:url('https://media.istockphoto.com/photos/hangman-sketched-on-blackboard-picture-id466313780?k=6&m=466313780&s=612x612&w=0&h=Wpx_vgPCyt3oEJ5CIAhHxVfWlqdRfXrAfsHX4MbPfe8=');
-    background-size:contain;
+    width: 100%;
+    height: 1em;
+    background: #000;
+    background-size: contain;
     color: whitesmoke;
-    filter: blur(1px);
+    letter-spacing: .4em;
 }
 
-.container-1{
-    width: 600px;
-    min-height: 550px;
-    border: 20px solid rgb(107, 50, 3);
-    border-radius: 20px;
+.container-1 {
+    width: 37.3em;
+    min-height: 40em;
+    border: 10px solid rgb(39, 38, 37);
+    box-shadow: 1px 1px 3px 5px rgb(43, 42, 42);
 }
 
-.header{
+.header {
     display: flex;
-}
-
-#btnPlace {
-    display: flex;
-    flex-wrap: wrap;
+    width: 100%;
     flex-direction: row;
-}
-
-#btnSound {
-    cursor: pointer;
-    position: relative;
-    font-size: 2.2em;
-    color: whitesmoke;
-    width: 40px;
-}
-
-#btnHint, #btnNew{
-    margin: 0px;
-    width: 80px;
-    height: 36px;
-    background: linear-gradient(#03FF0A,#018A06);
-    border: none;
-    font-family: 'Fredoka One', cursive;
-    transition: 0.75s;
-    border-top: 3px solid rgb(107, 50, 3);
-    border-bottom: 3px solid rgb(107, 50, 3);
-    border-left: 3px solid rgb(107, 50, 3);
-}
-
-#btnNew {
-    background: linear-gradient(red, yellow);
-}
-
-#btnHint:hover , #btnNew:hover{
-    background: linear-gradient(green, red);
-    font-family: 'Fredoka One', cursive;
-    color: white;
-}
-
-#btnPlace {
-    float: right;
-    width: 200px;
-    height: 36px;
+    background: #000;
 }
 
 #wrongWords {
-    background: url(https://cdn.images.express.co.uk/img/dynamic/59/590x/secondary/facetime-games-how-to-play-games-facetime-with-friends-2408135.jpg?r=1589438909303) top no-repeat;
-    background-size: cover;
+    background: #000;
     color: rgb(247, 246, 241);
-    width: 400px;
-    height: 36px;
+    width: 100%;
+    height: 2.5em;
+    margin-bottom: .5em;
+    margin-top: 2em;
+    color: chartreuse;
 }
 
 #wrongWordList {
     text-align: left;
     font-family: 'Anton', sans-serif;
     font-weight: 250;
-    letter-spacing: 1.5px;
-    margin: 10px;
-    left: 0px;
+    letter-spacing: .15em;
     font-size: 1.2em;
+    padding-left: .2em;
 }
 
 span {
@@ -116,58 +77,55 @@ span {
     font-size: 2em;
 }
 
-.container-main-screen{
-    background: url(https://cdn.images.express.co.uk/img/dynamic/59/590x/secondary/facetime-games-how-to-play-games-facetime-with-friends-2408135.jpg?r=1589438909303) center no-repeat;
-    background-size: cover;
+.container-main-screen {
+    background: #000;
     display: flex;
-    width: 600px;
-    height: 300px;
+    width: 100%;
+    height: 18em;
 }
 
-#canvasPlace{
-    width: 400px;
-    height: 303px;
-    background: none;
-    opacity: 0.9;
-}
-
-#canvasPlace canvas {
-    border-bottom-right-radius: 60px;
+#main-screen {
+    box-shadow: 1px 1px 2px 4px rgb(58, 56, 56);
+    width: 25em;
+    height: 100%;
+    transition: all 0.2s ease-out;
 }
 
 #information {
+    width: 30%;
+    height: 20em;
     display: flex;
     flex-direction: column;
-    justify-content:space-around;
+    justify-content: space-between;
 }
 
-#information h2{
-    margin: 10px;
+.information-title {
     font-family: 'Righteous', cursive;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.7em;
     color: chartreuse;
 }
 
-#category h3{
+#category h3 {
     color: rgb(227, 128, 240);
-    margin: 0;
 }
 
-#category, #playerName, #computerName{
-    padding-top: 10px;
-    width: 200px;
-    height: 94px;
+#category,
+#playerName,
+#computerName {
+    width: 100%;
+    height: calc(100% / 3);
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
 }
 
 #categoryName {
     font-family: 'Fredoka One', cursive;
     text-align: center;
-
-    font-size: 150%;;
+    font-size: 150%;
+    ;
     margin-left: 5px;
 }
 
@@ -179,68 +137,114 @@ span {
     color: rgb(240, 48, 48);
 }
 
-#wordToFind{
+#wordToFind {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
-    justify-content:space-around;
-    background: url(https://cdn.images.express.co.uk/img/dynamic/59/590x/secondary/facetime-games-how-to-play-games-facetime-with-friends-2408135.jpg?r=1589438909303) bottom no-repeat;
-    background-size: cover;
-    width: 600px;
-    height: 80px;
+    justify-content: space-around;
+    background: #000;
+    width: 100%;
+    height: 4em;
+    margin-top: 1em;
 }
 
-#wordToFind button{
+#wordToFind button {
     background: none;
     border: none;
     border-bottom: 7px solid rgb(255, 255, 255);
-    width: 45px;
-    height: 50px;
-    margin: 7px;
-    margin-bottom: 15px;
+    width: 10%;
+    height: 1.3em;
+    margin: .1em;
+    margin-bottom: 1em;
     font-family: 'Fredoka One', cursive;
-    color:rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
     font-size: 2.5em;
-    transition: 0.75s;
+    transition: 0.25s;
 }
 
-#wordToFind button:hover{
+#wordToFind button:hover {
     font-size: 2.8em;
 }
 
 #alphabet {
-    background: url('https://us.123rf.com/450wm/sonyaillustration/sonyaillustration1504/sonyaillustration150400304/38329927-stock-vector-green-school-board-vector-background-.jpg?ver=6') center no-repeat;
-    background-size:cover;
+    background: #000;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content:space-around;
-    width: 600px;
-    min-height: 200px;
+    width: 100%;
+    min-height: 10em;
 }
 
-#alphabet .btn-word{
-    border-radius: 10px;
-    width: 52px;
-    height: 40px;
-    margin: 7px;
-    margin-top: 15px;
+#alphabet .btn-word,
+.btn-func {
+    width: 3.98em;
+    height: 1.8em;
     font-family: 'Righteous', cursive;
     font-weight: bolder;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(65, 63, 63, 0.5);
     transition: 0.5s;
-    font-size: 1.1em;
+    font-size: 1.5em;
     color: #FCE060;
 }
 
+.btn-func:hover {
+    background: linear-gradient(green, red);
+    font-family: 'Fredoka One', cursive;
+    color: white;
+}
+
+#btnSound {
+    background: none;
+    cursor: pointer;
+    position: relative;
+    font-size: 1.5em;
+    color: whitesmoke;
+    width: 100%;
+    background: none;
+}
+
 #alphabet .btn-word:hover {
-    width: 55px;
-    height: 45px;
-    background:linear-gradient(rgb(107, 89, 50), rgb(230, 230, 143));
+    background: linear-gradient(rgb(107, 89, 50), rgb(230, 230, 143));
     color: #13120d;
 }
 
-#alphabet .btn-word:active{
-    background:linear-gradient(rgb(236, 193, 100), yellow);
+#alphabet .btn-word:active {
+    background: linear-gradient(rgb(236, 193, 100), yellow);
     color: #13120d;
+}
+
+@media (max-width:900px) {
+    * {
+        font-size: 12px;
+    }
+    #main-screen {
+        width: 25em;
+    }
+    #alphabet .btn-word,
+    .btn-func {
+        width: 3.95em;
+        height: 2.5em;
+    }
+}
+
+@media (max-width:475px) {
+    * {
+        font-size: 10px;
+    }
+    .information-title {
+        font-size: 1.3em;
+    }
+    #alphabet .btn-word,
+    .btn-func {
+        width: 3.9em;
+    }
+}
+
+@media (max-width:375px) {
+    * {
+        font-size: 7px;
+    }
+    #alphabet .btn-word,
+    .btn-func {
+        width: 3.8em;
+    }
 }
