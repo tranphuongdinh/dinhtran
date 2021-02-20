@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="https://cdn0.iconfinder.com/data/icons/augmented-reality-virtual-reality-technology/64/vr-01-512.png">
+
+    <title>Loopstudios landing page</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img class="logo-img" src="images/logo.png" alt="Logo">
+        </div>
+        <span class="menu-icon"><img src="./images/icon-hamburger.png" alt="Menu-icon"></span>
+        <nav class="nav-bar">
+            <div class="nav-logo">
+                <img class="nav-logo-img" src="images/logo.png" alt="Nav-Logo">
+            </div>
+            <span class="close-icon"><img src="./images/icon-close.png" alt="Close-icon"></span>
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Careers</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Events</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="section">
+            <div class="container">
+                <div class="hero">
+                    <h1 class="hero-title">
+                        Immersive experiences that deliver
+                    </h1>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <div class="interactive">
+                    <img class="interactive-img" src="images/desktop/image-interactive.jpg">
+                </div>
+                <div class="interactive-intro">
+                    <h2 class="interactive-intro-title">The leader in interactive VR</h2>
+                    <p class="interactive-intro-para">Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best companies around the globe. Our award-winning creations have transformed businesses through digital experiences that bind to
+                        their brand.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <h2 class="creation-title"> Our creations</h2>
+                <div class="creation-cards">
+                    <div class="card">
+                        <h3>Deep earth</h3>
+                        <img src="images/desktop/image-deep-earth.jpg" alt="Deep Earth ">
+                    </div>
+                    <div class="card ">
+                        <h3>Night arcade</h3>
+                        <img src="images/desktop/image-night-arcade.jpg " alt="Night Arcade ">
+                    </div>
+                    <div class="card ">
+                        <h3>Soccer team VR</h3>
+                        <img src="images/desktop/image-soccer-team.jpg " alt="Soccer team VR ">
+                    </div>
+                    <div class="card ">
+                        <h3>The grid</h3>
+                        <img src="images/desktop/image-grid.jpg " alt="The grid ">
+                    </div>
+                    <div class="card ">
+                        <h3>From up above VR</h3>
+                        <img src="images/desktop/image-from-above.jpg " alt="From up above VR ">
+                    </div>
+                    <div class="card ">
+                        <h3>Pocket borealis</h3>
+                        <img src="images/desktop/image-pocket-borealis.jpg " alt="Pocket borealis ">
+                    </div>
+                    <div class="card ">
+                        <h3>The curiosity</h3>
+                        <img src="images/desktop/image-curiosity.jpg " alt="The curiosity ">
+                    </div>
+                    <div class="card ">
+                        <h3>Make it fisheye</h3>
+                        <img src="images/desktop/image-fisheye.jpg " alt="Make it fisheye ">
+                    </div>
+                </div>
+                <button class="creation-btn">See all</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-logo">
+                <img class="footer-logo-img" src="images/logo.png " alt="Logo ">
+            </div>
+            <nav class="nav-bar">
+                <ul class="nav-list">
+                    <li class="nav-item"><a class="nav-link" href="# ">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="# ">Careers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="# ">Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="# ">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="# ">Support</a></li>
+                </ul>
+            </nav>
+            <ul class="nav-icon">
+                <li>
+                    <a href="# "><img src="images/icon-facebook.png " alt="Facebook "></a>
+                </li>
+                <li>
+                    <a href="# "><img src="images/icon-twitter.png " alt="Twitter "></a>
+                </li>
+                <li>
+                    <a href="# "><img src="images/icon-pinterest.png " alt="Pinterest "></a>
+                </li>
+                <li>
+                    <a href="# "><img src="images/icon-instagram.png " alt="Instagram "></a>
+                </li>
+            </ul>
+
+            <h5>© 2021 Loopstudios. All rights reserved.</h5>
+        </div>
+        <script>
+            window.addEventListener('scroll', function() {
+                var header = document.querySelector('header')
+                if (window.pageYOffset > 0) {
+                    header.style.background = "#000";
+                    if (window.innerWidth > 768) {
+                        header.style.transform = "translateY(-1em)"
+                    }
+                } else {
+                    header.style.background = "none";
+                    header.style.transform = "none";
+                }
+            })
+            document.querySelector('.menu-icon').addEventListener('click', function() {
+                document.querySelector('.nav-bar').classList.add('open');
+            });
+            document.querySelector('.close-icon').addEventListener('click', function() {
+                document.querySelector('.nav-bar').classList.remove('open');
+            });
+        </script>
+    </footer>
+</body>
+
+</html>
