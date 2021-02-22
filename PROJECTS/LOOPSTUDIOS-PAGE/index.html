@@ -128,26 +128,7 @@
 
             <h5>© 2021 Loopstudios. All rights reserved.</h5>
         </div>
-        <script>
-            window.addEventListener('scroll', function() {
-                var header = document.querySelector('header')
-                if (window.pageYOffset > 0) {
-                    header.style.background = "#000";
-                    if (window.innerWidth > 768) {
-                        header.style.transform = "translateY(-1em)"
-                    }
-                } else {
-                    header.style.background = "none";
-                    header.style.transform = "none";
-                }
-            })
-            document.querySelector('.menu-icon').addEventListener('click', function() {
-                document.querySelector('.nav-bar').classList.add('open');
-            });
-            document.querySelector('.close-icon').addEventListener('click', function() {
-                document.querySelector('.nav-bar').classList.remove('open');
-            });
-        </script>
+        <script src="js/script.js"></script>
     </footer>
 </body>
 

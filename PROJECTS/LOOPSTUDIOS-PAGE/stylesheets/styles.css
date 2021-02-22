@@ -31,6 +31,11 @@ header {
     transition: all .25s ease-in-out;
 }
 
+header.on-scroll {
+    transform: none;
+    background: #000;
+}
+
 .logo {
     width: 15em;
     height: 2.75em;
