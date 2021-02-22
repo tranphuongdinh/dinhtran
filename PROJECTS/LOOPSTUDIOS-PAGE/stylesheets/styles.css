@@ -8,7 +8,7 @@
 }
 
 * {
-    font-size: 15px;
+    font-size: 1vw;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -31,6 +31,16 @@ header {
     transition: all .25s ease-in-out;
 }
 
+.logo {
+    width: 15em;
+    height: 2.75em;
+}
+
+.logo-img {
+    width: 100%;
+    height: 100%;
+}
+
 .nav-bar {
     width: 40%;
 }
@@ -49,11 +59,13 @@ header {
     font-family: 'Alata', 'sans-serif';
 }
 
-.nav-item {
+.nav-item,
+.nav-icon-item {
     position: relative;
 }
 
-.nav-item::after {
+.nav-item::after,
+.nav-icon-item::after {
     position: absolute;
     content: '';
     left: 0;
@@ -65,7 +77,8 @@ header {
     transition: all .25s ease-in-out;
 }
 
-.nav-item:hover::after {
+.nav-item:hover::after,
+.nav-icon-item:hover::after {
     transform: scaleX(1);
 }
 
@@ -81,7 +94,6 @@ header {
 
 .section {
     padding: 3em 10em 0 10em;
-    min-height: 100vh;
     width: 100%;
 }
 
@@ -294,88 +306,27 @@ footer h5 {
     right: 0;
 }
 
-@media(max-width:1400px) {
-    * {
-        font-size: 13px;
+@media (max-width:1200px) {
+    .hero {
+        width: 60em;
     }
-    .interactive {
-        width: 45em;
-        height: 35em;
-    }
-}
-
-@media(max-width:1200px) {
-    * {
-        font-size: 11px;
-    }
-    .section {
-        padding: 2em 8em 0 8em;
+    .hero-title {
+        font-size: 7em;
     }
     header {
-        padding-left: 8em;
-        padding-right: 8em;
-        height: 14vh;
-    }
-    .card h3 {
-        font-size: 2.5em;
+        height: 10em;
     }
     .nav-icon {
-        width: 12em;
-    }
-    footer .container .nav-bar {
-        width: 40%;
-    }
-    /* INTERATIVE PAGE */
-    section:nth-child(2) {
-        padding-top: 8em;
-        padding-bottom: 8em;
-        min-height: 60vh;
-    }
-    section:nth-child(2) .container {
-        height: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .interactive {
-        width: 50em;
-        height: 30em;
-    }
-    .interactive-intro {
-        top: inherit;
-        right: inherit;
-        width: 42em;
-        height: 25em;
-        position: inherit;
-        padding-left: 5em;
-        padding-top: 5em;
-        height: 100%;
-    }
-    .interactive-intro-title {
-        font-size: 3.2em;
-    }
-    .interactive-intro-para {
-        font-size: 1.2em;
-    }
-    footer {
-        padding: 3em 8em 3em 8em;
+        width: 13em;
     }
 }
 
 @media (max-width:900px) {
-    .card h3 {
-        font-size: 2em;
+    .nav-icon {
+        width: 14em;
     }
-    .interactive {
-        width: 35em;
-        height: 25em;
-    }
-    .interactive-intro {
-        top: inherit;
-        right: inherit;
-        width: 50em;
-        padding-left: 2.5em;
-        padding-top: 2.5em;
+    footer {
+        height: 15em;
     }
 }
 
@@ -392,6 +343,9 @@ footer h5 {
 }
 
 @media (max-width:768px) {
+    * {
+        font-size: 12px;
+    }
     header {
         padding-top: 0;
         transform: none;
@@ -480,17 +434,22 @@ footer h5 {
         height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: center
     }
     .interactive {
         width: 100%;
         height: 33em;
+        position: inherit;
+        top: inherit;
+        right: inherit;
     }
     .interactive-intro {
+        margin-top: 4em;
+        position: inherit;
         width: 100%;
         height: 100%;
         padding: 0;
-        margin-top: 3em;
+        top: inherit;
+        right: inherit;
     }
     .interactive-intro-title {
         text-align: center;
@@ -519,7 +478,7 @@ footer h5 {
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-between;
-        margin-top: 6em;
+        margin-top: 4em;
     }
     .card {
         width: 100%;
@@ -588,6 +547,9 @@ footer h5 {
         width: 14em;
         align-items: center;
         position: inherit;
+    }
+    .nav-icon-item::after {
+        display: none;
     }
     footer h5 {
         text-align: center;
