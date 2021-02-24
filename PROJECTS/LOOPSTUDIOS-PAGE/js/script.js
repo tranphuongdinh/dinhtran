@@ -9,8 +9,12 @@ window.addEventListener('load', function() {
     })
     document.querySelector('.menu-icon').addEventListener('click', function() {
         document.querySelector('.nav-bar').classList.add('open');
+        document.querySelector('main').classList.add('blur');
+        document.querySelector('footer').classList.add('blur');
     });
     document.querySelector('.close-icon').addEventListener('click', function() {
         document.querySelector('.nav-bar').classList.remove('open');
+        document.querySelector('main').classList.remove('blur');
+        document.querySelector('footer').classList.remove('blur');
     });
 })
