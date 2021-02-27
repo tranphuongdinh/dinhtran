@@ -1,0 +1,69 @@
+header {
+    width: 100%;
+    height: 10em;
+    padding: 5em 10em 0em 10em;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 10;
+    transition: all 0.25s ease-out;
+    /*TỘI MỚI DẠY MÀ QUÊN, PHẦN TRANSFORM: LÌ XÌ 5K*/
+}
+
+header.on-scroll {
+    background-color: #000;
+}
+
+header nav {
+    width: 40%;
+}
+
+.logo,
+.footer-logo {
+    width: 12em;
+    height: 2.25em;
+}
+
+.logo-img,
+.footer-logo-img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-link {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-family: 'Alata', 'sans-serif';
+}
+
+.nav-item,
+.nav-icon-item {
+    list-style: none;
+    position: relative;
+}
+
+.nav-item::after,
+.nav-icon-item::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -.5em;
+    width: 100%;
+    height: .1em;
+    background-color: #fff;
+    transform: scaleX(0);
+    transition: all .25s ease-out;
+}
+
+.nav-item:hover::after,
+.nav-icon-item:hover::after {
+    transform: none;
+}

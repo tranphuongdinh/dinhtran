@@ -1,0 +1,48 @@
+footer {
+    padding: 3em 10em 3em 10em;
+    height: 12.5em;
+    background-color: #000;
+}
+
+footer .container {
+    height: 100%;
+    position: relative;
+}
+
+.nav-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10em;
+}
+
+.nav-icon-list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-icon-item {
+    width: 1.75em;
+    height: 1.75em;
+}
+
+.nav-icon-item img {
+    width: 100%;
+    height: 100%;
+}
+
+footer .nav-bar {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 25em;
+}
+
+footer h5 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+}

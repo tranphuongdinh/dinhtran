@@ -6,24 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- displays site properly based on user's device -->
 
-    <link rel="icon" type="image/png" sizes="32x32" href="https://cdn0.iconfinder.com/data/icons/augmented-reality-virtual-reality-technology/64/vr-01-512.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-    <title>Loopstudios landing page</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
+    <title>Frontend Mentor | Loopstudios landing page</title>
+    <link rel="stylesheet" href="stylesheets/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
 
     <header>
+        <!-- add nav bar -->
         <div class="logo">
-            <a href="./index.html"><img class="logo-img" src="images/logo.png" alt="Logo"></a>
+            <img class="logo-img" src="images/logo.svg" alt="Logo">
         </div>
-        <span class="menu-icon"><img src="./images/icon-hamburger.png" alt="Menu-icon"></span>
+        <div class="menu-icon"><img src="./images/icon-hamburger.svg" alt="menu-icon"></div>
         <nav class="nav-bar">
-            <div class="nav-logo">
-                <a href="./index.html"><img class="nav-logo-img" src="images/logo.png" alt="Nav-Logo"></a>
+            <div class="logo">
+                <img class="logo-img" src="images/logo.svg" alt="Logo">
             </div>
-            <span class="close-icon"><img src="./images/icon-close.png" alt="Close-icon"></span>
             <ul class="nav-list">
                 <li class="nav-item"><a class="nav-link" href="#">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Careers</a></li>
@@ -31,24 +32,23 @@
                 <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Support</a></li>
             </ul>
+            <div class="close-icon"><img src="./images/icon-close.svg" alt="close-icon"></div>
         </nav>
     </header>
     <main>
-        <section class="section">
+        <section class="section" id="top">
             <div class="container">
-                <div class="hero">
-                    <h1 class="hero-title">
-                        Immersive experiences that deliver
-                    </h1>
+                <div class="hero" data-aos="fade-up">
+                    <h1 class="hero-title">Immersive experiences that deliver</h1>
                 </div>
             </div>
         </section>
         <section class="section">
             <div class="container">
-                <div class="interactive">
+                <div class="interactive" data-aos="fade-right" data-aos-duration="500">
                     <img class="interactive-img" src="images/desktop/image-interactive.jpg">
                 </div>
-                <div class="interactive-intro">
+                <div class="interactive-intro" data-aos="fade-left" data-aos-duration="500">
                     <h2 class="interactive-intro-title">The leader in interactive VR</h2>
                     <p class="interactive-intro-para">Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best companies around the globe. Our award-winning creations have transformed businesses through digital experiences that bind to
                         their brand.
@@ -58,8 +58,8 @@
         </section>
         <section class="section">
             <div class="container">
-                <h2 class="creation-title"> Our creations</h2>
-                <div class="creation-cards">
+                <h2 class="creation-title" data-aos="zoom-in-down" data-aos-duration="1000"> Our creations</h2>
+                <div class="creation-cards" data-aos="zoom-in-up" data-aos-duration="1000">
                     <div class="card">
                         <h3>Deep earth</h3>
                         <img src="images/desktop/image-deep-earth.jpg" alt="Deep Earth ">
@@ -93,14 +93,14 @@
                         <img src="images/desktop/image-fisheye.jpg " alt="Make it fisheye ">
                     </div>
                 </div>
-                <button class="creation-btn">See all</button>
+                <button class="creation-btn" data-aos="zoom-in-down" data-aos-duration="1000">See all</button>
             </div>
         </section>
     </main>
     <footer>
         <div class="container">
             <div class="footer-logo">
-                <a href="./index.html"><img class="footer-logo-img" src="images/logo.png " alt="Logo "></a>
+                <img class="footer-logo-img" src="images/logo.svg " alt="Logo ">
             </div>
             <nav class="nav-bar">
                 <ul class="nav-list">
@@ -111,25 +111,28 @@
                     <li class="nav-item"><a class="nav-link" href="# ">Support</a></li>
                 </ul>
             </nav>
-            <ul class="nav-icon">
-                <li class="nav-icon-item">
-                    <a href="# "><img src="images/icon-facebook.png " alt="Facebook "></a>
-                </li>
-                <li class="nav-icon-item">
-                    <a href="# "><img src="images/icon-twitter.png " alt="Twitter "></a>
-                </li>
-                <li class="nav-icon-item">
-                    <a href="# "><img src="images/icon-pinterest.png " alt="Pinterest "></a>
-                </li>
-                <li class="nav-icon-item">
-                    <a href="# "><img src="images/icon-instagram.png " alt="Instagram "></a>
-                </li>
-            </ul>
-
+            <nav class="nav-icon">
+                <ul class="nav-icon-list">
+                    <li class="nav-icon-item">
+                        <a href="# "><img src="images/icon-facebook.svg " alt="Facebook "></a>
+                    </li>
+                    <li class="nav-icon-item">
+                        <a href="# "><img src="images/icon-twitter.svg " alt="Twitter "></a>
+                    </li>
+                    <li class="nav-icon-item">
+                        <a href="# "><img src="images/icon-pinterest.svg" alt="Pinterest "></a>
+                    </li>
+                    <li class="nav-icon-item">
+                        <a href="# "><img src="images/icon-instagram.svg " alt="Instagram "></a>
+                    </li>
+                </ul>
+            </nav>
             <h5>© 2021 Loopstudios. All rights reserved.</h5>
         </div>
-        <script src="js/script.js"></script>
     </footer>
+    <a href="#top" id="back-to-top"><img src="./images/back-to-top.png" alt="Back to top"></a>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

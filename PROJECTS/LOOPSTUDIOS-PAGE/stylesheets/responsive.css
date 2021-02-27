@@ -1,0 +1,249 @@
+@media (max-width:1200px) {
+    .hero {
+        width: 50em;
+    }
+    .hero-title {
+        font-size: 6em;
+    }
+}
+
+@media (min-width:769px) {
+    /*>=*/
+    .menu-icon {
+        display: none;
+    }
+    .nav-bar .logo {
+        display: none;
+    }
+    .close-icon {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    * {
+        font-size: 1.5vw;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    main.blur,
+    footer.blur {
+        filter: blur(5px);
+    }
+    #back-to-top {
+        width: 7.5em;
+        height: 7.5em;
+        transform: translateY(9.5em);
+    }
+    .nav-bar .logo {
+        margin-top: 4em;
+        margin-left: 2em;
+    }
+    .menu-icon {
+        cursor: pointer;
+    }
+    header {
+        padding: 4em 4em 2em 4em;
+    }
+    .logo {
+        width: 16em;
+        height: 3em;
+    }
+    .section {
+        padding-left: 4em;
+        padding-right: 4em;
+    }
+    header .nav-bar {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: #000;
+        height: 100vh;
+        width: 40em;
+        transform: translateX(40em);
+        transition: all 0.25s ease-out;
+    }
+    header .nav-bar.active {
+        transform: none;
+        box-shadow: 0 0 500px 2000px rgba(0, 0, 0, .8);
+    }
+    .close-icon {
+        position: absolute;
+        top: 4em;
+        right: 2em;
+        cursor: pointer;
+    }
+    header .nav-list {
+        flex-direction: column;
+        position: absolute;
+        top: 20em;
+        left: 2em;
+        height: 25em;
+        align-items: flex-start;
+    }
+    header .nav-link {
+        text-transform: uppercase;
+        font-size: 2.5em;
+        font-family: 'Josefin Sans';
+        font-weight: lighter;
+    }
+    section:nth-child(1) .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-item::after,
+    .nav-icon-item::after {
+        display: none;
+    }
+    .hero {
+        position: inherit;
+        top: initial;
+        width: 100%;
+    }
+    .hero-title {
+        font-size: 7em;
+        padding: .25em;
+    }
+    /*INTERACTIVE PAGE*/
+    section:nth-child(2) .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .interactive {
+        width: 100%;
+    }
+    .interactive-intro {
+        width: 100%;
+        position: initial;
+        margin-top: 8em;
+    }
+    .interactive-intro-title {
+        padding: 0;
+        text-align: center;
+        font-size: 5em;
+    }
+    .interactive-intro-para {
+        padding: 1em;
+        margin: 0;
+        text-align: center;
+        font-size: 2em;
+    }
+    /*CREATION PAGE*/
+    section:nth-child(3) .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .creation-title {
+        font-size: 5em;
+    }
+    .creation-cards {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .card {
+        width: 100%;
+        height: 20em;
+    }
+    .creation-btn {
+        position: initial;
+        padding: 1em 4em;
+        font-size: 2em;
+        margin-bottom: 4em;
+    }
+    .card:nth-child(1) img {
+        content: url('../images/mobile/image-deep-earth.jpg');
+    }
+    .card:nth-child(2) img {
+        content: url('../images/mobile/image-night-arcade.jpg');
+    }
+    .card:nth-child(3) img {
+        content: url('../images/mobile/image-soccer-team.jpg');
+    }
+    .card:nth-child(4) img {
+        content: url('../images/mobile/image-grid.jpg');
+    }
+    .card:nth-child(5) img {
+        content: url('../images/mobile/image-from-above.jpg');
+    }
+    .card:nth-child(6) img {
+        content: url('../images/mobile/image-pocket-borealis.jpg');
+    }
+    .card:nth-child(7) img {
+        content: url('../images/mobile/image-curiosity.jpg');
+    }
+    .card:nth-child(8) img {
+        content: url('../images/mobile/image-fisheye.jpg');
+    }
+    .card h3 {
+        font-size: 3.5em;
+        width: 5em;
+    }
+    /*FOOTER*/
+    footer {
+        height: 50em;
+    }
+    footer .container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    footer .nav-bar {
+        position: initial;
+    }
+    .nav-icon {
+        position: initial;
+        width: 20em;
+    }
+    .nav-icon-item {
+        width: 2.5em;
+        height: 2.5em;
+    }
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 18em;
+    }
+    .nav-link {
+        font-size: 1.5em;
+    }
+    .footer-logo {
+        width: 16em;
+        height: 3em;
+    }
+    footer h5 {
+        position: initial;
+        font-size: 1.5em;
+        color: var(--color-dark-gray);
+    }
+}
+
+@media (max-width: 576px) {
+    header {
+        height: 13em;
+        padding-top: 6em;
+    }
+    header .nav-bar .logo {
+        margin-top: 6em;
+    }
+    .close-icon {
+        top: 6em;
+    }
+    header .nav-list {
+        top: 30em;
+        height: 35em;
+    }
+    header .nav-link {
+        font-size: 3em;
+    }
+}
