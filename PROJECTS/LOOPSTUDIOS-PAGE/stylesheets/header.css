@@ -15,6 +15,10 @@ header.on-scroll {
     background-color: #000;
 }
 
+header.translateY {
+    transform: translateY(-1.5em);
+}
+
 header nav {
     width: 40%;
 }

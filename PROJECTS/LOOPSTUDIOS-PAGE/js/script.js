@@ -3,9 +3,15 @@ window.addEventListener('load', function() {
     window.addEventListener('scroll', function() {
         console.log(window.pageYOffset)
         if (window.pageYOffset > 0) {
+            if (window.innerWidth >= 769) {
+                document.querySelector('header').classList.add('translateY');
+            }
             document.querySelector('header').classList.add('on-scroll');
             document.querySelector('#back-to-top').classList.add('active');
         } else {
+            if (window.innerWidth >= 769) {
+                document.querySelector('header').classList.remove('translateY');
+            }
             document.querySelector('header').classList.remove('on-scroll');
             document.querySelector('#back-to-top').classList.remove('active');
         }

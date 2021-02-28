@@ -230,7 +230,7 @@
 
 @media (max-width: 576px) {
     header {
-        height: 13em;
+        height: 14em;
         padding-top: 6em;
     }
     header .nav-bar .logo {
