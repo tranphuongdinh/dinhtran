@@ -149,3 +149,13 @@
             font-size: 1.25rem;
         }
     }
+    
+    @media (max-width:576px) {
+        .contribution-content {
+            height: 80vh;
+            justify-content: center;
+        }
+        .contribution-area {
+            margin-top: 6em;
+        }
+    }
