@@ -2,7 +2,11 @@
     * {
         font-size: 1.9vw;
     }
+     ::-webkit-scrollbar {
+        width: 2em;
+    }
     header {
+        position: initial;
         height: 20em;
         width: 100%;
         padding: 0 2rem;
@@ -13,18 +17,24 @@
     main {
         overflow-x: hidden;
     }
+    section .container {
+        padding: 0;
+    }
     .nav-list {
         flex-direction: column;
         width: 100%;
     }
     .nav-item {
-        width: 100%;
+        width: calc(100% - 2rem);
     }
     .feature-bar {
+        padding-left: 0;
         padding-top: 1em;
         flex-direction: column;
         height: 9em;
         align-items: center;
+        border-bottom: .5em solid rgb(191, 36, 252);
+        box-shadow: none;
     }
     .open-feature-btn {
         display: none;

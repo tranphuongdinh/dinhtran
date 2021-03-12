@@ -5,7 +5,7 @@ window.onload = function() {
         const context = new AudioContext()
         const backgroundMusic = new Audio()
 
-        backgroundMusic.src = "../sounds/background-lofi.mp3"
+        backgroundMusic.src = "./sounds/background-lofi.mp3"
 
         let src = context.createMediaElementSource(backgroundMusic)
         const analyser = context.createAnalyser()

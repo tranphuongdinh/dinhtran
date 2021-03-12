@@ -1,7 +1,7 @@
 "use strict";
 
 window.onload = function () {
-  if (window.innerWidth >= 768) {
+  if (window.innerWidth >= 769) {
     var renderFrame = function renderFrame() {
       requestAnimationFrame(renderFrame);
       x = 0;
@@ -41,7 +41,7 @@ window.onload = function () {
     var ctx = canvas.getContext('2d');
     var context = new AudioContext();
     var backgroundMusic = new Audio();
-    backgroundMusic.src = "../sounds/background-lofi.mp3";
+    backgroundMusic.src = "./sounds/background-lofi.mp3";
     var src = context.createMediaElementSource(backgroundMusic);
     var analyser = context.createAnalyser();
     src.connect(analyser);

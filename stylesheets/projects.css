@@ -63,6 +63,11 @@
     box-shadow: 0 10px 20px rgba(255, 81, 0, 0.8);
 }
 
+#documentation-page-card {
+    background: url('../images/documentation-page-bg.jpg') center no-repeat;
+    background-size: cover;
+}
+
 #loop-studios-card {
     background: url('../images/loop-studio-bg.jpg') center no-repeat;
     background-size: cover;

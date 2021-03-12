@@ -6,9 +6,11 @@ section {
 }
 
 section .container {
+    padding-top: 3.5em;
     position: relative;
     background-size: cover;
     min-height: 100vh;
+    overflow-y: hidden;
 }
 
 .navigation-bar {
@@ -85,7 +87,7 @@ section .container {
     width: 10em;
     height: 6em;
     right: 8em;
-    bottom: 5em;
+    bottom: 3em;
     cursor: pointer;
     opacity: .6;
     transition: all 0.25s ease-in;

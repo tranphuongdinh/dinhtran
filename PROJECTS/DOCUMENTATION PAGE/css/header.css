@@ -1,4 +1,5 @@
 header {
+    position: fixed;
     height: 3.5em;
     width: 100%;
     display: flex;
@@ -7,8 +8,8 @@ header {
     transition: all 0.1s ease-in;
     padding: 0 8rem;
     z-index: 10;
-    background: #000;
-    box-shadow: 0 .1em .1em .5em rgb(8, 8, 8);
+    background: rgb(26, 26, 26);
+    box-shadow: 0 .1em .1em .5em rgb(26, 26, 26);
 }
 
 .logo {

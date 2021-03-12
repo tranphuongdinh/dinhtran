@@ -50,6 +50,10 @@ section .container {
     transition: all 0.25s ease-in;
 }
 
+.content-link {
+    text-decoration: none;
+}
+
 .content.fade,
 header.fade,
 footer.fade {

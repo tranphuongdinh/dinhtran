@@ -13,6 +13,9 @@ window.addEventListener('load', function() {
         if (document.querySelector('.documents-menu') != null) {
             document.querySelector('.documents-menu').classList.toggle('dark-mode')
         }
+        if (document.querySelector('.feature-bar') != null) {
+            document.querySelector('.feature-bar').classList.toggle('dark-mode')
+        }
         document.querySelector('header').classList.toggle('dark-mode')
         document.querySelector('.dark-mode-btn').classList.toggle('dark-mode')
         document.querySelectorAll('.document-title').forEach(function(e) {

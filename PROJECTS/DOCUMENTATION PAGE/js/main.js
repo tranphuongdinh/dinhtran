@@ -13,20 +13,22 @@ window.addEventListener('load', function() {
             document.querySelector('.main-content').classList = "container home main-content normal"
         })
     })
-    var timeout;
-    document.onmousemove = function() {
-        clearTimeout(timeout);
-        document.querySelectorAll('.content').forEach(function(content) {
-            content.classList.remove('fade')
-        })
-        document.querySelector('header').classList.remove('fade')
-        document.querySelector('.music-player').classList.remove('active')
-        timeout = setTimeout(function() {
+    if (window.innerWidth > 768) {
+        var timeout;
+        document.onmousemove = function() {
+            clearTimeout(timeout);
             document.querySelectorAll('.content').forEach(function(content) {
-                content.classList.add('fade')
+                content.classList.remove('fade')
             })
-            document.querySelector('header').classList.add('fade')
-            document.querySelector('.music-player').classList.add('active')
-        }, 5000);
+            document.querySelector('header').classList.remove('fade')
+            document.querySelector('.music-player').classList.remove('active')
+            timeout = setTimeout(function() {
+                document.querySelectorAll('.content').forEach(function(content) {
+                    content.classList.add('fade')
+                })
+                document.querySelector('header').classList.add('fade')
+                document.querySelector('.music-player').classList.add('active')
+            }, 5000);
+        }
     }
 })
