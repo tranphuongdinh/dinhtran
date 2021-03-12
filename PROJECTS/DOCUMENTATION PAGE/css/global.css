@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Roboto&family=Ubuntu&display=swap');
+* {
+    font-size: 1vw;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.dark-mode {
+    -webkit-filter: invert(1) hue-rotate(180deg);
+    filter: invert(1) hue-rotate(180deg);
+}
+
+.back-to-top {
+    background: url('../images/scroll-up.png') center no-repeat;
+    background-size: cover;
+    width: 4em;
+    height: 4em;
+    position: fixed;
+    bottom: 2em;
+    right: 3em;
+    cursor: pointer;
+    transform: translateY(6em);
+    transition: all .2s ease-out;
+}
+
+.back-to-top.active {
+    transform: none;
+}
+
+::-webkit-scrollbar {
+    width: .5rem;
+    background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(191, 36, 252);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(175, 21, 236);
+}

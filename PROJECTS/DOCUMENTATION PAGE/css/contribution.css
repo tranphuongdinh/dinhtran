@@ -1,0 +1,114 @@
+    section.contribution {
+        background: url('../images/background2.png') center no-repeat;
+        background-size: cover;
+    }
+    
+    .document-subject {
+        margin-left: 8em;
+        margin-bottom: 4em;
+    }
+    
+    .contribution-title {
+        font-size: 2.5em;
+        color: #fff;
+        margin-top: 1em;
+        border-left: .5rem solid rgb(191, 36, 252);
+        display: inline-block;
+        padding: .5rem 2rem;
+        padding-right: 3em;
+    }
+    
+    .contribution-area {
+        margin-left: 8em;
+        width: 60em;
+        height: 12em;
+        background: #000;
+        border-left: .5rem solid rgb(191, 36, 252);
+        clip-path: polygon(0% 0%, 90% 0, 100% 50%, 90% 100%, 0% 100%);
+        padding: 0rem 2rem;
+        padding-right: 5em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .contribution-text {
+        color: #fff;
+        font-size: 1.5em;
+    }
+    
+    .gg-drive-link {
+        color: yellow;
+    }
+    
+    .fb-link {
+        color: blue;
+    }
+    
+    .contribution-link {
+        font-size: 1.5rem;
+        text-decoration: none;
+        font-weight: 600;
+    }
+    
+    .contribution-link:hover {
+        text-decoration: underline;
+    }
+    
+    .btn-group {
+        width: 18em;
+        height: 3em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .contribution-btn {
+        text-decoration: none;
+        border-radius: .5em;
+        width: 45%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: .1em .3em;
+        font-weight: 600;
+        transition: all .1s ease-out;
+    }
+    
+    .contribution-btn:hover {
+        box-shadow: 0 0 .5em .2em rgb(102, 101, 101);
+    }
+    
+    .contribution-btn:nth-child(1) {
+        background: yellow;
+        color: green;
+    }
+    
+    .contribution-btn:nth-child(2) {
+        background: blue;
+        color: #fff;
+    }
+    
+    @media (max-width:768px) {
+        .document-subject {
+            margin: 3em 0 2em 2rem;
+        }
+        .contribution-title {
+            font-size: 1.8em;
+        }
+        .contribution-area {
+            margin-left: 2rem;
+            width: 47.5em;
+            height: 14em;
+            padding-right: 4em;
+        }
+        .contribution-text {
+            color: #fff;
+            font-size: 1.25em;
+        }
+        .contribution-link {
+            font-size: 1.25rem;
+        }
+    }

@@ -1,0 +1,72 @@
+@media (max-width:768px) {
+    * {
+        font-size: 1.9vw;
+    }
+    header {
+        height: 20em;
+        width: 100%;
+        padding: 0 2rem;
+    }
+    header .container {
+        flex-direction: column;
+    }
+    main {
+        overflow-x: hidden;
+    }
+    .nav-list {
+        flex-direction: column;
+        width: 100%;
+    }
+    .nav-item {
+        width: 100%;
+    }
+    .feature-bar {
+        padding-top: 1em;
+        flex-direction: column;
+        height: 9em;
+        align-items: center;
+    }
+    .open-feature-btn {
+        display: none;
+    }
+    .feature-list {
+        transform: none;
+        width: 50%;
+    }
+    .navigation-bar {
+        width: 40%;
+        transform: none;
+    }
+    .documents-content {
+        flex-direction: column;
+    }
+    .documents-list {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .documents-menu {
+        width: 100%;
+        height: 30em;
+    }
+    .documents-link {
+        height: 3em;
+        padding-left: 2rem;
+    }
+    .document-title {
+        font-size: 1.5em;
+    }
+    .list-courses-item {
+        width: 100%;
+    }
+    .list-courses-link {
+        font-size: 1.25em;
+    }
+    .footer {
+        position: initial;
+        background: #000;
+        font-size: 1em;
+    }
+    .music-player {
+        display: none;
+    }
+}
