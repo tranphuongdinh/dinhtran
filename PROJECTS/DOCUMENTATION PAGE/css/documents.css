@@ -197,7 +197,7 @@ section.courses::before {
 
 @media (max-width:768px) {
     .documents-list {
-        margin: 0;
-        padding: 2rem;
+        margin-top: 1rem;
+        padding-left: 0;
     }
 }

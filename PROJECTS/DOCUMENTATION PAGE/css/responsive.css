@@ -3,7 +3,7 @@
         font-size: 1.9vw;
     }
      ::-webkit-scrollbar {
-        width: 2em;
+        width: 1.5em;
     }
     header {
         position: initial;
