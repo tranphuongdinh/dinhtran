@@ -113,7 +113,7 @@ section.courses::before {
     display: inline-block;
     background: rgb(5, 5, 5);
     color: #fff;
-    font-size: 2em;
+    font-size: 1.9em;
     text-transform: uppercase;
     padding: 1rem 2rem;
     padding-right: 5em;
@@ -123,6 +123,10 @@ section.courses::before {
 
 .list-courses {
     margin-top: 2em;
+}
+
+.list-courses-link {
+    font-size: 1.4em;
 }
 
 .documents-content {

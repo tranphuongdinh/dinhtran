@@ -114,12 +114,33 @@ footer {
     left: calc(50% - 9em);
     bottom: 4em;
     cursor: pointer;
-    opacity: .2;
+    opacity: .3;
     transition: all 0.25s ease-in;
+    background-size: contain;
 }
 
 .music-player.active {
-    opacity: .9;
+    opacity: 1;
+}
+
+.music-player-pause {
+    position: absolute;
+    z-index: 15;
+    width: 5em;
+    height: 5em;
+    left: calc(50% - 2.5em);
+    bottom: calc(50% - 5em);
+    opacity: 0;
+    transition: all 0.25s ease-in;
+}
+
+.music-player-pause.active {
+    opacity: 1;
+    display: initial;
+}
+
+.music-player-pause:hover {
+    transform: scale(1.1);
 }
 
 #canvas {

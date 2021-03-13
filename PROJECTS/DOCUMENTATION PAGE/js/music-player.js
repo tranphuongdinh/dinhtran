@@ -4,6 +4,7 @@ window.onload = function() {
         const ctx = canvas.getContext('2d')
         const context = new AudioContext()
         const backgroundMusic = new Audio()
+        const music = new Image()
 
         backgroundMusic.src = "./sounds/background.mp3"
 
@@ -23,6 +24,8 @@ window.onload = function() {
         const barWidth = (WIDTH / bufferLength) * 15
         let barHeight
         let x = 0
+        let isPlaying = true;
+        let dataArrayTemp
 
         function renderFrame() {
             requestAnimationFrame(renderFrame)
@@ -52,6 +55,7 @@ window.onload = function() {
                     b = 175
                 }
 
+
                 ctx.fillStyle = `rgb(${r},${g},${b})`
                 ctx.fillRect(x, (HEIGHT - barHeight), barWidth + 2, barHeight)
                 x += barWidth + 5
@@ -61,16 +65,15 @@ window.onload = function() {
         backgroundMusic.play()
         backgroundMusic.loop = true
         renderFrame()
-            // setTimeout(function() {
 
-        // }, 2500)
         //CONTROL
-        let isPlaying = true;
         document.querySelector('.music-player').addEventListener('click', function() {
             if (isPlaying) {
                 backgroundMusic.pause()
+                document.querySelector('.music-player-pause').classList.add('active')
             } else {
                 backgroundMusic.play()
+                document.querySelector('.music-player-pause').classList.remove('active')
             }
             isPlaying = !isPlaying
         }, isPlaying)

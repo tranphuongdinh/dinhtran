@@ -87,15 +87,31 @@ section .container {
     width: 10em;
     height: 6em;
     right: 8em;
-    bottom: 3.5em;
+    bottom: 3em;
     cursor: pointer;
-    opacity: .6;
+    opacity: .8;
     transition: all 0.25s ease-in;
     z-index: 10;
 }
 
-.music-player.active {
-    opacity: .9;
+.music-player-pause {
+    position: absolute;
+    z-index: 15;
+    width: 3.5em;
+    height: 3.5em;
+    left: calc(50% - 1.75em);
+    bottom: calc(50% - 3.5em);
+    opacity: 0;
+    transition: all .25s ease-in-out;
+}
+
+.music-player-pause:hover {
+    transform: scale(1.2);
+}
+
+.music-player-pause.active {
+    opacity: 1;
+    display: initial;
 }
 
 #canvas {
