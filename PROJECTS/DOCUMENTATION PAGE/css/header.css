@@ -18,11 +18,10 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    box-shadow: -.1em .1em .2em .05em rgb(191, 36, 252);
+    box-shadow: 0em .0em .2em .15em rgb(191, 36, 252);
     padding: 0 .5em;
     transition: all .1s ease-in;
-    border-bottom-left-radius: .5em;
-    border-top-right-radius: .5em;
+    border-radius: .5em;
 }
 
 .logo-img {
@@ -36,7 +35,7 @@ header {
 }
 
 .logo:hover {
-    box-shadow: 0 0 .4em .1em rgb(191, 36, 252);
+    box-shadow: 0 0 .4em .3em rgb(191, 36, 252);
 }
 
 @keyframes zoom-in-out {

@@ -27,14 +27,28 @@ window.addEventListener('load', function() {
         alert('Tính năng sẽ sớm được cập nhật!')
     })
 
-    function getOffset(el) {
-        var _x = 0;
-        var _y = 0;
-        while (el && !isNaN(el.offsetLeft) && !isNaN(el.offsetTop)) {
-            _x += el.offsetLeft - el.scrollLeft;
-            _y += el.offsetTop - el.scrollTop;
-            el = el.offsetParent;
-        }
-        return { top: _y, left: _x };
+    let documentLinks = document.querySelectorAll('.documents-link')
+    let documentSubjects = document.querySelectorAll('.document-subject')
+
+    for (let i = 0; i < documentSubjects.length; i++) {
+        documentLinks[i].addEventListener('click', function() {
+            documentLinks[i].classList.add('active')
+            for (let j = 0; j < documentLinks.length; j++) {
+                if (j != i) {
+                    documentLinks[j].classList.remove('active')
+                }
+            }
+        })
+    }
+
+    for (let i = 0; i < documentSubjects.length; i++) {
+        documentSubjects[i].addEventListener('mouseover', function() {
+            documentLinks[i].classList.add('active')
+            for (let j = 0; j < documentLinks.length; j++) {
+                if (j != i) {
+                    documentLinks[j].classList.remove('active')
+                }
+            }
+        })
     }
 })

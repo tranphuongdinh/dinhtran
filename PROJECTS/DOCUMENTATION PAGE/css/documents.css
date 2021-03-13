@@ -2,17 +2,31 @@
 @import url('./header.css');
 @import url('./courses.css');
 @import url('./footer.css');
-section.tests {
+section {
+    position: relative;
+}
+
+section::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    opacity: .2;
+}
+
+section.tests::before {
     background: url('../images/tests.jpg') center no-repeat;
     background-size: cover;
 }
 
-section.documents {
+section.documents::before {
     background: url('../images/document.jpg') center no-repeat;
     background-size: cover;
 }
 
-section.courses {
+section.courses::before {
     background: url('../images/study.jpg') center no-repeat;
     background-size: cover;
 }
@@ -25,7 +39,7 @@ section.courses {
     flex-direction: row;
     align-items: center;
     background: rgb(26, 26, 26);
-    box-shadow: 0 .2em .1em .2em rgb(191, 36, 252);
+    box-shadow: 0 .1em .5em .1em rgb(191, 36, 252);
     transition: all 0.1s ease-in;
 }
 
@@ -97,7 +111,7 @@ section.courses {
 
 .document-title {
     display: inline-block;
-    background: rgb(26, 26, 26);
+    background: rgb(5, 5, 5);
     color: #fff;
     font-size: 2em;
     text-transform: uppercase;
@@ -127,6 +141,7 @@ section.courses {
 }
 
 .documents-link {
+    position: relative;
     text-decoration: none;
     display: inline-flex;
     align-items: center;
@@ -147,11 +162,14 @@ section.courses {
 }
 
 .documents-list {
-    margin-top: 1rem;
-    padding-left: 2rem;
-    width: 78%;
+    margin-top: 2rem;
+    width: 80%;
     height: 73vh;
     overflow-y: auto;
+}
+
+.document-subject {
+    padding-left: 2rem;
 }
 
 @media (max-width:1200px) {
