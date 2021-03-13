@@ -27,28 +27,35 @@ window.addEventListener('load', function() {
         alert('Tính năng sẽ sớm được cập nhật!')
     })
 
-    let documentLinks = document.querySelectorAll('.documents-link')
-    let documentSubjects = document.querySelectorAll('.document-subject')
+    let documentLinks, documentSubjects;
+    if (document.querySelectorAll('.documents-link') != null && document.querySelectorAll('.document-subject') != null) {
+        documentLinks = document.querySelectorAll('.documents-link')
+        documentSubjects = document.querySelectorAll('.document-subject')
 
-    for (let i = 0; i < documentSubjects.length; i++) {
-        documentLinks[i].addEventListener('click', function() {
-            documentLinks[i].classList.add('active')
-            for (let j = 0; j < documentLinks.length; j++) {
-                if (j != i) {
-                    documentLinks[j].classList.remove('active')
-                }
+        for (let i = 0; i < documentSubjects.length; i++) {
+            if (documentLinks[i] != null) {
+                documentLinks[i].addEventListener('click', function() {
+                    documentLinks[i].classList.add('active')
+                    for (let j = 0; j < documentLinks.length; j++) {
+                        if (j != i) {
+                            documentLinks[j].classList.remove('active')
+                        }
+                    }
+                })
             }
-        })
-    }
+        }
 
-    for (let i = 0; i < documentSubjects.length; i++) {
-        documentSubjects[i].addEventListener('mouseover', function() {
-            documentLinks[i].classList.add('active')
-            for (let j = 0; j < documentLinks.length; j++) {
-                if (j != i) {
-                    documentLinks[j].classList.remove('active')
+        for (let i = 0; i < documentSubjects.length; i++) {
+            documentSubjects[i].addEventListener('mouseover', function() {
+                if (documentLinks[i] != null) {
+                    documentLinks[i].classList.add('active')
+                    for (let j = 0; j < documentLinks.length; j++) {
+                        if (j != i) {
+                            documentLinks[j].classList.remove('active')
+                        }
+                    }
                 }
-            }
-        })
+            })
+        }
     }
 })

@@ -1,37 +1,72 @@
 "use strict";
 
 window.addEventListener('load', function () {
-  document.querySelector('.courses').addEventListener('mouseover', function () {
-    document.querySelector('.main-content').classList = "container main-content courses-active";
+  document.querySelector('.back-to-top').addEventListener('click', function () {
+    window.scrollTo(0, 0);
   });
-  document.querySelector('.documents').addEventListener('mouseover', function () {
-    document.querySelector('.main-content').classList = "container main-content documents-active";
+  document.querySelector('.open-feature-btn').addEventListener('click', function () {
+    document.querySelector('.feature-list').classList.toggle('active');
+    document.querySelector('.navigation-bar').classList.toggle('active');
+    document.querySelector('.open-feature-btn').classList.toggle('active');
   });
-  document.querySelector('.tests').addEventListener('mouseover', function () {
-    document.querySelector('.main-content').classList = "container main-content tests-active";
-  });
-  document.querySelectorAll('.content').forEach(function () {
-    this.addEventListener('mouseout', function () {
-      document.querySelector('.main-content').classList = "container main-content normal";
-    });
-  });
-  var timeout;
+  document.querySelector('.dark-mode-btn').addEventListener('click', function () {
+    if (document.querySelector('.documents-menu') != null) {
+      document.querySelector('.documents-menu').classList.toggle('dark-mode');
+    }
 
-  document.onmousemove = function () {
-    clearTimeout(timeout);
-    document.querySelectorAll('.content').forEach(function (content) {
-      content.classList.remove('fade');
+    if (document.querySelector('.feature-bar') != null) {
+      document.querySelector('.feature-bar').classList.toggle('dark-mode');
+    }
+
+    document.querySelector('header').classList.toggle('dark-mode');
+    document.querySelector('.dark-mode-btn').classList.toggle('dark-mode');
+    document.querySelectorAll('.document-title').forEach(function (e) {
+      e.classList.toggle('dark-mode');
     });
-    document.querySelector('header').classList.remove('fade');
-    document.querySelector('footer').classList.remove('fade');
-    document.querySelector('.music-player').classList.remove('active');
-    timeout = setTimeout(function () {
-      document.querySelectorAll('.content').forEach(function (content) {
-        content.classList.add('fade');
+  });
+  document.querySelector('.notification-btn').addEventListener('click', function () {
+    alert('Tính năng sẽ sớm được cập nhật!');
+  });
+  var documentLinks, documentSubjects;
+
+  if (document.querySelectorAll('.documents-link') != null && document.querySelectorAll('.document-subject') != null) {
+    documentLinks = document.querySelectorAll('.documents-link');
+    documentSubjects = document.querySelectorAll('.document-subject');
+
+    var _loop = function _loop(i) {
+      if (documentLinks[i] != null) {
+        documentLinks[i].addEventListener('click', function () {
+          documentLinks[i].classList.add('active');
+
+          for (var j = 0; j < documentLinks.length; j++) {
+            if (j != i) {
+              documentLinks[j].classList.remove('active');
+            }
+          }
+        });
+      }
+    };
+
+    for (var i = 0; i < documentSubjects.length; i++) {
+      _loop(i);
+    }
+
+    var _loop2 = function _loop2(_i) {
+      documentSubjects[_i].addEventListener('mouseover', function () {
+        if (documentLinks[_i] != null) {
+          documentLinks[_i].classList.add('active');
+
+          for (var j = 0; j < documentLinks.length; j++) {
+            if (j != _i) {
+              documentLinks[j].classList.remove('active');
+            }
+          }
+        }
       });
-      document.querySelector('header').classList.add('fade');
-      document.querySelector('footer').classList.add('fade');
-      document.querySelector('.music-player').classList.add('active');
-    }, 5000);
-  };
+    };
+
+    for (var _i = 0; _i < documentSubjects.length; _i++) {
+      _loop2(_i);
+    }
+  }
 });
