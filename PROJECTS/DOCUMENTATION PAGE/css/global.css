@@ -68,6 +68,11 @@ section.light-mode {
     font-weight: 600;
 }
 
+.search-bar.light-mode {
+    background-color: #fff;
+    color: #000;
+}
+
 .back-to-top {
     background: url('../images/scroll-up.png') center no-repeat;
     background-size: cover;

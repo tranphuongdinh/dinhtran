@@ -40,7 +40,7 @@ section .container {
     text-decoration: none;
     font-size: 1.2em;
     transition: all .1s ease-out;
-    box-shadow: 0 0 .2em .1em rgb(191, 36, 252);
+    box-shadow: 0 0 .1em .1em rgb(191, 36, 252);
 }
 
 .navigation-link:hover {

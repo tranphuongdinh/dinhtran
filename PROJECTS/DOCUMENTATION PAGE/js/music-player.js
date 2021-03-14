@@ -24,7 +24,11 @@ window.onload = function() {
         const barWidth = (WIDTH / bufferLength) * 15
         let barHeight
         let x = 0
-        let isPlaying = true;
+        let isPlaying = localStorage.getItem('is-playing')
+        if (isPlaying === null) {
+            localStorage.setItem('is-playing', 1)
+            isPlaying = localStorage.getItem('is-playing')
+        }
         let dataArrayTemp
 
         function renderFrame() {
@@ -63,19 +67,25 @@ window.onload = function() {
         }
 
         backgroundMusic.play()
+        if (isPlaying == 0) {
+            backgroundMusic.pause()
+            document.querySelector('.music-player-pause').classList.add('active')
+        }
         backgroundMusic.loop = true
         renderFrame()
 
         //CONTROL
         document.querySelector('.music-player').addEventListener('click', function() {
-            if (isPlaying) {
+            if (isPlaying != 0) {
                 backgroundMusic.pause()
                 document.querySelector('.music-player-pause').classList.add('active')
+                isPlaying = 0
             } else {
                 backgroundMusic.play()
                 document.querySelector('.music-player-pause').classList.remove('active')
+                isPlaying = 1
             }
-            isPlaying = !isPlaying
+            localStorage.setItem('is-playing', isPlaying)
         }, isPlaying)
     }
 }

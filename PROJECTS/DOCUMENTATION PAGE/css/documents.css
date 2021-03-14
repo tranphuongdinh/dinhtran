@@ -33,14 +33,45 @@ section.courses::before {
 
 .feature-bar {
     height: 4em;
-    padding-left: 8rem;
+    padding: 0 8rem;
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     background: rgb(26, 26, 26);
-    box-shadow: 0 .1em .5em .1em rgb(191, 36, 252);
+    box-shadow: 0 .1em .5em .025em rgb(191, 36, 252);
     transition: all 0.1s ease-in;
+}
+
+.main-feature {
+    height: 100%;
+    width: 40em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.search-bar {
+    background-image: url('../images/search.png');
+    background-color: #000;
+    background-position: .1em 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 25em;
+    padding: .5em .5em .5em 2.5em;
+    outline: none;
+    box-shadow: 0 0 .1em .1em rgb(191 36 252);
+    color: #fff;
+    border-radius: .25em;
+    border: none;
+    transition: all .75s ease-in-out;
+}
+
+.search-bar:focus {
+    background-position: 100% 0;
+    padding: .5em 2.5em .5em .5em;
 }
 
 .open-feature-btn {
@@ -60,7 +91,7 @@ section.courses::before {
 }
 
 .feature-list {
-    width: 20%;
+    width: 16em;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -100,9 +131,12 @@ section.courses::before {
 }
 
 .navigation-bar {
-    width: 22em;
-    transform: translateX(-18em);
+    width: 20em;
+    transform: translateX(-16em);
     transition: all .2s ease-in;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .navigation-bar.active {
