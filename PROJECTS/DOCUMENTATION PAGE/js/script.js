@@ -9,22 +9,27 @@ window.addEventListener('load', function() {
         document.querySelector('.open-feature-btn').classList.toggle('active');
     })
 
-    document.querySelector('.dark-mode-btn').addEventListener('click', function() {
+    document.querySelector('.light-mode-btn').addEventListener('click', function() {
         if (document.querySelector('.documents-menu') != null) {
-            document.querySelector('.documents-menu').classList.toggle('dark-mode')
+            document.querySelector('.documents-menu').classList.toggle('light-mode')
+        }
+        if (document.querySelector('.documents-list') != null) {
+            document.querySelector('.documents-list').classList.toggle('light-mode')
         }
         if (document.querySelector('.feature-bar') != null) {
-            document.querySelector('.feature-bar').classList.toggle('dark-mode')
+            document.querySelector('.feature-bar').classList.toggle('light-mode')
         }
-        document.querySelector('header').classList.toggle('dark-mode')
-        document.querySelector('.dark-mode-btn').classList.toggle('dark-mode')
+        document.querySelector('section').classList.toggle('light-mode')
+        document.querySelector('header').classList.toggle('light-mode')
+        document.querySelector('.footer').classList.toggle('light-mode')
+        document.querySelector('.light-mode-btn').classList.toggle('light-mode')
         document.querySelectorAll('.document-title').forEach(function(e) {
-            e.classList.toggle('dark-mode')
+            e.classList.toggle('light-mode')
         })
     })
 
     document.querySelector('.notification-btn').addEventListener('click', function() {
-        alert('Tính năng sẽ sớm được cập nhật!')
+        alert('Bạn có thể tắt/mở nhạc nền bằng cách click vào dãy sóng âm thanh :D')
     })
 
     let documentLinks, documentSubjects;

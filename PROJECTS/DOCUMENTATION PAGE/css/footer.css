@@ -10,4 +10,5 @@
     align-items: center;
     text-align: center;
     font-size: 1em;
+    transition: all 0.1s ease-in;
 }

@@ -76,6 +76,9 @@
         background: #000;
         font-size: 1em;
     }
+    .footer.light-mode {
+        background: rgb(252, 249, 249);
+    }
     .music-player {
         display: none;
     }

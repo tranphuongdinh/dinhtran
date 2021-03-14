@@ -8,13 +8,64 @@
     scroll-behavior: smooth;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     background: rgb(26, 26, 26);
 }
 
-.dark-mode {
-    -webkit-filter: invert(1) hue-rotate(180deg);
-    filter: invert(1) hue-rotate(180deg);
+header.light-mode {
+    background: rgb(252, 249, 249);
+    box-shadow: 0 .1em .1em .5em rgb(252, 249, 249);
+}
+
+header.light-mode .logo-title {
+    color: rgb(26, 26, 26);
+}
+
+header.light-mode .nav-item:hover,
+.feature-bar.light-mode .navigation-link:hover,
+.documents-menu.light-mode .documents-link:hover,
+.documents-menu.light-mode .documents-link.active {
+    background: rgb(219, 218, 218);
+}
+
+header.light-mode .nav-link {
+    color: rgb(26, 26, 26);
+    font-weight: 600;
+}
+
+section.light-mode {
+    background: rgb(252, 249, 249);
+}
+
+.feature-bar.light-mode {
+    background: rgb(252, 249, 249);
+}
+
+.feature-bar.light-mode .navigation-link,
+.documents-menu.light-mode .documents-link,
+.document-title.light-mode {
+    background: rgb(252, 249, 249);
+    color: rgb(26, 26, 26);
+    font-weight: 600;
+}
+
+.documents-list.light-mode .list-courses-link {
+    color: rgb(26, 26, 26);
+    font-weight: 500;
+    transition: none;
+}
+
+.documents-list.light-mode .list-courses-link:hover {
+    color: rgb(191, 36, 252);
+}
+
+.footer.light-mode {
+    color: rgb(26, 26, 26);
+    font-weight: 600;
 }
 
 .back-to-top {

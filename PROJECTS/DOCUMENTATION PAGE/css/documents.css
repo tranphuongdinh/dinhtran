@@ -90,12 +90,12 @@ section.courses::before {
     height: 100%;
 }
 
-.dark-mode-btn img {
+.light-mode-btn img {
     content: url('../images/moon.png');
     transition: all .1s ease-in-out;
 }
 
-.dark-mode-btn.dark-mode img {
+.light-mode-btn.light-mode img {
     content: url('../images/sun.png');
 }
 
@@ -119,6 +119,7 @@ section.courses::before {
     padding-right: 5em;
     clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 51%, 0% 0%);
     border-left: .5rem solid rgb(191, 36, 252);
+    transition: all 0.1s ease-in;
 }
 
 .list-courses {
@@ -156,7 +157,7 @@ section.courses::before {
     text-transform: uppercase;
     font-size: 1.2em;
     padding: 0 1rem;
-    transition: all .05s ease-out;
+    transition: all .1s ease-in;
     font-weight: 500;
 }
 
@@ -170,6 +171,7 @@ section.courses::before {
     width: 80%;
     height: 73vh;
     overflow-y: auto;
+    transition: all 0.1s ease-in;
 }
 
 .document-subject {
