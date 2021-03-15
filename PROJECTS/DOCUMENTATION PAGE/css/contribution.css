@@ -89,6 +89,7 @@
         padding: .1em .3em;
         font-weight: 600;
         transition: all .1s ease-out;
+        text-align: center;
     }
     
     .contribution-btn:hover {
@@ -113,6 +114,9 @@
     @media (max-width:992px) {
         .contribution-content {
             flex-direction: column;
+        }
+        .btn-group {
+            width: 70%;
         }
         .document-subject.contribution {
             width: 100%;
