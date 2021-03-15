@@ -31,8 +31,8 @@
     }
     
     .contribution-area {
-        width: 45%;
-        height: 26em;
+        width: 42.5%;
+        height: 24em;
         border-left: .5rem solid rgb(191, 36, 252);
         padding: 0rem 2rem;
         padding-right: 5em;
@@ -45,7 +45,7 @@
     .contribution-text {
         text-align: justify;
         color: #fff;
-        font-size: 1.5em;
+        font-size: 1.4em;
     }
     
     .gg-drive-link {
@@ -61,7 +61,7 @@
     }
     
     .contribution-link {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         text-decoration: none;
         font-weight: 600;
     }
