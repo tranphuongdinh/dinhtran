@@ -124,6 +124,7 @@ window.addEventListener('load', function() {
 
     document.querySelector('.search-bar').addEventListener('keyup', function() {
         let input, filter, documentTitles, listCoursesLink, listCoursesItem, textValue
+        let isFound = false
         input = document.querySelector('.search-bar')
         filter = removeVietnameseTones(input.value.toUpperCase())
         listCoursesLink = document.querySelectorAll('.list-courses-link')
@@ -132,8 +133,17 @@ window.addEventListener('load', function() {
             textValue = removeVietnameseTones(listCoursesLink[i].innerText) || removeVietnameseTones(listCoursesLink[i].textContent)
             if (textValue.toUpperCase().indexOf(filter) > -1) {
                 listCoursesItem[i].style.display = ''
+                isFound = true
             } else {
                 listCoursesItem[i].style.display = 'none'
+            }
+        }
+        if (!isFound) {
+            alert('Không tìm thấy tài nguyên phù hợp!')
+            input.value = ''
+            isFound = false
+            for (let i = 0; i < listCoursesLink.length; i++) {
+                listCoursesItem[i].style.display = ''
             }
         }
     })
