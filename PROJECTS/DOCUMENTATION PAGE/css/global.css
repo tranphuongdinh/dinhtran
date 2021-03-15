@@ -63,6 +63,14 @@ section.light-mode {
     color: rgb(191, 36, 252);
 }
 
+.documents-menu.light-mode::-webkit-scrollbar-track {
+    background: rgb(252, 249, 249);
+}
+
+.documents-list.light-mode::-webkit-scrollbar-track {
+    background: rgb(207, 207, 207);
+}
+
 .footer.light-mode {
     color: rgb(26, 26, 26);
     font-weight: 600;
@@ -71,6 +79,12 @@ section.light-mode {
 .search-bar.light-mode {
     background-color: #fff;
     color: #000;
+}
+
+.contribution-title.light-mode,
+.list-courses-link.light-mode,
+.contribution-text.light-mode {
+    color: rgb(26, 26, 26);
 }
 
 .back-to-top {
@@ -92,16 +106,22 @@ section.light-mode {
 
 ::-webkit-scrollbar {
     width: 1rem;
-    background: rgb(26, 26, 26);
 }
 
 ::-webkit-scrollbar-track {
     background: rgb(26, 26, 26);
+    transition: all .1s ease-out;
+    border-radius: 1em;
 }
 
 ::-webkit-scrollbar-thumb {
     background: rgb(191, 36, 252);
     border-radius: 1rem;
+}
+
+::-webkit-scrollbar-button {
+    border-radius: 50%;
+    background: rgb(191, 36, 252);
 }
 
 ::-webkit-scrollbar-thumb:hover {

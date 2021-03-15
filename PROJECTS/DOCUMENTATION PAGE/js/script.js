@@ -19,6 +19,17 @@ window.addEventListener('load', function() {
         if (document.querySelector('.feature-bar') != null) {
             document.querySelector('.feature-bar').classList.toggle('light-mode')
         }
+        if (document.querySelector('.contribution-title') != null) {
+            document.querySelector('.contribution-title').classList.toggle('light-mode')
+        }
+        if (document.querySelectorAll('.list-courses-link') != null) {
+            document.querySelectorAll('.list-courses-link').forEach(function(e) {
+                e.classList.toggle('light-mode')
+            })
+        }
+        if (document.querySelector('.contribution-text') != null) {
+            document.querySelector('.contribution-text').classList.toggle('light-mode')
+        }
         document.querySelector('section').classList.toggle('light-mode')
         document.querySelector('header').classList.toggle('light-mode')
         document.querySelector('.search-bar').classList.toggle('light-mode')
