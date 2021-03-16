@@ -125,6 +125,7 @@ window.addEventListener('load', function() {
     document.querySelector('.search-bar').addEventListener('keyup', function() {
         let input, filter, documentTitles, listCoursesLink, listCoursesItem, textValue
         let isFound = false
+        let minIndexFound = Number.MAX_VALUE
         input = document.querySelector('.search-bar')
         filter = removeVietnameseTones(input.value.toUpperCase())
         listCoursesLink = document.querySelectorAll('.list-courses-link')
@@ -133,6 +134,7 @@ window.addEventListener('load', function() {
             textValue = removeVietnameseTones(listCoursesLink[i].innerText) || removeVietnameseTones(listCoursesLink[i].textContent)
             if (textValue.toUpperCase().indexOf(filter) > -1) {
                 listCoursesItem[i].style.display = ''
+                if (i < minIndexFound) minIndexFound = i;
                 isFound = true
             } else {
                 listCoursesItem[i].style.display = 'none'
@@ -145,6 +147,9 @@ window.addEventListener('load', function() {
             for (let i = 0; i < listCoursesLink.length; i++) {
                 listCoursesItem[i].style.display = ''
             }
+        }
+        else {
+            listCoursesItem[minIndexFound].scrollIntoView()
         }
     })
 })
