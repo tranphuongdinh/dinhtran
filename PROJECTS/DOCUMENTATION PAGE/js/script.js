@@ -122,10 +122,14 @@ window.addEventListener('load', function() {
         return str;
     }
 
+    let input, filter, documentTitles, listCoursesLink, listCoursesItem, textValue
+    let isFound = false
+    let minIndexFound = Number.MAX_VALUE
+
     document.querySelector('.search-bar').addEventListener('keyup', function() {
-        let input, filter, documentTitles, listCoursesLink, listCoursesItem, textValue
-        let isFound = false
-        let minIndexFound = Number.MAX_VALUE
+        input, filter, documentTitles, listCoursesLink, listCoursesItem, textValue
+        isFound = false
+        minIndexFound = Number.MAX_VALUE
         input = document.querySelector('.search-bar')
         filter = removeVietnameseTones(input.value.toUpperCase())
         listCoursesLink = document.querySelectorAll('.list-courses-link')
@@ -140,16 +144,29 @@ window.addEventListener('load', function() {
                 listCoursesItem[i].style.display = 'none'
             }
         }
-        if (!isFound) {
-            alert('Không tìm thấy tài nguyên phù hợp!')
-            input.value = ''
-            isFound = false
-            for (let i = 0; i < listCoursesLink.length; i++) {
-                listCoursesItem[i].style.display = ''
+
+        listCoursesItem[minIndexFound].scrollIntoView()
+    })
+
+    document.querySelector('.search-bar').addEventListener('keypress', function(e) {
+        if (e.keyCode === 13) {
+            if (!isFound) {
+                //alert('Không tìm thấy tài nguyên phù hợp!')
+                if (confirm('Không tìm thấy tài nguyên phù hợp! Bạn có muốn tiếp tục nhập thông tin tìm kiếm không ?')) {
+
+                }
+                else {
+                    input.value = ''
+                    isFound = false
+                    for (let i = 0; i < listCoursesLink.length; i++) {
+                        listCoursesItem[i].style.display = ''
+                    }
+                }
             }
-        }
-        else {
-            listCoursesItem[minIndexFound].scrollIntoView()
+            else {
+                alert(`Tìm thấy tài nguyên: ${listCoursesItem[minIndexFound].textContent}`)
+                listCoursesItem[minIndexFound].scrollIntoView()
+            }
         }
     })
 })
