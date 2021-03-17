@@ -83,6 +83,7 @@ window.addEventListener('load', function() {
             documentSubjects[i].addEventListener('mouseover', function() {
                 if (documentLinks[i] != null) {
                     documentLinks[i].classList.add('active')
+                    documentLinks[i].scrollIntoView()
                     for (let j = 0; j < documentLinks.length; j++) {
                         if (j != i) {
                             documentLinks[j].classList.remove('active')
