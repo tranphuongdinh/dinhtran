@@ -121,7 +121,7 @@ const Documents = [
                     "https://drive.google.com/drive/folders/1EfPtewpsMzYRTf2APh_Y4pF7LKOpVYzl",
             },
             {
-                name: "8.1 Kĩ thuật lập trình | Tổng hợp",
+                name: "Kĩ thuật lập trình | Tổng hợp",
                 url:
                     "https://drive.google.com/drive/u/1/folders/1AL2BStLe4JFOZEwCcE2rJj6ApdTC7vHu",
             },

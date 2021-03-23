@@ -1,757 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tài liệu | Documentation Page</title>
-    <link rel="shortcut icon" href="./images/logo.png">
-    <link rel="stylesheet" href="css/documents.css">
-    <link rel="stylesheet" href="css/responsive.css">
-</head>
-
-<body>
-    <div id="loading"><img id="loading-image" src="https://i.pinimg.com/originals/8b/32/15/8b3215c7ee7dbd5e33b36383a83a04b7.gif" alt="Loading..." /></div>
-    <header>
-        <div class="container">
-            <a href="./index.html">
-                <div class="logo">
-                    <img src="./images/logo.png" alt="Logo" class="logo-img">
-                    <h3 class="logo-title">Documentation Page</h3>
-                </div>
-            </a>
-            <nav class="nav-bar">
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <a class="nav-link" href="./index.html">Trang chủ</a>
-                        <img class="item-logo" src="./images/home-logo.png" alt="Home">
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./courses.html">Khoá học</a>
-                        <img class="item-logo" src="./images/course-logo.png" alt="Course">
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="./documents.html">Tài liệu</a>
-                        <img class="item-logo" src="./images/document-icon.png" alt="Course">
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./tests.html">Đề thi</a>
-                        <img class="item-logo" src="./images/test-logo.png" alt="Tests">
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./contribution.html">Đóng góp</a>
-                        <img class="item-logo" src="./images/charity-logo.png" alt="Charity">
-                    </li>
-                </ul>
-            </nav>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tài liệu | Documentation Page</title>
+        <link rel="shortcut icon" href="./images/logo.png" />
+        <link rel="stylesheet" href="css/documents.css" />
+        <link rel="stylesheet" href="css/responsive.css" />
+    </head>
+    <body>
+        <div id="loading">
+            <img
+                id="loading-image"
+                src="https://i.pinimg.com/originals/8b/32/15/8b3215c7ee7dbd5e33b36383a83a04b7.gif"
+                alt="Loading..."
+            />
         </div>
-    </header>
-    <main>
-        <section class="section documents">
-            <div class="container main-content normal">
-                <div class="feature-bar">
-                    <div class="main-feature">
-                        <div class="open-feature-btn"><img src="./images/menu.png" alt="Menu btn"></div>
-                        <ul class="feature-list">
-                            <li class="feature-item notification-btn"><img src="./images/notification.png" alt="Notifications"></li>
-                            <a href="https://www.facebook.com/groups/tailieuhcmus" target="blank">
-                                <li class="feature-item"><img src="./images/facebook.png" alt="Facebook"></li>
-                            </a>
-                            <a href="https://driveuploader.com/upload/JS58fXozqO/" target="blank">
-                                <li class="feature-item"><img src="./images/google-drive.png" alt="Google Drive"></li>
-                            </a>
-                            <li class="feature-item light-mode-btn"><img src="./images/moon.png" alt="Dark mode"></li>
-                        </ul>
-                        <div class="navigation-bar">
-                            <a class="navigation-link" href="./index.html">Trang chủ</a><img src="./images/chevron-right.png" alt="right arrow">
-                            <a class="navigation-link" href="./documents.html">Tài liệu</a>
-                        </div>
+        <header>
+            <div class="container">
+                <a href="./index.html"
+                    ><div class="logo">
+                        <img
+                            src="./images/logo.png"
+                            alt="Logo"
+                            class="logo-img"
+                        />
+                        <h3 class="logo-title">Documentation Page</h3>
                     </div>
-                    <input class="search-bar" type="text" id="myInput" placeholder="Tìm kiếm tài liệu">
-                </div>
-                <div class="documents-content">
-                    <div class="documents-menu">
-                        <a href="#politics" class="documents-link active">chính trị</a>
-                        <a href="#it" class="documents-link">công nghệ thông tin</a>
-                        <a href="#geology" class="documents-link">địa chất</a>
-                        <a href="#dtvt" class="documents-link">điện tử - viễn thông</a>
-                        <a href="#chemistry" class="documents-link">hoá học</a>
-                        <a href="#environment" class="documents-link">môi trường</a>
-                        <a href="#english" class="documents-link">tiếng anh</a>
-                        <a href="#korean" class="documents-link">tiếng hàn</a>
-                        <a href="#japanese" class="documents-link">tiếng nhật</a>
-                        <a href="#chinese" class="documents-link">tiếng trung</a>
-                        <a href="#biology" class="documents-link">sinh học</a>
-                        <a href="#officeIT" class="documents-link">tin học cơ sở</a>
-                        <a href="#mathematics" class="documents-link">toán học</a>
-                        <a href="#physics" class="documents-link">vật lý</a>
-                    </div>
-                    <div class="documents-list">
-                        <div class="document-subject">
-                            <h3 class="document-title" id="politics">CHÍNH TRỊ</h3>
-                            <ul class="list-courses">
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1cDjsXASx5AO-h3ORSuYNE4xcFENw--zE" class="list-courses-link" target="blank">1. 6 bài luận chính trị | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1Lvt4T-_w6Drqk84hFmcFBFBg3p4puunu" class="list-courses-link" target="blank">2. Đường lối Đảng cộng sản Việt Nam | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/file/d/1eYAdr6Ev6kPVngbgV1PSqMWbshUfOuOa/view" class="list-courses-link" target="blank">3. Các sách giáo trình | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/u/1/folders/1HldAwfLJDjSnfDbrQ1Z7W_KtwD5XBb8T" class="list-courses-link" target="blank">4. Chủ nghĩa xã hội khoa học | Tổng hợp</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/file/d/1w_QpJl7QhwOTLKAPq1L31PyiOlhtaqcY/view" class="list-courses-link" target="blank">5. Giáo dục quốc phòng | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/u/1/folders/1G6lmbKgLZSuUD9_2y2UK-wtjyIIEHLhI" class="list-courses-link" target="blank">6. Kinh tế chính trị mác - lênin | Tổng hợp</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/138CipO0yHyX8Y6tnJ-6L_LwNgW5yOoyG?usp=sharing" class="list-courses-link" target="blank">7. Kinh tế đại cương | Tổng hợp</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/10hmujboP4RGd8sfmsABX3UEfEbXfKi0V" class="list-courses-link" target="blank">8. Những nguyên lý cơ bản của chủ nghĩa Mác - Lênin | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://phapluatdaicuong-hcmus.webnode.vn/" class="list-courses-link" target="blank">9. Pháp luật đại cương | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1SyKOYytHb-APAvsEPfG_TD1gS9uxdad4" class="list-courses-link" target="blank">10. Tâm lý học đại cương | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1ihNSvlfx1i4cpsjiTaJ9t3KvJ5BX2HlS" class="list-courses-link" target="blank">11. Triết học Mác - Lênin | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/u/1/folders/1gANMhcC7qs6LfvLgA_ItAtWYFOKIZtPl" class="list-courses-link" target="blank">11.1 Triết học Mác - Lênin | Tổng hợp</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1JX8H6wYv5eBfjAi62gSoE2wCxNsDGO6I" class="list-courses-link" target="blank">12. Tư tưởng Hồ Chí Minh | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/u/1/folders/1TxW-LD5nPmuPr4QFs7Fx76bKWTBHjG6t" class="list-courses-link" target="blank">12.1 Tư tưởng Hồ Chí Minh | Tổng hợp</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="document-subject">
-                            <h3 class="document-title" id="it">CÔNG NGHỆ THÔNG TIN</h3>
-                            <ul class="list-courses">
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1q9YqQNr48EnCMcjyposXuMKyKLba8izz" class="list-courses-link" target="blank">1. An toàn hệ thống thông tin - HUST | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://www.youtube.com/playlist?list=PLUZaqVtfqjnw9WdFdLyVL7EyMfm_5pt6O" class="list-courses-link" target="blank">2. Các thuật toán thông minh nhân tạo và ứng dụng | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1K2oTyKe0_zzt6gACYuivn542RqpxI099" class="list-courses-link" target="blank">3. Cấu Trúc Dữ Liệu Và Giải Thuật | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/u/1/folders/1pmdAi8tLOEkYv31J-IRxDo6kOAV4Z1E5" class="list-courses-link" target="blank">3.1 Cấu Trúc Dữ Liệu Và Giải Thuật | Tổng hợp</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1-DqXc_W3LJirGrgIuoVzC-1b4iyKc4Tl" class="list-courses-link" target="blank">4. Cơ sở dữ liệu | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1oXrljKIagqAfqQqlMrxJZ6Q-oH6wMk7H" class="list-courses-link" target="blank">5. Cơ sở lập trình | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1Yj0MEb5bjV-zg7JBCG0NIV7wJMLWQJxD" class="list-courses-link" target="blank">6. Hệ điều hành | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1ZkVf9fu2Aw-IKeV9LJIsnmdCx7_HVDIS" class="list-courses-link" target="blank">7. Hệ thống máy tính | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1EfPtewpsMzYRTf2APh_Y4pF7LKOpVYzl" class="list-courses-link" target="blank">8. Kĩ thuật lập trình | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/u/1/folders/1AL2BStLe4JFOZEwCcE2rJj6ApdTC7vHu" class="list-courses-link" target="blank">8.1 Kĩ thuật lập trình | Tổng hợp</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1-68YYPrDTAFF9FMnAngySM6T_nkthFmM" class="list-courses-link" target="blank">9. Lập trình C# 2.0 | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1hcFXnCQViC6J_L0i9RCxyTyc1oDWidaT" class="list-courses-link" target="blank">10. Lập trình hướng đối tượng | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/u/1/folders/16Z5lN0AVhDFoO_NL0MW1fv91PAZWtoJr" class="list-courses-link" target="blank">10.1 Lập trình hướng đối tượng | Tổng hợp</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1GN3CzEb34NBDTWAL2xIgsEtN7rzdTL0-" class="list-courses-link" target="blank">11. Lý thuyết máy học | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1UiY8_NJzTA1z_Kixy2mWe1vXQ685-tK4" class="list-courses-link" target="blank">12. Mạng máy tính | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/u/1/folders/1Mga7OToFQViPuezAlHTDfwN4zuqoIVr7" class="list-courses-link" target="blank">12.1 Mạng máy tính | Tổng hợp</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1Xc-y4KxYVQ6KSbZc2yuO9_uO5rB8B15h" class="list-courses-link" target="blank">13. Nhập môn công nghệ thông tin | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/u/1/folders/1_e7fqdL_zHyKxhjiVAwCnKZV0kjreq4n" class="list-courses-link" target="blank">14. Nhập môn lập trình | Tổng hợp</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/0Bxtai1f5Fda1UThDbU5GYlJvSTQ" class="list-courses-link" target="blank">15. Thiết kế giao diện bằng Bootstrap | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1Pb9p3f6U9zNlOVYL4I4CBQ0QhAXFsf17" class="list-courses-link" target="blank">16. Trí tuệ nhân tạo | Tailieuhcmus</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="document-subject">
-                            <h3 class="document-title" id="geology">ĐỊA CHẤT</h3>
-                            <ul class="list-courses">
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1SZUzixH_xpV9tVIcUN2HMQ-b2_SRY8eI" class="list-courses-link" target="blank">1. Câu Hỏi Ôn Tập Tinh Thể | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1WabChcl0facxqdCHXMbN2rbFvVzxAjSO" class="list-courses-link" target="blank">2. Địa Chất Môi Trường | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/12btiiMBp3docIALvRpRMhCpgUGhqFLk_" class="list-courses-link" target="blank">3. Khoa Học Trái Đất | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1uLRpSkpLNMiTv_UVrk5x3fAvXomJamxK" class="list-courses-link" target="blank">4. Kiến Tạo Cơ Sở Mới | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1xSSuT816VyWigH2EfUiETJYvJV6OlPgR" class="list-courses-link" target="blank">5. Phần Mềm Surfer 13 | Tailieuhcmus</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="document-subject">
-                            <h3 class="document-title IT-document-title" id="dtvt">ĐIỆN TỬ - VIỄN THÔNG</h3>
-                            <ul class="list-courses">
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1QEylQtUs3JoY0aRknffo0rJqgPu_z4u_" class="list-courses-link" target="blank">1. Điện tử căn bản | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://docs.google.com/document/d/12-xp1PB5rbb2fFVSCRl3rNs9aGRhqTQl7ls68l54ZUQ/edit" class="list-courses-link" target="blank">2. Đồ án điện tử | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1ipG-mk7A6QJBi4iseidsOHRN4X2C8b_P" class="list-courses-link" target="blank">3. Kiến trúc máy tính | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1zDzo1wHR0sQLp2TxyT31JO0SBrzGQEtb" class="list-courses-link" target="blank">4. Phần mềm | Tailieuhcmus</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="document-subject">
-                            <h3 class="document-title" id="chemistry">HOÁ HỌC</h3>
-                            <ul class="list-courses">
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1nOTgoX9TMbFYlIB5ks_7yytKsRaiZ4ck" class="list-courses-link" target="blank">1. Giáo trình tham khảo | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://ptable.com/#Properties" class="list-courses-link" target="blank">2. Bảng tuần hoàn online | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/12JepgqOomKHFxLHyYaXmVU0tfbE4YY-w" class="list-courses-link" target="blank">3. Điện hoá 1 | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1ZmKNuhdEWr99eue5bInUhqatD_Ii0q9c" class="list-courses-link" target="blank">4. Điện hoá 2 | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1KY1catihO6Yq56hr37lFfMZWY9fWpluu" class="list-courses-link" target="blank">5. Hoá đại cương | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1RkkpSi0B5-4U1l31TVhrLDp-4JCZAtmV" class="list-courses-link" target="blank">6. Hoá đại cương 1 | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/19q9owjuCmK37gEtO5_B7PKYokWeLtYOW" class="list-courses-link" target="blank">7. Hoá đại cương 2 | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1sN5wDkrrhztpTVqPYpALVXeZo5p-u2QZ" class="list-courses-link" target="blank">8. Hoá đại cương 3 | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1Ljj6q6KWCtYfMNQvRUSrsjm-Yf3v2eOO" class="list-courses-link" target="blank">9. Hoá học phức chất | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1QogER7gGIbxScUSdkrbl79ifX7YPur1k" class="list-courses-link" target="blank">10. Hoá hữu cơ | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1DzKRhbtPUJkEjjbj-BTRPQZqk0lvyoxj" class="list-courses-link" target="blank">11. Hoá kĩ thuật | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1c_hB7hfrdhL6bGaZ72_OKNFYa61WqD_t" class="list-courses-link" target="blank">12. Hoá lượng tử | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1MTNlXq4KsA4CUktvqiAmgoYWYE81rdb8" class="list-courses-link" target="blank">13. Hoá lý | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1pI6uCyc6nTA_fHLPWKozXbLpbGx7zksW" class="list-courses-link" target="blank">14. Hoá lý polime | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/10_3cimjBsV-Q2Sw4cyKhr17gS5xbkRVR" class="list-courses-link" target="blank">15. Hoá môi trường | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1O6G56tBjkGm3-8Q0Co8rpdSqCIueUfrz" class="list-courses-link" target="blank">16. Hoá phân tích - Lý thuyết | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1mnZmy8f0mbK0bZUkURLsxKyvz_xcMpji" class="list-courses-link" target="blank">17. Hoá phân tích - Thuyết trình | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1ZmgJoDaNM1SH8idi9B9VM0BJcDvlG4nh" class="list-courses-link" target="blank">18. Hoá vô cơ 1 | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/11EX4l8V1OX9_sHnjgtCqihSV8ZU272Bb" class="list-courses-link" target="blank">19. Khoá luận hoá học | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/10_3cimjBsV-Q2Sw4cyKhr17gS5xbkRVR" class="list-courses-link" target="blank">20. Mô phỏng hoá học | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/10_3cimjBsV-Q2Sw4cyKhr17gS5xbkRVR" class="list-courses-link" target="blank">21. Nhập môn lượng tử | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/file/d/1LqqLHGhPNqBCLztQsRj0aC1Mbtexwm1u/view" class="list-courses-link" target="blank">22. Phần mềm hoá học | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1lJVQRfWpijQuOD1mS997sCL5MHXiBQ-8" class="list-courses-link" target="blank">23. Sinh hoá | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1HOLBzrOXmIqEtd185lvrlU2a1xLZm1nH" class="list-courses-link" target="blank">24. Thực tập hoá đại cương 2 | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1xtf9J2Po20ikbDUVQbNZXvopJh790hyR" class="list-courses-link" target="blank">25. Xúc tác | Tailieuhcmus</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="document-subject">
-                            <h3 class="document-title" id="environment">MÔI TRƯỜNG</h3>
-                            <ul class="list-courses">
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/file/d/1AFhE-VvBD2uWs6b-O5MuY10Erpl10BgP/view" class="list-courses-link" target="blank">1. An Toàn Bức Xạ Ion Hóa | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1yFShy0BDUalwmuqF3IYBhvyqBsnK5H1r" class="list-courses-link" target="blank">2. Atlas Tài Nguyên Nước Việt Nam | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/19faXcNq5bwkmLNV5Wmkb8v5xZC-uUtbx" class="list-courses-link" target="blank">3. Bản Đồ Học Và GIS | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1vefYoCG3D2_9rW3xcOxqz9rpC6yBSdhc" class="list-courses-link" target="blank">4. Con Người Và Môi Trường | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1Icsk5xpmv-E2Gn09KDamqJV4ALc-FWyb" class="list-courses-link" target="blank">5. Địa Chất Môi Trường | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1S2ss2GDtFDt6Lb-uII9Y03R8E6J4hlLF" class="list-courses-link" target="blank">6. Khoa Học Môi Trường | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1EEM8Q7xY6y4IzIR05StYDpyG-wsLOilf" class="list-courses-link" target="blank">7. Môi Trường Đại Cương | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1mmY2zApmyV7mWU6rc8ahTjClUkU0SBmh" class="list-courses-link" target="blank">8. Ô Nhiễm Môi Trường | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1mmY2zApmyV7mWU6rc8ahTjClUkU0SBmh" class="list-courses-link" target="blank">9. Tài liệu khác | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1JpIcnen52mZF3Cv0Cpr_3-iZpNgTEYG9" class="list-courses-link" target="blank">10. SEMINAR | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1nnioYTlNhTgx6f_t7KaIuCFDmZIy6WkG" class="list-courses-link" target="blank">11. Sinh Thái Môi Trường | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="http://www.tailieumoitruong.org/" class="list-courses-link" target="blank">12. Tài liệu môi trường | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="http://www.tinmoitruong.vn/" class="list-courses-link" target="blank">13. Tin Môi Trường  | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1-pEEXbpFuwoah79lPRIjkzCgLm_u6PrH" class="list-courses-link" target="blank">14. Từ Điển Môi Trường | Tailieuhcmus</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="document-subject">
-                            <h3 class="document-title" id="english">TIẾNG ANH</h3>
-                            <ul class="list-courses">
-                                <li class="list-courses-item">
-                                    <a href="https://www.youtube.com/watch?v=USKrBTvgY_s&list=RDCMUC_OskgZBoS4dAnVUgJVexcw&start_radio=1&t=2s" class="list-courses-link" target="blank">1. Phát âm tiếng anh chuẩn | Tổng hợp</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1N2Sp2-TvwZjmRINremW3681VFHInonC9" class="list-courses-link" target="blank">2. Anh văn 1 / Anh văn 2 | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1u1DEimRnyYkYxAV3BbvGYsWX2D9zZY0r" class="list-courses-link" target="blank">3. Anh văn 2 | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1rmULE7DMYffh3eAcHqmx88DcWLRuo5UW" class="list-courses-link" target="blank">4. Anh văn 3 | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1ShXBpfJ72oVsasPErBGby1iR_Rd4wfW3" class="list-courses-link" target="blank">5. Anh văn 4 | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://sites.google.com/view/tailieuhcmus/ti%E1%BA%BFng-anh" class="list-courses-link" target="blank">6. Ebooks | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1OdQOpOf7k3DoISBINEjwRLB8W_tbtHIb" class="list-courses-link" target="blank">7. Audio listening Anh văn 2 | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/11phIJaSsPI7Sqp5psYrKpDlXL8F9UBq0" class="list-courses-link" target="blank">8. Học tiếng anh qua bài hát | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://magicenglishforyou.blogspot.com/" class="list-courses-link" target="blank">9. Học tiếng anh thần kì | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/file/d/1cV606I-l9HHfI7yN2S-ym6Q1UeOJT_UO/view" class="list-courses-link" target="blank">10. How To Write Email | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1o3N2hXcNBN6s2F6iUFxA70IpZyPpHsgO" class="list-courses-link" target="blank">11. IELTS | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://www.fshare.vn/folder/KHEDA3AWF41I?token=1615342797" class="list-courses-link" target="blank">12. Mất Gốc | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://www.hcmus.edu.vn/component/content/article/212-phong-dao-tao/quy-che-dao-tao/1939-tong-hop-qui-dinh-hoc-tieng-anh-tu-khoa-2013-den-2018?fbclid=IwAR0PrdORjWEOKb5O1NGgzr8aKyDC1M0dVHgYkjbwYxKrlG9dghFwyu3QrDA" class="list-courses-link" target="blank">13. Quy Định Về Trình Độ Anh Văn Của Trường | Tổng hợp</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/file/d/1Bzob0Cc9tDze-DF312qfo30omrGxyKb4/view" class="list-courses-link" target="blank">14. Sách AV 1-2 | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1QH2pWLTcgAJPkBTtiPYKRLg0pb5vjQnx" class="list-courses-link" target="blank">15. Starter TOEIC 3rd Edition</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://www.thesaurus.com/" class="list-courses-link" target="blank">16. Tìm từ đồng nghĩa / trái nghĩa | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/10O8US9DXKbgD1VpE8lpOlRXRZUREVYsk" class="list-courses-link" target="blank">17. TOEIC | Tailieuhcmus</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="document-subject">
-                            <h3 class="document-title" id="korean">TIẾNG HÀN</h3>
-                            <ul class="list-courses">
-                                <li class="list-courses-item">
-                                    <a href="https://docs.google.com/document/d/1H3h01T-C-RsD-BgBROaIB2zJaWVn_HhhgBA2-VMsO2w/edit" class="list-courses-link" target="blank">1. Bộ tài liệu FULL 1 | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://docs.google.com/document/d/1N-ilmax9fYYpzG5rXEwUQLlRyC5V5X3iO3osAeQjT-w/edit" class="list-courses-link" target="blank">2. Bộ tài liệu FULL 2 | Tailieuhcmus</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="document-subject">
-                            <h3 class="document-title" id="japanese">TIẾNG NHẬT</h3>
-                            <ul class="list-courses">
-                                <li class="list-courses-item">
-                                    <a href="https://docs.google.com/document/d/16cJptK3hDkXGjVtHYaelQ7APoc7odk2sQDiYJiz2xkc/edit" class="list-courses-link" target="blank">1. Cách học tiếng Nhật | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://www.dropbox.com/s/m2pbup2ucwgr97g/Japanese%20Picture%20Dictionary.pdf?dl=0" class="list-courses-link" target="blank">2. Từ điển tiếng Nhật bằng hình ảnh | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://docs.google.com/document/d/1hmmSJgGOZFTMy-ZEJFXXZ0HASLQTYT6QdyxylEnDGRk/edit" class="list-courses-link" target="blank">3. Khoá học tiếng Nhật cơ bản trong 2 giờ | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1gqq1Xm0JLZgxiw0qx-ergv0g5P92GqYs" class="list-courses-link" target="blank">4. Ngữ pháp | Tailieuhcmus</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="document-subject">
-                            <h3 class="document-title" id="chinese">TIẾNG TRUNG</h3>
-                            <ul class="list-courses">
-                                <li class="list-courses-item">
-                                    <a href="https://docs.google.com/document/d/1B5LSTIZ0xI_ihPEPhqAnmhGoFaC70tcsxERLXimvPbA/edit" class="list-courses-link" target="blank">1. Tổng hợp tài liệu tiếng Trung | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/file/d/0B4QEPCwB1K-FcC15dHdpcU1LSmc/view" class="list-courses-link" target="blank">2. Tập viết chữ Hán | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/file/d/1zY97boN6m4LCUQOqqbPz88SRf_p5FUon/view" class="list-courses-link" target="blank">3. Từ Điển Anh - Việt - Trung | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://docs.google.com/document/d/1B5LSTIZ0xI_ihPEPhqAnmhGoFaC70tcsxERLXimvPbA/edit" class="list-courses-link" target="blank">4. Tuyển tập sách tự học tiếng Trung | Tailieuhcmus</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="document-subject">
-                            <h3 class="document-title" id="biology">SINH HỌC</h3>
-                            <ul class="list-courses">
-                                <li class="list-courses-item">
-                                    <a href="https://tapchisinhhoc.com/sinh-hoc-campbell-biology-ban-tieng-viet.html/" class="list-courses-link" target="blank">1. Campbell Biology 8th Tiếng Việt | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/file/d/1ZDSoTYiZzRVy5gpt_PkkXf4-DC0z20Ad/view" class="list-courses-link" target="blank">2. Campbell Biology 10th Edition | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/file/d/1Vurmgequ7bbQWN8iVfY-n5kTYgJWWc2z/view" class="list-courses-link" target="blank">3. Campbell Biology 11th Edition | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1RLv8ZUVDxSL0M9Drym90m04heMBnnmdU?fbclid=IwAR2QXUYq-iEr5l8wXDiXn----nJTZ65s1O8hV5k2Km6eadVO7fh1quJgojs" class="list-courses-link" target="blank">4. Chương trình đào tạo khoa Sinh học | Tổng hợp</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1a7ceHE9gZPUGnbmeNb6dcMQsmEDbsT7-" class="list-courses-link" target="blank">5. Con người và môi trường | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1SCuiQI5prOF7P-k2W0ZILij797lUxB2O" class="list-courses-link" target="blank">6. Di truyền học | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://sites.google.com/view/tailieuhcmus/sinh-h%E1%BB%8Dc" class="list-courses-link" target="blank">7. Ebooks sinh học | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1rZlXALkMazSr_vlzWRtreOFqBk3MI7ji" class="list-courses-link" target="blank">8. Hình thái giải phẩu thực vật | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1cKiR8KpLAEPa8Gja8LcCuKMYso-yhtdd" class="list-courses-link" target="blank">9. Khuyết thực vật | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1Sq1T9uK9fwEP1JEDmYdjIeUpi7kEluEa" class="list-courses-link" target="blank">10. Kĩ thuật nuôi cấy tế bào động vật | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://phet.colorado.edu/vi/simulations/filter?subjects=biology&type=html&sort=alpha&view=grid" class="list-courses-link" target="blank">11. Mô phỏng sinh học | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1ceSGtT79HKmFl6-FCPgnkvBiDDiZ0bxr" class="list-courses-link" target="blank">12. Nguồn gốc loài | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1cV-zed2so023yI6AUnyQ8RB7llOMCFdz" class="list-courses-link" target="blank">13. Nhập môn sinh học | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1m0iSXSkC0JxtZY3Y5pjXeU5lFvMgywyf" class="list-courses-link" target="blank">14. Nuôi trồng nấm | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1a4segQQcD-kTQ3RaGID0cDYqxr-6Ph9F" class="list-courses-link" target="blank">15. Quản lý thực phẩm | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1byoqs-mbX_GCPVAO1cWmu0JqhJzM1yRE" class="list-courses-link" target="blank">16. Seminar | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1JjR3aq71R3trG3q2T64pS3Fd7WKvr7cL" class="list-courses-link" target="blank">17. Sinh đại cương 1 | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1nogS6u7Fem1QaRctkh4u9I0BF_2ZJIaZ" class="list-courses-link" target="blank">18. Sinh đại cương 2 | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/u/1/folders/1ihO4gIWgL6FE2Rjn1eeqcTemJT2tgQmn" class="list-courses-link" target="blank">18.1 Sinh đại cương 2 | Tổng hợp</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1lJVQRfWpijQuOD1mS997sCL5MHXiBQ-8" class="list-courses-link" target="blank">19. Sinh hoá | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1j5D2X2DRDjfKtpi5zqQgug5GASxtbf73" class="list-courses-link" target="blank">20. Sinh học đại cương | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1NxK5vwi_OQ8AyHGJFVw0fh4uKxEx7mrc" class="list-courses-link" target="blank">21. Sinh học phân tử | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1NGVsfvd9qgS70DQ-96C64XW5xqoJNcXO" class="list-courses-link" target="blank">22. Sinh lý bệnh | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1-Iv2nd2XsY98WVdb17nyLAeUFNhjhfvK" class="list-courses-link" target="blank">23. Sinh lý động vật | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1W9f41X37DUc7LyBt43OrXPXF5XedcZjr" class="list-courses-link" target="blank">24. Sinh thái học | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1sUEgPhFctjTBlusCaqTk7zQCKo-ZNpnL" class="list-courses-link" target="blank">25. Sinh trắc vân tay | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/file/d/1brMhqvXy-8oKUvfsoM33_b80zluJUfFC/view" class="list-courses-link" target="blank">26. Sổ Tay khoa Sinh Học - Công nghệ sinh học | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1OisiWaRV7NpIRu6Le5jOJWCixRTnBfBH" class="list-courses-link" target="blank">27. Thực tập | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1LKShelOfordgsBEudKV-P8jdN28zt8H9" class="list-courses-link" target="blank">28. Thực vật | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1McDaG0nd9hK4cgiWj8E06aGB4BrxShYn" class="list-courses-link" target="blank">29. Từ điển ngành | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1ma66CkEsHB2h9DSNaRw7m9G1WYQBkO1r" class="list-courses-link" target="blank">30. Vi sinh | Tailieuhcmus</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="document-subject">
-                            <h3 class="document-title" id="officeIT">TIN HỌC CƠ SỞ</h3>
-                            <ul class="list-courses">
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1ovxPgoKWEZSPkdDx5Qh-wLs0r4UJCuGf" class="list-courses-link" target="blank">1. Tin học cơ sở | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/17JqjL6ELtNJPL9JDRWzaocRMMo1cVrZ1" class="list-courses-link" target="blank">2. 3D - MAX Đại học FPT | Tailieuhcmus</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="document-subject">
-                            <h3 class="document-title" id="mathematics">TOÁN HỌC</h3>
-                            <ul class="list-courses">
-                                <li class="list-courses-item">
-                                    <a href="https://www.facebook.com/notes/toantinorg/m%E1%BB%99t-s%E1%BB%91-b%C3%A0i-vi%E1%BA%BFt-quan-tr%E1%BB%8Dng/10151236858032504/" class="list-courses-link" target="blank">1. Các thông tin quan trọng | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1HNFKyq8apfV8tkITQpHozfxYCK3nCMd2" class="list-courses-link" target="blank">2. Cực trị hình học trong không gian | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1NPMYzxEICKM2Y8qhD3tXhUHNm2qK8sIX" class="list-courses-link" target="blank">3. Đại số B1 | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1L7DGcu6SpwhmNPn0TLrbLliiLucDi7QY" class="list-courses-link" target="blank">4. Đại số B2 | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/19jb45YEAZ3freTNf85xCS8cS2Uu7ownb" class="list-courses-link" target="blank">5. Đại số đại cương | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/12B2sY9idFXfZZxGaDDjwbXoFqcnfxd8O" class="list-courses-link" target="blank">6. Đại số đồng đều | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/11acPQaAioZvcNJetGLM5xyE1iIcGGBSI" class="list-courses-link" target="blank">7. Đại số tuyến tính | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/u/1/folders/1szkxD7SW-jShK9ybxPwOvtghzP6nVOor" class="list-courses-link" target="blank">7.1 Đại số tuyến tính | Tổng hợp</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1imH77BbeCa9DCXSENbozcCvYSuOdcdhT" class="list-courses-link" target="blank">8. Đại số tuyến tính A1 | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/10tm2yu-8N6AZOeKny9omQ0ghIKxY0x8h" class="list-courses-link" target="blank">9. Đại số tuyến tính A2 | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1Ue208N9kVgBM9i8WrHD164vIHKROZh3U" class="list-courses-link" target="blank">10. Độ đo xác suất | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1-nIfous13gE7y8zH3G2p1gzM0fPsS5gu" class="list-courses-link" target="blank">11. Đối đồng đều nhóm | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1EijEqvRt5O9Za0Hb2zdOabVAeFJZDp6r" class="list-courses-link" target="blank">12. Giải tích 3 | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1j2ybOkSRLxu5EI8OVA77hDqgIGoyxcyE" class="list-courses-link" target="blank">13. Giải tích 4 | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1L-sn4gcav2FYsXQsUEsXL_sVDqDl-EML" class="list-courses-link" target="blank">14. Giải tích A1 | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1ti4n7olgkXlUKbJ83MXHsHT0Ydf_ijZ0" class="list-courses-link" target="blank">15. Giải tích A2 | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1bgbKmefeAit1g9wJinkcmDzwU91nBFi3" class="list-courses-link" target="blank">16. Giải tích B1 | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://sites.google.com/site/bmgdth/home" class="list-courses-link" target="blank">17. Giáo dục toán học | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1sSVHoOiSgYpnHR_zvKjvKxUrcgBJSMqN" class="list-courses-link" target="blank">18. James Stewart Calculus 6th Edition | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/file/d/1xfoLgB8Q8aY5owncsWMxF76FXa9FoMAx/view" class="list-courses-link" target="blank">19. James Stewart Calculus 7th Edition | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://math2it.com/" class="list-courses-link" target="blank">20. math2it.com | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/file/d/1oBZe9z9fG9q6knJnCqN6woVxF8ViSoZu/view" class="list-courses-link" target="blank">21. MathType 7.1 Full | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1v1kBQig3fUOpqnue5kUwJ6thr22uYp9F" class="list-courses-link" target="blank">22. Matlab | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/18jauWOGoYRcuRss0dgV5A9pwEUe_uU9z" class="list-courses-link" target="blank">23. Phần Tử Hữu Hạn | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1LYEU9jY7zGi1x-QtjNmoq2TO9oWiuNKg" class="list-courses-link" target="blank">24. Sơ đồ chuyên ngành | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1_PKzdeaR7jZ0UwIsmwkwBM7DBrzK30ju" class="list-courses-link" target="blank">25. Thực hành xác suất thống kê | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1Z7I-VWD1ymjxCZ0rPxudghlGAqzjqw9U" class="list-courses-link" target="blank">26. Toán cao cấp 1 - 2 | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1ouzV_FEHzSCpHOjMr3HaFtF00Ggk5jvi" class="list-courses-link" target="blank">27. Toán cao cấp C | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/u/1/folders/1oMXFbA9pnGNp4ldBHG8Gp9hmiixExQTS" class="list-courses-link" target="blank">28. Toán học tổ hợp | Tổng hợp</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1Hc8OcOQJ-plY4_5Q72mgvkrnS691Xj4t" class="list-courses-link" target="blank">29. Toán rời rạc | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/u/1/folders/12NmRK-IlFp7NDp8xkBQaOgLAM2xLIM_5" class="list-courses-link" target="blank">29.1 Toán rời rạc | Tổng hợp</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://www.facebook.com/groups/toantin.org/" class="list-courses-link" target="blank">30. Toantin.org Group | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1Pb9p3f6U9zNlOVYL4I4CBQ0QhAXFsf17" class="list-courses-link" target="blank">31. Trí tuệ nhân tạo | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/16PspuVUQEDmCbBRi2Gk6y__96q2o5nrm" class="list-courses-link" target="blank">32. Vector Calculus | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/174nI0KzfXwx3TxFznAN0pTJ3QYp5et0U" class="list-courses-link" target="blank">33. Vi tích phân 1B | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/u/1/folders/1Pgh0SJd1z562VTJNdFbrlCiE8CH_8xyd" class="list-courses-link" target="blank">33.1 Vi tích phân 1B | Tổng hợp</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1aI_6pxbl0LB65qsOsKUdvG2d1MIfzba-" class="list-courses-link" target="blank">34. Vi tích phân 1C | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1gBVCLDnCD5fgXPaZMQgfHaoaFXVtg56R" class="list-courses-link" target="blank">35. Vi tích phân 2B | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/u/1/folders/1E2QHHyASwWweeB-vG2Ii0bBpKRxbjR6V" class="list-courses-link" target="blank">35.1 Vi tích phân 2B | Tổng hợp</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://www.facebook.com/groups/163327654251069/?hc_location=group" class="list-courses-link" target="blank">36. Việc làm khoa Toán | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1wWLqaaqo-96Rs3L8VdP1rBRJOAfR3qcU" class="list-courses-link" target="blank">37. Xác suất - thống kê | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/u/1/folders/1g-VDFriiEWxyzDwjcMmcxXpmtqh940bN" class="list-courses-link" target="blank">37.1 Xác suất - thống kê | Tổng hợp</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="document-subject">
-                            <h3 class="document-title" id="physics">VẬT LÝ</h3>
-                            <ul class="list-courses">
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1bT4FzERKljo2Qgwr__b0X9X_LhHYs0js" class="list-courses-link" target="blank">1. Bài tập nguyên tử - Hạt nhân | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://lchaovlhn.wordpress.com/tai-lieu-hoc-tap-vat-ly-dai-cuong/" class="list-courses-link" target="blank">2. Điện từ - Quang | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://www.facebook.com/VLH2015/posts/545296688966920" class="list-courses-link" target="blank">3. Hỗ trợ học tập | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://www.facebook.com/VLH2015/posts/878629182300334" class="list-courses-link" target="blank">4. Hỗ trợ việc làm | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1neASpDQHhP3q8cqVf561xQIfGJDlqvgF" class="list-courses-link" target="blank">5. Lượng tử - Nguyên tử | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/18sYegDdIhx0aS3S745WjguGRZ0OKRLoj" class="list-courses-link" target="blank">6. Vật lý đại cương 1 (Cơ - Nhiệt) | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/u/1/folders/1lpI9TyJkztdWN03WFZGNZPu2XkWyNLrA" class="list-courses-link" target="blank">6.1 Vật lý đại cương 1 (Cơ - Nhiệt) | Tổng hợp</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://drive.google.com/drive/folders/1dpyABnBj4MsTdxQ8XwE-91la27rfqWon" class="list-courses-link" target="blank">7. Vật lý đại cương 2 (Điện - Quang) | Tailieuhcmus</a>
-                                </li>
-                                <li class="list-courses-item">
-                                    <a href="https://lchaovlhn.wordpress.com/tai-lieu-hoc-tap-vat-ly-dai-cuong/" class="list-courses-link" target="blank">8. Vật lý hiện đại | Tailieuhcmus</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="music-player">
-                    <img class="music-player-pause" src="./images/audio-wave.png" alt="pause">
-                    <canvas id="canvas"></canvas>
-                </div>
+                </a>
+                <nav class="nav-bar">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html"
+                                >Trang chủ</a
+                            >
+                            <img
+                                class="item-logo"
+                                src="./images/home-logo.png"
+                                alt="Home"
+                            />
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./courses.html"
+                                >Khoá học</a
+                            >
+                            <img
+                                class="item-logo"
+                                src="./images/course-logo.png"
+                                alt="Course"
+                            />
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./documents.html"
+                                >Tài liệu</a
+                            >
+                            <img
+                                class="item-logo"
+                                src="./images/document-icon.png"
+                                alt="Course"
+                            />
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./tests.html">Đề thi</a>
+                            <img
+                                class="item-logo"
+                                src="./images/test-logo.png"
+                                alt="Tests"
+                            />
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contribution.html"
+                                >Đóng góp</a
+                            >
+                            <img
+                                class="item-logo"
+                                src="./images/charity-logo.png"
+                                alt="Charity"
+                            />
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <div class="footer">2021 designed by Tran Phuong Dinh</div>
-        </section>
-    </main>
-    <div class="back-to-top"></div>
-    <script src="./js/header.js"></script>
-    <script src="./js/music-player.js"></script>
-    <script src="./js/script.js"></script>
-    <script src="./js/pre-load.js"></script>
-</body>
-
+        </header>
+        <main>
+            <section class="section documents">
+                <div class="container main-content normal">
+                    <div class="feature-bar">
+                        <div class="main-feature">
+                            <div class="open-feature-btn">
+                                <img src="./images/menu.png" alt="Menu btn" />
+                            </div>
+                            <ul class="feature-list">
+                                <li class="feature-item notification-btn">
+                                    <img
+                                        src="./images/notification.png"
+                                        alt="Notifications"
+                                    />
+                                </li>
+                                <a
+                                    href="https://www.facebook.com/groups/tailieuhcmus"
+                                    target="blank"
+                                    ><li class="feature-item">
+                                        <img
+                                            src="./images/facebook.png"
+                                            alt="Facebook"
+                                        />
+                                    </li>
+                                </a>
+                                <a
+                                    href="https://driveuploader.com/upload/JS58fXozqO/"
+                                    target="blank"
+                                    ><li class="feature-item">
+                                        <img
+                                            src="./images/google-drive.png"
+                                            alt="Google Drive"
+                                        />
+                                    </li>
+                                </a>
+                                <li class="feature-item light-mode-btn">
+                                    <img
+                                        src="./images/moon.png"
+                                        alt="Dark mode"
+                                    />
+                                </li>
+                            </ul>
+                            <div class="navigation-bar">
+                                <a class="navigation-link" href="./index.html"
+                                    >Trang chủ</a
+                                ><img
+                                    src="./images/chevron-right.png"
+                                    alt="right arrow"
+                                />
+                                <a
+                                    class="navigation-link"
+                                    href="./documents.html"
+                                    >Tài liệu</a
+                                >
+                            </div>
+                        </div>
+                        <input
+                            class="search-bar"
+                            type="text"
+                            id="myInput"
+                            placeholder="Tìm kiếm tài liệu"
+                        />
+                    </div>
+                    <div class="documents-content">
+                        <div class="documents-menu"></div>
+                        <div class="documents-list"></div>
+                    </div>
+                    <div class="music-player">
+                        <img
+                            class="music-player-pause"
+                            src="./images/audio-wave.png"
+                            alt="pause"
+                        />
+                        <canvas id="canvas"></canvas>
+                    </div>
+                </div>
+                <div class="footer">2021 designed by Tran Phuong Dinh</div>
+            </section>
+        </main>
+        <div class="back-to-top"></div>
+        <script src="./js/header.js"></script>
+        <script src="./js/music-player.js"></script>
+        <script src="./js/Documents.js"></script>
+        <script src="./js/script.js"></script>
+        <script src="./js/pre-load.js"></script>
+    </body>
 </html>
