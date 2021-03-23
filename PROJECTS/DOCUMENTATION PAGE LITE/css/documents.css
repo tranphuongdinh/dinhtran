@@ -1,0 +1,213 @@
+@import url('./global.css');
+@import url('./header.css');
+@import url('./courses.css');
+@import url('./footer.css');
+
+section {
+    position: relative;
+}
+
+section::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    opacity: .2;
+}
+
+.feature-bar {
+    height: 4em;
+    padding: 0 8rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(26, 26, 26);
+    box-shadow: 0 .1em .5em .025em rgb(46, 46, 46);
+}
+
+.main-feature {
+    height: 100%;
+    width: 26em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.search-bar {
+    background-image: url('../images/search.png');
+    background-color: #000;
+    background-position: .1em 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 25em;
+    padding: .5em .5em .5em 2.5em;
+    outline: none;
+    box-shadow: 0 0 .1em .1em rgb(191 36 252);
+    color: #fff;
+    border-radius: .25em;
+    border: none;
+}
+
+.search-bar:focus {
+    background-position: 100% 0;
+    padding: .5em 2.5em .5em .5em;
+}
+
+.open-feature-btn {
+    width: 3em;
+    height: 3em;
+    cursor: pointer;
+}
+
+.open-feature-btn.active img {
+    transform: rotateZ(90deg);
+}
+
+.open-feature-btn img {
+    width: 100%;
+    height: 100%;
+}
+
+.feature-list {
+    width: 12em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.feature-list.active {
+    transform: scaleX(1);
+}
+
+.feature-item {
+    list-style: none;
+    width: 3em;
+    height: 3em;
+    cursor: pointer;
+}
+
+.feature-item img {
+    width: 100%;
+    height: 100%;
+}
+
+.light-mode-btn img {
+    content: url('../images/moon.png');
+}
+
+.light-mode-btn.light-mode img {
+    content: url('../images/sun.png');
+}
+
+.navigation-bar {
+    width: 9em;
+    transform: translateX(-13em);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.navigation-bar.active {
+    transform: none;
+}
+
+.document-title {
+    display: inline-block;
+    color: #fff;
+    font-size: 1.9em;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    border-left: .5rem solid rgb(191, 36, 252);
+}
+
+.list-courses {
+    margin-top: 2em;
+}
+
+.list-courses-link {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 1.4em;
+}
+
+.documents-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.documents-menu {
+    width: 20%;
+    height: calc(73vh + 2rem);
+    overflow-y: auto;
+    box-shadow: .2em .3em .5em .025em rgb(46, 46, 46);
+    border-bottom-right-radius: .5em;
+}
+
+.documents-link {
+    position: relative;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    color: #fff;
+    width: 100%;
+    height: 4em;
+    background: rgb(26, 26, 26);
+    text-transform: uppercase;
+    font-size: 1.2em;
+    padding: 0 1rem;
+    font-weight: 500;
+}
+
+.documents-link:hover,
+.documents-link.active {
+    background: rgb(58, 57, 57);
+}
+
+.documents-list {
+    margin-top: 2rem;
+    width: 80%;
+    height: 73vh;
+    overflow-y: auto;
+}
+
+.document-subject {
+    padding-left: 2rem;
+}
+
+@media (max-width:1200px) {
+    * {
+        font-size: 1.1vw;
+    }
+}
+
+@media (max-width:992px) {
+    * {
+        font-size: 1.2vw;
+    }
+
+    .documents-link {
+        height: 5em;
+    }
+}
+
+@media (max-width:768px) {
+    .documents-list {
+        margin-top: 2.5rem;
+        padding-left: 0;
+    }
+
+    ::-webkit-scrollbar-button {
+        border-radius: 1em;
+    }
+}
