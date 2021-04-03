@@ -1,0 +1,246 @@
+.section.about-me {
+    padding-top: 8em;
+    min-height: 20em;
+    padding-bottom: 2em;
+}
+
+.about-me-title {
+    font-size: 3.5em;
+    font-family: 'Yeseva One', cursive;
+    text-transform: capitalize;
+}
+
+.section.about-me .container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.about-me-info {
+    width: 60%;
+}
+
+.about-me-decription {
+    margin-top: 2em;
+    text-align: justify;
+    font-size: 1.25em;
+    line-height: 2em;
+    font-weight: 300;
+}
+
+.about-me-img {
+    width: 30%;
+    height: 25em;
+    background: url('../images/avt.jpg') center no-repeat;
+    background-size: cover;
+    box-shadow: 0em 0em .75em .5em #dfdddd;
+    border-radius: .5em;
+}
+
+/*EDUCATION*/
+.section.education {
+    padding-top: 4em;
+    padding-bottom: 8em;
+    min-height: 40vh;
+}
+
+.section.education .container {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.education-title {
+    font-size: 3em;
+    font-family: 'Yeseva One', cursive;
+    margin-bottom: .75em;
+    transition: all .5s ease-in-out;
+    opacity: 0;
+}
+
+.education-title.show {
+    opacity: 1;
+}
+
+.education-col,
+.skills-col {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 30em;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+.education-col.show,
+.skills-col.show {
+    opacity: 1;
+}
+
+.skills-col {
+    min-height: 25em;
+}
+
+.education-row h5,
+.skills-row h5 {
+    font-weight: 400;
+    font-size: 1.25em;
+}
+
+.education-row,
+.skills-row {
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+
+.education-row.show,
+.skills-row.show {
+    opacity: 1;
+}
+
+.skills-row h5 {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.education-row p {
+    margin-top: .75em;
+    font-weight: 300;
+}
+
+i {
+    color: #8b8b8b;
+}
+
+.skill-tags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.skill-tag {
+    display: inline-block;
+    text-transform: capitalize;
+    background-color: #000;
+    color: #fff;
+    padding: .5em 1em;
+    margin: 0 1em 1em 0;
+    border-radius: 2em;
+    font-weight: 300;
+}
+
+
+/*CERTIFICATES*/
+.section.certificates {
+    padding-bottom: 8em;
+}
+
+
+.section.certificates .education-title {
+    margin: 2em 0;
+}
+
+.certificates-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    grid-gap: 3em;
+}
+
+.certificates-img {
+    width: 22em;
+    height: 15em;
+    box-shadow: 0 0 .75em .5em #dfdddd;
+    border-radius: .5em;
+    transition: all .5s ease-in-out;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.certificates-img.show {
+    opacity: 1;
+}
+
+.certificates-img:hover {
+    transform: translateY(-1.5em);
+}
+
+#img-full-screen {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1001;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s ease-in-out;
+}
+
+#img-full-screen img {
+    width: 60em;
+    height: 40em;
+    border-radius: .5em;
+    box-shadow: 0 0 1.5em .75em #dfdddd;
+}
+
+#img-full-screen.active {
+    opacity: 1;
+    pointer-events: initial;
+}
+
+/*CONTACT*/
+
+.section.contact {
+    min-height: 15em;
+    padding-top: 4em;
+    padding-bottom: 2em;
+    background-color: #f7f7f7;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.section.contact.show {
+    opacity: 1;
+}
+
+.section.contact .container {
+    width: 80%;
+    height: 15em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact-title {
+    font-size: 3em;
+    font-family: 'Yeseva One', cursive;
+}
+
+.contact-description {
+    text-align: justify;
+    font-size: 1.25em;
+    line-height: 2em;
+    font-weight: 300;
+}
+
+.contact-icons {
+    height: 3em;
+    width: 10em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contact-icon {
+    width: 1em;
+    height: 1em;
+    font-size: 2.5em;
+}

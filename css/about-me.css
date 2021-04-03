@@ -1,0 +1,101 @@
+.section.about-me {
+    min-height: 20em;
+    padding-bottom: 2em;
+    background-color: #f7f7f7;
+}
+
+.section.about-me .container {
+    width: 80%;
+}
+
+.about-me-title {
+    font-size: 3.5em;
+    font-family: 'Yeseva One', cursive;
+    text-transform: capitalize;
+    transition: all .5s ease-in-out;
+    opacity: 0;
+}
+
+.about-me-title.show {
+    opacity: 1;
+}
+
+.about-me-decription {
+    margin-top: 2em;
+    text-align: justify;
+    font-size: 1.25em;
+    line-height: 2em;
+    font-weight: 300;
+    transition: all .5s ease-in-out;
+    opacity: 0;
+}
+
+.about-me-decription.show {
+    opacity: 1;
+}
+
+.about-link {
+    display: inline-block;
+    font-size: 1.25rem;
+    text-decoration: underline;
+    transition: all .25s ease-in-out;
+    font-weight: bolder;
+}
+
+.about-link:hover {
+    transform: scale(1.1);
+}
+
+/*CONTACT*/
+
+.section.contact {
+    min-height: 15em;
+    padding-bottom: 2em;
+    background-color: #f7f7f7;
+    transition: all .5s ease-in-out;
+    opacity: 0;
+}
+
+.section.contact.show {
+    opacity: 1;
+}
+
+.section.contact .container {
+    width: 80%;
+    height: 15em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact-title {
+    font-size: 3em;
+    font-family: 'Yeseva One', cursive;
+}
+
+.contact-description {
+    text-align: justify;
+    font-size: 1.25em;
+    line-height: 2em;
+    font-weight: 300;
+}
+
+.contact-icons {
+    height: 3em;
+    width: 10em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contact-icon {
+    width: 1em;
+    height: 1em;
+    font-size: 2.75em;
+    transition: all .25s ease-in-out;
+    background: none;
+}
+
+.contact-icon:hover {
+    color: rgb(121, 121, 121);
+}

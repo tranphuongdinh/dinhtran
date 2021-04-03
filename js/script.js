@@ -1,187 +1,81 @@
-//function expression to select elements
-const selectElement = (s) => document.querySelector(s);
-//Open menu on click
-selectElement('.open').addEventListener('click', () => {
-    selectElement('.nav-list').classList.add('active');
-});
-
-//Close menu on click
-selectElement('.close').addEventListener('click', () => {
-    selectElement('.nav-list').classList.remove('active');
-});
-
-let navLinks = document.getElementsByClassName('nav-link')
-
-for (var i = 0; i < navLinks.length; i++) {
-    navLinks[i].addEventListener('click', () => {
-        selectElement('.nav-list').classList.remove('active');
-    })
-}
-
-//SCROLLSPY
-let home = document.querySelector('#home')
-let aboutme = document.querySelector('#about-me')
-let experience = document.querySelector('#experience')
-let projects = document.querySelector('#projects')
-let contact = document.querySelector('#contact')
-
-window.addEventListener('scroll', () => {
-        var windo = window.pageYOffset
-
-        if (home.offsetTop <= windo && aboutme.offsetTop > windo) {
-            for (var i = 0; i < 5; i++)
-                if (i === 0)
-                    navLinks[i].setAttribute("class", "nav-link current")
-                else
-                    navLinks[i].setAttribute("class", "nav-link")
-        }
-
-        if (aboutme.offsetTop <= windo + 20 && experience.offsetTop > windo) {
-            for (var i = 0; i < 5; i++)
-                if (i === 1)
-                    navLinks[i].setAttribute("class", "nav-link current")
-                else
-                    navLinks[i].setAttribute("class", "nav-link")
-        }
-
-        if (experience.offsetTop <= windo + 20 && projects.offsetTop > windo) {
-            for (var i = 0; i < 5; i++)
-                if (i === 2)
-                    navLinks[i].setAttribute("class", "nav-link current")
-                else
-                    navLinks[i].setAttribute("class", "nav-link")
-        }
-
-        if (projects.offsetTop <= windo + 20 && contact.offsetTop > windo) {
-            for (var i = 0; i < 5; i++)
-                if (i === 3)
-                    navLinks[i].setAttribute("class", "nav-link current")
-                else
-                    navLinks[i].setAttribute("class", "nav-link")
-        }
-
-        if (contact.offsetTop <= windo + 20) {
-            for (var i = 0; i < 5; i++)
-                if (i === 4)
-                    navLinks[i].setAttribute("class", "nav-link current")
-                else
-                    navLinks[i].setAttribute("class", "nav-link")
-        }
-    })
-    //SCROLLSPY
-
-//BACK TO TOP BUTTON
-const backToTopButton = document.querySelector("#back-to-top-btn");
-
-window.addEventListener('scroll', scrollFunction);
-
-function scrollFunction() {
-    if (window.pageYOffset > 20) {
-        if (!backToTopButton.classList.contains('btnEntrance')) {
-            backToTopButton.classList.remove('btnExit');
-            backToTopButton.classList.add('btnEntrance');
-            backToTopButton.style.display = 'flex';
-        }
-    } else {
-        if (backToTopButton.classList.contains('btnEntrance')) {
-            backToTopButton.classList.remove('btnEntrance');
-            backToTopButton.classList.add('btnExit');
-            setTimeout(function() {
-                backToTopButton.style.display = 'none';
-            }, 250);
-        }
+window.addEventListener("load", function () {
+    function detectPosition(element) {
+        let y =
+            window.scrollY +
+            document.querySelector(element).getBoundingClientRect().top;
+        let x =
+            window.scrollX +
+            document.querySelector(element).getBoundingClientRect().left;
+        return [x, y];
     }
-}
 
-backToTop = () => {
-    window.scrollTo(0, 0);
-}
-
-backToTopButton.addEventListener('click', backToTop);
-//BACK TO TOP BUTTON
-
-//SCROLL BAR
-let progress = document.getElementById('progressbar');
-let totalHeight = document.body.offsetHeight;
-
-window.onscroll = () => {
-        let progressHeight = (window.pageYOffset / totalHeight) * 120;
-        progress.style.height = progressHeight + "vh";
+    function showElementsOnScroll(element) {
+        document.querySelectorAll(element).forEach(function (card) {
+            let cardY = window.scrollY + card.getBoundingClientRect().top;
+            if (window.pageYOffset + window.innerHeight > cardY) {
+                card.classList.add("show");
+            } else {
+                card.classList.remove("show");
+            }
+        });
     }
-    //SCROLL BAR
 
-AOS.init({ duration: 1500 })
-
-const submitForm = () => { alert('This feature is being updated! Please comeback later^^') }
-
-//PRE-LOAD FUNCTIONS
-document.body.classList.add('page-loading')
-
-window.addEventListener("load", function() {
-    document.body.classList.remove('page-loading')
-    loadScreen = document.getElementById('loading')
-    loadScreen.classList.add('fade-out')
-}, false);
-
-$(document).ready(() => {
-    let projectCard = $('.project-card')
-    let isHide = true;
-    let isDark = false;
-
-    $('#dark-mode-btn').click(function() {
-        if (!isDark) {
-            $('html').addClass('dark-mode')
-            $('#home').addClass('dark-mode')
-            $('img').addClass('dark-mode')
-            $('.project-card').addClass('dark-mode')
-            $('footer').addClass('dark-mode')
-            $('#dark-mode-btn-content').removeClass('fa-sun')
-            $('#dark-mode-btn-content').addClass('fa-moon')
-            isDark = true;
+    window.addEventListener("scroll", function () {
+        if (window.pageYOffset > 0) {
+            document.querySelector(".back-to-top").classList.add("active");
         } else {
-            $('html').removeClass('dark-mode')
-            $('#home').removeClass('dark-mode')
-            $('img').removeClass('dark-mode')
-            $('.project-card').removeClass('dark-mode')
-            $('footer').removeClass('dark-mode')
-            $('#dark-mode-btn-content').removeClass('fa-moon')
-            $('#dark-mode-btn-content').addClass('fa-sun')
-            isDark = false;
+            document.querySelector(".back-to-top").classList.remove("active");
         }
-    })
 
-    for (let i = 6; i < projectCard.length; i++)
-        $(projectCard[i]).hide()
-
-    $('.list').click(function() {
-        const value = $(this).attr('data-filter')
-        if (value == 'all') {
-            $('.project-card').show('1000')
-            for (let i = 6; i < projectCard.length; i++)
-                $(projectCard[i]).hide()
-            $('.product__btn-see-more').show('1000')
+        let [mainX, mainY] = detectPosition("#portfolioMain");
+        if (window.pageYOffset > mainY) {
+            document.querySelector("header").classList.add("on-scroll");
         } else {
-            $('.product__btn-see-more').hide()
-            $('.project-card').not('.' + value).hide('1000')
-            $('.project-card').filter('.' + value).show('1000')
+            document.querySelector("header").classList.remove("on-scroll");
         }
-    })
 
-    $('.list').click(function() {
-        $(this).addClass('projectActive').siblings().removeClass('projectActive')
-    })
+        showElementsOnScroll(".section-title");
+        showElementsOnScroll(".project-card");
+        showElementsOnScroll(".work-card");
+        showElementsOnScroll(".about-me-title");
+        showElementsOnScroll(".about-me-decription");
+        showElementsOnScroll(".contact");
+    });
 
-    $('.product__btn-see-more').click(function() {
-        if (isHide) {
-            for (let i = 6; i < projectCard.length; i++)
-                $(projectCard[i]).show('1000')
-            $(this).html('Hide');
-            isHide = !isHide;
-        } else {
-            for (let i = 6; i < projectCard.length; i++)
-                $(projectCard[i]).hide('1000')
-            $(this).html('View all');
-            isHide = !isHide;
-        }
-    })
-})
+    document
+        .querySelector(".back-to-top")
+        .addEventListener("click", function () {
+            window.scrollTo(0, 0);
+        });
+
+    document.querySelectorAll(".portfolio").forEach(function (item) {
+        item.addEventListener("mouseover", function () {
+            activeNavItem(0);
+        });
+    });
+
+    document
+        .querySelector("#about-me")
+        .addEventListener("mouseover", function () {
+            activeNavItem(1);
+        });
+    document
+        .querySelector("#contact")
+        .addEventListener("mouseover", function () {
+            activeNavItem(3);
+        });
+
+    function activeNavItem(index) {
+        let navItems = document.querySelectorAll(".nav-item");
+        navItems.forEach(function (navItem) {
+            navItem.classList.remove("active");
+        });
+        navItems[index].classList.add("active");
+    }
+
+    document.querySelectorAll(".nav-item").forEach(function (item, index) {
+        item.addEventListener("mouseover", function () {
+            activeNavItem(index);
+        });
+    });
+});

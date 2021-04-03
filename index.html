@@ -1,499 +1,482 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Dinh Tran</title>
-    <link rel="shortcut icon" href="./images/white-logo.png">
-    <!--Ion Icons-->
-    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
-    <!--Google Fonts-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Aldrich&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Krona+One&family=Press+Start+2P&family=Rowdies:wght@700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-    <!--Stylesheets-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/roadmap.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="stylesheets/main.css">
-    <link rel="stylesheet" href="css/fontawesome-all.css">
-</head>
-
-<body>
-    <div id="loading"><img id="loading-image" src="./images/loading.gif" alt="Loading..." /></div>
-    <div id="progressbar"></div>
-    <div id="scrollPath"></div>
-    <header>
-        <div class="ctn">
-            <nav>
-                <div class="nav-brand">
-                    <a href="index.html">
-                        <img src="./images/logo.png" alt="Dinh Tran">
-                    </a>
-                </div>
-
-                <div class="menu-icons open">
-                    <i class="icon ion-md-menu"></i>
-                </div>
-
-                <ul class="nav-list">
-                    <div class="menu-icons close">
-                        <i class="icon ion-md-close"></i>
-                    </div>
-                    <li class="nav-item">
-                        <a href="#home" class="nav-link current" title="Home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#about-me" class="nav-link" title="My Intro">My Intro</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#experience" class="nav-link" title="Experience">Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#projects" class="nav-link" title="Portfolio">Portfolio</a>
-                    </li>
-                    <!-- <li class="nav-item">
-                        <a href="#" class="nav-link" title="Blog">Blog</a>
-                    </li> -->
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link" title="Contact">Contact</a>
-                    </li>
-                </ul>
-            </nav>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dinh Tran</title>
+        <script src="https://use.fontawesome.com/786af939dc.js"></script>
+		<link rel="shortcut icon" href="./images/DT.png">
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
+    <body>
+        <div id="loading">
+            <img
+                id="loading-image"
+                src="./images/loading.gif"
+                alt="Loading Screen"
+            />
         </div>
-    </header>
-    <main>
-        <section id="home">
-            <div class="ctn">
-                <h3>Hi, I am</h3>
-                <h2 data-text="TRAN.PHUONG.DINH">TRAN.PHUONG.DINH</h2>
-                <h3>Front End Developer</h3>
-                <div class="btn-group">
-                    <a href="https://drive.google.com/file/d/12tHLTZ_PqPGUiRm2OqHuT3SYUyk_Xpqw/view?usp=sharing" target="blanc">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span> Download CV</a>
-                    <a href="#contact">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span> Contact me</a>
-                </div>
-                <div class="music-player">
-                    <canvas id="canvas"></canvas>
-                    <h3 class="music-name">Weight of the world</h3>
-                    <div class="btn-group">
-                        <button class="btn-previous"><span class="fa fa-fast-backward"></span></button>
-                        <button class="btn-play"><span class="fa fa-pause"></span></button>
-                        <button class="btn-next"><span class="fa fa-fast-forward"></span></button>
-                    </div>
-                </div>
+        <header>
+            <div class="container">
+                <nav class="nav-bar">
+                    <a href="./index.html"
+                        ><div class="nav-brand">
+                            <img
+                                src="./images/DT.png"
+                                alt="Dinh Tran"
+                                class="nav-brand-img"
+                            /></div
+                    ></a>
+                    <ul class="nav-list">
+                        <li class="nav-item active">
+                            <a href="#portfolio" class="nav-link">portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about-me" class="nav-link">about me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://drive.google.com/file/d/12tHLTZ_PqPGUiRm2OqHuT3SYUyk_Xpqw/view?usp=sharing" target="_blank" class="nav-link">resume</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">contact</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-        </section>
-        <section id="about-me">
-            <div class="ctn">
-                <div data-aos="fade-up" class="about-me__ctn__full-image">
-                    <img src="./images/avt.webp" alt="Dinh's Avatar">
-                </div>
-                <div data-aos="fade-down" class="about-me__ctn__content">
-                    <div class="about-me__ctn__intro">
-                        <h3>My Intro</h3>
-                        <h2>About Me</h2>
-                        <p>
-                            Hi! My name is Tran Phuong Dinh, and I am a second year student at Ho Chi Minh University Of Science. I have a strong passion about Front-end web development, and I've learnt Front-end for eight months and I got some certificates of HTML-CSS-JS and Front-end
-                            frameworks. One of my favorite quotes is from Linus Torvalds: “Talk is cheap. Show me the code.”.
-                        </p>
+        </header>
+        <main>
+            <section class="section home portfolio" id="portfolio">
+                <div class="container">
+                    <div class="home-info">
+                        <h1 class="home-info-title">
+                            <span>hi, i'm</span><br />
+                            Tran Phuong Dinh
+                        </h1>
+                        <h3 class="home-info-subtitle">front end developer</h3>
                     </div>
-                    <div class="about-me__ctn__info">
-                        <div class="about-me__ctn__info__content">
-                            <span class="about-me__ctn__content__icon fas fa-user"></span><span class="about-me__ctn__content__label"> Name</span><span>:</span><span>Tran Phuong Dinh</span>
-                        </div>
-                        <div class="about-me__ctn__info__content">
-                            <span class="about-me__ctn__content__icon fas fa-phone"></span><span class="about-me__ctn__content__label"> Phone</span><span>:</span><span>+84949996310</span>
-                        </div>
-                        <div class="about-me__ctn__info__content">
-                            <span class="about-me__ctn__content__icon far fa-envelope"></span><span class="about-me__ctn__content__label"> Email</span><span>:</span> <span>dinhblade123@gmail.com</span>
-                        </div>
-                    </div>
-                    <div class="about-me__ctn__interests">
-                        <h3>My Interests</h3>
-                        <div class="about-me__ctn__interests__info">
-                            <div class="about-me__ctn__interests-info"><span class="about-me__ctn__content__icon fas fa-music"></span><span class="about-me__ctn__content__label"> Music</span></div>
-                            <div class="about-me__ctn__interests-info"><span class="about-me__ctn__content__icon fas fa-code"></span><span class="about-me__ctn__content__label"> Coding</span></div>
-                            <div class="about-me__ctn__interests-info"><span class="about-me__ctn__content__icon fas fa-futbol"></span><span class="about-me__ctn__content__label"> Football</span></div>
-                            <div class="about-me__ctn__interests-info"><span class="about-me__ctn__content__icon fas fa-child"></span><span class="about-me__ctn__content__label"> Gym</span></div>
+                    <div class="music-player">
+                        <canvas id="canvas"></canvas>
+                        <h3 class="music-name">Awakening</h3>
+                        <div class="btn-group">
+                            <button class="btn-previous">
+                                <span class="fa fa-fast-backward"></span>
+                            </button>
+                            <button class="btn-play">
+                                <span class="fa fa-pause play-icon"></span>
+                            </button>
+                            <button class="btn-next">
+                                <span class="fa fa-fast-forward"></span>
+                            </button>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-        <section id="experience">
-            <h3 data-aos="zoom-in-down">My Qualification</h3>
-            <h2 data-aos="zoom-in-down">Awesome Journey</h2>
-            <div class="ctn">
-                <div class="roadmaps">
-                    <div class="roadmap" id="my-timeline" data-aos="flip-up">
-                        <h1 class="roadmap-title">Jobs & Education</h1>
-                    </div>
-                    <div class="roadmap" id="my-knowledge" data-aos="flip-down">
-                        <h1 class="roadmap-title">Knowledge</h1>
-                    </div>
-                </div>
-                <div class="skill-container" data-aos="zoom-in-up">
-                    <div class="card">
-                        <div class="box">
-                            <div class="percent">
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="certificate">
-                    <h3>My Certificates</h3>
-                    <h2>A Winner Never Stops Trying</h2>
-                    <a href="certificates.html" target="blanc">
-                        <div class="certificate-box">
-                            <span style="--i:1"><img src="./images/codelearn0.webp" alt="CodeLearn_certification"></span>
-                            <span style="--i:2"><img src="./images/codelearn1.webp" alt="CodeLearn_certification1"></span>
-                            <span style="--i:3"><img src="./images/codelearn2.webp" alt="CodeLearn_certification2"></span>
-                            <span style="--i:4"><img src="./images/algorithmToolbox.webp" alt="algorithm-toolbox-certificate"></span>
-                            <span style="--i:5"><img src="./images/frontendBasic.webp" alt="front-end-basic-certificate"></span>
-                            <span style="--i:6"><img src="./images/bootstrap.webp" alt="bootstrap4-certificate"></span>
-                            <span style="--i:7"><img src="./images/codelearn3.webp" alt="CodeLearn_certification3"></span>
-                            <span style="--i:8"><img src="./images/codelearn4.webp" alt="CodeLearn_certification4"></span>
-                            <span style="--i:9"><img src="./images/codelearn5.webp" alt="CodeLearn_certification5"></span>
-                            <span style="--i:10"><img src="./images/codelearn6.webp" alt="CodeLearn_certification6"></span>
-                            <span style="--i:11"><img src="./images/codelearn7.webp" alt="CodeLearn_certification7"></span>
-                            <span style="--i:12"><img src="./images/codelearn8.webp" alt="CodeLearn_certification8"></span>
-                            <span style="--i:13"><img src="./images/codelearn9.webp" alt="CodeLearn_certification9"></span>
-                        </div>
+                    <a href="#portfolioMain" class="check-my-work">
+                        <span class="bottom-border"></span>
+                        <p>Check out my projects</p>
                     </a>
                 </div>
-            </div>
-        </section>
-        <section id="projects">
-            <h3 data-aos="zoom-in-down">My Portfolio</h3>
-            <h2 data-aos="zoom-in-down">Recent Works</h2>
-            <div class="projectBox">
-                <ul data-aos="fade-up">
-                    <li class="list projectActive" data-filter="all">All Projects</li>
-                    <li class="list" data-filter="miniGames">Mini Games</li>
-                    <li class="list" data-filter="simpleWebapps">Mini Webapps</li>
-                    <li class="list" data-filter="youtubeClips">Youtube Clips</li>
-                    <li class="list" data-filter="others">Others</li>
-                </ul>
-                <div data-aos="zoom-in-up" class="product">
-                    <div class="project-card others" id="documentation-page-card">
-                        <div class="project-card__content">
-                            <a href="./PROJECTS/DOCUMENTATION PAGE/index.html" target="blanc"><span class="fas fa-play"></span></a>
-                            <a href="https://github.com/TranPhuongDinh/dinhtran/tree/master/PROJECTS/DOCUMENTATION%20PAGE" target="blanc"><span class="fas fa-code"></span></a>
-                        </div>
-                        <div class="project-card__info">
-                            <a href="./PROJECTS/DOCUMENTATION PAGE/index.html">Documentation Page</a>
-                            <div>
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JS</span>
+            </section>
+            <section class="section projects portfolio" id="portfolioMain">
+                <div class="container">
+                    <h2 class="section-title">
+                        website / landing page projects
+                    </h2>
+                    <div class="project-group">
+                        <div class="project-card">
+                            <div class="project-info">
+                                <h3 class="project-name">Documentation Page</h3>
+                                <p class="project-description">
+                                    A page where you can find documents for all
+                                    subjects you want to learn.
+                                </p>
+                                <div class="project-info-tag">
+                                    <span class="info-tag">HTML</span>
+                                    <span class="info-tag">CSS</span>
+                                    <span class="info-tag">JS</span>
+                                </div>
+                                <a
+                                    href="https://tranphuongdinh.github.io/dinhtran/PROJECTS/DOCUMENTATION%20PAGE/index.html?fbclid=IwAR3AxFpTIrYwdFOEY4x_LBDtL4gGJwvA41wPpdL2qGmxMMi_WXx8o4yNLj8"
+                                    target="_blank"
+                                    class="project-info-btn"
+                                    >View Demo
+                                    <span class="bottom-border"></span>
+                                </a>
+                            </div>
+                            <div class="project-img doc-page">
+                                <a
+                                    href="https://tranphuongdinh.github.io/dinhtran/PROJECTS/DOCUMENTATION%20PAGE/index.html"
+                                    target="_blank"
+                                >
+                                    <img
+                                        src="./images/documentation-page-bg.jpg"
+                                        alt="Documentation Page"
+                                    />
+                                </a>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="project-card others" id="loop-studios-card">
-                        <div class="project-card__content">
-                            <a href="./PROJECTS/LOOPSTUDIOS-PAGE/index.html" target="blanc"><span class="fas fa-play"></span></a>
-                            <a href="https://github.com/TranPhuongDinh/dinhtran/tree/master/PROJECTS/LOOPSTUDIOS-PAGE" target="blanc"><span class="fas fa-code"></span></a>
-                        </div>
-                        <div class="project-card__info">
-                            <a href="./PROJECTS/LOOPSTUDIOS-PAGE/index.html">Loop Studios Page</a>
-                            <div>
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JS</span>
+                        <div class="project-card">
+                            <div class="project-info">
+                                <h3 class="project-name">Loop Studio Page</h3>
+                                <p class="project-description">
+                                    A simple VR landing page
+                                </p>
+                                <div class="project-info-tag">
+                                    <span class="info-tag">HTML</span>
+                                    <span class="info-tag">CSS</span>
+                                    <span class="info-tag">JS</span>
+                                </div>
+                                <a
+                                    href="https://tranphuongdinh.github.io/dinhtran/PROJECTS/LOOPSTUDIOS-PAGE/index.html"
+                                    target="_blank"
+                                    class="project-info-btn"
+                                    >View Demo
+                                    <span class="bottom-border"></span>
+                                </a>
+                            </div>
+                            <div class="project-img vr-page">
+                                <a
+                                    href="https://tranphuongdinh.github.io/dinhtran/PROJECTS/LOOPSTUDIOS-PAGE/index.html"
+                                    target="_blank"
+                                >
+                                    <img
+                                        src="./images/loop-studio-img.png"
+                                        alt="Loop Studio Page"
+                                    />
+                                </a>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="project-card others" id="room-homepage-card">
-                        <div class="project-card__content">
-                            <a href="https://tranphuongdinh.github.io/dinhtran/PROJECTS/ROOM%20-%20HOMEPAGE/" target="blanc"><span class="fas fa-play"></span></a>
-                            <a href="https://github.com/TranPhuongDinh/dinhtran/tree/master/PROJECTS/ROOM%20-%20HOMEPAGE" target="blanc"><span class="fas fa-code"></span></a>
-                        </div>
-                        <div class="project-card__info">
-                            <a href="https://tranphuongdinh.github.io/dinhtran/PROJECTS/ROOM%20-%20HOMEPAGE/">Room Homepage</a>
-                            <div>
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JS</span>
+                        <div class="project-card">
+                            <div class="project-info">
+                                <h3 class="project-name">Room Homepage</h3>
+                                <p class="project-description">
+                                    A simple landing page with carousel effect
+                                </p>
+                                <div class="project-info-tag">
+                                    <span class="info-tag">HTML</span>
+                                    <span class="info-tag">CSS</span>
+                                    <span class="info-tag">JS</span>
+                                </div>
+                                <a
+                                    href="https://tranphuongdinh.github.io/dinhtran/PROJECTS/ROOM%20-%20HOMEPAGE/"
+                                    target="_blank"
+                                    class="project-info-btn"
+                                    >View Demo
+                                    <span class="bottom-border"></span>
+                                </a>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card miniGames" id="flappy-bird-card">
-                        <div class="project-card__content">
-                            <a href="https://tranphuongdinh.github.io/dinhtran/PROJECTS/FLAPPY%20BIRD/menu.html" target="blanc"><span class="fas fa-play"></span></a>
-                            <a href="https://github.com/TranPhuongDinh/dinhtran/tree/master/PROJECTS/FLAPPY%20BIRD" target="blanc"><span class="fas fa-code"></span></a>
-                        </div>
-                        <div class="project-card__info">
-                            <a href="https://tranphuongdinh.github.io/dinhtran/PROJECTS/FLAPPY%20BIRD/menu.html">Flappy Bird</a>
-                            <div>
-                                <span>JS</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card miniGames" id="hangman-card">
-                        <div class="project-card__content">
-                            <a href="https://tranphuongdinh.github.io/dinhtran/PROJECTS/HANGMAN/index.html" target="blanc"><span class="fas fa-play"></span></a>
-                            <a href="https://github.com/TranPhuongDinh/dinhtran/tree/master/PROJECTS/HANGMAN" target="blanc"><span class="fas fa-code"></span></a>
-                        </div>
-                        <div class="project-card__info">
-                            <a href="https://tranphuongdinh.github.io/dinhtran/PROJECTS/HANGMAN/index.html">Hangman</a>
-                            <div>
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JS</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card simpleWebapps" id="calculator-card">
-                        <div class="project-card__content">
-                            <a href="./PROJECTS/CALCULATOR APP/index.html" target="blanc"><span class="fas fa-play"></span></a>
-                            <a href="https://github.com/TranPhuongDinh/dinhtran/tree/master/PROJECTS/CALCULATOR%20APP" target="blanc"><span class="fas fa-code"></span></a>
-                        </div>
-                        <div class="project-card__info">
-                            <a href="./PROJECTS/CALCULATOR APP/index.html">Calculator</a>
-                            <div>
-                                <span>CSS</span>
-                                <span>JS</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card simpleWebapps" id="memeGen-card">
-                        <div class="project-card__content">
-                            <a href="https://tranphuongdinh.github.io/MemeGeneratorAppDemo/" target="blanc"><span class="fas fa-play"></span></a>
-                            <a href="./PROJECTS/MemeGeneratorSource/" target="blanc"><span class="fas fa-code"></span></a>
-                        </div>
-                        <div class="project-card__info">
-                            <a href="https://tranphuongdinh.github.io/MemeGeneratorAppDemo/">Meme Generator</a>
-                            <div>
-                                <span>REACT</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card simpleWebapps" id="paint-card">
-                        <div class="project-card__content">
-                            <a href="https://tranphuongdinh.github.io/SIMPLE-PAINT/" target="blanc"><span class="fas fa-play"></span></a>
-                            <a href="./PROJECTS/SIMPLE PAINT/" target="blanc"><span class="fas fa-code"></span></a>
-                        </div>
-                        <div class="project-card__info">
-                            <a href="https://tranphuongdinh.github.io/SIMPLE-PAINT/">Paint</a>
-                            <div>
-                                <span>JS</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card youtubeClips" id="snake-card">
-                        <div class="project-card__content">
-                            <a href="https://www.youtube.com/watch?v=OfrRXK3a6pw&t=9s" target="blanc"><span class="fas fa-play"></span></a>
-                        </div>
-                        <div class="project-card__info">
-                            <a href="https://www.youtube.com/watch?v=OfrRXK3a6pw&t=9s">Snake The Game</a>
-                            <div>
-                                <span>C++</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card youtubeClips" id="coding-card">
-                        <div class="project-card__content">
-                            <a href="https://www.youtube.com/watch?v=PdHPwGvnvzI&t=1373s" target="blanc"><span class="fas fa-play"></span></a>
-                            <a href="https://github.com/TranPhuongDinh/dinhtran/tree/master/PROJECTS/FLAPPY%20BIRD" target="blanc"><span class="fas fa-code"></span></a>
-                        </div>
-                        <div class="project-card__info">
-                            <a href="https://www.youtube.com/watch?v=PdHPwGvnvzI&t=1373s">Coding Challenge</a>
-                            <div>
-                                <span>JS</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card youtubeClips" id="piano-card">
-                        <div class="project-card__content">
-                            <a href="https://www.youtube.com/watch?v=AR6zpfzaENs&feature=youtu.be" target="blanc"><span class="fas fa-play"></span></a>
-                        </div>
-                        <div class="project-card__info">
-                            <a href="https://www.youtube.com/watch?v=AR6zpfzaENs&feature=youtu.be">Piano Cover</a>
-                            <div>
-                                <span>PIANO</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card others" id="tron-like-card">
-                        <div class="project-card__content">
-                            <a href="https://tranphuongdinh.github.io/dinhtran/PROJECTS/TRON-LIKE%20TUNNELS/index.html" target="blanc"><span class="fas fa-play"></span></a>
-                            <a href="https://github.com/TranPhuongDinh/dinhtran/tree/master/PROJECTS/TRON-LIKE%20TUNNELS" target="blanc"><span class="fas fa-code"></span></a>
-                        </div>
-                        <div class="project-card__info">
-                            <a href="https://tranphuongdinh.github.io/dinhtran/PROJECTS/TRON-LIKE%20TUNNELS/index.html">Tron-like Tunnels</a>
-                            <div>
-                                <span>JS Canvas</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-card others" id="galactic-card">
-                        <div class="project-card__content">
-                            <a href="https://tranphuongdinh.github.io/dinhtran/PROJECTS/GALACTIC%20LIGHT%20TRAILS/index.html" target="blanc"><span class="fas fa-play"></span></a>
-                            <a href="https://github.com/TranPhuongDinh/dinhtran/tree/master/PROJECTS/GALACTIC%20LIGHT%20TRAILS" target="blanc"><span class="fas fa-code"></span></a>
-                        </div>
-                        <div class="project-card__info">
-                            <a href="https://tranphuongdinh.github.io/dinhtran/PROJECTS/GALACTIC%20LIGHT%20TRAILS/index.html">Galactic Light Trails</a>
-                            <div>
-                                <span>JS Canvas</span>
+                            <div class="project-img room-page">
+                                <a
+                                    href="https://tranphuongdinh.github.io/dinhtran/PROJECTS/ROOM%20-%20HOMEPAGE/"
+                                    target="_blank"
+                                >
+                                    <img
+                                        src="./images/room-homepage-bg.PNG"
+                                        alt="Room Homepage"
+                                    />
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <button class="product__btn-see-more">View all</button>
-            </div>
-        </section>
-        <section id="contact">
-            <h3 data-aos="fade-down">Contact me</h3>
-            <h2 data-aos="fade-down">Get in Touch</h2>
-            <div data-aos="fade-up" class="ctn">
-                <!-- <div class="formBx" data-aos="fade-up">
-                    <script type="text/javascript" src="https://form.jotform.com/jsform/202814080705044"></script>
-                </div> -->
-
-                <div class="formBx">
-                    <h1 class="formBx__title">Message me!</h1>
-                    <iframe class="fs_embed" src="https://formsmarts.com/form/25d3?mode=h5embed&lay=1" allow="camera; fullscreen; geolocation" allowfullscreen="true"><a href="https://formsmarts.com/form/25d3">Can&#39;t see the form? Click here</a>.</iframe>
-                    <!-- Do not change or remove this notice. See https://formsmarts.com/warn -->
-                    <!-- <form onsubmit="submitForm()">
-                        <h3>Message Me</h3>
-                        <input type="text" name="" placeholder="Full Name">
-                        <input type="text" name="" placeholder="Email">
-                        <textarea placeholder="Your Message"></textarea>
-                        <input type="submit" value="Send">
-                    </form> -->
-                </div>
-
-                <div class="contact-info">
-                    <div class="contact-info__item">
-                        <span class="contact-info__item-icon fas fa-map-marker-alt"></span>
-                        <h3><b>Location</b></h3>
-                        <span>Ho Chi Minh city, Vietnam</span>
+            </section>
+            <section class="section web-apps portfolio">
+                <div class="container">
+                    <h2 class="section-title">web app projects</h2>
+                    <div class="project-group">
+                        <div class="project-card">
+                            <div class="project-info">
+                                <h3 class="project-name">calculator</h3>
+                                <p class="project-description">
+                                    A simple neumorphism calculator
+                                </p>
+                                <div class="project-info-tag">
+                                    <span class="info-tag">HTML</span>
+                                    <span class="info-tag">CSS</span>
+                                    <span class="info-tag">JS</span>
+                                </div>
+                                <a
+                                    href="https://tranphuongdinh.github.io/dinhtran/PROJECTS/CALCULATOR%20APP/index.html"
+                                    target="_blank"
+                                    class="project-info-btn"
+                                    >View Demo
+                                    <span class="bottom-border"></span>
+                                </a>
+                            </div>
+                            <div class="project-img calculator">
+                                <a
+                                    href="https://tranphuongdinh.github.io/dinhtran/PROJECTS/CALCULATOR%20APP/index.html"
+                                    target="_blank"
+                                >
+                                    <img
+                                        src="./images/calculator.PNG"
+                                        alt="Calculator"
+                                    />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-info">
+                                <h3 class="project-name">Hangman</h3>
+                                <p class="project-description">
+                                    Want to learn more English vocabulary? Try
+                                    this :))
+                                </p>
+                                <div class="project-info-tag">
+                                    <span class="info-tag">HTML</span>
+                                    <span class="info-tag">CSS</span>
+                                    <span class="info-tag">JS</span>
+                                </div>
+                                <a
+                                    href="https://tranphuongdinh.github.io/dinhtran/PROJECTS/HANGMAN/index.html"
+                                    target="_blank"
+                                    class="project-info-btn"
+                                    >View Demo
+                                    <span class="bottom-border"></span>
+                                </a>
+                            </div>
+                            <div class="project-img hangman">
+                                <a
+                                    href="https://tranphuongdinh.github.io/dinhtran/PROJECTS/HANGMAN/index.html"
+                                    target="_blank"
+                                >
+                                    <img
+                                        src="./images/hangman-bg.jpg"
+                                        alt="Hangman"
+                                    />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-info">
+                                <h3 class="project-name">Flappy Bird</h3>
+                                <p class="project-description">
+                                    Score 1000 points and I will send you a
+                                    special gift :3
+                                </p>
+                                <div class="project-info-tag">
+                                    <span class="info-tag">HTML</span>
+                                    <span class="info-tag">CSS</span>
+                                    <span class="info-tag">JS</span>
+                                </div>
+                                <a
+                                    href="https://tranphuongdinh.github.io/dinhtran/PROJECTS/FLAPPY%20BIRD/menu.html"
+                                    target="_blank"
+                                    class="project-info-btn"
+                                    >View Demo
+                                    <span class="bottom-border"></span>
+                                </a>
+                            </div>
+                            <div class="project-img flappy-bird">
+                                <a
+                                    href="https://tranphuongdinh.github.io/dinhtran/PROJECTS/FLAPPY%20BIRD/menu.html"
+                                    target="_blank"
+                                >
+                                    <img
+                                        src="./images/flappy-bird-bg.png"
+                                        alt="Flappy Bird"
+                                    />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-info">
+                                <h3 class="project-name">Meme Generator</h3>
+                                <p class="project-description">
+                                    Are you a true fan of memes? Try this!
+                                </p>
+                                <div class="project-info-tag">
+                                    <span class="info-tag">HTML</span>
+                                    <span class="info-tag">CSS</span>
+                                    <span class="info-tag">JS</span>
+                                </div>
+                                <a
+                                    href="https://tranphuongdinh.github.io/MemeGeneratorAppDemo/"
+                                    target="_blank"
+                                    class="project-info-btn"
+                                    >View Demo
+                                    <span class="bottom-border"></span>
+                                </a>
+                            </div>
+                            <div class="project-img meme-gen">
+                                <a
+                                    href="https://tranphuongdinh.github.io/MemeGeneratorAppDemo/"
+                                    target="_blank"
+                                >
+                                    <img
+                                        src="./images/meme-gen-bg.jpg"
+                                        alt="Meme Generator"
+                                    />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-info">
+                                <h3 class="project-name">Paint</h3>
+                                <p class="project-description">
+                                    A simple paint app on web
+                                </p>
+                                <div class="project-info-tag">
+                                    <span class="info-tag">HTML</span>
+                                    <span class="info-tag">CSS</span>
+                                    <span class="info-tag">JS</span>
+                                </div>
+                                <a
+                                    href="https://tranphuongdinh.github.io/SIMPLE-PAINT/"
+                                    target="_blank"
+                                    class="project-info-btn"
+                                    >View Demo
+                                    <span class="bottom-border"></span>
+                                </a>
+                            </div>
+                            <div class="project-img paint">
+                                <a
+                                    href="https://tranphuongdinh.github.io/SIMPLE-PAINT/"
+                                    target="_blank"
+                                >
+                                    <img
+                                        src="./images/paint-bg.jpg"
+                                        alt="Paint"
+                                    />
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="contact-info__item">
-                        <span class="contact-info__item-icon far fa-envelope"></span>
-                        <h3><b>E-mail</b></h3>
-                        <span>dinhblade123@gmail.com</span>
-                    </div>
-                    <div class="contact-info__item">
-                        <span class="contact-info__item-icon fas fa-phone"></span>
-                        <h3><b>Handy</b></h3>
-                        <span>+84949996310</span>
+                </div>
+            </section>
+            <section class="section others portfolio">
+                <div class="container">
+                    <h2 class="section-title">other works</h2>
+                    <div class="works-group">
+                        <div class="work-card-collumn">
+                            <div class="work-card">
+                                <div class="work-img">
+                                    <iframe
+                                        src="https://www.youtube.com/embed/PdHPwGvnvzI"
+                                        title="YouTube video player"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen
+                                    ></iframe>
+                                </div>
+                                <h3 class="work-name">
+                                    Coding challenge: Flappy Bird in 60 minutes
+                                </h3>
+                            </div>
+                            <div class="work-card">
+                                <div class="work-img">
+                                    <iframe
+                                        src="https://www.youtube.com/embed/OfrRXK3a6pw"
+                                        title="YouTube video player"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen
+                                    ></iframe>
+                                </div>
+                                <h3 class="work-name">
+                                    C++ Game Projects: Snake the game
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="work-card-collumn">
+                            <div class="work-card">
+                                <div class="work-img">
+                                    <iframe
+                                        src="https://www.youtube.com/embed/dPnHg6OUIIU"
+                                        title="YouTube video player"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen
+                                    ></iframe>
+                                </div>
+                                <h3 class="work-name">
+                                    Social responsibility - WHAT AND WHY?
+                                </h3>
+                            </div>
+                            <div class="work-card">
+                                <div class="work-img">
+                                    <iframe
+                                        src="https://www.youtube.com/embed/AR6zpfzaENs"
+                                        title="YouTube video player"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen
+                                    ></iframe>
+                                </div>
+                                <h3 class="work-name">Piano Cover</h3>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <div class="contact-items">
-            <ul>
-                <li>
-                    <a href="#dark-mode-btn" id="dark-mode-btn">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span id="dark-mode-btn-content" class="fas fa-sun"></span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://drive.google.com/file/d/12tHLTZ_PqPGUiRm2OqHuT3SYUyk_Xpqw/view?usp=sharing" target="blanc">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/TranPhuongDinh/dinhtran/tree/master/PROJECTS" target="blanc">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span class="fab fa-github-square" aria-hidden="true"></span>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/Dinh.Ramos.SR4.CR7.NTH/" target="blanc">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span class="fab fa-facebook-square" aria-hidden="true"></span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </main>
-    <footer>
-        <div class="ctn">
-            <div class="footer__links">
-                <ul>
-                    <li><a class="footer__nav-link" href="#home">HOME</a></li>
-                    <li><a class="footer__nav-link" href="#about-me">ABOUT</a></li>
-                    <li><a class="footer__nav-link" href="#experience">EXPERIENCE</a></li>
-                    <li><a class="footer__nav-link" href="#projects">PROJECTS</a></li>
-                    <li><a class="footer__nav-link" href="#contact">CONTACT</a></li>
-                </ul>
-            </div>
-            <div class="footer__logo">
-                <div class="footer__logo-img">
-                    <a href="#home">
-                        <img src="./images/white-logo.png" alt="footer-logo">
-                    </a>
+            </section>
+            <section id="about-me" class="section about-me">
+                <div class="container">
+                    <h2 class="section-title">about me</h2>
+                    <h1 class="about-me-title">
+                        front end developer from ho chi minh, vietnam.
+                    </h1>
+                    <p class="about-me-decription">
+                        Hi! My name is Tran Phuong Dinh, and I am a second year
+                        student at Ho Chi Minh University Of Science. I have a
+                        strong passion about Front-end web development, and I've
+                        learnt Front-end for eight months and I got some
+                        certificates of HTML-CSS-JS and Front-end frameworks.
+                        One of my favorite quotes is from Linus Torvalds: “Talk
+                        is cheap. Show me the code!”. Read
+                        more about me <a href="./about-me.html" class="about-link">here</a>.
+                    </p>
                 </div>
-            </div>
-        </div>
-        <div class="footer__title">
-            <h4><span class="fas fa-copyright"></span> 2020 Dinh Tran. All rights reserved | Designed by Tran Phuong Dinh</h4>
-            <div class="footer__title-icons">
-                <ul>
-                    <li><a href="https://www.facebook.com/Dinh.Ramos.SR4.CR7.NTH/" target="blanc"><span class="fab fa-facebook"></span></a></li>
-                    <li><a href="mailto:dinhblade123@gmail.com"><span class="fab fa-google-plus-circle"></span></a></li>
-                    <li><a href="https://www.youtube.com/channel/UCRvegrzTa8Lof_PE0YxRhew?view_as=subscriber" target="blanc"><span class="fab fa-youtube"></span></a></li>
-                    <li><a href="tel:0949996310"><span class="fas fa-phone"></span></a></li>
-                </ul>
-            </div>
-        </div>
-    </footer>
-    <div id="back-to-top-btn"><img src="./images/up-icon.png" alt="Back to top"></div>
+            </section>
+            <section id="contact" class="section contact">
+                <div class="container">
+                    <h1 class="contact-title">dinhblade123@gmail.com</h1>
+                    <p class="contact-description">
+                        Always down to collaborate when I have the time. I'm
+                        hoping to further my career by disrupting the social
+                        product space. Let's get in touch ✌️.
+                    </p>
+                    <div class="contact-icons">
+                        <a
+                            href="https://www.facebook.com/Dinh.Ramos.SR4.CR7.NTH/"
+                            target="blanc"
+                        >
+                            <span
+                                class="contact-icon fa fa-facebook-square"
+                                aria-hidden="true"
+                            >
+                            </span>
+                        </a>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="js/jquery.roadmap.js"></script>
-    <script src="js/study-roadmap.js"></script>
-    <script src="js/frondEnd-roadmap.js"></script>
-    <script src="js/rellax.min.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/music-player.js"></script>
-</body>
-
+                        <a
+                            href="https://www.youtube.com/channel/UCRvegrzTa8Lof_PE0YxRhew"
+                            target="blanc"
+                        >
+                            <span
+                                class="contact-icon fa fa-youtube-square"
+                                aria-hidden="true"
+                            ></span
+                        ></a>
+                        <a
+                            href="https://github.com/TranPhuongDinh/"
+                            target="blanc"
+                        >
+                            <span
+                                class="contact-icon fa fa-github-square"
+                                aria-hidden="true"
+                            ></span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+                <h5 class="copyright">Copyright © Tran Phuong Dinh.</h5>
+            </div>
+        </footer>
+        <div class="back-to-top"><span class="class="fa fa-caret-square-o-up" aria-hidden="true""></span></div>
+        <script src="./js/rellax.min.js"></script>
+        <script src="./js/pre-load.js"></script>
+        <script src="./js/script.js"></script>
+        <script src="./js/music-player.js"></script>
+    </body>
 </html>
