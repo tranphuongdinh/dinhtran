@@ -7,6 +7,10 @@
         background-position-y: 50%;
     }
 
+    .section.about-me {
+        padding-top: 6em;
+    }
+
     .section.about-me .container {
         flex-direction: column;
         align-items: center;
@@ -23,6 +27,31 @@
 
     .section.education .container {
         width: 100%;
+    }
+
+    .education-title {
+        font-size: 3.5em;
+    }
+
+    .education-col {
+        height: 42.5em;
+    }
+
+    .education-row h5,
+    .skills-row h5 {
+        font-size: 2em;
+    }
+
+    .education-row p {
+        font-size: 1.5em;
+    }
+
+    .education-row i {
+        font-size: 1em;
+    }
+
+    .skill-tag {
+        font-size: 1.4em;
     }
 
     .certificates-container {
@@ -50,5 +79,9 @@
     #img-full-screen img {
         width: 45em;
         height: 30em;
+    }
+
+    .education-col {
+        height: 55em;
     }
 }
