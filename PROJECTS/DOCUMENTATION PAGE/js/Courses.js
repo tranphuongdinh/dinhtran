@@ -41,7 +41,7 @@ const Documents = [
         ],
     },
     {
-        id: "c",
+        id: "#c",
         name: "lập trình c++",
         documentsList: [
             {
