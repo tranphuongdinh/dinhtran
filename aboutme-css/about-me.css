@@ -21,7 +21,7 @@
     width: 60%;
 }
 
-.about-me-decription {
+.about-me-description {
     margin-top: 2em;
     text-align: justify;
     font-size: 1.25em;
@@ -194,53 +194,4 @@ i {
 #img-full-screen.active {
     opacity: 1;
     pointer-events: initial;
-}
-
-/*CONTACT*/
-
-.section.contact {
-    min-height: 15em;
-    padding-top: 4em;
-    padding-bottom: 2em;
-    background-color: #f7f7f7;
-    opacity: 0;
-    transition: all 1s ease-in-out;
-}
-
-.section.contact.show {
-    opacity: 1;
-}
-
-.section.contact .container {
-    width: 80%;
-    height: 15em;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.contact-title {
-    font-size: 3em;
-    font-family: 'Yeseva One', cursive;
-}
-
-.contact-description {
-    text-align: justify;
-    font-size: 1.25em;
-    line-height: 2em;
-    font-weight: 300;
-}
-
-.contact-icons {
-    height: 3em;
-    width: 10em;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.contact-icon {
-    width: 1em;
-    height: 1em;
-    font-size: 2.5em;
 }

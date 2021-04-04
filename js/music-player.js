@@ -36,6 +36,12 @@ window.onload = function () {
     let barHeight;
     let x = 0;
 
+    let isPlaying = localStorage.getItem("is-playing");
+    if (isPlaying === null) {
+        localStorage.setItem("is-playing", "true");
+        isPlaying = localStorage.getItem("is-playing");
+    }
+
     function renderFrame() {
         requestAnimationFrame(renderFrame);
         x = 0;
@@ -107,19 +113,34 @@ window.onload = function () {
         [songIndex, playIcon] = soundController(songIndex, playIcon, true);
     });
 
-    playBtn.addEventListener("click", function () {
+    function pauseMusic() {
         if (playIcon.className === "fa fa-play play-icon") {
             backgroundMusic.play();
+            renderFrame();
             playIcon.className = "fa fa-pause play-icon";
         } else {
             backgroundMusic.pause();
             playIcon.className = "fa fa-play play-icon";
         }
+    }
+
+    playBtn.addEventListener("click", function () {
+        pauseMusic();
+        if (isPlaying == "false") {
+            isPlaying = "true";
+        } else {
+            isPlaying = "false";
+        }
+        localStorage.setItem("is-playing", isPlaying);
     });
     //======================= CONTROL BUTTONS ============================
 
-    setTimeout(function () {
-        backgroundMusic.play();
-        renderFrame();
-    }, 500);
+    if (isPlaying == "false") {
+        pauseMusic();
+    } else {
+        setTimeout(function () {
+            backgroundMusic.play();
+            renderFrame();
+        }, 500);
+    }
 };

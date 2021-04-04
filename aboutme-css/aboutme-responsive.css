@@ -8,7 +8,7 @@
     }
 
     .section.about-me {
-        padding-top: 6em;
+        padding-top: 5em;
     }
 
     .section.about-me .container {
@@ -23,6 +23,7 @@
 
     .about-me-img {
         width: 45%;
+        height: 26.5em;
     }
 
     .section.education .container {

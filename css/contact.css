@@ -1,0 +1,54 @@
+.section.contact {
+    min-height: 15em;
+    padding-bottom: 2em;
+    background-color: #f7f7f7;
+}
+
+.section.contact .container {
+    width: 80%;
+    height: 15em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact-title {
+    font-size: 3em;
+    font-family: 'Yeseva One', cursive;
+    transition: all .5s ease-in-out;
+    opacity: 0;
+}
+
+.contact-description {
+    text-align: justify;
+    font-size: 1.25em;
+    line-height: 2em;
+    font-weight: 300;
+    transition: all .5s ease-in-out;
+    opacity: 0;
+}
+
+.contact-title.show,
+.contact-description.show {
+    opacity: 1;
+}
+
+.contact-icons {
+    height: 3em;
+    width: 10em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contact-icon {
+    width: 1em;
+    height: 1em;
+    font-size: 2.75em;
+    transition: all .25s ease-in-out;
+    background: none;
+}
+
+.contact-icon:hover {
+    color: rgb(121, 121, 121);
+}

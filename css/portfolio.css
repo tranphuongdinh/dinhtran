@@ -21,7 +21,9 @@
     position: absolute;
     top: 50%;
     left: 0;
+    transition: all .5s ease-in-out;
 }
+
 
 .project-card {
     width: 100%;
@@ -62,6 +64,8 @@
     transition: all .25s ease-in-out;
 }
 
+
+
 .bottom-border {
     position: absolute;
     bottom: .1em;
@@ -85,6 +89,8 @@
     letter-spacing: .02em;
 }
 
+
+
 .project-description {
     font-weight: lighter;
     font-size: 1.2em;
@@ -105,7 +111,10 @@
     padding: .25em 1.5em;
     border-radius: 2em;
     font-weight: 300;
+    transition: all .5s ease-in-out;
 }
+
+
 
 .project-img {
     width: 50%;

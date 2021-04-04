@@ -26,6 +26,8 @@ section:nth-child(3) .container {
     font-weight: bold;
     padding: 1em 3em;
     letter-spacing: .25em;
+    transition: all .25s ease-out;
+    cursor: pointer;
 }
 
 .creation-cards {
@@ -46,6 +48,8 @@ section:nth-child(3) .container {
     position: relative;
     box-shadow: 0em 0em .1em .2em rgb(97, 97, 97);
     position: relative;
+    overflow: hidden;
+    cursor: pointer;
 }
 
 .card::after {
@@ -65,8 +69,13 @@ section:nth-child(3) .container {
 }
 
 .card img {
+    transition: all .25s ease-out;
     width: 100%;
     height: 100%;
+}
+
+.card:hover img {
+    transform: scale(1.5) rotateZ(10deg);
 }
 
 .card h3 {

@@ -1,0 +1,84 @@
+header.dark-mode.on-scroll {
+    background-color: #202020;
+}
+
+header.dark-mode.on-scroll .dark-mode-icon,
+header.dark-mode.on-scroll .nav-link {
+    color: #fff;
+}
+
+.section.projects.dark-mode,
+.section.others.dark-mode {
+    background-color: #242424;
+}
+
+.section.web-apps.dark-mode,
+.section.about-me.dark-mode,
+.section.education.dark-mode,
+.section.contact.dark-mode,
+.section.certificates.dark-mode,
+footer.dark-mode {
+    background-color: #202020;
+}
+
+.section-title.dark-mode,
+.about-me-title.dark-mode,
+.about-me-description.dark-mode,
+.about-link.dark-mode,
+.education-title.dark-mode,
+.education-row.dark-mode h5,
+.skills-row.dark-mode h5,
+.education-row.dark-mode p,
+.contact-title.dark-mode,
+.project-name.dark-mode,
+.project-description.dark-mode,
+.contact-description.dark-mode,
+.contact-title.dark-mode,
+.contact-description.dark-mode,
+.contact-icon.dark-mode,
+.copyright.dark-mode {
+    color: #fff;
+}
+
+.info-tag.dark-mode {
+    background: rgb(24, 24, 24);
+    color: #f2f2f2;
+}
+
+.skill-tag.dark-mode {
+    color: rgb(24, 24, 24);
+    background: #f2f2f2;
+}
+
+.about-me-img.dark-mode,
+.project-img.dark-mode,
+.work-img.dark-mode {
+    box-shadow: 0em 0em 1em .75em #353535;
+}
+
+.certificates-img.dark-mode,
+#img-full-screen-src.dark-mode {
+    box-shadow: 0em 0em 1em .75em #404040;
+}
+
+.section-title.dark-mode::before,
+header.dark-mode.on-scroll .nav-item::before {
+    background: #fff;
+}
+
+.project-info-btn.dark-mode {
+    border-bottom: .2em solid #fff;
+    color: #fff;
+}
+
+.project-info-btn.dark-mode .bottom-border {
+    background: #fff;
+}
+
+.contact-icon.dark-mode:hover {
+    color: rgb(156, 156, 156);
+}
+
+.back-to-top.dark-mode {
+    filter: invert(180)
+}

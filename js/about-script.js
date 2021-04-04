@@ -12,6 +12,7 @@ window.addEventListener("load", function () {
     function showElementsOnScroll(element) {
         document.querySelectorAll(element).forEach(function (card) {
             let cardY = window.scrollY + card.getBoundingClientRect().top;
+
             if (window.pageYOffset + window.innerHeight > cardY) {
                 card.classList.add("show");
             } else {
@@ -19,6 +20,64 @@ window.addEventListener("load", function () {
             }
         });
     }
+
+    function toggleDarkMode(elements) {
+        document.querySelectorAll(elements).forEach(function (element) {
+            element.classList.toggle("dark-mode");
+        });
+    }
+
+    let lightModeOn = localStorage.getItem("light-mode-on");
+    if (lightModeOn === null) {
+        localStorage.setItem("light-mode-on", 0);
+        lightModeOn = localStorage.getItem("light-mode-on");
+    } else if (lightModeOn != 0) {
+        activeDarkMode();
+    }
+
+    function activeDarkMode() {
+        if (
+            document
+                .querySelector(".dark-mode-icon")
+                .classList.contains("fa-sun-o")
+        ) {
+            document
+                .querySelector(".dark-mode-icon")
+                .classList.replace("fa-sun-o", "fa-moon-o");
+        } else {
+            document
+                .querySelector(".dark-mode-icon")
+                .classList.replace("fa-moon-o", "fa-sun-o");
+        }
+
+        toggleDarkMode("header");
+        toggleDarkMode(".section");
+        toggleDarkMode(".section-title");
+        toggleDarkMode(".about-me-title");
+        toggleDarkMode(".about-me-description");
+        toggleDarkMode(".about-me-img");
+        toggleDarkMode(".education-title");
+        toggleDarkMode(".education-row");
+        toggleDarkMode(".skills-row");
+        toggleDarkMode(".skill-tag");
+        toggleDarkMode(".certificates-img");
+        toggleDarkMode("#img-full-screen-src");
+        toggleDarkMode(".contact-title");
+        toggleDarkMode(".contact-description");
+        toggleDarkMode(".contact-icon");
+        toggleDarkMode(".copyright");
+        toggleDarkMode(".back-to-top");
+        toggleDarkMode("footer");
+    }
+
+    document
+        .querySelector(".dark-mode-switch")
+        .addEventListener("click", function () {
+            activeDarkMode();
+            if (lightModeOn == 0) lightModeOn = 1;
+            else lightModeOn = 0;
+            localStorage.setItem("light-mode-on", lightModeOn);
+        });
 
     window.addEventListener("scroll", function () {
         if (window.pageYOffset > 0) {
@@ -28,6 +87,7 @@ window.addEventListener("load", function () {
         }
 
         let [mainX, mainY] = detectPosition("#about-me-main");
+
         if (window.pageYOffset > mainY) {
             document.querySelector("header").classList.add("on-scroll");
         } else {
@@ -41,6 +101,8 @@ window.addEventListener("load", function () {
         showElementsOnScroll(".skills-row");
         showElementsOnScroll(".certificates-img");
         showElementsOnScroll(".contact");
+        showElementsOnScroll(".contact-title");
+        showElementsOnScroll(".contact-description");
     });
 
     document.querySelectorAll(".certificates-img").forEach(function (img) {
@@ -89,6 +151,7 @@ window.addEventListener("load", function () {
 
     function activeNavItem(index) {
         let navItems = document.querySelectorAll(".nav-item");
+
         navItems.forEach(function (navItem) {
             navItem.classList.remove("active");
         });

@@ -1,4 +1,5 @@
 footer {
+    transition: all .5s ease-in-out;
     background-color: #f7f7f7;
 }
 

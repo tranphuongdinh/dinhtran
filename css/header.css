@@ -5,7 +5,7 @@ header {
     top: 0;
     left: 0;
     z-index: 1000;
-    transition: all .3s ease-out;
+    transition: all .5s ease-out;
 }
 
 header.on-scroll {
@@ -22,23 +22,34 @@ header .container .nav-bar {
 }
 
 header .container .nav-brand {
-    width: 3.5em;
+    width: 7em;
     height: 3em;
-    box-shadow: 0 .1em .2em .2em #474747;
     transition: all .1s ease-in-out;
     border-radius: .2em;
-}
-
-header .container .nav-brand:hover {
-    width: 3.5em;
-    height: 3em;
-    box-shadow: 0 .1em .5em .2em #888888;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: space-between
 }
 
 header .container .nav-brand-img {
-    width: 100%;
+    width: 3.5em;
     height: 100%;
     border-radius: .2em;
+    box-shadow: 0 .1em .2em .2em #474747;
+}
+
+header .container .nav-brand-img:hover {
+    box-shadow: 0 .1em .5em .2em #888888;
+}
+
+header .dark-mode-switch {
+    margin-left: .25em;
+    border: none;
+    background: transparent;
+    width: 3.5em;
+    height: 100%;
+    font-size: 2.5em;
 }
 
 header .container .nav-list {

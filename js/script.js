@@ -1,17 +1,80 @@
 window.addEventListener("load", function () {
     let countTimes = 0;
-    setInterval(function () {
+
+    setInterval(
+        function () {
+            if (
+                document.querySelector(".home-info-title").innerHTML ===
+                "A Programmer"
+            ) {
+                document.querySelector(".home-info-title").innerHTML =
+                    "Tran Phuong Dinh";
+            } else {
+                document.querySelector(".home-info-title").innerHTML =
+                    "A Programmer";
+            }
+        },
+
+        4500
+    );
+
+    function toggleDarkMode(elements) {
+        document.querySelectorAll(elements).forEach(function (element) {
+            element.classList.toggle("dark-mode");
+        });
+    }
+
+    let lightModeOn = localStorage.getItem("light-mode-on");
+    if (lightModeOn === null) {
+        localStorage.setItem("light-mode-on", 0);
+        lightModeOn = localStorage.getItem("light-mode-on");
+    } else if (lightModeOn != 0) {
+        activeDarkMode();
+    }
+
+    function activeDarkMode() {
         if (
-            document.querySelector(".home-info-title").innerHTML ===
-            "A Programmer"
+            document
+                .querySelector(".dark-mode-icon")
+                .classList.contains("fa-sun-o")
         ) {
-            document.querySelector(".home-info-title").innerHTML =
-                "Tran Phuong Dinh";
+            document
+                .querySelector(".dark-mode-icon")
+                .classList.replace("fa-sun-o", "fa-moon-o");
         } else {
-            document.querySelector(".home-info-title").innerHTML =
-                "A Programmer";
+            document
+                .querySelector(".dark-mode-icon")
+                .classList.replace("fa-moon-o", "fa-sun-o");
         }
-    }, 4500);
+
+        toggleDarkMode("header");
+        toggleDarkMode(".section");
+        toggleDarkMode(".section-title");
+        toggleDarkMode(".project-name");
+        toggleDarkMode(".project-description");
+        toggleDarkMode(".info-tag");
+        toggleDarkMode(".project-info-btn");
+        toggleDarkMode(".project-img");
+        toggleDarkMode(".work-img");
+        toggleDarkMode("footer");
+        toggleDarkMode(".about-me-title");
+        toggleDarkMode(".about-me-description");
+        toggleDarkMode(".about-link");
+        toggleDarkMode(".contact-title");
+        toggleDarkMode(".contact-description");
+        toggleDarkMode(".contact-icon");
+        toggleDarkMode(".copyright");
+        toggleDarkMode(".back-to-top");
+    }
+
+    document
+        .querySelector(".dark-mode-switch")
+        .addEventListener("click", function () {
+            activeDarkMode();
+            if (lightModeOn == 0) lightModeOn = 1;
+            else lightModeOn = 0;
+            localStorage.setItem("light-mode-on", lightModeOn);
+        });
 
     function detectPosition(element) {
         let y =
@@ -26,6 +89,7 @@ window.addEventListener("load", function () {
     function showElementsOnScroll(element) {
         document.querySelectorAll(element).forEach(function (card) {
             let cardY = window.scrollY + card.getBoundingClientRect().top;
+
             if (window.pageYOffset + window.innerHeight > cardY) {
                 card.classList.add("show");
             } else {
@@ -42,6 +106,7 @@ window.addEventListener("load", function () {
         }
 
         let [mainX, mainY] = detectPosition("#portfolioMain");
+
         if (window.pageYOffset > mainY) {
             document.querySelector("header").classList.add("on-scroll");
         } else {
@@ -52,8 +117,10 @@ window.addEventListener("load", function () {
         showElementsOnScroll(".project-card");
         showElementsOnScroll(".work-card");
         showElementsOnScroll(".about-me-title");
-        showElementsOnScroll(".about-me-decription");
+        showElementsOnScroll(".about-me-description");
         showElementsOnScroll(".contact");
+        showElementsOnScroll(".contact-title");
+        showElementsOnScroll(".contact-description");
     });
 
     document
@@ -73,6 +140,7 @@ window.addEventListener("load", function () {
         .addEventListener("mouseover", function () {
             activeNavItem(1);
         });
+
     document
         .querySelector("#contact")
         .addEventListener("mouseover", function () {
@@ -81,6 +149,7 @@ window.addEventListener("load", function () {
 
     function activeNavItem(index) {
         let navItems = document.querySelectorAll(".nav-item");
+
         navItems.forEach(function (navItem) {
             navItem.classList.remove("active");
         });
