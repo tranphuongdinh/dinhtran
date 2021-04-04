@@ -185,6 +185,10 @@
         margin-top: 7em;
     }
 
+    .home-info {
+        width: 100%;
+    }
+
     .music-player {
         height: 5em;
         margin: 7.5em 0;

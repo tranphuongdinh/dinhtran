@@ -12,7 +12,8 @@
     margin-bottom: 4em;
 }
 
-.home-info-title span {
+.home-info span {
+    font-weight: bold;
     font-size: 3.5rem;
     font-family: 'Yeseva One', cursive;
     text-transform: capitalize;
@@ -22,6 +23,49 @@
     font-size: 5em;
     font-family: 'Yeseva One', cursive;
     text-transform: capitalize;
+    border-right: .1em solid #000;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: changeWidth 9s steps(16) infinite normal, blinkTextCursor 500ms steps(16) infinite normal;
+}
+
+@keyframes changeWidth {
+    0% {
+        width: 0;
+    }
+
+    30% {
+        width: 9.3em;
+    }
+
+    31%,
+    49% {
+        width: 9.3em;
+    }
+
+    50% {
+        width: 0;
+    }
+
+    80% {
+        width: 7.6em;
+    }
+
+    81%,
+    100% {
+        width: 7.6em;
+    }
+
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: rgb(0, 0, 0);
+    }
+
+    to {
+        border-right-color: transparent;
+    }
 }
 
 .home-info-subtitle {
