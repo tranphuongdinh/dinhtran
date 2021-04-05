@@ -29,6 +29,24 @@
     animation: changeWidth 9s steps(16) infinite normal, blinkTextCursor 500ms steps(16) infinite normal;
 }
 
+.home-info-title::before {
+    content: 'Tran Phuong Dinh';
+    animation: changeContent 9s infinite;
+}
+
+@keyframes changeContent {
+
+    0%,
+    49% {
+        content: 'Tran Phuong Dinh';
+    }
+
+    53%,
+    100% {
+        content: 'A Programmer'
+    }
+}
+
 @keyframes changeWidth {
     0% {
         width: 0;

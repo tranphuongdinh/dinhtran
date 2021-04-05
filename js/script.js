@@ -1,23 +1,4 @@
 window.addEventListener("load", function () {
-    let countTimes = 0;
-
-    setInterval(
-        function () {
-            if (
-                document.querySelector(".home-info-title").innerHTML ===
-                "A Programmer"
-            ) {
-                document.querySelector(".home-info-title").innerHTML =
-                    "Tran Phuong Dinh";
-            } else {
-                document.querySelector(".home-info-title").innerHTML =
-                    "A Programmer";
-            }
-        },
-
-        4500
-    );
-
     function toggleDarkMode(elements) {
         document.querySelectorAll(elements).forEach(function (element) {
             element.classList.toggle("dark-mode");
