@@ -32,7 +32,7 @@
 .about-me-img {
     width: 30%;
     height: 25em;
-    background: url('../images/avt.jpg') center no-repeat;
+    background: url('../images/avt.webp') center no-repeat;
     background-size: cover;
     box-shadow: 0em 0em .75em .5em #dfdddd;
     border-radius: .5em;
