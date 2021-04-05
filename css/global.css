@@ -80,7 +80,7 @@ button {
 .back-to-top {
     width: 3em;
     height: 3em;
-    background: url('../images/up-arrow.png') center no-repeat;
+    background: url('../images/up-arrow.webp') center no-repeat;
     background-size: cover;
     position: fixed;
     right: 8em;
