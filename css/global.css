@@ -9,7 +9,7 @@
     list-style: none;
     text-decoration: none;
     color: #242424;
-    font-size: 1vw;
+    font-size: calc(7.5px + 0.5vw);
     font-family: 'Lato', sans-serif;
     scroll-behavior: smooth;
 }

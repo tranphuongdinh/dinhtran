@@ -1,6 +1,6 @@
 @media (max-width: 1200px) {
     * {
-        font-size: 1.1vw;
+        font-size: calc(7px + 0.5vw);
     }
 
     section .container,
@@ -19,7 +19,7 @@
 
 @media (max-width: 992px) {
     * {
-        font-size: 1.2vw;
+        font-size: calc(6px + 0.6vw);
     }
 
     section .container,
@@ -35,7 +35,7 @@
 
 @media (max-width:768px) {
     * {
-        font-size: 1.3vw;
+        font-size: calc(5px + 0.6vw);
     }
 
     header .container .nav-bar {
@@ -148,7 +148,7 @@
 
 @media (max-width:576px) {
     * {
-        font-size: 1.7vw;
+        font-size: calc(4px + .8vw);
     }
 
     body {
@@ -225,5 +225,11 @@
 
     .section.contact .container {
         height: 23em;
+    }
+}
+
+@media (max-width: 376px) {
+    * {
+        font-size: calc(3.5px + .7vw);
     }
 }
