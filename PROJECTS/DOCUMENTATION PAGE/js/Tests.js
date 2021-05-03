@@ -419,7 +419,7 @@ let Documents = [
                     "https://drive.google.com/drive/folders/1idE9rcB5bbNQe4z6oHsB5zddA7h2yMnl",
             },
             {
-                name: "Vật lý đại cương 1 | Tailieuhcmus",
+                name: "Vật lý đại cương 1 | Tổng hợp",
                 url:
                     "https://drive.google.com/drive/u/1/folders/1HFEU9EqIVtfF3QeT-gICuSHepIVHOiae",
             },
@@ -427,6 +427,11 @@ let Documents = [
                 name: "Vật lý đại cương 2 | Tailieuhcmus",
                 url:
                     "https://drive.google.com/drive/folders/1ncypWVexHGVSgboQKUtgst-kfpCIc0uW",
+            },
+            {
+                name: "Vật lý đại cương 2 | Tổng hợp",
+                url:
+                    "https://drive.google.com/drive/u/1/folders/1V2cq9KU6-FawN-nykMoUdulxGqbdp1Xa",
             },
             {
                 name: "Vật lý đại cương 3 | Tailieuhcmus",

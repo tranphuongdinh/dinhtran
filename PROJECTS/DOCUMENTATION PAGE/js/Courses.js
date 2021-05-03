@@ -124,6 +124,10 @@ const Documents = [
                     "https://www.youtube.com/watch?v=gL5HBA_1bDQ&list=PLJ5qtRQovuEOoKffoCBzTfvzMTTORnoyp",
             },
             {
+                name: "Làm quen với React trong 30 phút | HoleTex",
+                url: "https://www.youtube.com/watch?v=Up3YNeLA6MQ",
+            },
+            {
                 name: "Lập trình web cơ bản - Thư viện lập trình",
                 url:
                     "https://www.youtube.com/watch?v=CxMbQ2AqteE&list=PLLAJJPGNwNkghoNSB9xq22EJ_Z1rX7Ygs",
