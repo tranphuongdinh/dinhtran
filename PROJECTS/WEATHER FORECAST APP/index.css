@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: url(https://cdn.dribbble.com/users/1889982/screenshots/6641962/tempo.gif) center no-repeat;
+    background-size: cover;
+    background-color: #404040;
+}
+
+.container {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.05);
+    width: 400px;
+    margin: 50px auto;
+    border-radius: 5px;
+    font-size: 14px;
+    box-shadow: 0 8px 32px 0 rgba(44, 44, 44, 0.37);
+    backdrop-filter: blur(6.0px);
+    -webkit-backdrop-filter: blur(6.0px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.search-bar {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 50px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+}
+
+.search-icon {
+    margin-right: 0;
+    position: absolute;
+    left: 0;
+}
+
+#search-input {
+    border: 0;
+    outline: 0;
+    padding: 3px 3px 3px 0;
+    background: transparent;
+    height: 20px;
+    color: #fff;
+}
+
+#search-input::placeholder {
+    color: rgb(200, 200, 200);
+    font-style: italic;
+}
+
+.info-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    padding: 80px 50px;
+}
+
+.city-name {
+    font-size: 30px;
+    margin-bottom: 3px;
+    text-align: center;
+}
+
+.weather-state {
+    font-size: 13px;
+    text-transform: capitalize;
+}
+
+.weather-icon {
+    width: 70px;
+    height: 70px;
+}
+
+.temperature {
+    padding: 20px;
+    font-size: 80px;
+    font-weight: bolder;
+    line-height: 1;
+    position: relative;
+}
+
+.temperature::after {
+    content: 'o';
+    position: absolute;
+    font-size: 30px;
+    top: 0;
+    right: 0;
+}
+
+.additional-section {
+    width: 100%;
+    border-top: 1px solid #fff;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 20px;
+    font-size: 13px;
+    justify-content: space-around;
+    align-items: center;
+    height: 14vh;
+}
+
+.row {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.label {
+    font-weight: bold;
+}

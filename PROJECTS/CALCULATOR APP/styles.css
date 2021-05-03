@@ -26,25 +26,26 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(36, 35, 35);
+    background: #2e2e2e
 }
 
 button {
     border: none;
     outline: none;
-    box-shadow: 0 2px 1px 1px rgb(83, 83, 83);
 }
 
 button:active {
-    background: honeydew;
+    background: rgb(48, 231, 48);
     color: black;
 }
 
 .container {
     width: 20em;
     height: 40em;
-    border-radius: 1px;
-    box-shadow: 0px 0px 5px 15px rgb(49, 48, 48);
+    border-radius: 10px;
+    background: #2e2e2e;
+    box-shadow: -21px 21px 42px #222222,
+        21px -21px 42px #3a3a3a;
 }
 
 .screen {
@@ -54,7 +55,8 @@ button:active {
     display: flex;
     flex-direction: column;
     background: #000;
-    box-shadow: 0 2px 1px 1px rgb(83, 83, 83);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 #calculation {
@@ -84,6 +86,16 @@ button:active {
     height: 70%;
     display: flex;
     flex-flow: row;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#btn-dot {
+    border-bottom-left-radius: 10px;
+}
+
+#equal {
+    border-bottom-right-radius: 10px;
 }
 
 .number-container {
@@ -99,7 +111,7 @@ button:active {
     width: calc(100% / 3.1);
     height: calc(100% / 4.05);
     font-family: 'uasquare', sans-serif;
-    font-size: 1.5em;
+    font-size: 1.75em;
     background: rgb(39, 39, 39);
     color: rgb(48, 231, 48);
 }

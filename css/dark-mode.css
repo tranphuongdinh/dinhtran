@@ -31,7 +31,8 @@ footer.dark-mode {
 .education-row.dark-mode p,
 .contact-title.dark-mode,
 .project-name.dark-mode,
-.project-description.dark-mode,
+.project-description.dark-mode div,
+.project-description.dark-mode span,
 .contact-description.dark-mode,
 .contact-title.dark-mode,
 .contact-description.dark-mode,
@@ -53,12 +54,12 @@ footer.dark-mode {
 .about-me-img.dark-mode,
 .project-img.dark-mode,
 .work-img.dark-mode {
-    box-shadow: 0em 0em 1em .75em #353535;
+    box-shadow: 0em 0em 1em .75em #292929;
 }
 
 .certificates-img.dark-mode,
 #img-full-screen-src.dark-mode {
-    box-shadow: 0em 0em 1em .75em #404040;
+    box-shadow: 0em 0em 1em .75em #414040;
 }
 
 .section-title.dark-mode::before,
