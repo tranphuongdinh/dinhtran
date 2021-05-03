@@ -23,7 +23,7 @@ searchInput.addEventListener("change", (e) => {
 
 const getData = (value, API_ID) => {
     fetch(
-        `http://api.openweathermap.org/data/2.5/weather?q=${value}&appid=${API_ID}&units=metric&lang=vi`
+        `https://api.openweathermap.org/data/2.5/weather?q=${value}&appid=${API_ID}&units=metric&lang=vi`
     ).then(async (res) => {
         const data = await res.json();
         console.log(data);
