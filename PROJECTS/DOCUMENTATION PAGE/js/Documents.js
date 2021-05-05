@@ -182,6 +182,11 @@ let Documents = [
         name: "địa chất",
         documentsList: [
             {
+                name: "Cơ sở khoa học chất rắn | tailieuhcmus",
+                url:
+                    "https://drive.google.com/drive/folders/14B_W0WU-7FwQUgEMx9QXunONUA6z6Ac_?fbclid=IwAR1oVL4q600jDRIHHKMpLlyWBeJNM3cRUr7ORYGWNtk-Y20pY8Y52s1SRI4",
+            },
+            {
                 name: "Câu Hỏi Ôn Tập Tinh Thể | tailieuhcmus",
                 url:
                     "https://drive.google.com/drive/folders/1SZUzixH_xpV9tVIcUN2HMQ-b2_SRY8eI",
@@ -238,6 +243,31 @@ let Documents = [
         id: "#chemistry",
         name: "hoá học",
         documentsList: [
+            {
+                name: "Thực tập hóa phân tích 2 | tailieuhcmus",
+                url:
+                    "https://drive.google.com/drive/folders/1yDYCvffdmHd0ucZiXgHL2z9s37HbvW06?fbclid=IwAR0kWmGZFagtgJv4NjyC7TcX85yXCicIl7wLplecWbS78JvBlTrSrtcjqY4",
+            },
+            {
+                name: "Hóa phân tích 2 | tailieuhcmus",
+                url:
+                    "https://drive.google.com/drive/folders/1qXYhKVy1l2huzsS5mkzNWl6vuFgnkGk_?fbclid=IwAR0t-DiItaI1f_Wx9GWumQJ2mwQlA13CW5Oayk9tQ67kDv2NvaesVqU1y1E",
+            },
+            {
+                name: "thực tập hóa vô cơ 1 | tailieuhcmus",
+                url:
+                    "https://drive.google.com/drive/folders/1VV8NWpri6gvfNhMQ9i60R3HPqQtYIfXU?fbclid=IwAR1pwLe0DZLzKBeffJvOlU-u2bIfDLvJ_zH-ZdJyT5zmje5HCRfL-DwKTzo",
+            },
+            {
+                name: "Thực tập hóa vô cơ 2 | tailieuhcmus",
+                url:
+                    "https://drive.google.com/drive/folders/1zBWoJIBvNHrR0s6-dp5WDkAMerghHEQg?fbclid=IwAR3We1GxIABgp7oIhuEqIFA8iI-OGBP28szLII7Kl8QOPU8zJnLB7I4WFqU",
+            },
+            {
+                name: "Hóa vô cơ 2 | tailieuhcmus",
+                url:
+                    "https://drive.google.com/drive/folders/1xtymc_C7E4tDfUKxqePMfhoFOH5w_xWk?fbclid=IwAR10_OCUvANsFIX5Ob-mh0cpRNr1P-2FtJm_QMkHsVJ7LVQ9qS0kcrUIwhY",
+            },
             {
                 name: "Giáo trình tham khảo | tailieuhcmus",
                 url:
@@ -755,6 +785,11 @@ let Documents = [
                 url:
                     "https://drive.google.com/drive/folders/1ma66CkEsHB2h9DSNaRw7m9G1WYQBkO1r",
             },
+            {
+                name: "Sinh học cơ sở | tailieuhcmus",
+                url:
+                    "https://drive.google.com/drive/folders/1ScTmexDMlqeChU4YsqLcCWbNtrIDIU6j?fbclid=IwAR0LKRHxUMDr2DubpbPwKoAi0TOgEOuoXaKvWmppQHMEOzNEOZjclT2r-GU",
+            },
         ],
     },
     {
@@ -800,7 +835,7 @@ let Documents = [
             {
                 name: "Đại số đại cương | tailieuhcmus",
                 url:
-                    "https://drive.google.com/drive/folders/19jb45YEAZ3freTNf85xCS8cS2Uu7ownb",
+                    "https://drive.google.com/drive/folders/1juUIi5cd2q8b3ZPMSgvmR1S2n5vLLI8a?sort=13&direction=a&fbclid=IwAR1Y10P7_aclZbe1n1jPUVeEGIFq5MWrR6lHkijq8dc0VlqnRvfGAVE97JA",
             },
             {
                 name: "Đại số đồng đều | tailieuhcmus",
@@ -991,12 +1026,22 @@ let Documents = [
         name: "vật lý",
         documentsList: [
             {
+                name: "Điện động lực học | tailieuhcmus",
+                url:
+                    "https://drive.google.com/drive/folders/1Gf3WvyR7urUluCX84rNlpyNQXGM_t7LV?fbclid=IwAR2-oXO7U_-vXogBjURlh95_jAjR9xbLhBJs2VmQDH4pm9XI_xBqEQUKu0o",
+            },
+            {
+                name: "Lượng tử học | tailieuhcmus",
+                url:
+                    "https://drive.google.com/drive/folders/18cgSKbFczoYTxY3KJjBE7A__4plFEVJS?fbclid=IwAR2wU7zf9ABa6qtxG2TCQsyel77jLtXvhH4WGFSMciUchhsVKZEQ1I17yYY",
+            },
+            {
                 name: "Bài tập nguyên tử - Hạt nhân | tailieuhcmus",
                 url:
                     "https://drive.google.com/drive/folders/1bT4FzERKljo2Qgwr__b0X9X_LhHYs0js",
             },
             {
-                name: "hiện từ - Quang | tailieuhcmus",
+                name: "điện từ - Quang | tailieuhcmus",
                 url:
                     "https://lchaovlhn.wordpress.com/tai-lieu-hoc-tap-vat-ly-dai-cuong/",
             },
@@ -1038,7 +1083,7 @@ let Documents = [
 ];
 
 function compareName(a, b) {
-    return a.name > b.name ? 1 : -1;
+    return a.name.toLowerCase() > b.name.toLowerCase() ? 1 : -1;
 }
 
 Documents.sort(compareName);

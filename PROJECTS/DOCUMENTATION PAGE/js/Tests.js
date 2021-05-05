@@ -116,6 +116,21 @@ let Documents = [
         name: "hoá học",
         documentsList: [
             {
+                name: "Hóa vô cơ 1 | tailieuhcmus",
+                url:
+                    "https://drive.google.com/drive/folders/1eWLsuUNHMbxouyN2U0G_4ThHfiwPgBT2?fbclid=IwAR0u2gqmjEbb2VUtoKKLbmvye30zDJ8BwjmBR8i8S9VMbVBddHQiRdIPfks",
+            },
+            {
+                name: "Hóa lý 1 | tailieuhcmus",
+                url:
+                    "https://drive.google.com/drive/folders/1C1QemUcPBcuzOriLtHS4eKRZ-XR-34Lo?fbclid=IwAR0b3gwiVTfJHSjc3eSqtVvnl3Mr55pdf_WzVZ6AbNvag-6rhttrtyNhhF8",
+            },
+            {
+                name: "Hóa lượng tử | tailieuhcmus",
+                url:
+                    "https://drive.google.com/drive/folders/1WSvczEOxwo9ddYsZHE50na5_CXakOMqs?fbclid=IwAR3K8Pbhqvy3ehLmo9PtoFB0Wfm8gn2stMcxdrzssvCmRYKt5JbjM_8Le8I",
+            },
+            {
                 name: "Hoá đại cương 1 | Tailieuhcmus",
                 url:
                     "https://drive.google.com/drive/folders/1PpdA0vf2jh9weI7TwClQnqbEd_zA_tGE",
@@ -569,7 +584,7 @@ let Documents = [
 ];
 
 function compareName(a, b) {
-    return a.name > b.name ? 1 : -1;
+    return a.name.toLowerCase() > b.name.toLowerCase() ? 1 : -1;
 }
 
 Documents.sort(compareName);

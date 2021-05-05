@@ -124,7 +124,7 @@ const Documents = [
                     "https://www.youtube.com/watch?v=gL5HBA_1bDQ&list=PLJ5qtRQovuEOoKffoCBzTfvzMTTORnoyp",
             },
             {
-                name: "Làm quen với React trong 30 phút | HoleTex",
+                name: "Làm quen với React trong 30 phút - HoleTex",
                 url: "https://www.youtube.com/watch?v=Up3YNeLA6MQ",
             },
             {
@@ -201,7 +201,7 @@ const Documents = [
 ];
 
 function compareName(a, b) {
-    return a.name > b.name ? 1 : -1;
+    return a.name.toLowerCase() > b.name.toLowerCase() ? 1 : -1;
 }
 
 Documents.sort(compareName);
