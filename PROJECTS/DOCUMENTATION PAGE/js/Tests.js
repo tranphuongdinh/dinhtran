@@ -34,6 +34,11 @@ let Documents = [
                     "https://drive.google.com/drive/folders/1f4613Gt7JWXi07RgF-ZwX68_afXvgOrQ",
             },
             {
+                name: "Lập trình hướng đối tượng | Tổng hợp",
+                url:
+                    "https://drive.google.com/drive/u/1/folders/1YYZ5Ygnki2Od9JbMdd4GhtT8q_5MQvyJ",
+            },
+            {
                 name: "Mạng máy tính | Tailieuhcmus",
                 url:
                     "https://drive.google.com/drive/folders/17g4B1vpw6iTsNevi-SnigQL_XUdFWebk",
