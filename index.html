@@ -5,451 +5,494 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Dinh Tran</title>
-        <script src="https://use.fontawesome.com/786af939dc.js"></script>
-        <link rel="shortcut icon" href="./images/DT.webp" />
-        <link rel="stylesheet" href="css/main.css" />
+        <script src="https://use.fontawesome.com/eb06b48c58.js"></script>
+        <link rel="stylesheet" href="./assets/css/index.css" />
     </head>
-
     <body>
-        <div id="loading">
-            <img
-                id="loading-image"
-                src="./images/loading.gif"
-                alt="Loading Screen"
-            />
-        </div>
-        <header>
-            <div class="container">
-                <nav class="nav-bar">
-                    <div class="nav-brand">
-                        <a href="./index.html"
-                            ><img
-                                src="./images/DT.webp"
-                                alt="Dinh Tran"
-                                class="nav-brand-img"
-                        /></a>
-                        <button class="dark-mode-switch">
-                            <span
-                                class="fa fa-sun-o dark-mode-icon"
-                                aria-hidden="true"
-                            ></span>
-                        </button>
+        <span class="project-tooltip"></span>
+        <div class="description-modal">
+            <span class="description-modal__close fa fa-times-circle-o"></span>
+            <div class="description-modal__details">
+                <div class="description-modal__details-knowledge">
+                    <div class="knowledge-col">
+                        <h3 class="knowledge-col__title">education</h3>
+                        <div class="knowledge-col__info">
+                            <h3 class="info-name">
+                                University Of Science - Vietnam National
+                                University
+                            </h3>
+                            <p class="info-year">
+                                Student <span>•Sep 2019 - Present</span>
+                            </p>
+                        </div>
+                        <div class="knowledge-col__info">
+                            <h3 class="info-name">My Lac Senior High School</h3>
+                            <p class="info-year">
+                                Student <span>•2016 - 2019</span>
+                            </p>
+                        </div>
+                        <div class="knowledge-col__info">
+                            <h3 class="info-name">My Lac Junior High School</h3>
+                            <p class="info-year">
+                                Student <span>•2012 - 2016</span>
+                            </p>
+                        </div>
+                        <div class="knowledge-col__info">
+                            <h3 class="info-name">
+                                My Lac Primary High School
+                            </h3>
+                            <p class="info-year">
+                                Student <span>•2007 - 2012</span>
+                            </p>
+                        </div>
                     </div>
-                    <ul class="nav-list">
-                        <li class="nav-item active">
-                            <a href="#portfolio" class="nav-link">portfolio</a>
+                    <div class="knowledge-col">
+                        <h3 class="knowledge-col__title">skills</h3>
+                        <div class="knowledge-col__info">
+                            <h3 class="info-name">General</h3>
+                            <div class="info-tags">
+                                <span class="tag">Front-end Dev</span>
+                                <span class="tag">UI/UX</span>
+                                <span class="tag">Software Engineering</span>
+                            </div>
+                        </div>
+                        <div class="knowledge-col__info">
+                            <h3 class="info-name">Design</h3>
+                            <div class="info-tags">
+                                <span class="tag">Figma</span>
+                                <span class="tag">Adobe Photoshop</span>
+                                <span class="tag">Balsamiq</span>
+                            </div>
+                        </div>
+                        <div class="knowledge-col__info">
+                            <h3 class="info-name">Engineering</h3>
+                            <div class="info-tags">
+                                <span class="tag">C++</span>
+                                <span class="tag">HTML/CSS</span>
+                                <span class="tag">React Js</span>
+                                <span class="tag">Jquery</span>
+                                <span class="tag">Git</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="description-modal__details-certificates">
+                    <h3 class="certificates-title">certificates</h3>
+                    <div class="certificates">
+                        <img
+                            class="certificates-img"
+                            src="./images/codelearn0.webp"
+                            alt="Certificate Image"
+                        /><img
+                            class="certificates-img"
+                            src="./images/codelearn1.webp"
+                            alt="Certificate Image"
+                        /><img
+                            class="certificates-img"
+                            src="./images/codelearn2.webp"
+                            alt="Certificate Image"
+                        /><img
+                            class="certificates-img"
+                            src="./images/codelearn3.webp"
+                            alt="Certificate Image"
+                        /><img
+                            class="certificates-img"
+                            src="./images/codelearn4.webp"
+                            alt="Certificate Image"
+                        /><img
+                            class="certificates-img"
+                            src="./images/codelearn5.webp"
+                            alt="Certificate Image"
+                        /><img
+                            class="certificates-img"
+                            src="./images/codelearn6.webp"
+                            alt="Certificate Image"
+                        /><img
+                            class="certificates-img"
+                            src="./images/codelearn7.webp"
+                            alt="Certificate Image"
+                        /><img
+                            class="certificates-img"
+                            src="./images/codelearn8.webp"
+                            alt="Certificate Image"
+                        /><img
+                            class="certificates-img"
+                            src="./images/codelearn9.webp"
+                            alt="Certificate Image"
+                        /><img
+                            class="certificates-img"
+                            src="./images/codelearn10.webp"
+                            alt="Certificate Image"
+                        /><img
+                            class="certificates-img"
+                            src="./images/bootstrap.webp"
+                            alt="Certificate Image"
+                        /><img
+                            class="certificates-img"
+                            src="./images/algorithmToolbox.webp"
+                            alt="Certificate Image"
+                        /><img
+                            class="certificates-img"
+                            src="./images/frontendBasic.webp"
+                            alt="Certificate Image"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="project-modal">
+            <span class="modal-close fa fa-times-circle-o"></span>
+            <iframe class="project-modal__iframe" src=""></iframe>
+        </div>
+        <div class="mobile-menu">
+            <div class="mobile-menu__inner">
+                <a href="./index.html"
+                    ><h3 class="mobile-menu__inner-logo">DINH TRAN</h3></a
+                >
+                <div class="mobile-menu__inner-menu">
+                    <ul class="menu-list">
+                        <li class="menu-list__item" data-filter="home">
+                            <a href="#" class="item-link"
+                                ><span class="fa fa-home"></span
+                            ></a>
                         </li>
-                        <li class="nav-item">
-                            <a href="#about-me" class="nav-link">about me</a>
+                        <li class="menu-list__item" data-filter="about">
+                            <a href="#" class="item-link"
+                                ><span class="fa fa-id-card"></span
+                            ></a>
                         </li>
-                        <li class="nav-item">
-                            <a
-                                href="https://drive.google.com/file/d/12tHLTZ_PqPGUiRm2OqHuT3SYUyk_Xpqw/view?usp=sharing"
-                                target="_blank"
-                                class="nav-link"
-                                >resume</a
-                            >
+                        <li class="menu-list__item" data-filter="portfolio">
+                            <a href="#" class="item-link"
+                                ><span class="fa fa-briefcase"></span
+                            ></a>
                         </li>
-                        <li class="nav-item">
-                            <a href="#contact" class="nav-link">contact</a>
+                        <li class="menu-list__item" data-filter="contact">
+                            <a href="#" class="item-link"
+                                ><span class="fa fa-envelope"></span
+                            ></a>
                         </li>
                     </ul>
-                </nav>
+                </div>
             </div>
-        </header>
-        <main>
-            <section class="section home portfolio" id="portfolio">
-                <div class="container">
-                    <div class="home-info">
-                        <span>hi, i'm</span><br />
-                        <h1 class="home-info-title"></h1>
-                        <h3 class="home-info-subtitle">front end developer</h3>
+        </div>
+        <div class="wrapper">
+            <div class="left-part">
+                <div class="left-part__inner">
+                    <a href="./index.html"
+                        ><div class="left-part__inner-logo">
+                            <h3>DINH TRAN</h3>
+                        </div></a
+                    >
+                    <div class="left-part__inner-menu">
+                        <ul class="menu-list">
+                            <li class="menu-list__item" data-filter="home">
+                                <a href="#" class="item-link">Home</a>
+                            </li>
+                            <li class="menu-list__item" data-filter="about">
+                                <a href="#" class="item-link">About</a>
+                            </li>
+                            <li class="menu-list__item" data-filter="portfolio">
+                                <a href="#" class="item-link">Portfolio</a>
+                            </li>
+                            <li class="menu-list__item" data-filter="contact">
+                                <a href="#" class="item-link">Contact</a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="music-player">
-                        <canvas id="canvas"></canvas>
-                        <h3 class="music-name">Awakening</h3>
-                        <div class="btn-group">
-                            <button class="btn-previous">
-                                <span
-                                    class="fa fa-fast-backward"
-                                ></span></button
-                            ><button class="btn-play">
-                                <span
-                                    class="fa fa-pause play-icon"
-                                ></span></button
-                            ><button class="btn-next">
-                                <span class="fa fa-fast-forward"></span>
-                            </button>
+                    <div class="left-part__inner-copyright">
+                        <p class="menu-copyright__text">
+                            © 2021 Created by Tran Phuong Dinh
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="right-part">
+                <div class="section home" id="home">
+                    <div class="home__content">
+                        <div class="home__content-avt">
+                            <img
+                                src="./images/avt.webp"
+                                alt="TRAN PHUONG DINH"
+                            />
+                        </div>
+                        <div class="home__content-details">
+                            <h3 class="home__content-details__name">
+                                TRAN PHUONG DINH
+                            </h3>
+                            <p class="home__content-details__job">
+                                Creative Front-end Developer based in Ho Chi
+                                Minh City
+                            </p>
+                            <div class="home__content-details__social">
+                                <ul>
+                                    <li>
+                                        <a
+                                            href="https://www.facebook.com/Dinh.Ramos.SR4.CR7.NTH/"
+                                            target="_blank"
+                                        >
+                                            <span
+                                                class="fa fa-facebook"
+                                                aria-hidden="true"
+                                            ></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://www.youtube.com/channel/UCRvegrzTa8Lof_PE0YxRhew"
+                                            target="_blank"
+                                        >
+                                            <span
+                                                class="fa fa-youtube"
+                                                aria-hidden="true"
+                                            ></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://github.com/TranPhuongDinh/"
+                                            target="_blank"
+                                        >
+                                            <span
+                                                class="fa fa-github"
+                                                aria-hidden="true"
+                                            ></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <a href="#portfolioMain" class="check-my-work"
-                        ><span class="bottom-border"></span>
-                        <p>Check out my projects</p>
-                    </a>
                 </div>
-            </section>
-            <section class="section projects portfolio" id="portfolioMain">
-                <div class="container">
-                    <h2 class="section-title">
-                        website / landing page projects
-                    </h2>
-                    <div class="project-group">
-                        <div class="project-card">
-                            <div class="project-info">
-                                <h3 class="project-name">Documentation Page</h3>
-                                <div class="project-description">
-                                    <div><span>Front-end:</span> Me</div>
-                                    <div><span>Back-end:</span> Me</div>
-                                    <div><span>Design:</span> Me</div>
-                                    <div><span>Year:</span> 2021</div>
-                                </div>
-                                <div class="project-info-tag">
-                                    <span class="info-tag">HTML</span
-                                    ><span class="info-tag">CSS</span
-                                    ><span class="info-tag">JS</span>
-                                </div>
-                                <a
-                                    href="https://tranphuongdinh.github.io/dinhtran/PROJECTS/DOCUMENTATION%20PAGE/index.html?fbclid=IwAR3AxFpTIrYwdFOEY4x_LBDtL4gGJwvA41wPpdL2qGmxMMi_WXx8o4yNLj8"
-                                    target="_blank"
-                                    class="project-info-btn"
-                                    >View Demo
-                                    <span class="bottom-border"></span
-                                ></a>
+                <div class="section about" id="about">
+                    <div class="about__main">
+                        <img
+                            src="./images/cover.webp"
+                            alt="Tran Phuong Dinh"
+                            class="about__main-img"
+                        />
+                    </div>
+                    <div class="about__description">
+                        <div class="about__description-name">
+                            Tran Phuong Dinh & Front-end Developer
+                        </div>
+                        <div class="about__description-inner">
+                            <div class="inner-left">
+                                <p>
+                                    Hi ! My name is Tran Phuong Dinh, and I am a
+                                    second year student at Ho Chi Minh
+                                    University Of Science. I have a strong
+                                    passion about Front-end web development, and
+                                    I've learnt Front-end for eight months and I
+                                    got some certificates of HTML-CSS-JS and
+                                    Front-end frameworks. One of my favorite
+                                    quotes is from Linus Torvalds: “Talk is
+                                    cheap. Show me the code !”.
+                                </p>
+                                <a href="#">
+                                    <div class="button learn-more">
+                                        Learn More
+                                    </div>
+                                </a>
                             </div>
-                            <div class="project-img doc-page">
-                                <a
-                                    href="https://tranphuongdinh.github.io/dinhtran/PROJECTS/DOCUMENTATION%20PAGE/index.html"
-                                    target="_blank"
-                                    ><img
+                            <div class="inner-right">
+                                <ul>
+                                    <li>
+                                        <p><span>Birthday:</span>02/06/2001</p>
+                                    </li>
+                                    <li>
+                                        <p><span>Age:</span>20</p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <span>Address:</span>Ho Chi Minh
+                                            City
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <span>Email:</span
+                                            >dinhblade123@gmail.com
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><span>Phone:</span>(+84)949996310</p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <span>Study:</span>Vietnam National
+                                            University - University Of Science
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section portfolio" id="portfolio">
+                    <div class="portfolio__title">
+                        <div class="title-flex">
+                            <div class="title-flex__left">
+                                <span>PORTFOLIO</span>
+                                <h3>Creative Portfolio</h3>
+                            </div>
+                        </div>
+                        <div class="portfolio-filter">
+                            <ul class="portfolio-filter__list">
+                                <li
+                                    class="portfolio-filter__item"
+                                    data-filter="all"
+                                >
+                                    <a href="#">all</a>
+                                </li>
+                                <li
+                                    class="portfolio-filter__item"
+                                    data-filter="page"
+                                >
+                                    <a href="#">page</a>
+                                </li>
+                                <li
+                                    class="portfolio-filter__item"
+                                    data-filter="app"
+                                >
+                                    <a href="#">app</a>
+                                </li>
+                                <li
+                                    class="portfolio-filter__item"
+                                    data-filter="others"
+                                >
+                                    <a href="#">others</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="portfolio__galery">
+                        <ul class="portfolio__galery-list">
+                            <li
+                                class="all page galery-item galery-item-tooltip"
+                                data-url="./PROJECTS/DOCUMENTATION PAGE/index.html"
+                                data-name="Documentation Page"
+                            >
+                                <div class="item__img">
+                                    <img
                                         src="./images/documentation-page-bg.webp"
                                         alt="Documentation Page"
-                                /></a>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <div class="project-info">
-                                <h3 class="project-name">Loop Studio Page</h3>
-                                <div class="project-description">
-                                    <div><span>Front-end:</span> Me</div>
-                                    <div><span>Back-end:</span> None</div>
-                                    <div>
-                                        <span>Design:</span> frontendmentor.io
-                                    </div>
-                                    <div><span>Year:</span> 2021</div>
+                                    />
                                 </div>
-                                <div class="project-info-tag">
-                                    <span class="info-tag">HTML</span
-                                    ><span class="info-tag">CSS</span
-                                    ><span class="info-tag">JS</span>
-                                </div>
-                                <a
-                                    href="https://tranphuongdinh.github.io/dinhtran/PROJECTS/LOOPSTUDIOS-PAGE/index.html"
-                                    target="_blank"
-                                    class="project-info-btn"
-                                    >View Demo
-                                    <span class="bottom-border"></span
-                                ></a>
-                            </div>
-                            <div class="project-img vr-page">
-                                <a
-                                    href="https://tranphuongdinh.github.io/dinhtran/PROJECTS/LOOPSTUDIOS-PAGE/index.html"
-                                    target="_blank"
-                                    ><img
-                                        src="./images/loop-studio-bg.webp"
-                                        alt="Loop Studio Page"
-                                /></a>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <div class="project-info">
-                                <h3 class="project-name">Room Homepage</h3>
-                                <div class="project-description">
-                                    <div><span>Front-end:</span> Me</div>
-                                    <div><span>Back-end:</span> None</div>
-                                    <div>
-                                        <span>Design:</span> frontendmentor.io
-                                    </div>
-                                    <div><span>Year:</span> 2020</div>
-                                </div>
-                                <div class="project-info-tag">
-                                    <span class="info-tag">HTML</span
-                                    ><span class="info-tag">CSS</span
-                                    ><span class="info-tag">JS</span>
-                                </div>
-                                <a
-                                    href="https://tranphuongdinh.github.io/dinhtran/PROJECTS/ROOM%20-%20HOMEPAGE/"
-                                    target="_blank"
-                                    class="project-info-btn"
-                                    >View Demo
-                                    <span class="bottom-border"></span
-                                ></a>
-                            </div>
-                            <div class="project-img room-page">
-                                <a
-                                    href="https://tranphuongdinh.github.io/dinhtran/PROJECTS/ROOM%20-%20HOMEPAGE/"
-                                    target="_blank"
-                                    ><img
+                            </li>
+                            <li
+                                class="all page galery-item galery-item-tooltip"
+                                data-url="./PROJECTS/ROOM - HOMEPAGE/index.html"
+                                data-name="Room Homepage"
+                            >
+                                <div class="item__img">
+                                    <img
                                         src="./images/room-homepage-bg.webp"
                                         alt="Room Homepage"
-                                /></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="section web-apps portfolio">
-                <div class="container">
-                    <h2 class="section-title">web app projects</h2>
-                    <div class="project-group">
-                        <div class="project-card">
-                            <div class="project-info">
-                                <h3 class="project-name">Bad Apple</h3>
-                                <div class="project-description">
-                                    <div><span>Front-end:</span> Me</div>
-                                    <div><span>Back-end:</span> None</div>
-                                    <div><span>Design:</span> Me</div>
-                                    <div><span>Year:</span> 2021</div>
+                                    />
                                 </div>
-                                <div class="project-info-tag">
-                                    <span class="info-tag">HTML</span
-                                    ><span class="info-tag">CSS</span
-                                    ><span class="info-tag">JS</span>
+                            </li>
+                            <li
+                                class="all page galery-item galery-item-tooltip"
+                                data-url="./PROJECTS/LOOPSTUDIOS-PAGE/index.html"
+                                data-name="Loop Studio Page"
+                            >
+                                <div class="item__img">
+                                    <img
+                                        src="./images/loop-studio-bg.webp"
+                                        alt="Loopstudio Page"
+                                    />
                                 </div>
-                                <a
-                                    href="https://www.facebook.com/100008190586110/videos/2887868274829497/"
-                                    target="_blank"
-                                    class="project-info-btn"
-                                    >View Demo
-                                    <span class="bottom-border"></span
-                                ></a>
-                            </div>
-                            <div class="project-img badApple">
-                                <a
-                                    href="https://www.facebook.com/100008190586110/videos/2887868274829497/"
-                                    target="_blank"
-                                    ><img
-                                        src="./images/badApple-bg.webp"
-                                        alt="Bad Apple"
-                                /></a>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <div class="project-info">
-                                <h3 class="project-name">weather forecast</h3>
-                                <div class="project-description">
-                                    <div><span>Front-end:</span> Me</div>
-                                    <div>
-                                        <span>Back-end:</span>
-                                        openweathermap.org
-                                    </div>
-                                    <div><span>Design:</span> Me</div>
-                                    <div><span>Year:</span> 2021</div>
-                                </div>
-                                <div class="project-info-tag">
-                                    <span class="info-tag">HTML</span
-                                    ><span class="info-tag">CSS</span
-                                    ><span class="info-tag">JS</span>
-                                </div>
-                                <a
-                                    href="./PROJECTS/WEATHER FORECAST APP/index.html"
-                                    target="_blank"
-                                    class="project-info-btn"
-                                    >View Demo
-                                    <span class="bottom-border"></span
-                                ></a>
-                            </div>
-                            <div class="project-img weather-forecast">
-                                <a
-                                    href="./PROJECTS/WEATHER FORECAST APP/index.html"
-                                    target="_blank"
-                                    ><img
-                                        src="./images/weatherForecast-bg.webp"
-                                        alt="Weather forecast"
-                                /></a>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <div class="project-info">
-                                <h3 class="project-name">calculator</h3>
-                                <div class="project-description">
-                                    <div><span>Front-end:</span> Me</div>
-                                    <div><span>Back-end:</span> None</div>
-                                    <div><span>Design:</span> Me</div>
-                                    <div><span>Year:</span> 2020</div>
-                                </div>
-                                <div class="project-info-tag">
-                                    <span class="info-tag">HTML</span
-                                    ><span class="info-tag">CSS</span
-                                    ><span class="info-tag">JS</span>
-                                </div>
-                                <a
-                                    href="https://tranphuongdinh.github.io/dinhtran/PROJECTS/CALCULATOR%20APP/index.html"
-                                    target="_blank"
-                                    class="project-info-btn"
-                                    >View Demo
-                                    <span class="bottom-border"></span
-                                ></a>
-                            </div>
-                            <div class="project-img calculator">
-                                <a
-                                    href="https://tranphuongdinh.github.io/dinhtran/PROJECTS/CALCULATOR%20APP/index.html"
-                                    target="_blank"
-                                    ><img
-                                        src="./images/calculator-bg.webp"
-                                        alt="Calculator"
-                                /></a>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <div class="project-info">
-                                <h3 class="project-name">Hangman</h3>
-                                <div class="project-description">
-                                    <div><span>Front-end:</span> Me</div>
-                                    <div><span>Back-end:</span> None</div>
-                                    <div><span>Design:</span> Me</div>
-                                    <div><span>Year:</span> 2020</div>
-                                </div>
-                                <div class="project-info-tag">
-                                    <span class="info-tag">HTML</span
-                                    ><span class="info-tag">CSS</span
-                                    ><span class="info-tag">JS</span>
-                                </div>
-                                <a
-                                    href="https://tranphuongdinh.github.io/dinhtran/PROJECTS/HANGMAN/index.html"
-                                    target="_blank"
-                                    class="project-info-btn"
-                                    >View Demo
-                                    <span class="bottom-border"></span
-                                ></a>
-                            </div>
-                            <div class="project-img hangman">
-                                <a
-                                    href="https://tranphuongdinh.github.io/dinhtran/PROJECTS/HANGMAN/index.html"
-                                    target="_blank"
-                                    ><img
-                                        src="./images/hangman-bg.webp"
-                                        alt="Hangman"
-                                /></a>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <div class="project-info">
-                                <h3 class="project-name">Flappy Bird</h3>
-                                <div class="project-description">
-                                    <div><span>Front-end:</span> Me</div>
-                                    <div><span>Back-end:</span> None</div>
-                                    <div><span>Design:</span> Me</div>
-                                    <div><span>Year:</span> 2020</div>
-                                </div>
-                                <div class="project-info-tag">
-                                    <span class="info-tag">HTML</span
-                                    ><span class="info-tag">CSS</span
-                                    ><span class="info-tag">JS</span>
-                                </div>
-                                <a
-                                    href="https://tranphuongdinh.github.io/dinhtran/PROJECTS/FLAPPY%20BIRD/menu.html"
-                                    target="_blank"
-                                    class="project-info-btn"
-                                    >View Demo
-                                    <span class="bottom-border"></span
-                                ></a>
-                            </div>
-                            <div class="project-img flappy-bird">
-                                <a
-                                    href="https://tranphuongdinh.github.io/dinhtran/PROJECTS/FLAPPY%20BIRD/menu.html"
-                                    target="_blank"
-                                    ><img
-                                        src="./images/flappy-bird-bg.webp"
-                                        alt="Flappy Bird"
-                                /></a>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <div class="project-info">
-                                <h3 class="project-name">Meme Generator</h3>
-                                <div class="project-description">
-                                    <div><span>Front-end:</span> Me</div>
-                                    <div><span>Back-end:</span> None</div>
-                                    <div><span>Design:</span> Me</div>
-                                    <div><span>Year:</span> 2020</div>
-                                </div>
-                                <div class="project-info-tag">
-                                    <span class="info-tag">REACT</span>
-                                </div>
-                                <a
-                                    href="https://tranphuongdinh.github.io/MemeGenerator/"
-                                    target="_blank"
-                                    class="project-info-btn"
-                                    >View Demo
-                                    <span class="bottom-border"></span
-                                ></a>
-                            </div>
-                            <div class="project-img meme-gen">
-                                <a
-                                    href="https://tranphuongdinh.github.io/MemeGenerator/"
-                                    target="_blank"
-                                    ><img
+                            </li>
+                            <li
+                                class="all app galery-item galery-item-tooltip"
+                                data-url="https://tranphuongdinh.github.io/MemeGenerator/"
+                                data-name="Meme Generator"
+                            >
+                                <div class="item__img">
+                                    <img
                                         src="./images/meme-gen-bg.webp"
                                         alt="Meme Generator"
-                                /></a>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <div class="project-info">
-                                <h3 class="project-name">Paint</h3>
-                                <div class="project-description">
-                                    <div><span>Front-end:</span> Me</div>
-                                    <div><span>Back-end:</span> None</div>
-                                    <div><span>Design:</span> Me</div>
-                                    <div><span>Year:</span> 2020</div>
+                                    />
                                 </div>
-                                <div class="project-info-tag">
-                                    <span class="info-tag">HTML</span
-                                    ><span class="info-tag">CSS</span
-                                    ><span class="info-tag">JS</span>
-                                </div>
-                                <a
-                                    href="https://tranphuongdinh.github.io/SimplePaint/"
-                                    target="_blank"
-                                    class="project-info-btn"
-                                    >View Demo
-                                    <span class="bottom-border"></span
-                                ></a>
-                            </div>
-                            <div class="project-img paint">
-                                <a
-                                    href="https://tranphuongdinh.github.io/SimplePaint/"
-                                    target="_blank"
-                                    ><img
+                            </li>
+                            <li
+                                class="all app galery-item galery-item-tooltip"
+                                data-url="./PROJECTS/SIMPLE PAINT/index.html"
+                                data-name="Simple Paint"
+                            >
+                                <div class="item__img">
+                                    <img
                                         src="./images/paint-bg.webp"
                                         alt="Paint"
-                                /></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="section others portfolio">
-                <div class="container">
-                    <h2 class="section-title">other works</h2>
-                    <div class="works-group">
-                        <div class="work-card-collumn">
-                            <div class="work-card">
-                                <div class="work-img">
-                                    <iframe
-                                        src="https://www.youtube.com/embed/PdHPwGvnvzI"
-                                        title="YouTube video player"
-                                        frameborder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen
-                                    ></iframe>
+                                    />
                                 </div>
-                                <h3 class="work-name">
-                                    Coding challenge: Flappy Bird in 60 minutes
-                                </h3>
-                            </div>
-                            <div class="work-card">
-                                <div class="work-img">
+                            </li>
+                            <li
+                                class="all app galery-item galery-item-tooltip"
+                                data-url="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FDinh.Ramos.SR4.CR7.NTH%2Fvideos%2F2887868274829497%2F&show_text=false"
+                                data-name="Bad Apple"
+                            >
+                                <div class="item__img">
+                                    <img
+                                        src="./images/badApple-bg.webp"
+                                        alt="Bad Apple"
+                                    />
+                                </div>
+                            </li>
+                            <li
+                                class="all app galery-item galery-item-tooltip"
+                                data-url="./PROJECTS/WEATHER FORECAST APP/index.html"
+                                data-name="Weather Forecast"
+                            >
+                                <div class="item__img">
+                                    <img
+                                        src="./images/weatherForecast-bg.webp"
+                                        alt="Weather Forecast"
+                                    />
+                                </div>
+                            </li>
+                            <li
+                                class="all app galery-item galery-item-tooltip"
+                                data-url="./PROJECTS/CALCULATOR APP/index.html"
+                                data-name="Calculator"
+                            >
+                                <div class="item__img">
+                                    <img
+                                        src="./images/calculator-bg.webp"
+                                        alt="Calculator"
+                                    />
+                                </div>
+                            </li>
+                            <li
+                                class="all app galery-item galery-item-tooltip"
+                                data-url="./PROJECTS/HANGMAN/index.html"
+                                data-name="Hangman"
+                            >
+                                <div class="item__img">
+                                    <img
+                                        src="./images/hangman-bg.webp"
+                                        alt="Hangman"
+                                    />
+                                </div>
+                            </li>
+                            <li
+                                class="all app galery-item galery-item-tooltip"
+                                data-url="./PROJECTS/FLAPPY BIRD/index.html"
+                                data-name="Flappy Bird"
+                            >
+                                <div class="item__img">
+                                    <img
+                                        src="./images/flappy-bird-bg.webp"
+                                        alt="Flappy Bird"
+                                    />
+                                </div>
+                            </li>
+                            <li
+                                class="all others galery-item"
+                                data-url="https://www.youtube.com/OfrRXK3a6pw"
+                                data-name=""
+                            >
+                                <div class="item__iframe">
                                     <iframe
                                         src="https://www.youtube.com/embed/OfrRXK3a6pw"
                                         title="YouTube video player"
@@ -458,14 +501,28 @@
                                         allowfullscreen
                                     ></iframe>
                                 </div>
-                                <h3 class="work-name">
-                                    C++ Game Project: Snake the game
-                                </h3>
-                            </div>
-                        </div>
-                        <div class="work-card-collumn">
-                            <div class="work-card">
-                                <div class="work-img">
+                            </li>
+                            <li
+                                class="all others galery-item"
+                                data-url="https://www.youtube.com/PdHPwGvnvzI"
+                                data-name=""
+                            >
+                                <div class="item__iframe">
+                                    <iframe
+                                        src="https://www.youtube.com/embed/PdHPwGvnvzI"
+                                        title="YouTube video player"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen
+                                    ></iframe>
+                                </div>
+                            </li>
+                            <li
+                                class="all others galery-item"
+                                data-url="https://www.youtube.com/dPnHg6OUIIU"
+                                data-name=""
+                            >
+                                <div class="item__iframe">
                                     <iframe
                                         src="https://www.youtube.com/embed/dPnHg6OUIIU"
                                         title="YouTube video player"
@@ -474,87 +531,54 @@
                                         allowfullscreen
                                     ></iframe>
                                 </div>
-                                <h3 class="work-name">
-                                    Social responsibility - WHAT AND WHY?
-                                </h3>
-                            </div>
-                            <div class="work-card">
-                                <div class="work-img">
-                                    <iframe
-                                        src="https://www.youtube.com/embed/AR6zpfzaENs"
-                                        title="YouTube video player"
-                                        frameborder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen
-                                    ></iframe>
-                                </div>
-                                <h3 class="work-name">Piano Cover</h3>
-                            </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="section contact" id="contact">
+                    <div class="title-flex">
+                        <div class="title-flex__left">
+                            <span>CONTACT</span>
+                            <h3>Get in Touch</h3>
                         </div>
                     </div>
-                </div>
-            </section>
-            <section id="about-me" class="section about-me">
-                <div class="container">
-                    <h2 class="section-title">about me</h2>
-                    <h1 class="about-me-title">
-                        front end developer from ho chi minh, vietnam.
-                    </h1>
-                    <p class="about-me-description">
-                        Hi ! My name is Tran Phuong Dinh, and I am a second year
-                        student at Ho Chi Minh University Of Science. I have a
-                        strong passion about Front-end web development, and I've
-                        learnt Front-end for eight months and I got some
-                        certificates of HTML-CSS-JS and Front-end frameworks.
-                        One of my favorite quotes is from Linus Torvalds: “Talk
-                        is cheap. Show me the code !”. Read more about me
-                        <a href="./about-me.html" class="about-link">here</a>.
-                    </p>
-                </div>
-            </section>
-            <section id="contact" class="section contact">
-                <div class="container">
-                    <h1 class="contact-title">dinhblade123@gmail.com</h1>
-                    <p class="contact-description">
-                        Always down to collaborate when I have the time. I'm
-                        hoping to further my career by disrupting the social
-                        product space. Let's get in touch ✌️.
-                    </p>
-                    <div class="contact-icons">
-                        <a
-                            href="https://www.facebook.com/Dinh.Ramos.SR4.CR7.NTH/"
-                            target="blanc"
-                            ><span
-                                class="contact-icon fa fa-facebook-square"
-                                aria-hidden="true"
-                            ></span></a
-                        ><a
-                            href="https://www.youtube.com/channel/UCRvegrzTa8Lof_PE0YxRhew"
-                            target="blanc"
-                            ><span
-                                class="contact-icon fa fa-youtube-square"
-                                aria-hidden="true"
-                            ></span></a
-                        ><a
-                            href="https://github.com/TranPhuongDinh/"
-                            target="blanc"
-                            ><span
-                                class="contact-icon fa fa-github-square"
-                                aria-hidden="true"
-                            ></span
-                        ></a>
+                    <div class="contact__map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.1586865038053!2d106.79692831462344!3d10.875532492254338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d8a1768e1d03%3A0x38d3ea53e0581ae0!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBLaG9hIGjhu41jIFThu7Egbmhpw6puLCBDxqEgc-G7nyBMaW5oIFRydW5nLCBUaOG7pyDEkOG7qWMsIMSQSFFHIFRQSENNLg!5e0!3m2!1svi!2s!4v1621658184694!5m2!1svi!2s"
+                            allowfullscreen="true"
+                            loading="lazy"
+                        ></iframe>
+                    </div>
+                    <div class="contact__form">
+                        <form action="/" method="post">
+                            <input
+                                class="input-text"
+                                type="text"
+                                placeholder="Your name..."
+                                required
+                            />
+                            <input
+                                class="input-text"
+                                type="email"
+                                placeholder="Your email..."
+                                required
+                            />
+                            <textarea
+                                id="message"
+                                placeholder="Your Message..."
+                                required
+                            ></textarea>
+                            <input
+                                class="button"
+                                type="submit"
+                                value="Send Message"
+                            />
+                        </form>
                     </div>
                 </div>
-            </section>
-        </main>
-        <footer>
-            <div class="container">
-                <h5 class="copyright">Copyright © Tran Phuong Dinh.</h5>
             </div>
-        </footer>
-        <div class="back-to-top"></div>
-        <script src="./js/pre-load.js"></script>
-        <script src="./js/script.js"></script>
-        <script src="./js/music-player.js"></script>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="./assets/js/index.js"></script>
     </body>
 </html>
