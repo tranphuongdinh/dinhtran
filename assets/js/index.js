@@ -1,3 +1,7 @@
+window.addEventListener("load", function () {
+    $("#loading").fadeOut(2000);
+});
+
 $(document).ready(() => {
     function fillDataset(menuItems, sections, time) {
         for (item of menuItems) {
