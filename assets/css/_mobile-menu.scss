@@ -23,6 +23,10 @@
             font-weight: 900;
             font-size: 22px;
             color: #000;
+
+            @media (max-width: 476px) {
+                font-size: 16px;
+            }
         }
 
         &-menu {

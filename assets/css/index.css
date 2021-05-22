@@ -9,6 +9,12 @@
   text-decoration: none;
 }
 
+@media (max-width: 768px) {
+  * ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 body {
   overflow-x: hidden;
 }
@@ -153,6 +159,12 @@ h3 {
   }
 }
 
+@media (max-width: 576px) {
+  .description-modal__details-knowledge .knowledge-col__title {
+    font-size: 32px;
+  }
+}
+
 .description-modal__details-knowledge .knowledge-col__info {
   margin-bottom: 30px;
 }
@@ -160,6 +172,12 @@ h3 {
 .description-modal__details-knowledge .knowledge-col__info .info-name {
   font-size: 20px;
   margin-bottom: 10px;
+}
+
+@media (max-width: 576px) {
+  .description-modal__details-knowledge .knowledge-col__info .info-name {
+    font-size: 18px;
+  }
 }
 
 .description-modal__details-knowledge .knowledge-col__info .info-year {
@@ -229,6 +247,12 @@ h3 {
   }
 }
 
+@media (max-width: 576px) {
+  .description-modal__details-certificates .certificates-title {
+    font-size: 32px;
+  }
+}
+
 .description-modal__details-certificates .certificates {
   display: -ms-grid;
   display: grid;
@@ -287,7 +311,7 @@ h3 {
 
 @media (max-width: 992px) {
   .description-modal {
-    padding: 100px 20px;
+    padding: 80px 20px;
   }
 }
 
@@ -352,7 +376,7 @@ h3 {
 
 @media (max-width: 992px) {
   .project-modal {
-    padding: 100px 20px;
+    padding: 80px 20px;
   }
 }
 
@@ -399,6 +423,12 @@ h3 {
   font-weight: 900;
   font-size: 22px;
   color: #000;
+}
+
+@media (max-width: 476px) {
+  .mobile-menu__inner-logo {
+    font-size: 16px;
+  }
 }
 
 .mobile-menu__inner-menu .menu-list {
@@ -628,6 +658,13 @@ h3 {
   }
 }
 
+@media (max-width: 476px) {
+  .wrapper .right-part .home__content-avt {
+    max-width: 180px;
+    height: 180px;
+  }
+}
+
 .wrapper .right-part .home__content-details {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -651,6 +688,12 @@ h3 {
   .wrapper .right-part .home__content-details__name {
     font-size: 45px;
     text-align: center;
+  }
+}
+
+@media (max-width: 476px) {
+  .wrapper .right-part .home__content-details__name {
+    font-size: 35px;
   }
 }
 
@@ -692,6 +735,12 @@ h3 {
   color: #767676;
 }
 
+@media (max-width: 476px) {
+  .wrapper .right-part .home__content-details__social {
+    margin-bottom: 20px;
+  }
+}
+
 @media (max-width: 992px) {
   .wrapper .right-part .home__content-details {
     margin-left: 0;
@@ -710,6 +759,20 @@ h3 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+@media (max-width: 1200px) {
+  .wrapper .right-part .home {
+    -webkit-transform: translateY(60px);
+            transform: translateY(60px);
+    padding: 20px 50px;
+  }
+}
+
+@media (max-width: 992px) {
+  .wrapper .right-part .home {
+    padding: 20px 0;
   }
 }
 
