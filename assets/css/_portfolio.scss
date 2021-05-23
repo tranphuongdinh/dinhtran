@@ -100,10 +100,35 @@
                         height: 100%;
                     }
                 }
-                div:hover {
-                    img {
-                        transform: scale(1.2);
-                    }
+                #documentation-page:hover {
+                    content: url(../../images/documentationPageGIF.gif);
+                }
+                #room-homepage:hover {
+                    content: url(../../images/roomPageGIF.gif);
+                }
+                #loopstudio-page:hover {
+                    content: url(../../images/VRPageGIF.gif);
+                }
+                #meme-generator:hover {
+                    content: url(../../images/memeGenGIF.gif);
+                }
+                #paint:hover {
+                    content: url(../../images/paintGIF.gif);
+                }
+                #bad-apple:hover {
+                    content: url(../../images/badAppleGIF.gif);
+                }
+                #weather-forecast:hover {
+                    content: url(../../images/weatherForecastGIF.gif);
+                }
+                #calculator:hover {
+                    content: url(../../images/calculatorGIF.gif);
+                }
+                #hangman:hover {
+                    content: url(../../images/hangmanGIF.gif);
+                }
+                #flappy-bird:hover {
+                    content: url(../../images/flappyGIF.gif);
                 }
             }
 

@@ -1358,9 +1358,44 @@ h3 {
   }
 }
 
-.wrapper .right-part .portfolio__galery-list li div:hover img {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+.wrapper .right-part .portfolio__galery-list li #documentation-page:hover {
+  content: url(../../images/documentationPageGIF.gif);
+}
+
+.wrapper .right-part .portfolio__galery-list li #room-homepage:hover {
+  content: url(../../images/roomPageGIF.gif);
+}
+
+.wrapper .right-part .portfolio__galery-list li #loopstudio-page:hover {
+  content: url(../../images/VRPageGIF.gif);
+}
+
+.wrapper .right-part .portfolio__galery-list li #meme-generator:hover {
+  content: url(../../images/memeGenGIF.gif);
+}
+
+.wrapper .right-part .portfolio__galery-list li #paint:hover {
+  content: url(../../images/paintGIF.gif);
+}
+
+.wrapper .right-part .portfolio__galery-list li #bad-apple:hover {
+  content: url(../../images/badAppleGIF.gif);
+}
+
+.wrapper .right-part .portfolio__galery-list li #weather-forecast:hover {
+  content: url(../../images/weatherForecastGIF.gif);
+}
+
+.wrapper .right-part .portfolio__galery-list li #calculator:hover {
+  content: url(../../images/calculatorGIF.gif);
+}
+
+.wrapper .right-part .portfolio__galery-list li #hangman:hover {
+  content: url(../../images/hangmanGIF.gif);
+}
+
+.wrapper .right-part .portfolio__galery-list li #flappy-bird:hover {
+  content: url(../../images/flappyGIF.gif);
 }
 
 @media (max-width: 992px) {
