@@ -56,9 +56,13 @@ $(document).ready(() => {
             $(item).click(function () {
                 const sectionName = $(this).attr("data-filter");
                 for (item of menuItems) {
-                    $(item).removeClass("active");
+                    if ($(item).attr("data-filter") != sectionName) {
+                        $(item).removeClass("active");
+                    } else {
+                        $(item).addClass("active");
+                    }
                 }
-                $(this).addClass("active");
+
                 for (section of sections) {
                     if ($(section).hasClass(sectionName)) {
                         $(section).fadeIn(time);

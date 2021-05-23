@@ -30,10 +30,14 @@ body {
 body.dark-mode {
     filter: invert(1) hue-rotate(180deg);
 
-    img:not(#loading-image),
+    img:not(#loading-image):not(.certificates-img),
     .home__content-avt,
     iframe {
         filter: invert(1) hue-rotate(180deg) grayscale(100%) !important;
+    }
+
+    .description-modal img {
+        filter: invert(1) hue-rotate(180deg) grayscale(0) !important;
     }
 
     .project-modal iframe {
@@ -86,6 +90,10 @@ h3 {
     &:hover {
         background-color: #767676;
         color: #fff;
+    }
+
+    @media (min-width: 1200px) {
+        min-width: 160px;
     }
 
     @media (max-width: 476px) {

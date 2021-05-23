@@ -30,11 +30,16 @@ body.dark-mode {
           filter: invert(1) hue-rotate(180deg);
 }
 
-body.dark-mode img:not(#loading-image),
+body.dark-mode img:not(#loading-image):not(.certificates-img),
 body.dark-mode .home__content-avt,
 body.dark-mode iframe {
   -webkit-filter: invert(1) hue-rotate(180deg) grayscale(100%) !important;
           filter: invert(1) hue-rotate(180deg) grayscale(100%) !important;
+}
+
+body.dark-mode .description-modal img {
+  -webkit-filter: invert(1) hue-rotate(180deg) grayscale(0) !important;
+          filter: invert(1) hue-rotate(180deg) grayscale(0) !important;
 }
 
 body.dark-mode .project-modal iframe {
@@ -89,6 +94,12 @@ h3 {
 .button:hover {
   background-color: #767676;
   color: #fff;
+}
+
+@media (min-width: 1200px) {
+  .button {
+    min-width: 160px;
+  }
 }
 
 @media (max-width: 476px) {
