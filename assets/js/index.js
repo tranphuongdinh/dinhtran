@@ -47,8 +47,10 @@ $(document).ready(() => {
     $(".button-submit").click(function (e) {
         e.preventDefault();
         let form = document.querySelector(".contact-form");
-        form.submit();
-        form.reset();
+        if (form.reportValidity()) {
+            form.submit();
+            form.reset();
+        }
     });
 
     function fillDataset(menuItems, sections, time) {
