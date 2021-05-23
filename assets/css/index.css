@@ -30,7 +30,7 @@ body.dark-mode {
           filter: invert(1) hue-rotate(180deg);
 }
 
-body.dark-mode img,
+body.dark-mode img:not(#loading-image),
 body.dark-mode .home__content-avt,
 body.dark-mode iframe {
   -webkit-filter: invert(1) hue-rotate(180deg) grayscale(100%) !important;
@@ -501,18 +501,18 @@ h3 {
 }
 
 .mobile-menu__inner-menu .menu-list__item a {
-  color: #000;
+  color: #767676;
   font-size: 15px;
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 }
 
 .mobile-menu__inner-menu .menu-list__item.active .item-link {
-  color: #767676;
+  color: #000;
 }
 
 .mobile-menu__inner-menu .menu-list__item:hover .item-link {
-  color: #767676;
+  color: #000;
 }
 
 @media (max-width: 576px) {
@@ -749,6 +749,8 @@ h3 {
 .wrapper .left-part__inner-menu .menu-list .button-darkmode-switch .button-darkmode-tray.on .button-darkmode-switcher {
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
+  -webkit-box-shadow: 0 0 12.5px 4px #000;
+          box-shadow: 0 0 12.5px 4px #000;
 }
 
 .wrapper .left-part__inner-menu .menu-list__item .item-link {

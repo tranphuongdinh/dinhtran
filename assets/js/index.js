@@ -6,21 +6,42 @@ window.addEventListener("load", function () {
 });
 
 $(document).ready(() => {
-    $(".button-darkmode").click(function () {
+    let isDarkMode = localStorage.getItem("dinhtran-darkmode");
+    if (!isDarkMode) {
+        localStorage.setItem("dinhtran-darkmode", "false");
+        isDarkMode = localStorage.getItem("dinhtran-darkmode");
+    }
+
+    function toggleDarkModeIcon() {
         let buttonDarkmodeIcon = $(".button-darkmode-icon");
+        let buttonDarkmodeTray = $(".button-darkmode-tray");
         $("body").toggleClass("dark-mode");
         if ($(buttonDarkmodeIcon).hasClass("fa-sun-o")) {
             $(buttonDarkmodeIcon).removeClass("fa-sun-o");
             $(buttonDarkmodeIcon).addClass("fa-moon-o");
+
+            $(buttonDarkmodeTray).removeClass("on");
+            $(buttonDarkmodeTray).addClass("on");
+            isDarkMode = "true";
         } else {
             $(buttonDarkmodeIcon).removeClass("fa-moon-o");
             $(buttonDarkmodeIcon).addClass("fa-sun-o");
+            isDarkMode = "false";
+            $(buttonDarkmodeTray).removeClass("on");
         }
+        localStorage.setItem("dinhtran-darkmode", isDarkMode);
+    }
+
+    if (isDarkMode == "true") {
+        toggleDarkModeIcon();
+    }
+
+    $(".button-darkmode").click(function () {
+        toggleDarkModeIcon();
     });
 
     $(".button-darkmode-switch").click(function () {
-        $("body").toggleClass("dark-mode");
-        $(".button-darkmode-tray").toggleClass("on");
+        toggleDarkModeIcon();
     });
 
     $(".button-submit").click(function (e) {

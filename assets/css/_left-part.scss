@@ -60,6 +60,7 @@
                         &.on {
                             .button-darkmode-switcher {
                                 transform: translateX(100%);
+                                box-shadow: 0 0 12.5px 4px #000;
                             }
                         }
                     }

@@ -38,19 +38,19 @@
                     margin-left: 20px;
 
                     a {
-                        color: #000;
+                        color: #767676;
                         font-size: 15px;
                         transition: all 0.1s ease-in-out;
                     }
 
                     &.active {
                         .item-link {
-                            color: #767676;
+                            color: #000;
                         }
                     }
                     &:hover {
                         .item-link {
-                            color: #767676;
+                            color: #000;
                         }
                     }
 

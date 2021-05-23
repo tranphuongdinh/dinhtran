@@ -30,7 +30,7 @@ body {
 body.dark-mode {
     filter: invert(1) hue-rotate(180deg);
 
-    img,
+    img:not(#loading-image),
     .home__content-avt,
     iframe {
         filter: invert(1) hue-rotate(180deg) grayscale(100%) !important;
