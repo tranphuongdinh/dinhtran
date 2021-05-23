@@ -758,8 +758,8 @@ h3 {
 }
 
 .wrapper .left-part__inner-menu .menu-list .button-darkmode-switch .button-darkmode-tray.on .button-darkmode-switcher {
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
+  -webkit-transform: translateX(25px);
+          transform: translateX(25px);
   -webkit-box-shadow: 0 0 12.5px 4px #000;
           box-shadow: 0 0 12.5px 4px #000;
 }
