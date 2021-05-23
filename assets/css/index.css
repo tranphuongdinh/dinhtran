@@ -15,6 +15,12 @@
   }
 }
 
+@media (max-width: 1200px) {
+  html::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 body {
   overflow-x: hidden;
 }
@@ -917,8 +923,8 @@ h3 {
 
 @media (max-width: 476px) {
   .wrapper .right-part .home__content-avt {
-    width: 180px;
-    height: 180px;
+    width: 140px;
+    height: 140px;
   }
 }
 
@@ -950,7 +956,7 @@ h3 {
 
 @media (max-width: 476px) {
   .wrapper .right-part .home__content-details__name {
-    font-size: 35px;
+    font-size: 32.5px;
   }
 }
 
@@ -1035,15 +1041,13 @@ h3 {
 
 @media (max-width: 1200px) {
   .wrapper .right-part .home {
-    -webkit-transform: translateY(60px);
-            transform: translateY(60px);
-    padding: 20px 20px;
+    padding: 0px 20px;
   }
 }
 
 @media (max-width: 992px) {
   .wrapper .right-part .home {
-    padding: 20px 0;
+    padding: 0 0;
   }
 }
 
@@ -1178,9 +1182,7 @@ h3 {
 
 @media (max-width: 1200px) {
   .wrapper .right-part .about {
-    -webkit-transform: translateY(60px);
-            transform: translateY(60px);
-    padding: 20px 50px;
+    padding: 0 50px;
   }
 }
 
@@ -1357,9 +1359,7 @@ h3 {
 
 @media (max-width: 1200px) {
   .wrapper .right-part .portfolio {
-    -webkit-transform: translateY(60px);
-            transform: translateY(60px);
-    padding: 20px 50px;
+    padding: 0 50px;
   }
 }
 
@@ -1429,9 +1429,7 @@ h3 {
 
 @media (max-width: 1200px) {
   .wrapper .right-part .contact {
-    -webkit-transform: translateY(60px);
-            transform: translateY(60px);
-    padding: 20px 40px;
+    padding: 0 40px;
   }
 }
 
@@ -1450,6 +1448,14 @@ h3 {
 @media (max-width: 768px) {
   .wrapper .right-part {
     padding: 40px 20px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .wrapper .right-part {
+    -webkit-transform: translateY(60px);
+            transform: translateY(60px);
+    height: calc(100vh - 60px);
   }
 }
 

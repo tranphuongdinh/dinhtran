@@ -38,6 +38,11 @@
         @media (max-width: 768px) {
             padding: 40px 20px;
         }
+
+        @media (max-width: 1200px) {
+            transform: translateY(60px);
+            height: calc(100vh - 60px);
+        }
     }
 
     @media (max-width: 1200px) {
