@@ -53,6 +53,10 @@
                             color: #767676;
                         }
                     }
+
+                    @media (max-width: 576px) {
+                        margin-left: 10px;
+                    }
                 }
 
                 &__item:first-child {

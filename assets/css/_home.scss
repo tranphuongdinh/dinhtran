@@ -1,39 +1,91 @@
 .home {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100%;
+    position: relative;
+
+    .music-player {
+        display: flex;
+        justify-content: center;
+        background: transparent;
+        align-items: center;
+        width: 125px;
+        height: 60px;
+        bottom: 60px;
+        right: 60px;
+        position: fixed;
+        cursor: pointer;
+        z-index: 10;
+        transition: all 0.25s ease-in-out;
+        #canvas {
+            z-index: 2;
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+        }
+        @media (max-width: 992px) {
+            margin: 20px 0;
+            width: 150px;
+            position: initial;
+            bottom: initial;
+            right: initial;
+        }
+        &.pause {
+            background: url("https://img.icons8.com/small/96/000000/soundcloud.png")
+                center no-repeat;
+            background-size: contain;
+        }
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
 
     &__content {
         display: flex;
         flex-direction: row;
 
         &-avt {
-            max-width: 200px;
+            background: url("../../images/avt.webp") center no-repeat;
+            background-size: cover;
+            filter: grayscale(100%);
+            animation: morph 8s ease-in-out infinite;
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+            box-sizing: border-box;
             height: 200px;
+            transition: all 1s ease-in-out;
+            width: 200px;
+            z-index: 5;
+            outline: none;
+            @keyframes morph {
+                0% {
+                    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+                }
 
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                filter: grayscale(100%);
-                border-radius: 50%;
+                50% {
+                    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+                }
+
+                100% {
+                    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+                }
             }
 
             @media (max-width: 992px) {
-                max-width: 300px;
+                width: 300px;
                 height: 300px;
                 margin-bottom: 50px;
             }
 
             @media (max-width: 768px) {
-                max-width: 200px;
+                width: 200px;
                 height: 200px;
             }
 
             @media (max-width: 476px) {
-                max-width: 180px;
+                width: 180px;
                 height: 180px;
             }
         }
@@ -87,7 +139,16 @@
                             }
                         }
                     }
+
+                    @media (max-width: 992px) {
+                        justify-content: center;
+                        align-items: center;
+                        li {
+                            margin: 0 10px;
+                        }
+                    }
                 }
+
                 @media (max-width: 476px) {
                     margin-bottom: 20px;
                 }
@@ -107,7 +168,7 @@
 
     @media (max-width: 1200px) {
         transform: translateY(60px);
-        padding: 20px 50px;
+        padding: 20px 20px;
     }
 
     @media (max-width: 992px) {

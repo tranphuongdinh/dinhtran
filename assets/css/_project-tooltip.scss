@@ -5,4 +5,8 @@
     background-color: transparent;
     color: #000;
     z-index: 1000;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
 }

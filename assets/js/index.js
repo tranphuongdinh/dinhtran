@@ -1,8 +1,35 @@
 window.addEventListener("load", function () {
-    $("#loading").fadeOut(2000);
+    $("#loading").fadeOut(800);
+    setTimeout(function () {
+        $(".preload").addClass("active");
+    }, 1000);
 });
 
 $(document).ready(() => {
+    $(".button-darkmode").click(function () {
+        let buttonDarkmodeIcon = $(".button-darkmode-icon");
+        $("body").toggleClass("dark-mode");
+        if ($(buttonDarkmodeIcon).hasClass("fa-sun-o")) {
+            $(buttonDarkmodeIcon).removeClass("fa-sun-o");
+            $(buttonDarkmodeIcon).addClass("fa-moon-o");
+        } else {
+            $(buttonDarkmodeIcon).removeClass("fa-moon-o");
+            $(buttonDarkmodeIcon).addClass("fa-sun-o");
+        }
+    });
+
+    $(".button-darkmode-switch").click(function () {
+        $("body").toggleClass("dark-mode");
+        $(".button-darkmode-tray").toggleClass("on");
+    });
+
+    $(".button-submit").click(function (e) {
+        e.preventDefault();
+        let form = document.querySelector(".contact-form");
+        form.submit();
+        form.reset();
+    });
+
     function fillDataset(menuItems, sections, time) {
         for (item of menuItems) {
             $(item).click(function () {

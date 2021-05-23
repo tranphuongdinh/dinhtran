@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
 :root {
     --color-white: hsl(0, 0%, 100%);
     --color-black: hsl(0, 0%, 0%);
@@ -15,6 +16,10 @@
     box-sizing: border-box;
     font-family: 'Josefin Sans', sans-serif;
     scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fff;
 }
 
 #back-to-top {

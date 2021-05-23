@@ -1,0 +1,58 @@
+.preload {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    pointer-events: none;
+    z-index: 100;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .left {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 50%;
+        height: 100%;
+        background-color: #000;
+        transition: transform 0.5s 1s ease-in-out;
+    }
+
+    .middle {
+        width: 3px;
+        height: 100%;
+        background-color: #fff;
+        transform: scaleY(0.3);
+        transition: all 1s ease-in-out;
+    }
+
+    .right {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 50%;
+        height: 100%;
+        background-color: #000;
+        transition: transform 0.5s 1s ease-in-out;
+    }
+
+    &.active {
+        .left {
+            transform: translateX(-100%);
+        }
+        .middle {
+            transform: scaleY(1);
+            opacity: 0;
+        }
+        .right {
+            transform: translateX(100%);
+        }
+    }
+}

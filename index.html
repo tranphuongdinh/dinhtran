@@ -11,6 +11,11 @@
     </head>
     <body>
         <span class="project-tooltip"></span>
+        <div class="preload">
+            <div class="left"></div>
+            <div class="middle"></div>
+            <div class="right"></div>
+        </div>
         <div id="loading">
             <img
                 id="loading-image"
@@ -159,6 +164,13 @@
                 >
                 <div class="mobile-menu__inner-menu">
                     <ul class="menu-list">
+                        <li>
+                            <button class="button-darkmode">
+                                <span
+                                    class="fa fa-sun-o button-darkmode-icon"
+                                ></span>
+                            </button>
+                        </li>
                         <li class="menu-list__item" data-filter="home">
                             <a href="#" class="item-link"
                                 ><span class="fa fa-home"></span
@@ -205,6 +217,17 @@
                             <li class="menu-list__item" data-filter="contact">
                                 <a href="#" class="item-link">Contact</a>
                             </li>
+                            <li>
+                                <button class="button-darkmode-switch">
+                                    <span class="fa fa-sun-o"></span>
+                                    <div class="button-darkmode-tray">
+                                        <div
+                                            class="button-darkmode-switcher"
+                                        ></div>
+                                    </div>
+                                    <span class="fa fa-moon-o"></span>
+                                </button>
+                            </li>
                         </ul>
                     </div>
                     <div class="left-part__inner-copyright">
@@ -217,12 +240,7 @@
             <div class="right-part">
                 <div class="section home" id="home">
                     <div class="home__content">
-                        <div class="home__content-avt">
-                            <img
-                                src="./images/avt.webp"
-                                alt="TRAN PHUONG DINH"
-                            />
-                        </div>
+                        <div class="home__content-avt"></div>
                         <div class="home__content-details">
                             <h3 class="home__content-details__name">
                                 TRAN PHUONG DINH
@@ -270,6 +288,9 @@
                             </div>
                         </div>
                     </div>
+                    <div class="music-player">
+                        <canvas id="canvas"></canvas>
+                    </div>
                 </div>
                 <div class="section about" id="about">
                     <div class="about__main">
@@ -300,6 +321,12 @@
                                     <div class="button learn-more">
                                         Learn More
                                     </div>
+                                </a>
+                                <a
+                                    href="https://drive.google.com/file/d/12tHLTZ_PqPGUiRm2OqHuT3SYUyk_Xpqw/view?usp=sharing"
+                                    target="_blank"
+                                >
+                                    <div class="button">Download CV</div>
                                 </a>
                             </div>
                             <div class="inner-right">
@@ -558,26 +585,34 @@
                         ></iframe>
                     </div>
                     <div class="contact__form">
-                        <form action="/" method="post">
+                        <form
+                            class="contact-form"
+                            action="https://formspree.io/f/mqkwprkn"
+                            method="POST"
+                            target="_blank"
+                        >
                             <input
                                 class="input-text"
                                 type="text"
+                                name="name"
                                 placeholder="Your name..."
                                 required
                             />
                             <input
                                 class="input-text"
                                 type="email"
+                                name="_replyto"
                                 placeholder="Your email..."
                                 required
                             />
                             <textarea
                                 id="message"
+                                name="message"
                                 placeholder="Your Message..."
                                 required
                             ></textarea>
                             <input
-                                class="button"
+                                class="button button-submit"
                                 type="submit"
                                 value="Send Message"
                             />
@@ -587,6 +622,7 @@
             </div>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="./assets/js/music-player.js"></script>
         <script src="./assets/js/index.js"></script>
     </body>
 </html>
