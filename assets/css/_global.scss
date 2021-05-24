@@ -16,10 +16,8 @@
 }
 
 html {
-    @media (max-width: 1200px) {
-        &::-webkit-scrollbar {
-            display: none;
-        }
+    &::-webkit-scrollbar {
+        display: none;
     }
 }
 
@@ -61,6 +59,35 @@ body.dark-mode {
     background-color: transparent;
     font-size: 16px;
     cursor: pointer;
+}
+
+#circle-cursor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    background-color: transparent;
+    border: 1px solid #000;
+    border-radius: 999px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    pointer-events: none;
+
+    #circle-cursor-dot {
+        pointer-events: none;
+        width: 5px;
+        height: 5px;
+        background-color: #767676;
+        border-radius: 999px;
+        transition: transform 0.25s ease-out;
+    }
+
+    @media (max-width: 768px) {
+        display: none !important;
+    }
 }
 
 p {

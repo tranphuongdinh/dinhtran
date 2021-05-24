@@ -15,10 +15,8 @@
   }
 }
 
-@media (max-width: 1200px) {
-  html::-webkit-scrollbar {
-    display: none;
-  }
+html::-webkit-scrollbar {
+  display: none;
 }
 
 body {
@@ -63,6 +61,46 @@ body.dark-mode .description-modal img {
   background-color: transparent;
   font-size: 16px;
   cursor: pointer;
+}
+
+#circle-cursor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 45px;
+  height: 45px;
+  background-color: transparent;
+  border: 1px solid #000;
+  border-radius: 999px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  pointer-events: none;
+}
+
+#circle-cursor #circle-cursor-dot {
+  pointer-events: none;
+  width: 5px;
+  height: 5px;
+  background-color: #767676;
+  border-radius: 999px;
+  -webkit-transition: -webkit-transform 0.25s ease-out;
+  transition: -webkit-transform 0.25s ease-out;
+  transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+}
+
+@media (max-width: 768px) {
+  #circle-cursor {
+    display: none !important;
+  }
 }
 
 p {
@@ -1316,8 +1354,7 @@ h3 {
   overflow: hidden;
 }
 
-.wrapper .right-part .portfolio__galery-list li div img,
-.wrapper .right-part .portfolio__galery-list li div iframe {
+.wrapper .right-part .portfolio__galery-list li div img {
   width: 100%;
   height: 100%;
   background-color: #fff;
@@ -1329,24 +1366,6 @@ h3 {
   transition: -webkit-transform 0.25s ease-in-out;
   transition: transform 0.25s ease-in-out;
   transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
-}
-
-@media (max-width: 992px) {
-  .wrapper .right-part .portfolio__galery-list li div iframe {
-    height: 325px;
-  }
-}
-
-@media (max-width: 768px) {
-  .wrapper .right-part .portfolio__galery-list li div iframe {
-    height: 275px;
-  }
-}
-
-@media (max-width: 512px) {
-  .wrapper .right-part .portfolio__galery-list li div iframe {
-    height: 225px;
-  }
 }
 
 @media (max-width: 1400px) {
@@ -1391,6 +1410,15 @@ h3 {
   }
   .wrapper .right-part .portfolio__galery-list li #flappy-bird:hover {
     content: url(../../images/flappyGIF.gif);
+  }
+  .wrapper .right-part .portfolio__galery-list li #social-responsibility:hover {
+    content: url(../../images/social-responsibilityGIF.gif);
+  }
+  .wrapper .right-part .portfolio__galery-list li #snake-the-game:hover {
+    content: url(../../images/snake-the-gameGIF.gif);
+  }
+  .wrapper .right-part .portfolio__galery-list li #flappy-bird-youtube:hover {
+    content: url(../../images/flappy-bird-youtubeGIF.gif);
   }
 }
 
