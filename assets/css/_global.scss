@@ -26,28 +26,34 @@ body {
 }
 
 body.dark-mode {
+    -webkit-filter: invert(1) hue-rotate(180deg);
     filter: invert(1) hue-rotate(180deg);
 
     img:not(#loading-image):not(.certificates-img),
     .home__content-avt,
     iframe {
+        -webkit-filter: invert(1) hue-rotate(180deg) grayscale(100%) !important;
         filter: invert(1) hue-rotate(180deg) grayscale(100%) !important;
     }
 
     .description-modal img {
+        -webkit-filter: invert(1) hue-rotate(180deg) grayscale(0) !important;
         filter: invert(1) hue-rotate(180deg) grayscale(0) !important;
     }
 
     .project-modal iframe {
+        -webkit-filter: invert(1) hue-rotate(180deg) !important;
         filter: invert(1) hue-rotate(180deg) !important;
     }
 
     .contact__map iframe {
+        -webkit-filter: invert(1) hue-rotate(180deg) !important;
         filter: invert(1) hue-rotate(180deg) !important;
     }
 
     .description-modal {
         img {
+            -webkit-filter: invert(1) hue-rotate(180deg) !important;
             filter: invert(1) hue-rotate(180deg) !important;
         }
     }
