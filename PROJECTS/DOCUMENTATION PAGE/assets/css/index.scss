@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: "Noto Sans", sans-serif;
+
+    @media (max-width: 476px) {
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+}
+
+body.dark-mode {
+    -webkit-filter: invert(100%) hue-rotate(180) !important;
+    filter: invert(100%) hue-rotate(180deg);
+
+    img {
+        -webkit-filter: invert(100%) hue-rotate(180deg);
+        filter: invert(100%) hue-rotate(180deg);
+    }
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    @import "menu-bar";
+    @import "menu-features";
+
+    .content {
+        background-color: #fff;
+        width: 100%;
+        height: calc(100% - 120px);
+        overflow-x: hidden;
+
+        @media (max-width: 768px) {
+            height: calc(100% - 170px);
+        }
+
+        @media (max-width: 476px) {
+            height: calc(100% - 170px);
+        }
+
+        @import "homepage";
+
+        @import "document";
+
+        @import "contribution";
+
+        &.full {
+            height: calc(100% - 60px);
+        }
+    }
+}

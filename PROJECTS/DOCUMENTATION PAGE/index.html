@@ -1,86 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documentation Page</title>
-    <link rel="shortcut icon" href="https://img.icons8.com/nolan/64/hand-with-pen.png">
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/responsive.css">
-</head>
-
-<body>
-    <div id="loading"><img id="loading-image" src="https://i.pinimg.com/originals/8b/32/15/8b3215c7ee7dbd5e33b36383a83a04b7.gif" alt="Loading..." /></div>
-    <header class="home">
-        <div class="container">
-            <a href="./index.html">
-                <div class="logo">
-                    <img src="./images/logo.png" alt="Logo" class="logo-img">
-                    <h3 class="logo-title">Documentation Page</h3>
-                </div>
-            </a>
-            <nav class="nav-bar">
-                <ul class="nav-list">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="./index.html">Trang chủ</a>
-                        <img class="item-logo" src="./images/home-logo.png" alt="Home">
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./courses.html">Khoá học</a>
-                        <img class="item-logo" src="./images/course-logo.png" alt="Course">
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./documents.html">Tài liệu</a>
-                        <img class="item-logo" src="./images/document-icon.png" alt="Course">
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./tests.html">Đề thi</a>
-                        <img class="item-logo" src="./images/test-logo.png" alt="Tests">
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./contribution.html">Đóng góp</a>
-                        <img class="item-logo" src="./images/charity-logo.png" alt="Charity">
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <section class="section">
-            <div class="container home main-content normal">
-                <a href="./courses.html" class="content-link">
-                    <div class="content courses">
-                        <img src="./images/holding-book.png" class="content-img" alt="Courses">
-                        <h2 class="content-title">Khoá học</h2>
-                    </div>
-                </a>
-                <a href="./documents.html" class="content-link">
-                    <div class="content documents">
-                        <img src="./images/document.png" class="content-img" alt="Documents">
-                        <h2 class="content-title">Tài Liệu</h2>
-                    </div>
-                </a>
-                <a href="./tests.html" class="content-link">
-                    <div class="content tests">
-                        <img src="./images/test.png" class="content-img" alt="Tests">
-                        <h2 class="content-title">Đề Thi</h2>
-                    </div>
-                </a>
-                <div class="music-player">
-                    <img class="music-player-pause" src="./images/audio-wave.png" alt="pause">
-                    <canvas id="canvas"></canvas>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Documentation Page</title>
+        <link rel="shortcut icon" href="./images/logo.png" />
+        <link rel="stylesheet" href="./assets/css/index.css" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="menu-bar">
+                <div class="menu-bar__inner">
+                    <a href="index.html">
+                        <div class="menu-bar__inner-logo">
+                            <img
+                                src="./images/logo.png"
+                                alt="Documentation Page"
+                            />
+                            <span>Documentation Page</span>
+                        </div>
+                    </a>
+                    <ul class="menu-bar__inner-navlist">
+                        <li
+                            class="menu-bar__inner-navlist__item"
+                            data-id="home"
+                        >
+                            <img src="./images/home-logo.png" alt="Home" />
+                            <span>Trang chủ</span>
+                        </li>
+                        <li
+                            class="menu-bar__inner-navlist__item"
+                            data-id="courses"
+                        >
+                            <img src="./images/course-logo.png" alt="Courses" />
+                            <span>Khoá học</span>
+                        </li>
+                        <li
+                            class="menu-bar__inner-navlist__item"
+                            data-id="documents"
+                        >
+                            <img
+                                src="./images/document-icon.png"
+                                alt="Documents"
+                            />
+                            <span>Tài liệu</span>
+                        </li>
+                        <li
+                            class="menu-bar__inner-navlist__item"
+                            data-id="tests"
+                        >
+                            <img src="./images/test-logo.png" alt="Tests" />
+                            <span>Đề thi</span>
+                        </li>
+                        <li
+                            class="menu-bar__inner-navlist__item"
+                            data-id="contribution"
+                        >
+                            <img
+                                src="./images/charity-logo.png"
+                                alt="Contribution"
+                            />
+                            <span>Đóng góp</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="footer">2021 designed by Tran Phuong Dinh</div>
-        </section>
-    </main>
-    <script src="./js/header.js"></script>
-    <script src="./js/main.js"></script>
-    <script src="./js/music-player.js"></script>
-    <script src="./js/pre-load.js"></script>
-</body>
-
+            <div class="menu-features">
+                <div class="menu-features__inner">
+                    <ul class="menu-features__inner-list">
+                        <li
+                            class="menu-features__inner-list__item button-alert"
+                        >
+                            <img
+                                src="./images/notification.png"
+                                alt="Notification"
+                            />
+                        </li>
+                        <a
+                            href="https://www.facebook.com/groups/tailieuhcmus"
+                            target="_blank"
+                        >
+                            <li class="menu-features__inner-list__item">
+                                <img
+                                    src="./images/facebook.png"
+                                    alt="Facebook"
+                                />
+                            </li>
+                        </a>
+                        <a
+                            href="https://driveuploader.com/upload/JS58fXozqO/"
+                            target="_blank"
+                        >
+                            <li class="menu-features__inner-list__item">
+                                <img
+                                    src="./images/google-drive.png"
+                                    alt="Drive"
+                                />
+                            </li>
+                        </a>
+                        <li
+                            class="
+                                menu-features__inner-list__item
+                                button-darkmode-item
+                            "
+                        >
+                            <img
+                                class="button-darkmode"
+                                src="./images/sun.png"
+                                alt="Dark/Light mode"
+                            />
+                        </li>
+                        <li class="menu-features__inner-list__item">
+                            <h3 class="section-name">Khoá học</h3>
+                        </li>
+                    </ul>
+                    <input
+                        type="text"
+                        class="search-bar"
+                        placeholder="Tìm kiếm khoá học"
+                        data-id="courses"
+                    />
+                    <input
+                        type="text"
+                        class="search-bar"
+                        placeholder="Tìm kiếm tài liệu"
+                        data-id="documents"
+                    />
+                    <input
+                        type="text"
+                        class="search-bar"
+                        placeholder="Tìm kiếm đề thi"
+                        data-id="tests"
+                    />
+                </div>
+            </div>
+            <div class="content">
+                <div class="homepage section" id="home">
+                    <div class="homepage__inner">
+                        <div class="homepage__inner-item" data-id="courses">
+                            <img
+                                class="homepage__inner-item__img"
+                                src="./images/holding-book.png"
+                                alt=""
+                            />
+                            <h2>khoá học</h2>
+                        </div>
+                        <div class="homepage__inner-item" data-id="documents">
+                            <img
+                                class="homepage__inner-item__img"
+                                src="./images/document.png"
+                                alt=""
+                            />
+                            <h2>tài liệu</h2>
+                        </div>
+                        <div class="homepage__inner-item" data-id="tests">
+                            <img
+                                class="homepage__inner-item__img"
+                                src="./images/test.png"
+                                alt=""
+                            />
+                            <h2>đề thi</h2>
+                        </div>
+                    </div>
+                    <p>
+                        © 2021 Created by
+                        <a
+                            href="https://tranphuongdinh.github.io/dinhtran"
+                            target="_blank"
+                            >Tran Phuong Dinh</a
+                        >
+                    </p>
+                </div>
+                <div class="document section" id="courses">
+                    <div class="left-part courses-menu"></div>
+                    <div class="right-part">
+                        <ul class="document-detail-list courses-list"></ul>
+                    </div>
+                </div>
+                <div class="document section" id="documents">
+                    <div class="left-part documents-menu"></div>
+                    <div class="right-part">
+                        <ul class="document-detail-list documents-list"></ul>
+                    </div>
+                </div>
+                <div class="document section" id="tests">
+                    <div class="left-part tests-menu"></div>
+                    <div class="right-part">
+                        <ul class="document-detail-list tests-list"></ul>
+                    </div>
+                </div>
+                <div class="contribution section" id="contribution">
+                    <div class="contribution__inner">
+                        <div class="contribution__inner-left">
+                            <h3>
+                                tài liệu của trang được tổng hợp từ các nguồn
+                                sau:
+                            </h3>
+                            <ul>
+                                <li>
+                                    <a
+                                        href="https://tailieuhcmus.blogspot.com/"
+                                        target="_blank"
+                                        >1. tài liệu HCMUS</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://www.facebook.com/groups/tailieuhcmus"
+                                        target="_blank"
+                                        >2. group tài liệu HCMUS</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://drive.google.com/drive/folders/1fP-kASOLyuN8foH18tYlonfsCNanDn1J?fbclid=IwAR2xzr1UEsWBonxnQ2Tulkw3q2N_6HMsgTCtmu8l49V08rNTAKDuTTeLOrc"
+                                        target="_blank"
+                                        >3. ôn thi học kì ITUS</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://www.facebook.com/groups/hoctap20shh1"
+                                        target="_blank"
+                                        >4. group thông tin - tài liệu học tập
+                                        20SHH1</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://drive.google.com/drive/folders/1VB5IRqPyFdSCtZx5nne1wDVWyY1tztmk?fbclid=IwAR2oSvSMSaqRPBYocH8PEjIbX-MeMlSwSusrR6062wiRCKfp3DVzffFzlOw"
+                                        target="_blank"
+                                        >5. tài liệu học tập - đội sinh viên
+                                        tình nguyện HCMUS</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://vinahost.vn/thu-thuat-tim-kiem-tren-google"
+                                        target="_blank"
+                                        >6. google ( ͡° ͜ʖ ͡°)</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://www.oxii.vn/song/10-kenh-youtube-viet-nam-dang-de-anh-em-theo-doi-1097.html"
+                                        target="_blank"
+                                        >7. youtube ( ͡° ͜ʖ ͡°)</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="contribution__inner-right">
+                            <p>
+                                Bạn có thể chia sẻ tài liệu và đề thi ở
+                                <a
+                                    href="https://driveuploader.com/upload/JS58fXozqO/"
+                                    target="_blank"
+                                    >đây</a
+                                >
+                                hoặc tham gia nhóm
+                                <a
+                                    href="https://www.facebook.com/groups/tailieuhcmus"
+                                    target="_blank"
+                                    >Tài liệu HCMUS</a
+                                >
+                                nhé! Nếu có bất kì ý kiến nào muốn đóng góp cho
+                                Page (về trải nghiệm, giao diện, báo link
+                                hỏng,...), bạn có thể gửi
+                                <a
+                                    href="https://docs.google.com/forms/d/1OEdgqOeD9k2jUgZ1T9fGF8753jTGIRIRApOtBIThmGE/viewform?edit_requested=true"
+                                    target="_blank"
+                                    >feedback</a
+                                >
+                                nè. Chúc bạn có những năm tháng đại học thật vui
+                                vẻ và hữu ích!
+                            </p>
+                            <div class="button-group">
+                                <a
+                                    href="https://driveuploader.com/upload/JS58fXozqO/"
+                                    target="_blank"
+                                    class="button warning"
+                                    >google drive</a
+                                >
+                                <a
+                                    href="https://www.facebook.com/groups/tailieuhcmus"
+                                    target="_blank"
+                                    class="button success"
+                                    >Tài liệu HCMUS</a
+                                >
+                                <a
+                                    href="https://docs.google.com/forms/d/1OEdgqOeD9k2jUgZ1T9fGF8753jTGIRIRApOtBIThmGE/viewform?edit_requested=true"
+                                    target="_blank"
+                                    class="button danger"
+                                    >Feedback</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="./assets/js/index.js"></script>
+        <script src="./assets/js/Courses.js"></script>
+        <script src="./assets/js/Documents.js"></script>
+        <script src="./assets/js/Tests.js"></script>
+    </body>
 </html>
