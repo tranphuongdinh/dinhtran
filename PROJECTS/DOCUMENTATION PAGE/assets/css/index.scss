@@ -16,6 +16,25 @@
     }
 }
 
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-color: #fff;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        max-width: 150px;
+        max-height: 150px;
+    }
+}
+
 body.dark-mode {
     -webkit-filter: invert(100%) hue-rotate(180) !important;
     filter: invert(100%) hue-rotate(180deg);

@@ -1,3 +1,7 @@
+window.addEventListener("load", function () {
+    $(".loading").fadeOut(500);
+});
+
 $(document).ready(function () {
     let menuItems = $(".menu-bar__inner-navlist__item");
     let sections = $(".section");

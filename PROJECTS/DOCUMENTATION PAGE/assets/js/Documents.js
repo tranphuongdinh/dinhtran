@@ -82,6 +82,10 @@ Documents = [
                 url: "https://drive.google.com/drive/folders/1-DqXc_W3LJirGrgIuoVzC-1b4iyKc4Tl",
             },
             {
+                name: "Cơ sở dữ liệu | Tổng hợp",
+                url: "https://drive.google.com/drive/u/1/folders/1Cl9aD-XIjxLqzufef83kUCfJGlu3tToE",
+            },
+            {
                 name: "Cơ sở lập trình | tailieuhcmus",
                 url: "https://drive.google.com/drive/folders/1oXrljKIagqAfqQqlMrxJZ6Q-oH6wMk7H",
             },
