@@ -62,7 +62,7 @@ body.dark-mode {
         }
 
         @media (max-width: 476px) {
-            height: calc(100% - 170px);
+            height: calc(100% - 150px);
         }
 
         @import "homepage";
@@ -73,6 +73,9 @@ body.dark-mode {
 
         &.full {
             height: calc(100% - 60px);
+            @media (max-width: 768px) {
+                height: calc(100% - 50px);
+            }
         }
     }
 }

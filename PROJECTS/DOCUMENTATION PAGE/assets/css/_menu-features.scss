@@ -37,7 +37,6 @@
                 width: 40px;
                 height: 40px;
                 margin-right: 20px;
-                cursor: pointer;
                 border-radius: 150px;
                 background: linear-gradient(145deg, #e6e6e6, #ffffff);
                 box-shadow: 9px 9px 18px #dadada, -9px -9px 18px #ffffff;
@@ -73,6 +72,7 @@
                 }
 
                 &:not(:nth-child(5)):hover {
+                    cursor: pointer;
                     background: linear-gradient(145deg, #ffffff, #e6e6e6);
                     box-shadow: 5px 5px 10px #d9d9d9, -5px -5px 10px #fff;
                 }
@@ -82,7 +82,8 @@
                     min-width: 120px;
                     text-transform: uppercase;
                     border-radius: 10px;
-                    box-shadow: 9px 9px 18px #dbdbdb, -9px -9px 18px #ffffff;
+                    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+                    box-shadow: 7px 7px 14px #d9d9d9, -7px -7px 14px #ffffff;
                     h3 {
                         transform: translateY(25%);
                     }
