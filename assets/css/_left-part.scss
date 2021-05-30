@@ -55,11 +55,12 @@
                             height: 24px;
                             background-color: #000;
                             border-radius: 50px;
+                            transform: translateY(-1px);
                             transition: transform 0.15s ease-in-out;
                         }
                         &.on {
                             .button-darkmode-switcher {
-                                transform: translateX(25px);
+                                transform: translate(25px, -1px);
                                 box-shadow: 0 0 12.5px 4px #000;
                             }
                         }
