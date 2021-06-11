@@ -184,7 +184,7 @@ for (item of menuItems) {
     }
 }
 
-fillDataset(menuItems, sections, 500);
+fillDataset(menuItems, sections, 250);
 
 let portfolioItems = $(".portfolio-filter__item");
 
