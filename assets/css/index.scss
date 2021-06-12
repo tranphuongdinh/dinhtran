@@ -23,6 +23,10 @@
         padding: 100px;
         background-color: #f8f8f8;
 
+        @media (max-width: 1400px) {
+            width: calc(100% - 300px);
+        }
+
         @import "./home";
 
         @import "./about";
