@@ -69,9 +69,11 @@
                     height: 280px;
                     overflow: hidden;
                     cursor: pointer;
-                    box-shadow: 0px 0px 5px 2px #c9c9c9;
+                    border-radius: 10px;
+                    box-shadow: 0px 0px 15px 2px #eeeeee;
                     background-color: #fff;
                     overflow: hidden;
+                    position: relative;
 
                     img {
                         width: 100%;
@@ -93,48 +95,104 @@
                     }
                 }
 
-                @media (min-width: 993px) {
-                    #documentation-page:hover {
-                        content: url(../../images/documentationPageGIF.gif);
+                &:hover {
+                    .source-demo {
+                        visibility: initial;
+                        opacity: 1;
+
+                        &__button {
+                            &:nth-child(1) {
+                                transform: translateX(0);
+                            }
+                            &:nth-child(2) {
+                                transform: translateX(0);
+                            }
+                        }
                     }
-                    #room-homepage:hover {
-                        content: url(../../images/roomPageGIF.gif);
+                    @media (min-width: 993px) {
+                        #documentation-page {
+                            content: url(../../images/documentationPageGIF.gif);
+                        }
+                        #room-homepage {
+                            content: url(../../images/roomPageGIF.gif);
+                        }
+                        #loopstudio-page {
+                            content: url(../../images/VRPageGIF.gif);
+                        }
+                        #simple-paint {
+                            content: url(../../images/SimplePaintGDIGIF.gif);
+                        }
+                        #meme-generator {
+                            content: url(../../images/memeGenGIF.gif);
+                        }
+                        #paint {
+                            content: url(../../images/paintGIF.gif);
+                        }
+                        #bad-apple {
+                            content: url(../../images/badAppleGIF.gif);
+                        }
+                        #weather-forecast {
+                            content: url(../../images/weatherForecastGIF.gif);
+                        }
+                        #calculator {
+                            content: url(../../images/calculatorGIF.gif);
+                        }
+                        #hangman {
+                            content: url(../../images/hangmanGIF.gif);
+                        }
+                        #flappy-bird {
+                            content: url(../../images/flappyGIF.gif);
+                        }
+                        #social-responsibility {
+                            content: url(../../images/social-responsibilityGIF.gif);
+                        }
+                        #snake-the-game {
+                            content: url(../../images/snake-the-gameGIF.gif);
+                        }
+                        #flappy-bird-youtube {
+                            content: url(../../images/flappy-bird-youtubeGIF.gif);
+                        }
                     }
-                    #loopstudio-page:hover {
-                        content: url(../../images/VRPageGIF.gif);
+                }
+            }
+
+            .source-demo {
+                position: absolute;
+                z-index: 2;
+                background-color: rgba(0, 0, 0, 0.1);
+                -webkit-backdrop-filter: blur(3px);
+                backdrop-filter: blur(2px);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                visibility: hidden;
+                opacity: 0;
+                transition: all 0.25s ease-out;
+
+                &__button {
+                    display: inline-block;
+                    width: 65px;
+                    height: 65px;
+                    background-color: transparent;
+                    color: #fff;
+                    margin: 20px;
+                    transition: all 0.2s ease-in;
+                    border-radius: 7.5px;
+
+                    &:nth-child(1) {
+                        transform: translateX(-100px);
                     }
-                    #simple-paint:hover {
-                        content: url(../../images/SimplePaintGDIGIF.gif);
+                    &:nth-child(2) {
+                        transform: translateX(100px);
                     }
-                    #meme-generator:hover {
-                        content: url(../../images/memeGenGIF.gif);
-                    }
-                    #paint:hover {
-                        content: url(../../images/paintGIF.gif);
-                    }
-                    #bad-apple:hover {
-                        content: url(../../images/badAppleGIF.gif);
-                    }
-                    #weather-forecast:hover {
-                        content: url(../../images/weatherForecastGIF.gif);
-                    }
-                    #calculator:hover {
-                        content: url(../../images/calculatorGIF.gif);
-                    }
-                    #hangman:hover {
-                        content: url(../../images/hangmanGIF.gif);
-                    }
-                    #flappy-bird:hover {
-                        content: url(../../images/flappyGIF.gif);
-                    }
-                    #social-responsibility:hover {
-                        content: url(../../images/social-responsibilityGIF.gif);
-                    }
-                    #snake-the-game:hover {
-                        content: url(../../images/snake-the-gameGIF.gif);
-                    }
-                    #flappy-bird-youtube:hover {
-                        content: url(../../images/flappy-bird-youtubeGIF.gif);
+
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    img {
+                        width: 100%;
+                        border-radius: 7.5px;
                     }
                 }
             }

@@ -198,27 +198,6 @@ for (item of portfolioItems) {
 
 fillDataset(portfolioItems, galeryItems, 0);
 
-let projectModal = $(".project-modal");
-
-let projectModalIframe = $(".project-modal__iframe");
-
-projectModal.fadeOut(0);
-
-for (item of galeryItems) {
-    $(item).click(function () {
-        const url = $(this).attr("data-url");
-
-        projectModal.fadeIn(250);
-
-        projectModalIframe.attr("src", url);
-    });
-}
-
-$(".modal-close").click(function () {
-    projectModal.fadeOut(250);
-    projectModalIframe.attr("src", "");
-});
-
 let mouseX = 0,
     mouseY = 0;
 
