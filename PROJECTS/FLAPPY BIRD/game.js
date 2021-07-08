@@ -1,6 +1,4 @@
-window.addEventListener('DOMContentLoaded', showIntroduction = () => { alert('Press space or mouse left to fly. Beware the obstacles!') })
-
-const canvas = document.getElementById('canvas');
+const canvas = document.getElementById("canvas");
 const c = canvas.getContext("2d");
 
 const flySound = new Audio();
@@ -24,7 +22,6 @@ background.src = "images/bg.png";
 foreground.src = "images/fg.png";
 pipeSouth.src = "images/pipeSouth.png";
 pipeNorth.src = "images/pipeNorth.png";
-
 
 //variables
 var isDead = false;
@@ -53,7 +50,7 @@ function init() {
     pipes.push({
         x: canvas.width,
         y: randomIntFromRange(-100, 0),
-        space: randomIntFromRange(70, 130)
+        space: randomIntFromRange(70, 130),
     });
     k = 0;
     speed = 1;
@@ -93,23 +90,29 @@ function randomIntFromRange(min, max) {
 
 function detectCollision(birdX, birdY, pipeX, pipeY, space) {
     if (birdY >= canvas.height - 118 - 26 || birdY <= 0) return true;
-
-    else if (birdY <= pipeY + 242 && birdX >= pipeX - 38 && birdX <= pipeX + 52 + 38) return true;
-
-    else if (birdY + 26 >= pipeY + 242 + space && birdX >= pipeX - 38 && birdX <= pipeX + 52 + 38) return true;
-
+    else if (
+        birdY <= pipeY + 242 &&
+        birdX >= pipeX - 38 &&
+        birdX <= pipeX + 52 + 38
+    )
+        return true;
+    else if (
+        birdY + 26 >= pipeY + 242 + space &&
+        birdX >= pipeX - 38 &&
+        birdX <= pipeX + 52 + 38
+    )
+        return true;
     else return false;
 }
-
 
 init();
 
 function drawImageRot(img, x, y, width, height, deg) {
     // Store the current context state (i.e. rotation, translation etc..)
-    c.save()
+    c.save();
 
-    //Convert degrees to radian 
-    var rad = deg * Math.PI / 180;
+    //Convert degrees to radian
+    var rad = (deg * Math.PI) / 180;
 
     //Set the origin to the center of the image
     c.translate(x + width / 2, y + height / 2);
@@ -117,15 +120,14 @@ function drawImageRot(img, x, y, width, height, deg) {
     //Rotate the canvas around the origin
     c.rotate(rad);
 
-    //draw the image    
-    c.drawImage(img, width / 2 * (-1), height / 2 * (-1), width, height);
+    //draw the image
+    c.drawImage(img, (width / 2) * -1, (height / 2) * -1, width, height);
 
     // Restore canvas state as saved from above
     c.restore();
 }
 
 function draw() {
-
     for (let i = 0; i < pipes.length + 1; i++) {
         c.drawImage(background, backgroundX + i * canvas.width, 0);
     }
@@ -139,7 +141,11 @@ function draw() {
     angle = 0;
 
     for (let i = 0; i < pipes.length + 1; i++) {
-        c.drawImage(foreground, backgroundX + i * canvas.width, canvas.height - 118);
+        c.drawImage(
+            foreground,
+            backgroundX + i * canvas.width,
+            canvas.height - 118
+        );
     }
 
     birdY += gravity;
@@ -156,7 +162,7 @@ function draw() {
         pipes.push({
             x: canvas.width,
             y: randomIntFromRange(-100, 0),
-            space: randomIntFromRange(85, 135)
+            space: randomIntFromRange(85, 135),
         });
     }
 
@@ -165,9 +171,9 @@ function draw() {
     //draw score
     c.font = "20px Bangers";
     c.fillStyle = "red";
-    c.fillText("Score: " + (k).toString(), canvas.width / 2 - 30, 20);
+    c.fillText("Score: " + k.toString(), canvas.width / 2 - 30, 20);
     c.fillStyle = "red";
-    c.fillText("High Score: " + (highScore).toString(), 95, 500);
+    c.fillText("High Score: " + highScore.toString(), 95, 500);
     //draw score
 
     if (pipes[k].x + 52 < birdX) {
