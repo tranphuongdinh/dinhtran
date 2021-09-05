@@ -20,14 +20,14 @@
         bottom: 0;
         width: 50%;
         height: 100%;
-        background-color: #000;
+        background-color: var(--heading-color);
         transition: transform 0.5s 1s ease-in-out;
     }
 
     .middle {
         width: 3px;
         height: 100%;
-        background-color: #fff;
+        background-color: var(--bg-color);
         transform: scaleY(0.3);
         transition: all 1s ease-in-out;
     }
@@ -39,7 +39,7 @@
         bottom: 0;
         width: 50%;
         height: 100%;
-        background-color: #000;
+        background-color: var(--heading-color);
         transition: transform 0.5s 1s ease-in-out;
     }
 

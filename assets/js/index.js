@@ -36,16 +36,18 @@ if (width > 768) {
         if (!isInElement) {
             cursor.style.left = event.pageX - 20 + "px";
             cursor.style.top = event.pageY - 20 + "px";
-            cursor.style.border = "1px solid #000";
+            cursor.style.border = "1px solid var(--heading-color)";
             cursor.style.borderRadius = "999px";
             cursorDot.style.transform = "scale(1)";
-            cursorDot.style.backgroundColor = "#767676";
+            cursorDot.style.opacity = "1";
+            cursorDot.style.backgroundColor = "var(--text-color)";
         } else {
             cursor.style.left = event.pageX - 20 + "px";
             cursor.style.top = event.pageY - 20 + "px";
             cursor.style.borderRadius = "999px";
             cursorDot.style.transform = "scale(10)";
-            cursorDot.style.backgroundColor = "rgba(76,76,76,.5)";
+            cursorDot.style.backgroundColor = "var(--text-color)";
+            cursorDot.style.opacity = ".4";
             cursor.style.border = "none";
         }
 

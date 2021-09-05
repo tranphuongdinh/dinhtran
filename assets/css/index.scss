@@ -1,3 +1,4 @@
+@import "./variables";
 @import "./global";
 @import "./description-modal";
 @import "./project-tooltip";
@@ -18,9 +19,9 @@
         width: calc(100% - 400px);
         overflow-x: hidden;
         overflow-y: auto;
-        box-shadow: 0px 0px 10px 1px #e6e6e6;
+        box-shadow: var(--right-part-box-shadow);
         padding: 100px;
-        background-color: #f8f8f8;
+        background-color: var(--light-bg-color);
 
         @media (max-width: 1400px) {
             width: calc(100% - 300px);

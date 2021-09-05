@@ -1,6 +1,6 @@
 .left-part {
     width: 400px;
-    background-color: #fff;
+    background-color: var(--bg-color);
     height: 100%;
 
     @media (max-width: 1400px) {
@@ -23,7 +23,7 @@
             h3 {
                 font-weight: 900;
                 font-size: 25px;
-                color: #000;
+                color: var(--heading-color);
             }
         }
 
@@ -51,6 +51,7 @@
                     .button-darkmode-tray {
                         height: 25px;
                         width: 50px;
+                        color: var(--text-color);
                         background-color: #fff;
                         border-radius: 50px;
                         border: 1px solid #000;
@@ -59,13 +60,13 @@
                             height: 24px;
                             background-color: #000;
                             border-radius: 50px;
-                            transform: translateY(-1px);
+                            transform: translate(-1px, 0px);
                             transition: transform 0.15s ease-in-out;
                         }
                         &.on {
                             .button-darkmode-switcher {
-                                transform: translate(25px, -1px);
-                                box-shadow: 0 0 12.5px 4px #000;
+                                transform: translate(25px, 0px);
+                                box-shadow: 0 0 12.5px 4px rgb(255, 255, 255);
                             }
                         }
                     }
@@ -73,22 +74,22 @@
 
                 &__item {
                     .item-link {
-                        color: #767676;
+                        color: var(--text-color);
                         font-weight: 500;
                         letter-spacing: 1.5px;
                         transition: all 0.25s ease-in-out;
                     }
                     &.active {
                         .item-link {
-                            color: #000;
+                            color: var(--heading-color);
                             font-weight: 600;
                         }
                     }
                     &:hover {
                         .item-link {
-                            letter-spacing: 3px;
-                            color: #000;
+                            color: var(--heading-color);
                             font-weight: 600;
+                            letter-spacing: 3px;
                         }
                     }
                 }
@@ -96,7 +97,7 @@
         }
 
         &-copyright {
-            color: #767676;
+            color: var(--text-color);
             font-style: italic;
         }
     }

@@ -1,0 +1,25 @@
+:root {
+    --bg-color: #fff;
+    --light-bg-color: #f8f8f8;
+    --text-color: #767676;
+    --heading-color: #000;
+    --about-img-box-shadow: 0px 0px 15px 2px #eeeeee;
+    --box-shadow: 0px 0px 15px 2px #eeeeee;
+    --description-modal-bg: rgba(76, 76, 76, 0.6);
+    --mobile-menu-box-shadow: -1px 0px 10px 1px #e6e6e6;
+    --portfolio-item-box-shadow: 0px 0px 15px 2px #eeeeee;
+    --right-part-box-shadow: 0px 0px 10px 1px #e6e6e6;
+}
+
+.dark-mode {
+    --bg-color: #000;
+    --light-bg-color: #0e0e0e;
+    --text-color: #b6b6b6;
+    --heading-color: #fff;
+    --about-img-box-shadow: none;
+    --box-shadow: none;
+    --description-modal-bg: rgba(37, 37, 37, 0.6);
+    --mobile-menu-box-shadow: none;
+    --portfolio-item-box-shadow: none;
+    --right-part-box-shadow: none;
+}
