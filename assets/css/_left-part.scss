@@ -46,11 +46,11 @@
                     align-items: center;
                     flex-wrap: nowrap;
                     width: 90px;
-                    height: 25px;
+                    height: 27px;
                     cursor: pointer;
                     .button-darkmode-tray {
-                        height: 25px;
-                        width: 50px;
+                        height: 27px;
+                        width: 54px;
                         color: var(--text-color);
                         background-color: #fff;
                         border-radius: 50px;
@@ -60,13 +60,13 @@
                             height: 24px;
                             background-color: #000;
                             border-radius: 50px;
-                            transform: translate(-1px, 0px);
+                            transform: translate(1px, 1px);
                             transition: transform 0.15s ease-in-out;
                         }
                         &.on {
                             .button-darkmode-switcher {
-                                transform: translate(25px, 0px);
-                                box-shadow: 0 0 12.5px 4px rgb(255, 255, 255);
+                                transform: translate(26px, 1px);
+                                box-shadow: 0 0 14px 6px rgb(255, 255, 255);
                             }
                         }
                     }
